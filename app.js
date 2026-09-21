@@ -56,10 +56,16 @@
 
       const link = document.createElement("a");
       link.href = book.href;
-      link.append(textElement("span", "archive-code", archiveNumber(code, nextNumber)));
+      link.append(
+        textElement(
+          "span",
+          "archive-code",
+          book.archiveCode || archiveNumber(code, nextNumber)
+        )
+      );
 
       const metadata = book.meta || book.metadata || book.act || "";
-      link.append(textElement("span", "entry-meta", metadata));
+      if (metadata) link.append(textElement("span", "entry-meta", metadata));
       link.append(textElement("strong", "", book.title));
       if (book.subtitle) link.append(textElement("small", "", book.subtitle));
       link.append(textElement("span", "entry-arrow", "→"));
