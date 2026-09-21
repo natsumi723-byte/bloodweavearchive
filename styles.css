@@ -306,59 +306,141 @@ footer { border-top: 1px solid var(--line); }
 }
 
 @media (max-width: 760px) {
-  :root { --page: min(calc(100% - 32px), 620px); }
+  :root { --page: min(calc(100% - 36px), 620px); }
   .header-inner {
-    padding: 1.1rem 0 .8rem;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    min-height: 70px;
+    gap: 1rem;
+  }
+  .wordmark { gap: .68rem; min-width: 0; }
+  .wordmark-mark {
+    width: 24px;
+    height: 24px;
+    flex-basis: 24px;
+  }
+  .wordmark-text strong {
+    font-size: .8rem;
+    letter-spacing: .065em;
+  }
+  .wordmark-text small {
+    margin-top: .12rem;
+    font-size: .63rem;
   }
   .site-header nav {
-    width: 100%;
-    padding-top: .65rem;
-    border-top: 1px solid var(--line);
+    flex: 0 0 auto;
+    gap: 1.15rem;
+    font-size: .76rem;
   }
+  .site-header nav a { padding: .65rem 0; }
+
+  .archive-intro {
+    padding: 1.8rem 0 2rem;
+  }
+  .foreword {
+    max-width: none;
+    padding: .15rem 0 .15rem 1rem;
+    background: transparent;
+    border: 0;
+    border-left: 2px solid var(--line-dark);
+  }
+  .foreword p {
+    margin-bottom: .85rem;
+    font-size: .92rem;
+    line-height: 1.82;
+  }
+  .foreword .foreword-greeting {
+    margin-bottom: 1rem;
+    font-size: 1.02rem;
+  }
+  .foreword .foreword-signature { margin-top: .35rem; }
+  .archive-update-note {
+    margin-top: .65rem;
+    font-size: .68rem;
+  }
+
   .collection {
     grid-template-columns: 1fr;
-    gap: 1.25rem;
+    gap: 1.8rem;
+    padding: 2.45rem 0 2.65rem;
   }
-  .archive-intro { padding: 2rem 0 2.3rem; }
-  .collection { padding: 2.6rem 0 2.8rem; }
-  .collection-heading {
-    display: grid;
-    grid-template-columns: 4.5rem minmax(0, 1fr);
-    column-gap: 1rem;
+  .collection-number { margin-bottom: .7rem; }
+  .collection-heading h2 {
+    max-width: 18em;
+    font-size: 1.32rem;
+    line-height: 1.42;
   }
-  .collection-number { grid-row: 1 / span 3; margin: .38rem 0 0; }
-  .collection-heading .en,
-  .collection-heading .description { grid-column: 2; }
-  .collection-heading .description { margin-top: .65rem; }
-}
+  .collection-heading .en { margin-top: .55rem; }
+  .collection-heading .description {
+    max-width: 32rem;
+    margin-top: .72rem;
+    font-size: .8rem;
+  }
+  .shelf + .shelf { margin-top: 2.15rem; }
 
-@media (max-width: 520px) {
-  :root { --page: min(calc(100% - 24px), 480px); }
-  .wordmark-text strong { font-size: .82rem; }
-  .site-header nav { gap: 1.25rem; }
-  .foreword p { font-size: .88rem; }
-  .foreword .foreword-greeting { font-size: 1rem; }
-  .foreword { padding: 1.35rem 1.25rem; }
-  .collection-heading { grid-template-columns: 3.8rem minmax(0, 1fr); }
   .catalog-entry a {
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
       "code meta"
       "title arrow"
-      "subtitle arrow";
-    gap: .2rem .8rem;
+      "subtitle subtitle";
+    gap: .22rem .8rem;
+    padding: 1rem 0 1.08rem;
   }
   .archive-code { padding: 0; }
-  .entry-meta { text-align: right; }
+  .entry-meta {
+    min-height: 0;
+    text-align: right;
+  }
+  .catalog-entry strong {
+    font-size: .98rem;
+    line-height: 1.48;
+  }
+  .catalog-entry small {
+    margin-top: .08rem;
+    padding-right: 1.6rem;
+    font-size: .78rem;
+    line-height: 1.55;
+  }
+  .entry-arrow { margin-top: .26rem; }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.55rem 0 2rem;
+  }
+  .footer-inner p + p { margin-top: .22rem; }
+}
+
+@media (max-width: 520px) {
+  :root { --page: min(calc(100% - 32px), 480px); }
+  .wordmark-text strong { font-size: .76rem; }
+  .wordmark-text small { font-size: .6rem; }
+  .site-header nav { gap: .9rem; }
+  .foreword { padding-left: .9rem; }
+  .foreword p { font-size: .9rem; }
+  .collection { padding: 2.25rem 0 2.45rem; }
+  .collection-heading h2 { font-size: 1.25rem; }
   .empty-shelf { grid-template-columns: 5rem 1fr; }
   .shelf-heading { display: block; }
   .shelf-heading p { margin-top: .22rem; }
-  .footer-inner { grid-template-columns: 1fr; gap: 1rem; }
-  .footer-inner p + p { margin-top: .25rem; }
-  .footer-disclaimer {
-    text-align: left;
+  .footer-disclaimer { text-align: left; }
+}
+
+@media (max-width: 360px) {
+  :root { --page: calc(100% - 28px); }
+  .header-inner { gap: .65rem; }
+  .wordmark-mark {
+    width: 21px;
+    height: 21px;
+    flex-basis: 21px;
+  }
+  .wordmark-text small { display: none; }
+  .site-header nav {
+    gap: .75rem;
+    font-size: .72rem;
+  }
+  .entry-meta {
+    max-width: 12rem;
+    letter-spacing: .035em;
   }
 }
 
