@@ -2,7 +2,7 @@ window.BLOODWEAVE_CATALOG = {
   site: {
     title: "Bloodweave 书库",
     catalogVersion: "0.1",
-    lastUpdated: "2026-09-21"
+    lastUpdated: "2026-09-23"
   },
   collections: [
     {
