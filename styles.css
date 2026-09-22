@@ -377,7 +377,7 @@ footer { border-top: 1px solid var(--line); }
   .shelf + .shelf { margin-top: 2.15rem; }
 
   .catalog-entry a {
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) 8.5rem;
     grid-template-areas:
       "code meta"
       "title arrow"
@@ -388,6 +388,7 @@ footer { border-top: 1px solid var(--line); }
   .archive-code { padding: 0; }
   .entry-meta {
     min-height: 0;
+    justify-self: end;
     text-align: right;
   }
   .catalog-entry strong {
@@ -400,7 +401,10 @@ footer { border-top: 1px solid var(--line); }
     font-size: .78rem;
     line-height: 1.55;
   }
-  .entry-arrow { margin-top: .26rem; }
+  .entry-arrow {
+    justify-self: end;
+    margin-top: .26rem;
+  }
 
   .footer-inner {
     grid-template-columns: 1fr;
@@ -419,6 +423,7 @@ footer { border-top: 1px solid var(--line); }
   .foreword p { font-size: .9rem; }
   .collection { padding: 2.25rem 0 2.45rem; }
   .collection-heading h2 { font-size: 1.25rem; }
+  .catalog-entry a { grid-template-columns: minmax(0, 1fr) 7.5rem; }
   .empty-shelf { grid-template-columns: 5rem 1fr; }
   .shelf-heading { display: block; }
   .shelf-heading p { margin-top: .22rem; }
@@ -439,9 +444,10 @@ footer { border-top: 1px solid var(--line); }
     font-size: .72rem;
   }
   .entry-meta {
-    max-width: 12rem;
+    max-width: none;
     letter-spacing: .035em;
   }
+  .catalog-entry a { grid-template-columns: minmax(0, 1fr) 6.5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
