@@ -239,7 +239,24 @@ window.BLOODWEAVE_CATALOG = {
           id: "story-scenes",
           title: "剧情内互动",
           description: "",
-          books: []
+          books: [
+            {
+              id: "AG-023",
+              archiveCode: "AG · 023",
+              title: "吹一支小曲",
+              subtitle: "阿斯代伦对演奏的评价",
+              meta: "剧情场景 · 盖尔死亡后",
+              href: "books/ag-023.html"
+            },
+            {
+              id: "AG-024",
+              archiveCode: "AG · 024",
+              title: "如何复活盖尔",
+              subtitle: "阿斯代伦的场外提示",
+              meta: "剧情场景 · 盖尔死亡后",
+              href: "books/ag-024.html"
+            }
+          ]
         }
       ]
     }
