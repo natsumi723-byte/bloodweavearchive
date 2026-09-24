@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="book-id" content="BK-AST_GAL-UNK-Gale_DeathVoice"><meta name="source-page-ids" content="PAGE-SRC-0001-Gale_DeathVoice"><meta name="source-graph-ids" content="GRAPH-SRC-0001-Gale_DeathVoice"><title>如何复活盖尔</title><style id="visual-system-current">
+@page{size:A4;margin:18mm 17mm}
+:root{
+  --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
+  --astarion:#8B3048;--astarion-soft:#faedf1;--astarion-line:#c27b8e;
+  --gale:#624779;--gale-soft:#f3eff7;--gale-line:#9986aa;
+  --shared:#5e565d;--shared-soft:#f3f0f2;--shared-line:#aaa0a7;
+  --source:#51484d;--source-soft:#f6f2ee;--source-line:#9c8f87;
+  --research:#70572F;--research-soft:#fbf6e9;--research-line:#b79d6f;
+  --check:#795b1d;--check-soft:#fff8e8;--check-line:#c4a35d;
+  --success:#276247;--success-soft:#edf7f1;--success-line:#78ae91;
+  --failure:#8a3740;--failure-soft:#fff0f1;--failure-line:#ce8e94;
+  --conflict:#80503F;--conflict-soft:#fff5ef;--conflict-line:#c99f8e
+}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{max-width:900px;margin:28px auto;padding:18mm;background:var(--paper);color:var(--ink);font:16px/1.78 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;box-shadow:0 6px 32px #433b4218}
+main{max-width:860px;margin:auto}
+h1,h2,h3,h4{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.32;text-wrap:balance}
+h1{margin:.2rem 0 1.35rem;color:var(--ink);padding-bottom:1rem;border-bottom:2px solid var(--rule)}
+.book-title__main{display:block;max-width:18em;font-size:clamp(2rem,4.4vw,2.5rem);line-height:1.2;letter-spacing:-.025em;text-wrap:balance}
+.book-title__subtitle{display:block;max-width:28em;margin-top:.58rem;color:var(--gale);font-size:clamp(1.05rem,2.1vw,1.34rem);line-height:1.48;font-weight:650;letter-spacing:.01em;text-wrap:balance}
+h2{font-size:clamp(1.5rem,3vw,1.95rem);margin:3.7rem 0 1.2rem;color:var(--ink);padding-bottom:.5rem;border-bottom:1px solid var(--rule);break-after:avoid-page}
+h3{font-size:1.2rem;margin:1.8rem 0 .8rem;color:var(--ink);break-after:avoid-page}
+h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
+.system-meta{margin:0 0 2.2rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.synopsis-deck{max-width:72ch;margin:0 0 2rem;color:var(--ink);font-size:1rem;line-height:1.72}
+.source-kicker{margin-bottom:.42rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
+.synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
+.synopsis-deck p{margin:.35rem 0}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.zh{color:#4e474c}
+.translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
+.editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
+.research-kicker,.editorial-note::before{color:var(--research);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
+.flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
+.flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
+.route{margin:2.1rem 0}
+.turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.turn p{margin:.38rem 0}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
+.note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
+.note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
+.note p,.source-note p{margin:.3rem 0}
+.choice{padding:1rem 1.1rem;margin:1.05rem 0;border:1px solid var(--rule);border-left:5px solid var(--shared-line);background:#fcfbfc;break-inside:avoid}
+.choice--shared{border-left-color:var(--shared-line);background:linear-gradient(90deg,var(--shared-soft),#fff 44%)}
+.choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
+.tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
+.tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.choice--astarion>.tag,.choice--astarion>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
+.branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
+.menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45;text-wrap:pretty}
+.menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+.menu-label{min-width:0}
+.check{margin:1rem 0;padding:1rem 1.1rem;border:1px solid var(--check-line);background:var(--check-soft)}
+.check-label{display:inline-flex;padding:.25rem .62rem;border:1px solid var(--check);border-radius:99px;color:var(--check);font:700 .75rem/1.25 "Microsoft YaHei",sans-serif}
+.variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
+.ending{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.ending--success{border-top:4px solid var(--success-line);background:linear-gradient(180deg,var(--success-soft),#fff 38%)}
+.ending--failure{border-top:4px solid var(--failure-line);background:linear-gradient(180deg,var(--failure-soft),#fff 38%)}
+.ending h3{margin:.45rem 0;color:var(--ink)}
+.ending p{margin:.35rem 0}
+.outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
+.outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
+.component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
+.component-index a{color:var(--muted);text-underline-offset:.2em}
+@media(max-width:700px){
+  body{margin:0;padding:26px 18px;box-shadow:none;overflow-wrap:anywhere}
+  .book-title__main{font-size:clamp(1.8rem,9vw,2.2rem)}
+  .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
+  .variants{grid-template-columns:1fr}
+  .flow pre{font-size:13px;overflow-wrap:anywhere}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
+  .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
+  .version-heading{grid-template-columns:1fr}
+  .version-heading>.condition-tag{margin:0}
+}
+@media print{
+  html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
+  .component-index,.component-note{display:none}
+  .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
+}
+</style></head><body class="scene-book"><main><h1 class="book-title"><span class="book-title__main">如何复活盖尔</span></h1><div class="synopsis-deck"><div class="source-kicker">■ 源文件简介</div><div class="synopsis-item"><p class="en" lang="en">The real Gale has died and now magical manifestation of himself appears to deliver a message: he has put in place an elaborate protocol that will turn a blank letter he has in his possession into a Scroll of True Resurrection, which the player can use to bring him back to life. In this scene he describes the protocol and urges the player to repeat the instructions back to him. The manifestation speaks with the voice and personality of Gale, but this is a pre-recorded message (even though the player can interact with the manifestation), which is why the language in the message itself is also more elaborate on purpose. Gale does not shy away from the theatrical from time to time.</p><p class="zh"><span>参考译文</span>真正的盖尔已经死亡，他的魔法投影随即现身并传达留言：他预先设计了一套复杂流程，能把随身携带的一封空白信件变成真正的复活术卷轴，用来让他复活。在这段场景中，投影会说明流程，并要求玩家复述指示。投影拥有盖尔的声音和性格。虽然玩家可以与它互动，它所传达的仍是一段预先录制的信息，因此留言的措辞被刻意写得更加繁复。盖尔偶尔并不回避戏剧化的表现。</p></div></div><div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br>投影讲完复活流程后，会让玩家逐项复述。玩家可能答错三个问题：缝线的颜色、吹奏音符的起点，以及魔蝠的名字。阿斯代伦会针对答错的那一项给出答案。</div><h2>阅读脉络</h2><nav class="flow" aria-label="阅读脉络"><pre>01 · 投影说明复活流程
+   ↓
+玩家逐项复述
+├─ 答错缝线颜色 → 02 · 阿斯代伦提醒“紫色”
+├─ 答错音符起点 → 03 · 阿斯代伦提醒“右下角”
+└─ 答错魔蝠名字 → 04 · 阿斯代伦说出正确名字</pre></nav><section><h2>01 · 投影留下的指引</h2><article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">Well met! I am a magical projection of Gale of Waterdeep, and if you see this manifestation, that means I have prematurely perished.</p><p class="zh"><span class="translation">参考译文</span>你好！我是“深水城的盖尔”留下的魔法投影；如果你看见我，就说明我过早地死去了。</p><aside class="note"><strong>场景旁注</strong><p class="en" lang="en">The speaker here is not the real Gale: Gale is dead. This is a magical projection of him (like the mirror image) or potentially a projection of his face alone floating in a magic haze.</p><p><span class="translation">参考译文</span>这里说话的不是真正的盖尔：盖尔已死。它是他的魔法投影，可能只显出笼罩在魔法雾气中的脸。</p></aside></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">However, for reasons that cannot be disclosed, it is of vital importance that my death be remedied at your earliest convenience.</p><p class="zh"><span class="translation">参考译文</span>但出于不能透露的原因，尽快纠正我的死亡至关重要。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">You may rest assured that I do not speak out of self preservation alone: many lives depend on my return to the living within the span of two days.</p><p class="zh"><span class="translation">参考译文</span>请放心，我不只是为了自保才这么说：许多人的性命取决于我能否在两天内复活。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">I trust I have made myself clear?</p><p class="zh"><span class="translation">参考译文</span>我说清楚了吗？</p></article>
+<article class="turn"><h4>玩家</h4><p class="en" lang="en">How am I supposed to bring you back to life?</p><p class="zh"><span class="translation">参考译文</span>我该怎样让你复活？</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">I have upon my deceased person a magical item that can accomplish my return, but such is the value and rarity that it is protected by a multi-layered security protocol.</p><p class="zh"><span class="translation">参考译文</span>我身上有一件魔法物品能让我复活，但它价值稀有，因此受到多重安全程序保护。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">I will now explain the protocol:</p><p class="zh"><span class="translation">参考译文</span>现在，我来说明这套程序。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">Step one is to retrieve from my person a pouch I wear over my heart.</p><p class="zh"><span class="translation">参考译文</span>第一步，从我胸口上方取下一个小袋。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">Next you must unthread the purple seam that seals it in a counter-clockwise fashion. Do not touch any other coloured strand.</p><p class="zh"><span class="translation">参考译文</span>接着逆时针拆开封口的紫色缝线；不要碰其他颜色的线。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">Inside the pouch, you will find a folded letter and a tiny flute. Unfold the letter, and note the markings in the top and bottom corners. These are the notes you will need to play.</p><p class="zh"><span class="translation">参考译文</span>袋中有一封折好的信和一支小笛。展开信，记下角落的符号；那是你要吹奏的音符。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">Starting from the bottom right, play the notes in correct order - clockwise this time.</p><p class="zh"><span class="translation">参考译文</span>从右下角开始，按顺时针顺序吹奏音符。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">Upon completion of the tune, a magma mephit will appear, which will pose the following question: I'ss k'cha t'chiss n'aga?</p><p class="zh"><span class="translation">参考译文</span>曲子完成后，会出现一只岩浆魔蝠，问出一个问题。</p><aside class="note"><strong>制作旁注</strong><p class="en" lang="en">Is-ksja-tsjis-naga</p><p><span class="translation">参考译文</span>读音：Is-ksja-tsjis-naga。</p></aside></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">This is Ignan for 'What is my name?' The answer is 'K'ha'ssji'trach'ash'.</p><p class="zh"><span class="translation">参考译文</span>这是火族语中的“我叫什么名字？”答案是“K’ha’ssji’trach’ash”。</p><aside class="note"><strong>制作旁注</strong><p class="en" lang="en">Kahs-she-trachh-awsh! The chhh is with the back of the throat.</p><p><span class="translation">参考译文</span>读音：Kahs-she-trachh-awsh！其中 chhh 要从喉咙后方发出。</p></aside></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">Pronounce the name correctly and the mephit will breathe on the letter. Stay clear because the little scamp can melt metal.</p><p class="zh"><span class="translation">参考译文</span>名字念对后，魔蝠会向信件喷火。务必避开；它能熔化金属。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">Words will now appear on the letter's surface, effectively turning the letter into a Scroll of True Resurrection. Use it to bring me back to life.</p><p class="zh"><span class="translation">参考译文</span>信件上会显出文字，成为一张真正的复活术卷轴。用它使我复活。</p></article></section>
+<section><h2>02 · 若答错缝线颜色</h2><h3 class="menu-heading"><span class="menu-code">02.1</span><span class="menu-label">玩家复述缝线颜色</span></h3><section class="choice choice--shared"><div class="tag"><span class="choice-code">02.1A</span> · 错误回答</div><article class="turn"><h4>玩家</h4><p class="en" lang="en">I should unthread the scarlet seam in a counter-clockwise fashion.</p><p class="zh"><span class="translation">参考译文</span>我应该逆时针拆开猩红色的缝线。</p></article></section><section class="choice choice--shared"><div class="tag"><span class="choice-code">02.1B</span> · 错误回答</div><article class="turn"><h4>玩家</h4><p class="en" lang="en">I should unthread the yellow seam in a counter-clockwise fashion.</p><p class="zh"><span class="translation">参考译文</span>我应该逆时针拆开黄色的缝线。</p></article></section><h3 class="result-heading"><span class="result-badge">共同后续</span>阿斯代伦纠正答案</h3><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Purple , darling. It's the purple seam.</p><p class="zh"><span class="translation">参考译文</span>紫色，亲爱的。是紫色的缝线。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">The purple seam indeed. You then have access to the letter and the flute. Continue.</p><p class="zh"><span class="translation">参考译文</span>没错，是紫色缝线。之后就可以取出信和笛子。继续说。</p></article></section>
+<section><h2>03 · 若答错音符的起点</h2><h3 class="menu-heading"><span class="menu-code">03.1</span><span class="menu-label">玩家复述吹奏起点</span></h3><section class="choice choice--shared"><div class="tag"><span class="choice-code">03.1A</span> · 错误回答</div><article class="turn"><h4>玩家</h4><p class="en" lang="en">I should play the notes starting at the top right corner.</p><p class="zh"><span class="translation">参考译文</span>我应该从右上角开始吹奏音符。</p></article></section><section class="choice choice--shared"><div class="tag"><span class="choice-code">03.1B</span> · 错误回答</div><article class="turn"><h4>玩家</h4><p class="en" lang="en">I should play the notes starting at the bottom left corner.</p><p class="zh"><span class="translation">参考译文</span>我应该从左下角开始吹奏音符。</p></article></section><h3 class="result-heading"><span class="result-badge">共同后续</span>阿斯代伦纠正答案</h3><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Wrong, I'm afraid. Bottom right.</p><p class="zh"><span class="translation">参考译文</span>恐怕错了。右下角。</p></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">Quite right. You start at the bottom right corner - and remember to play them clockwise! After that?</p><p class="zh"><span class="translation">参考译文</span>没错，从右下角开始，别忘了按顺时针吹奏！然后呢？</p></article></section>
+<section><h2>04 · 若答错魔蝠名字</h2><h3 class="menu-heading"><span class="menu-code">04.1</span><span class="menu-label">玩家复述魔蝠的名字</span></h3><section class="choice choice--shared"><div class="tag"><span class="choice-code">04.1A</span> · 错误回答</div><article class="turn"><h4>玩家</h4><p class="en" lang="en">When a mephit appears I should say its name: K'ha'trach'ash'ssji.</p><p class="zh"><span class="translation">参考译文</span>魔蝠出现后，我应该说出它的名字：K’ha’trach’ash’ssji。</p></article></section><section class="choice choice--shared"><div class="tag"><span class="choice-code">04.1B</span> · 错误回答</div><article class="turn"><h4>玩家</h4><p class="en" lang="en">When a mephit appears I should say its name: K'ha'ash'ssji'trach.</p><p class="zh"><span class="translation">参考译文</span>魔蝠出现后，我应该说出它的名字：K’ha’ash’ssji’trach。</p></article></section><h3 class="result-heading"><span class="result-badge">共同后续</span>阿斯代伦纠正答案</h3><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">K'ha'ssji'trach'ash. The blighter is called K'ha'ssji'trach'ash.</p><p class="zh"><span class="translation">参考译文</span>K’ha’ssji’trach’ash。那混蛋叫 K’ha’ssji’trach’ash。</p><aside class="note"><strong>制作旁注</strong><p class="en" lang="en">Kahs-she-trawkk-awsh!</p><p><span class="translation">参考译文</span>读音：Kahs-she-trawkk-awsh！</p></aside></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">Listen to your friend. It's K'ha'ssji'trach'ash.</p><p class="zh"><span class="translation">参考译文</span>听你朋友的。名字是 K’ha’ssji’trach’ash。</p><aside class="note"><strong>制作旁注</strong><p class="en" lang="en">Kahs-she-trachh-awsh! The chhh is with the back of the throat.</p><p><span class="translation">参考译文</span>读音：Kahs-she-trachh-awsh！其中 chhh 要从喉咙后方发出。</p></aside></article>
+<article class="turn turn--gale"><h4>盖尔的魔法投影</h4><p class="en" lang="en">And pay attention to the 'trach' part. Chhh. Back of the throat.</p><p class="zh"><span class="translation">参考译文</span>尤其注意“trach”那部分。要从喉咙后方发出那个音。</p></article></section><details class="research"><summary>研究依据</summary><p>来源：Patch 8 对话文件《Gale_DeathVoice》。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main></body></html>

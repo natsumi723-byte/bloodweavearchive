@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="zh-Hans"><head><meta charset="utf-8"><script src="../analytics.js"></script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="book-id" content="BK-AST_GAL-UNK-PB_Astarion_Gale_Moonrise_General"><meta name="source-page-ids" content="PAGE-SRC-0001-PB_Astarion_Gale_Moonrise_General"><meta name="source-graph-ids" content="GRAPH-SRC-0001-PB_Astarion_Gale_Moonrise_General_P037"><title>他们把这地方弄成了什么样｜阿斯代伦与盖尔</title><style>
-
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="book-id" content="BK-AST_GAL-UNK-PB_Astarion_Gale_Moonrise_General"><meta name="source-page-ids" content="PAGE-SRC-0001-PB_Astarion_Gale_Moonrise_General"><meta name="source-graph-ids" content="GRAPH-SRC-0001-PB_Astarion_Gale_Moonrise_General_P037"><title>他们把这地方弄成了什么样｜阿斯代伦与盖尔</title><style id="visual-system-current">
 @page{size:A4;margin:18mm 17mm}
 :root{
   --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
@@ -31,7 +30,7 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
 .synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
 .synopsis-deck p{margin:.35rem 0}
-.en,.turn p[lang=en],.note p[lang=en]{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
 .zh{color:#4e474c}
 .translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
 .editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
@@ -39,13 +38,27 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
 .flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
 .flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
 .route{margin:2.1rem 0}
 .turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
 .turn p{margin:.38rem 0}
-.pb-example .turn--astarion{border-left:4px solid var(--astarion-line)}
-.pb-example .turn--gale{border-left:4px solid var(--gale-line)}
-.pb-example .turn--astarion h4{color:var(--astarion)}
-.pb-example .turn--gale h4{color:var(--gale)}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
 .note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
 .note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
 .note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
@@ -55,6 +68,9 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
 .choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
 .choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
 .tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
 .tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
 .choice--astarion>.tag,.choice--astarion>.badge{color:var(--astarion);background:var(--astarion-soft)}
@@ -62,17 +78,26 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
 .condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
 .result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
-.version-heading,.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
 .version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
-.version-badge{border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
 .result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
 .branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
 .menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45;text-wrap:pretty}
 .menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
 .menu-label{min-width:0}
 .check{margin:1rem 0;padding:1rem 1.1rem;border:1px solid var(--check-line);background:var(--check-soft)}
 .check-label{display:inline-flex;padding:.25rem .62rem;border:1px solid var(--check);border-radius:99px;color:var(--check);font:700 .75rem/1.25 "Microsoft YaHei",sans-serif}
 .variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
 .ending{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
 .ending--success{border-top:4px solid var(--success-line);background:linear-gradient(180deg,var(--success-soft),#fff 38%)}
 .ending--failure{border-top:4px solid var(--failure-line);background:linear-gradient(180deg,var(--failure-soft),#fff 38%)}
@@ -81,8 +106,8 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
 .outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
 .outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
-.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.86rem;color:var(--muted)}
-.research summary{cursor:pointer;font-weight:700;color:var(--ink)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
 .component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
 .component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
 .component-index a{color:var(--muted);text-underline-offset:.2em}
@@ -92,19 +117,18 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
   .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
   .variants{grid-template-columns:1fr}
   .flow pre{font-size:13px;overflow-wrap:anywhere}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
   .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
+  .version-heading{grid-template-columns:1fr}
+  .version-heading>.condition-tag{margin:0}
 }
 @media print{
   html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
   .component-index,.component-note{display:none}
   .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
 }
-
-/* PB exception: speaker colours identify the two voices in short party banter. */
-.pb-book .turn--astarion{border-left:4px solid var(--astarion-line)}
-.pb-book .turn--gale{border-left:4px solid var(--gale-line)}
-.pb-book .turn--astarion h4{color:var(--astarion)}
-.pb-book .turn--gale h4{color:var(--gale)}
-</style><style id="research-footer-standard">.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule,#d8cec7);background:transparent;color:var(--muted,#6b6269);font-size:.86rem}.research summary{cursor:pointer;color:var(--ink,#433b42);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}</style></head><body class="pb-book"><main><h1 class="book-title"><span class="book-title__main">他们把这地方弄成了什么样</span></h1><div class="synopsis-deck"><div class="source-kicker">■ 源文件简介</div><div class="synopsis-item"><p class="en" lang="en">Astarion and Gale discuss the Moonrise General.</p><p class="zh"><span class="translation">参考译文</span>阿斯代伦与盖尔谈论月出之塔的整体情况。</p></div></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Can't say I love what they've done with the place.</p><p class="zh"><span class="translation">参考译文</span>不能说我喜欢他们把这地方弄成的样子。</p></article>
+</style></head><body class="pb-book"><main><h1 class="book-title"><span class="book-title__main">他们把这地方弄成了什么样</span></h1><div class="synopsis-deck"><div class="source-kicker">■ 源文件简介</div><div class="synopsis-item"><p class="en" lang="en">Astarion and Gale discuss the Moonrise General.</p><p class="zh"><span class="translation">参考译文</span>阿斯代伦与盖尔谈论月出之塔的整体情况。</p></div></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Can't say I love what they've done with the place.</p><p class="zh"><span class="translation">参考译文</span>不能说我喜欢他们把这地方弄成的样子。</p></article>
 <article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">Unsurprising, really. Fanatical cultists tend to care more for ambience than aesthetics.</p><p class="zh"><span class="translation">参考译文</span>也不奇怪。狂热的邪教徒往往更在乎氛围，而不是美感。</p><aside class="note"><strong>制作旁注</strong><p class="en" lang="en">A subject he feels he knows a little about. 'Ambience' Implication being cultists are more focused on inspiring fear/awe/dread than making the palce look nice.</p><p><span class="translation">参考译文</span>他觉得自己对这个话题略知一二。“氛围”暗指邪教徒更在意制造恐惧、敬畏，而非让地方好看。</p></aside></article>
 <article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Reason enough to put them all to the sword, I say.</p><p class="zh"><span class="translation">参考译文</span>所以我说，光凭这点就够把他们全都送上刀尖了。</p></article><details class="research"><summary>研究依据</summary><p>来源：Patch 8 对话文件《PB_Astarion_Gale_Moonrise_General》。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main></body></html>
