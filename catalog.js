@@ -236,12 +236,6 @@ window.BLOODWEAVE_CATALOG = {
           ]
         },
         {
-          id: "talking-about-each-other",
-          title: "向领队谈起对方",
-          description: "",
-          books: []
-        },
-        {
           id: "story-scenes",
           title: "剧情内互动",
           description: "",
@@ -317,6 +311,12 @@ window.BLOODWEAVE_CATALOG = {
               href: "books/ag-032.html"
             }
           ]
+        },
+        {
+          id: "talking-about-each-other",
+          title: "向领队谈起对方",
+          description: "",
+          books: []
         }
       ]
     }
