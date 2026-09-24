@@ -250,70 +250,70 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-023",
               archiveCode: "AG · 023",
               title: "没必要把事情弄得一团糟",
-              meta: "剧情场景 · 第一章招募阿斯代伦",
+              meta: "第一章 · 招募阿斯代伦",
               href: "books/ag-023.html"
             },
             {
               id: "AG-024",
               archiveCode: "AG · 024",
               title: "盖尔的血是什么味道",
-              meta: "剧情场景 · 第一章吸血鬼身份公开后",
+              meta: "第一章 · 吸血鬼身份公开后",
               href: "books/ag-024.html"
             },
             {
               id: "AG-025",
               archiveCode: "AG · 025",
               title: "请允许我代他道歉",
-              meta: "剧情场景 · 第一章渥金休眠地",
+              meta: "第一章 · 渥金休眠地",
               href: "books/ag-025.html"
             },
             {
               id: "AG-026",
               archiveCode: "AG · 026",
               title: "如何复活盖尔",
-              meta: "剧情场景 · 盖尔死亡后的复活指引",
+              meta: "第一章 · 盖尔死亡后的复活指引",
               href: "books/ag-026.html"
             },
             {
               id: "AG-027",
               archiveCode: "AG · 027",
               title: "吹响盖尔的魔法笛",
-              meta: "剧情场景 · 盖尔复活流程",
+              meta: "第一章 · 盖尔复活流程",
               href: "books/ag-027.html"
             },
             {
               id: "AG-028",
               archiveCode: "AG · 028",
               title: "亵渎飞升仪式前后",
-              meta: "剧情场景 · 第三章卡扎多尔宫殿",
+              meta: "第三章 · 卡扎多尔宫殿",
               href: "books/ag-028.html"
             },
             {
               id: "AG-029",
               archiveCode: "AG · 029",
               title: "王冠沉入乔恩萨河之后",
-              meta: "剧情场景 · 终战路线盖尔存活",
+              meta: "终战路线 · 盖尔存活",
               href: "books/ag-029.html"
             },
             {
               id: "AG-030",
               archiveCode: "AG · 030",
               title: "阳光不再眷顾他",
-              meta: "剧情场景 · 终战路线衍体阿斯代伦先行离开",
+              meta: "终战路线 · 衍体阿斯代伦先行离开",
               href: "books/ag-030.html"
             },
             {
               id: "AG-031",
               archiveCode: "AG · 031",
               title: "盖尔带来的胜利",
-              meta: "剧情场景 · 终战路线盖尔引爆法球",
+              meta: "终战路线 · 盖尔引爆法球",
               href: "books/ag-031.html"
             },
             {
               id: "AG-032",
               archiveCode: "AG · 032",
               title: "为盖尔举杯",
-              meta: "剧情场景 · 盖尔牺牲后的纪念提议",
+              meta: "终战路线 · 盖尔牺牲后的纪念提议",
               href: "books/ag-032.html"
             }
           ]
