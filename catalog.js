@@ -186,7 +186,7 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "AG-017",
               archiveCode: "AG · 017",
-              title: "每个聚居地都有育幼室？",
+              title: "每个殖民地都有育幼室？",
               subtitle: "进入夺心魔殖民地",
               meta: "第二章 · 夺心魔殖民地",
               href: "books/ag-017.html"
