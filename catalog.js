@@ -92,7 +92,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 005",
               title: "从树林到沼泽",
               subtitle: "日照湿地的幻象消失",
-              meta: "第一章 · 阳光湿地",
+              meta: "第一章 · 日照湿地",
               href: "books/ag-005.html"
             },
             {
@@ -180,7 +180,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 016",
               title: "触手与鱿鱼",
               subtitle: "进入夺心魔殖民地",
-              meta: "第二章 · 夺心魔聚居地",
+              meta: "第二章 · 夺心魔殖民地",
               href: "books/ag-016.html"
             },
             {
@@ -188,7 +188,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 017",
               title: "每个聚居地都有育幼室？",
               subtitle: "进入夺心魔殖民地",
-              meta: "第二章 · 夺心魔聚居地",
+              meta: "第二章 · 夺心魔殖民地",
               href: "books/ag-017.html"
             },
             {
