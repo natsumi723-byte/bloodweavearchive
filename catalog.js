@@ -69,7 +69,7 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "AG-002",
               archiveCode: "AG · 002",
-              title: "结束之后，有人在等你们吗",
+              title: "有人等你们回去吗",
               meta: "一般闲聊 · 三人对话",
               href: "books/ag-002.html"
             },
@@ -83,7 +83,7 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "AG-004",
               archiveCode: "AG · 004",
-              title: "阿斯代伦问起卡扎多尔",
+              title: "听说过叫卡扎多尔的吸血鬼吗",
               meta: "一般闲聊 · 三人对话",
               href: "books/ag-004.html"
             },
@@ -98,7 +98,7 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "AG-006",
               archiveCode: "AG · 006",
-              title: "威尔问起耐色瑞尔魔法",
+              title: "耐色瑞尔魔法是什么",
               subtitle: "鬼婆提及耐色瑞尔魔法",
               meta: "第一章 · 三人对话",
               href: "books/ag-006.html"
@@ -146,7 +146,7 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "AG-012",
               archiveCode: "AG · 012",
-              title: "月出之塔的安全感",
+              title: "“安全舒适”的月出之塔",
               subtitle: "初次接近月出之塔",
               meta: "第二章 · 月出之塔",
               href: "books/ag-012.html"
