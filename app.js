@@ -4,6 +4,44 @@
   const catalog = window.BLOODWEAVE_CATALOG;
   const root = document.querySelector("#collection-list");
 
+  const navigationMenus = Array.from(document.querySelectorAll(".collection-nav"));
+  const canHover = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+  function closeNavigationMenus(activeMenu) {
+    navigationMenus.forEach((menu) => {
+      if (menu !== activeMenu) menu.open = false;
+    });
+  }
+
+  navigationMenus.forEach((menu) => {
+    const summary = menu.querySelector("summary");
+
+    menu.addEventListener("mouseenter", () => {
+      if (!canHover.matches) return;
+      closeNavigationMenus(menu);
+      menu.open = true;
+    });
+    menu.addEventListener("mouseleave", () => {
+      if (canHover.matches) menu.open = false;
+    });
+    summary.addEventListener("click", (event) => {
+      if (!canHover.matches) {
+        closeNavigationMenus(menu);
+        return;
+      }
+      event.preventDefault();
+      closeNavigationMenus(menu);
+      menu.open = true;
+    });
+    menu.addEventListener("focusout", (event) => {
+      if (!menu.contains(event.relatedTarget)) menu.open = false;
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".collection-nav")) closeNavigationMenus(null);
+  });
+
   if (!catalog || !Array.isArray(catalog.collections) || !root) {
     throw new Error("Public catalog is missing or malformed.");
   }
@@ -131,6 +169,15 @@
       nextNumber = rendered.nextNumber;
       shelfSection.append(shelfHeading, rendered.element);
       shelves.append(shelfSection);
+    }
+
+    const shelfList = Array.from(shelves.querySelectorAll(".shelf"));
+    if (
+      shelfList.length > 0 &&
+      shelfList.every((shelf) => shelf.querySelector(".empty-shelf"))
+    ) {
+      section.classList.add("is-empty");
+      shelves.replaceChildren(textElement("p", "collection-empty", "暂无公开档案"));
     }
 
     section.append(heading, shelves);

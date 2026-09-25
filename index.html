@@ -26,7 +26,7 @@
     }
   </script>
   <script src="analytics.js"></script>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260925-2">
 </head>
 <body>
   <a class="skip-link" href="#archive">跳到档案目录</a>
@@ -40,24 +40,53 @@
           <small>Astarion · Gale</small>
         </span>
       </a>
-      <nav aria-label="主导航">
-        <a href="#about">卷首语</a>
-        <a href="#archive">档案</a>
+      <nav class="archive-nav archive-nav-horizontal" aria-label="主导航">
+        <a class="about-link" href="#about">关于本站</a>
+        <details class="collection-nav nav-oa">
+          <summary><span>起源阿斯代伦视角</span><i aria-hidden="true"></i></summary>
+          <div class="collection-menu">
+            <a href="#astarion-origin-with-gale-scenes-and-relationship">旅途中的对话</a>
+            <a href="#astarion-origin-with-gale-finale-and-epilogue">终局与尾声</a>
+          </div>
+        </details>
+        <details class="collection-nav nav-og">
+          <summary><span>起源盖尔视角</span><i aria-hidden="true"></i></summary>
+          <div class="collection-menu">
+            <a href="#gale-origin-with-astarion-scenes-and-relationship">旅途中的对话</a>
+            <a href="#gale-origin-with-astarion-finale-and-epilogue">终局与尾声</a>
+          </div>
+        </details>
+        <details class="collection-nav nav-ag">
+          <summary><span>同伴阿斯代伦&amp;同伴盖尔视角</span><i aria-hidden="true"></i></summary>
+          <div class="collection-menu">
+            <a href="#shared-journey-party-banter">队内闲聊</a>
+            <a href="#shared-journey-story-scenes">剧情内互动</a>
+            <a href="#shared-journey-talking-about-each-other">向领队谈起对方</a>
+          </div>
+        </details>
       </nav>
     </div>
   </header>
 
   <main id="top" class="page">
-    <section class="archive-intro" id="about" aria-label="卷首语">
-      <div class="foreword">
-        <p class="foreword-greeting">Hi，这里是 <span lang="en">Bloodweave Archive</span>！</p>
+    <section class="archive-intro foreword-preview" id="about" aria-label="卷首语">
+      <details class="foreword-fold">
+        <summary>
+          <span class="foreword-summary-copy">
+            <span class="foreword-kicker">写在档案之前</span>
+            <span class="foreword-summary-title">Hi，这里是 <span lang="en">Bloodweave Archive</span>！</span>
+            <span class="foreword-summary-note">档案仍在整理中，内容将分批更新：）</span>
+          </span>
+          <span class="foreword-toggle" aria-hidden="true"><span class="when-closed">展开阅读</span><span class="when-open">收起留言</span><i></i></span>
+        </summary>
+        <div class="foreword">
         <p><span lang="en">Bloodweave Archive</span> 以 Patch 8 版本的游戏文本为基础，收录并梳理《博德之门 3》中阿斯代伦（Astarion）与盖尔（Gale）的互动、专属剧情分支及相关文本资料。</p>
         <p>在每一册互动中，除了对话，<span lang="en">Bloodweave Archive</span> 还将尽可能呈现源文本在该场景下的所有文字描述：包括背景简介、触发条件、不同选择及其结果，以及游玩过程中不可见的开发者旁注。</p>
         <p><span lang="en">Bloodweave Archive</span> 会明确区分原始资料与研究整理内容，避免两者在阅读过程中混淆：原始资料均直接取自源文件；中文参考译文、部分前情提要及必要的上下文逻辑说明，则由 <span lang="en">Bloodweave Archive</span> 整理，仅用于帮助快速理解原始文本。目前，所有对白的中文翻译均为研究译文，并非官方简体中文翻译；如有歧义，请以英文为准。官方简中可能将在后续更新中逐步替换到正式文档内。</p>
         <p class="foreword-closing" lang="en">Enjoy！</p>
         <p class="foreword-signature" lang="en"><span>Yours,</span><span>N.A.</span></p>
-      </div>
-      <p class="archive-update-note">档案仍在整理中，内容将分批更新：）</p>
+        </div>
+      </details>
     </section>
 
     <section class="archive" id="archive" aria-label="Bloodweave 档案目录">
@@ -82,6 +111,6 @@
   </footer>
 
   <script src="catalog.js?v=20260925-8"></script>
-  <script src="app.js"></script>
+  <script src="app.js?v=20260925-2"></script>
 </body>
 </html>
