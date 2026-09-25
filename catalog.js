@@ -244,20 +244,23 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-023",
               archiveCode: "AG · 023",
               title: "没必要把事情弄得一团糟",
-              meta: "第一章 · 招募阿斯代伦",
+              subtitle: "首次遇见并招募阿斯代伦",
+              meta: "第一章 · 荒野",
               href: "books/ag-023.html"
             },
             {
               id: "AG-024",
               archiveCode: "AG · 024",
               title: "盖尔的血是什么味道",
-              meta: "第一章 · 吸血鬼身份公开后",
+              subtitle: "阿斯代伦的吸血鬼身份公开",
+              meta: "第一章 · 营地事件",
               href: "books/ag-024.html"
             },
             {
               id: "AG-025",
               archiveCode: "AG · 025",
               title: "请允许我代他道歉",
+              subtitle: "找到米里遗体并与贝恩林交谈",
               meta: "第一章 · 渥金休眠地",
               href: "books/ag-025.html"
             },
@@ -265,20 +268,23 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-026",
               archiveCode: "AG · 026",
               title: "如何复活盖尔",
-              meta: "第一章 · 盖尔死亡后的复活指引",
+              subtitle: "首次触发盖尔留下的复活指引",
+              meta: "第一章 · 盖尔死亡",
               href: "books/ag-026.html"
             },
             {
               id: "AG-027",
               archiveCode: "AG · 027",
               title: "吹响盖尔的魔法笛",
-              meta: "第一章 · 盖尔复活流程",
+              subtitle: "依照复活指引吹响魔法笛",
+              meta: "第一章 · 盖尔死亡",
               href: "books/ag-027.html"
             },
             {
               id: "AG-028",
               archiveCode: "AG · 028",
               title: "亵渎飞升仪式前后",
+              subtitle: "亵渎飞升仪式前后",
               meta: "第三章 · 卡扎多尔宫殿",
               href: "books/ag-028.html"
             },
@@ -286,28 +292,32 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-029",
               archiveCode: "AG · 029",
               title: "王冠沉入乔恩萨河之后",
-              meta: "终战路线 · 盖尔存活",
+              subtitle: "盖尔存活，王冠沉入乔恩萨河",
+              meta: "终战 · 战胜耐色脑",
               href: "books/ag-029.html"
             },
             {
               id: "AG-030",
               archiveCode: "AG · 030",
               title: "阳光不再眷顾他",
-              meta: "终战路线 · 衍体阿斯代伦先行离开",
+              subtitle: "阳光灼伤衍体阿斯代伦，迫使他先行离开",
+              meta: "终战 · 战胜耐色脑",
               href: "books/ag-030.html"
             },
             {
               id: "AG-031",
               archiveCode: "AG · 031",
               title: "盖尔带来的胜利",
-              meta: "终战路线 · 盖尔引爆法球",
+              subtitle: "盖尔引爆法球并摧毁耐色脑",
+              meta: "终战 · 战胜耐色脑",
               href: "books/ag-031.html"
             },
             {
               id: "AG-032",
               archiveCode: "AG · 032",
               title: "为盖尔举杯",
-              meta: "终战路线 · 盖尔牺牲后的纪念提议",
+              subtitle: "盖尔牺牲，众人商议如何纪念他",
+              meta: "终战 · 战胜耐色脑",
               href: "books/ag-032.html"
             }
           ]
