@@ -105,7 +105,13 @@
       const metadata = book.meta || book.metadata || book.act || "";
       if (metadata) link.append(textElement("span", "entry-meta", metadata));
       link.append(textElement("strong", "", book.title));
-      if (book.subtitle) link.append(textElement("small", "", book.subtitle));
+      if (book.subtitle) {
+        const subtitle = textElement("small", "", book.subtitle);
+        if (book.notice) {
+          subtitle.append(textElement("span", "entry-notice", book.notice));
+        }
+        link.append(subtitle);
+      }
       link.append(textElement("span", "entry-arrow", "→"));
 
       item.append(link);

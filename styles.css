@@ -382,6 +382,18 @@ a { color: inherit; }
   font-size: .82rem;
   line-height: 1.6;
 }
+.entry-notice {
+  display: inline-flex;
+  margin-left: .55rem;
+  padding: .04rem .42rem;
+  border: 1px solid var(--line-dark);
+  border-radius: 999px;
+  color: var(--shared);
+  font-size: .68rem;
+  line-height: 1.45;
+  white-space: nowrap;
+  vertical-align: .08rem;
+}
 .entry-arrow {
   grid-area: arrow;
   align-self: center;
