@@ -107,7 +107,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-007",
               archiveCode: "AG · 007",
               title: "我倒觉得这次有点慢了",
-              subtitle: "玩家角色与阿斯代伦进入暧昧阶段　【提及玩家与阿斯代伦恋爱关系】",
+              subtitle: "玩家角色与阿斯代伦进入暧昧阶段　提及玩家与阿斯代伦恋爱关系",
               meta: "第一章 · 旅途中",
               href: "books/ag-007.html"
             },
@@ -115,7 +115,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-008",
               archiveCode: "AG · 008",
               title: "我说的可不是密斯特拉",
-              subtitle: "玩家角色与盖尔进入暧昧阶段　【提及玩家与盖尔恋爱关系】",
+              subtitle: "玩家角色与盖尔进入暧昧阶段　提及玩家与盖尔恋爱关系",
               meta: "第一章 · 旅途中",
               href: "books/ag-008.html"
             },
@@ -163,7 +163,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-014",
               archiveCode: "AG · 014",
               title: "你昨晚和盖尔过得如何",
-              subtitle: "玩家角色与盖尔确立恋爱关系，并完成第二章恋爱场景　【提及玩家与盖尔恋爱关系】",
+              subtitle: "玩家角色与盖尔确立恋爱关系，并完成第二章恋爱场景　提及玩家与盖尔恋爱关系",
               meta: "第二章 · 旅途中",
               href: "books/ag-014.html"
             },
@@ -171,7 +171,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-015",
               archiveCode: "AG · 015",
               title: "愿心碎已成过去",
-              subtitle: "玩家角色与阿斯代伦确立恋爱关系，并完成第二章恋爱场景　【提及玩家与阿斯代伦恋爱关系】",
+              subtitle: "玩家角色与阿斯代伦确立恋爱关系，并完成第二章恋爱场景　提及玩家与阿斯代伦恋爱关系",
               meta: "第二章 · 旅途中",
               href: "books/ag-015.html"
             },
@@ -211,7 +211,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-020",
               archiveCode: "AG · 020",
               title: "与女神同床的故事",
-              subtitle: "玩家角色与盖尔保持恋爱关系，并完成第三章恋爱场景　【提及玩家与盖尔恋爱关系】",
+              subtitle: "玩家角色与盖尔保持恋爱关系，并完成第三章恋爱场景　提及玩家与盖尔恋爱关系",
               meta: "第三章 · 旅途中",
               href: "books/ag-020.html"
             },
@@ -219,7 +219,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-021",
               archiveCode: "AG · 021",
               title: "献血的好意",
-              subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦仍是吸血鬼衍体　【提及玩家与阿斯代伦恋爱关系】",
+              subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦仍是吸血鬼衍体　提及玩家与阿斯代伦恋爱关系",
               meta: "第三章 · 旅途中",
               href: "books/ag-021.html"
             },
@@ -227,7 +227,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-022",
               archiveCode: "AG · 022",
               title: "新的关系，还是新的束缚",
-              subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦已经完成飞升　【提及玩家与阿斯代伦恋爱关系】",
+              subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦已经完成飞升　提及玩家与阿斯代伦恋爱关系",
               meta: "第三章 · 旅途中",
               href: "books/ag-022.html"
             }
