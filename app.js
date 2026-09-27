@@ -36,6 +36,11 @@
     menu.addEventListener("focusout", (event) => {
       if (!menu.contains(event.relatedTarget)) menu.open = false;
     });
+    menu.querySelectorAll(".collection-menu a").forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.open = false;
+      });
+    });
   });
 
   document.addEventListener("click", (event) => {
