@@ -383,7 +383,7 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "AG-039",
               archiveCode: "AG · 039",
-              title: "要是人人都有这份运气",
+              title: "死而复生的好运",
               subtitle: "盖尔死亡后被复活",
               meta: "第一章 · 旅途中",
               href: "books/ag-039.html"
@@ -391,7 +391,7 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "AG-040",
               archiveCode: "AG · 040",
-              title: "古尔人办事确实利落",
+              title: "古尔人的猎网从不留情",
               subtitle: "将阿斯代伦交给古尔猎人",
               meta: "第一章 · 日照湿地",
               href: "books/ag-040.html"
@@ -431,7 +431,7 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "AG-045",
               archiveCode: "AG · 045",
-              title: "死去的妖精真是点睛之笔",
+              title: "盖尔也学会了驾驭黑暗",
               subtitle: "盖尔利用妖精尸体制作提灯",
               meta: "第二章 · 月出之塔",
               href: "books/ag-045.html"
@@ -479,7 +479,7 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "AG-051",
               archiveCode: "AG · 051",
-              title: "一个祸患总算铲除了",
+              title: "博德之门逃过一劫",
               subtitle: "将飞升阿斯代伦交给古尔人",
               meta: "第三章 · 扎尔宅邸",
               href: "books/ag-051.html"
