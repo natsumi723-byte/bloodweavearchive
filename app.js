@@ -38,7 +38,16 @@
     });
     menu.querySelectorAll(".collection-menu a").forEach((link) => {
       link.addEventListener("click", () => {
-        menu.open = false;
+        const target = link.hash ? document.querySelector(link.hash) : null;
+        window.setTimeout(() => {
+          menu.open = false;
+          if (target) {
+            const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+            document.documentElement.style.scrollBehavior = "auto";
+            target.scrollIntoView({ block: "start" });
+            document.documentElement.style.scrollBehavior = previousScrollBehavior;
+          }
+        }, 0);
       });
     });
   });
