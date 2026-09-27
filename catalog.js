@@ -265,7 +265,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-025",
               archiveCode: "AG · 025",
               title: "盖尔的血是什么味道",
-              subtitle: "身份公开后，玩家询问同伴们的血是什么味道",
+              subtitle: "阿斯代伦猜想同伴们的血是什么味道",
               meta: "第一章 · 营地",
               href: "books/ag-025.html"
             },
