@@ -305,7 +305,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-030",
               archiveCode: "AG · 030",
               title: "亵渎飞升仪式前后",
-              subtitle: "亵渎飞升仪式前后",
+              subtitle: "飞升仪式中的劝阻与事后回应",
               meta: "第三章 · 扎尔宅邸",
               href: "books/ag-030.html"
             },
