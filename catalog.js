@@ -2,7 +2,7 @@ window.BLOODWEAVE_CATALOG = {
   site: {
     title: "Bloodweave 书库",
     catalogVersion: "0.1",
-    lastUpdated: "2026-09-27"
+    lastUpdated: "2026-09-28"
   },
   collections: [
     {
@@ -340,7 +340,144 @@ window.BLOODWEAVE_CATALOG = {
           id: "talking-about-each-other",
           title: "向领队谈起对方",
           description: "",
-          books: []
+          books: [
+            {
+              id: "AG-035",
+              archiveCode: "AG · 035",
+              title: "和他同行最好保持警觉",
+              subtitle: "招募阿斯代伦",
+              meta: "第一章 · 招募同伴",
+              href: "books/ag-035.html"
+            },
+            {
+              id: "AG-036",
+              archiveCode: "AG · 036",
+              title: "把自己困在传送门里的法师",
+              subtitle: "招募盖尔",
+              meta: "第一章 · 招募同伴",
+              href: "books/ag-036.html"
+            },
+            {
+              id: "AG-037",
+              archiveCode: "AG · 037",
+              title: "营地里有个吸血鬼",
+              subtitle: "阿斯代伦的吸血鬼身份公开",
+              meta: "第一章 · 营地对话",
+              href: "books/ag-037.html"
+            },
+            {
+              id: "AG-038",
+              archiveCode: "AG · 038",
+              title: "白白糟蹋了那么好的宝物",
+              subtitle: "盖尔吸收魔法物品",
+              meta: "第一章 · 盖尔的法球",
+              href: "books/ag-038.html"
+            },
+            {
+              id: "AG-039",
+              archiveCode: "AG · 039",
+              title: "要是人人都有这份运气",
+              subtitle: "盖尔死亡后被复活",
+              meta: "第一章 · 盖尔复活",
+              href: "books/ag-039.html"
+            },
+            {
+              id: "AG-040",
+              archiveCode: "AG · 040",
+              title: "古尔人办事确实利落",
+              subtitle: "将阿斯代伦交给古尔猎人",
+              meta: "第一章 · 日照湿地",
+              href: "books/ag-040.html"
+            },
+            {
+              id: "AG-041",
+              archiveCode: "AG · 041",
+              title: "他现在才提起那颗法球？",
+              subtitle: "盖尔公开法球危机",
+              meta: "第一章 · 盖尔坦白身世",
+              href: "books/ag-041.html"
+            },
+            {
+              id: "AG-042",
+              archiveCode: "AG · 042",
+              title: "可惜了一个好端端的盖尔",
+              subtitle: "伊尔明斯特传达密斯特拉的命令",
+              meta: "第二章 · 伊尔明斯特来访",
+              href: "books/ag-042.html"
+            },
+            {
+              id: "AG-043",
+              archiveCode: "AG · 043",
+              title: "那个大胡子叫盖尔把自己炸掉？",
+              subtitle: "伊尔明斯特传达密斯特拉的命令",
+              meta: "第二章 · 实机可达性存疑",
+              href: "books/ag-043.html"
+            },
+            {
+              id: "AG-044",
+              archiveCode: "AG · 044",
+              title: "阿斯代伦终会复仇",
+              subtitle: "拉斐尔解释阿斯代伦背上的仪式文字",
+              meta: "第二章 · 阿斯代伦的仪式疤痕",
+              href: "books/ag-044.html"
+            },
+            {
+              id: "AG-045",
+              archiveCode: "AG · 045",
+              title: "死去的妖精真是点睛之笔",
+              subtitle: "盖尔利用妖精尸体制作提灯",
+              meta: "第二章 · 月出之塔",
+              href: "books/ag-045.html"
+            },
+            {
+              id: "AG-046",
+              archiveCode: "AG · 046",
+              title: "我们得罪的神已经够多了",
+              subtitle: "伊尔明斯特转达密斯特拉的会面请求",
+              meta: "第三章 · 石化蜥蜴之门",
+              href: "books/ag-046.html"
+            },
+            {
+              id: "AG-047",
+              archiveCode: "AG · 047",
+              title: "卡尔萨斯王冠该归谁",
+              subtitle: "盖尔与密斯特拉会面",
+              meta: "第三章 · 风暴海岸圣所",
+              href: "books/ag-047.html"
+            },
+            {
+              id: "AG-048",
+              archiveCode: "AG · 048",
+              title: "我们大概还是该救那个法师",
+              subtitle: "奥林掳走盖尔",
+              meta: "第三章 · 奥林绑架事件",
+              href: "books/ag-048.html"
+            },
+            {
+              id: "AG-049",
+              archiveCode: "AG · 049",
+              title: "阿斯代伦的命运如今全看我们",
+              subtitle: "吸血鬼衍体掳走阿斯代伦",
+              meta: "第三章 · 吸血鬼衍体夜袭",
+              href: "books/ag-049.html"
+            },
+            {
+              id: "AG-050",
+              archiveCode: "AG · 050",
+              title: "一位吸血鬼领主与我们同行",
+              subtitle: "阿斯代伦完成飞升",
+              meta: "第三章 · 卡扎多尔宫殿",
+              href: "books/ag-050.html"
+            },
+            {
+              id: "AG-051",
+              archiveCode: "AG · 051",
+              title: "一个祸患总算铲除了",
+              subtitle: "将飞升阿斯代伦交给古尔人",
+              meta: "第三章 · 古尔人的决断",
+              href: "books/ag-051.html"
+            }
+          ]
         }
       ]
     }
