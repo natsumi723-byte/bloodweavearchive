@@ -352,7 +352,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-035",
               archiveCode: "AG · 035",
               title: "和他同行最好保持警觉",
-              subtitle: "招募阿斯代伦",
+              subtitle: "招募阿斯代伦为同伴后",
               meta: "第一章 · 荒野",
               href: "books/ag-035.html"
             },
@@ -360,7 +360,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-036",
               archiveCode: "AG · 036",
               title: "把自己困在传送门里的法师",
-              subtitle: "招募盖尔",
+              subtitle: "招募盖尔为同伴后",
               meta: "第一章 · 路边山崖",
               href: "books/ag-036.html"
             },
