@@ -433,7 +433,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-046",
               archiveCode: "AG · 046",
               title: "我们得罪的神已经够多了",
-              subtitle: "伊尔明斯特转告盖尔，密斯特拉要见他",
+              subtitle: "密斯特拉召见盖尔",
               meta: "第三章 · 石化蜥蜴之门",
               href: "books/ag-046.html"
             },
