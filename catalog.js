@@ -257,7 +257,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-024",
               archiveCode: "AG · 024",
               title: "与吸血鬼同行的清晨",
-              subtitle: "阿斯代伦吸血鬼身份公开次晨",
+              subtitle: "吸血夜次晨，众人商议阿斯代伦去留",
               meta: "第一章 · 营地",
               href: "books/ag-024.html"
             },
@@ -265,7 +265,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-025",
               archiveCode: "AG · 025",
               title: "盖尔的血是什么味道",
-              subtitle: "阿斯代伦的吸血鬼身份公开",
+              subtitle: "身份公开后，玩家询问同伴们的血是什么味道",
               meta: "第一章 · 营地",
               href: "books/ag-025.html"
             },
@@ -368,7 +368,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-037",
               archiveCode: "AG · 037",
               title: "营地里有个吸血鬼",
-              subtitle: "阿斯代伦的吸血鬼身份公开",
+              subtitle: "身份公开后，玩家询问盖尔对此事的看法",
               meta: "第一章 · 营地",
               href: "books/ag-037.html"
             },
