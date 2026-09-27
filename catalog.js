@@ -63,28 +63,28 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-001",
               archiveCode: "AG · 001",
               title: "散步时请保持安静",
-              meta: "一般闲聊",
+              meta: "旅途中 · 两人闲聊",
               href: "books/ag-001.html"
             },
             {
               id: "AG-002",
               archiveCode: "AG · 002",
               title: "有人等你们回去吗",
-              meta: "一般闲聊 · 三人对话",
+              meta: "旅途中 · 三人对话",
               href: "books/ag-002.html"
             },
             {
               id: "AG-003",
               archiveCode: "AG · 003",
               title: "那颗法球能做什么？",
-              meta: "一般闲聊",
+              meta: "旅途中 · 两人闲聊",
               href: "books/ag-003.html"
             },
             {
               id: "AG-004",
               archiveCode: "AG · 004",
               title: "听说过叫卡扎多尔的吸血鬼吗",
-              meta: "一般闲聊 · 三人对话",
+              meta: "旅途中 · 三人对话",
               href: "books/ag-004.html"
             },
             {
@@ -100,23 +100,23 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 006",
               title: "耐色瑞尔魔法是什么",
               subtitle: "鬼婆提及耐色瑞尔魔法",
-              meta: "第一章 · 三人对话",
+              meta: "第一章 · 旅途中",
               href: "books/ag-006.html"
             },
             {
               id: "AG-007",
               archiveCode: "AG · 007",
               title: "我倒觉得这次有点慢了",
-              subtitle: "玩家角色与阿斯代伦进入暧昧阶段",
-              meta: "第一章 · 恋爱状态",
+              subtitle: "玩家角色与阿斯代伦进入暧昧阶段　【提及玩家与阿斯代伦恋爱关系】",
+              meta: "第一章 · 旅途中",
               href: "books/ag-007.html"
             },
             {
               id: "AG-008",
               archiveCode: "AG · 008",
               title: "我说的可不是密斯特拉",
-              subtitle: "玩家角色与盖尔进入暧昧阶段",
-              meta: "第一章 · 恋爱状态",
+              subtitle: "玩家角色与盖尔进入暧昧阶段　【提及玩家与盖尔恋爱关系】",
+              meta: "第一章 · 旅途中",
               href: "books/ag-008.html"
             },
             {
@@ -163,16 +163,16 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-014",
               archiveCode: "AG · 014",
               title: "你昨晚和盖尔过得如何",
-              subtitle: "玩家角色与盖尔确立恋爱关系，并完成第二章恋爱场景",
-              meta: "第二章 · 恋爱状态",
+              subtitle: "玩家角色与盖尔确立恋爱关系，并完成第二章恋爱场景　【提及玩家与盖尔恋爱关系】",
+              meta: "第二章 · 旅途中",
               href: "books/ag-014.html"
             },
             {
               id: "AG-015",
               archiveCode: "AG · 015",
               title: "愿心碎已成过去",
-              subtitle: "玩家角色与阿斯代伦确立恋爱关系，并完成第二章恋爱场景",
-              meta: "第二章 · 恋爱状态",
+              subtitle: "玩家角色与阿斯代伦确立恋爱关系，并完成第二章恋爱场景　【提及玩家与阿斯代伦恋爱关系】",
+              meta: "第二章 · 旅途中",
               href: "books/ag-015.html"
             },
             {
@@ -211,24 +211,24 @@ window.BLOODWEAVE_CATALOG = {
               id: "AG-020",
               archiveCode: "AG · 020",
               title: "与女神同床的故事",
-              subtitle: "玩家角色与盖尔保持恋爱关系，并完成第三章恋爱场景",
-              meta: "第三章 · 恋爱状态",
+              subtitle: "玩家角色与盖尔保持恋爱关系，并完成第三章恋爱场景　【提及玩家与盖尔恋爱关系】",
+              meta: "第三章 · 旅途中",
               href: "books/ag-020.html"
             },
             {
               id: "AG-021",
               archiveCode: "AG · 021",
               title: "献血的好意",
-              subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦仍是吸血鬼衍体",
-              meta: "第三章 · 衍体路线",
+              subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦仍是吸血鬼衍体　【提及玩家与阿斯代伦恋爱关系】",
+              meta: "第三章 · 旅途中",
               href: "books/ag-021.html"
             },
             {
               id: "AG-022",
               archiveCode: "AG · 022",
               title: "新的关系，还是新的束缚",
-              subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦已经完成飞升",
-              meta: "第三章 · 飞升路线",
+              subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦已经完成飞升　【提及玩家与阿斯代伦恋爱关系】",
+              meta: "第三章 · 旅途中",
               href: "books/ag-022.html"
             }
           ]
@@ -251,7 +251,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 024",
               title: "与吸血鬼同行的清晨",
               subtitle: "阿斯代伦吸血鬼身份公开次晨",
-              meta: "第一章 · 营地事件",
+              meta: "第一章 · 营地",
               href: "books/ag-024.html"
             },
             {
@@ -259,7 +259,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 025",
               title: "盖尔的血是什么味道",
               subtitle: "阿斯代伦的吸血鬼身份公开",
-              meta: "第一章 · 营地事件",
+              meta: "第一章 · 营地",
               href: "books/ag-025.html"
             },
             {
@@ -275,7 +275,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 027",
               title: "如何复活盖尔",
               subtitle: "首次触发盖尔留下的复活指引",
-              meta: "第一章 · 盖尔死亡",
+              meta: "第一章 · 旅途中",
               href: "books/ag-027.html"
             },
             {
@@ -283,7 +283,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 028",
               title: "吹响盖尔的魔法笛",
               subtitle: "依照复活指引吹响魔法笛",
-              meta: "第一章 · 盖尔死亡",
+              meta: "第一章 · 旅途中",
               href: "books/ag-028.html"
             },
             {
@@ -291,7 +291,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 029",
               title: "藏在胸口的真相",
               subtitle: "盖尔完整坦白身世与法球危机",
-              meta: "第一章 · 营地事件",
+              meta: "第一章 · 营地",
               href: "books/ag-029.html"
             },
             {
@@ -299,7 +299,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 030",
               title: "亵渎飞升仪式前后",
               subtitle: "亵渎飞升仪式前后",
-              meta: "第三章 · 卡扎多尔宫殿",
+              meta: "第三章 · 扎尔宅邸",
               href: "books/ag-030.html"
             },
             {
@@ -307,7 +307,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 031",
               title: "王冠沉入乔恩萨河之后",
               subtitle: "盖尔存活，王冠沉入乔恩萨河",
-              meta: "终战 · 战胜耐色脑",
+              meta: "终战 · 码头",
               href: "books/ag-031.html"
             },
             {
@@ -315,7 +315,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 032",
               title: "阳光不再眷顾他",
               subtitle: "阳光灼伤衍体阿斯代伦，迫使他先行离开",
-              meta: "终战 · 战胜耐色脑",
+              meta: "终战 · 码头",
               href: "books/ag-032.html"
             },
             {
@@ -323,7 +323,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 033",
               title: "盖尔带来的胜利",
               subtitle: "盖尔引爆法球并摧毁耐色脑",
-              meta: "终战 · 战胜耐色脑",
+              meta: "终战 · 码头",
               href: "books/ag-033.html"
             },
             {
@@ -331,7 +331,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 034",
               title: "为盖尔举杯",
               subtitle: "盖尔牺牲，众人商议如何纪念他",
-              meta: "终战 · 战胜耐色脑",
+              meta: "终战 · 码头",
               href: "books/ag-034.html"
             }
           ]
@@ -346,7 +346,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 035",
               title: "和他同行最好保持警觉",
               subtitle: "招募阿斯代伦",
-              meta: "第一章 · 招募同伴",
+              meta: "第一章 · 荒野",
               href: "books/ag-035.html"
             },
             {
@@ -354,7 +354,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 036",
               title: "把自己困在传送门里的法师",
               subtitle: "招募盖尔",
-              meta: "第一章 · 招募同伴",
+              meta: "第一章 · 路边山崖",
               href: "books/ag-036.html"
             },
             {
@@ -362,7 +362,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 037",
               title: "营地里有个吸血鬼",
               subtitle: "阿斯代伦的吸血鬼身份公开",
-              meta: "第一章 · 营地对话",
+              meta: "第一章 · 营地",
               href: "books/ag-037.html"
             },
             {
@@ -370,7 +370,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 038",
               title: "白白糟蹋了那么好的宝物",
               subtitle: "盖尔吸收魔法物品",
-              meta: "第一章 · 盖尔的法球",
+              meta: "第一章 · 旅途中",
               href: "books/ag-038.html"
             },
             {
@@ -378,7 +378,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 039",
               title: "要是人人都有这份运气",
               subtitle: "盖尔死亡后被复活",
-              meta: "第一章 · 盖尔复活",
+              meta: "第一章 · 旅途中",
               href: "books/ag-039.html"
             },
             {
@@ -394,7 +394,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 041",
               title: "他现在才提起那颗法球？",
               subtitle: "盖尔公开法球危机",
-              meta: "第一章 · 盖尔坦白身世",
+              meta: "第一章 · 旅途中",
               href: "books/ag-041.html"
             },
             {
@@ -402,7 +402,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 042",
               title: "可惜了一个好端端的盖尔",
               subtitle: "伊尔明斯特传达密斯特拉的命令",
-              meta: "第二章 · 伊尔明斯特来访",
+              meta: "第二章 · 营地",
               href: "books/ag-042.html"
             },
             {
@@ -410,7 +410,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 043",
               title: "那个大胡子叫盖尔把自己炸掉？",
               subtitle: "伊尔明斯特传达密斯特拉的命令",
-              meta: "第二章 · 实机可达性存疑",
+              meta: "第二章 · 营地",
               href: "books/ag-043.html"
             },
             {
@@ -418,7 +418,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 044",
               title: "阿斯代伦终会复仇",
               subtitle: "拉斐尔解释阿斯代伦背上的仪式文字",
-              meta: "第二章 · 阿斯代伦的仪式疤痕",
+              meta: "第二章 · 营地",
               href: "books/ag-044.html"
             },
             {
@@ -450,7 +450,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 048",
               title: "我们大概还是该救那个法师",
               subtitle: "奥林掳走盖尔",
-              meta: "第三章 · 奥林绑架事件",
+              meta: "第三章 · 下城区下水道",
               href: "books/ag-048.html"
             },
             {
@@ -458,7 +458,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 049",
               title: "阿斯代伦的命运如今全看我们",
               subtitle: "吸血鬼衍体掳走阿斯代伦",
-              meta: "第三章 · 吸血鬼衍体夜袭",
+              meta: "第三章 · 营地",
               href: "books/ag-049.html"
             },
             {
@@ -466,7 +466,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 050",
               title: "一位吸血鬼领主与我们同行",
               subtitle: "阿斯代伦完成飞升",
-              meta: "第三章 · 卡扎多尔宫殿",
+              meta: "第三章 · 扎尔宅邸",
               href: "books/ag-050.html"
             },
             {
@@ -474,7 +474,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 051",
               title: "一个祸患总算铲除了",
               subtitle: "将飞升阿斯代伦交给古尔人",
-              meta: "第三章 · 古尔人的决断",
+              meta: "第三章 · 扎尔宅邸",
               href: "books/ag-051.html"
             }
           ]
