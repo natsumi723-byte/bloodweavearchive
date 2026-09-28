@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-Hans"><head><script src="../analytics.js"></script><meta name="book-id" content="BK-AST_GAL-A2-ElminsterBombReveal_AstarionComment"><meta name="source-page-ids" content="PAGE-SRC-0001-Astarion_InParty2_Nested_TopicalGreetings"><meta name="source-graph-ids" content="GRAPH-SRC-0001-Astarion_InParty2_Nested_TopicalGreetings"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>那个大胡子叫盖尔把自己炸掉？</title><style id="visual-system-current">
+<!doctype html><html lang="zh-Hans"><head><script src="../analytics.js"></script><meta name="book-id" content="BK-AST_GAL-A2-ElminsterSacrifice_AstarionComment"><meta name="source-page-ids" content="PAGE-SRC-0001-Astarion_InParty2_Nested_TopicalGreetings"><meta name="source-graph-ids" content="GRAPH-SRC-0001-Astarion_InParty2_Nested_TopicalGreetings"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>可惜了一个好端端的盖尔</title><style id="visual-system-current">
 @page{size:A4;margin:18mm 17mm}
 :root{
   --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
@@ -128,29 +128,4 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
   .component-index,.component-note{display:none}
   .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
 }
-</style></head><body class="scene-book"><main><h1 class="book-title"><span class="book-title__main">那个大胡子叫盖尔把自己炸掉？</span></h1><section><h2>01 · 伊尔明斯特揭示法球的用途</h2><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p lang="en">The parasite must be playing with my ears, because I was sure that beardy tramp told Gale to find the Heart of the Absolute and then blow himself up .</p><p class="zh"><span class="translation">参考译文</span>一定是寄生虫扰乱了我的耳朵。我刚才明明听见那个大胡子流浪汉叫盖尔找到至上真神之心，然后把自己炸掉。</p></article><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p lang="en">To think, he's had that orb within him this whole time and never told us.</p><p class="zh"><span class="translation">参考译文</span>真想不到，那颗法球一直都在他体内，他却从没告诉过我们。</p></article><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p lang="en">Who'd keep a secret like that from his friends? You can't trust anyone these days.</p><p class="zh"><span class="translation">参考译文</span>谁会对朋友隐瞒这种秘密？如今真是谁也不能信。</p></article></section><aside class="editorial-note"><p>研究者经核对源文件发现：本册与《可惜了一个好端端的盖尔》使用了完全相同的触发条件。目前互联网上能找到的实机记录均为《可惜了一个好端端的盖尔》，本册内容是否能够在同伴阿斯代伦&amp;同伴盖尔游戏流程中出现，仍然存疑。</p>
-<h3>实机可达性存疑的原因</h3>
-<ol>
-<li><p><strong>源文件为伊尔明斯特带来消息的事件保留了两种回应：</strong>一组是《可惜了一个好端端的盖尔》，阿斯代伦直接评论密斯特拉要求盖尔牺牲；另一组是本册对白，阿斯代伦刚刚才知道盖尔有爆炸的风险，并责怪盖尔一直没有告诉大家。</p></li>
-<li><p><strong>然而，两组回应在代码层面的触发条件完全相同：</strong>它们都要求盖尔作为同伴加入队伍、伊尔明斯特已经传达密斯特拉的命令，当前与阿斯代伦交谈的人不是盖尔本人，并且盖尔已经向队伍公开法球危机。</p></li>
-<li><p><strong>这使本册台词的意思与入口条件发生了矛盾：</strong>要进入这段对白，文件要求盖尔已经向队伍公开法球危机。在进入这段对白后，阿斯代伦又表示刚刚才知道盖尔的体内有法球，抱怨盖尔从没把这件事告诉大家，二者之间相互矛盾。它与语义上更适合这个条件的“阿斯代伦已经知情”版本——《可惜了一个好端端的盖尔》属于同一个入口。</p></li>
-<li><p><strong>两组台词不能依次出现：</strong>伊尔明斯特来访后，阿斯代伦会得到一个只供这次事件使用的话题窗口。若玩家主动与他交谈，系统只会随机选择二者之一触发，而后立刻清除触发条件，使得另一组台词因此失去入口，无法通过再次交谈补看。</p></li>
-</ol><h3>两个入口实际读取的条件</h3>
-<div class="variants">
-<section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">《可惜了一个好端端的盖尔》</span></h3>
-<p>盖尔作为同伴加入队伍：<span class="state-value" lang="en">GLO_Origin_Avatar_Gale=False</span></p>
-<p>盖尔已经向队伍公开法球会爆炸：<span class="state-value" lang="en">ORI_Gale_Knows_Bomb=True</span></p>
-<p>伊尔明斯特来访的话题仍待阿斯代伦回应：<span class="state-value" lang="en">TG_ORI_Gale_ElminsterVisit=True</span></p>
-<p>当前与阿斯代伦交谈的人不是盖尔：<span class="state-value" lang="en">REALLY_GALE=False</span></p>
-</section>
-<section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">《那个大胡子叫盖尔把自己炸掉？》</span></h3>
-<p>盖尔作为同伴加入队伍：<span class="state-value" lang="en">GLO_Origin_Avatar_Gale=False</span></p>
-<p>盖尔已经向队伍公开法球会爆炸：<span class="state-value" lang="en">ORI_Gale_Knows_Bomb=True</span></p>
-<p>伊尔明斯特来访的话题仍待阿斯代伦回应：<span class="state-value" lang="en">TG_ORI_Gale_ElminsterVisit=True</span></p>
-<p>当前与阿斯代伦交谈的人不是盖尔：<span class="state-value" lang="en">REALLY_GALE=False</span></p>
-</section>
-</div>
-<p>两边四项条件逐项一致；源文件没有加入第五项条件，用来区分阿斯代伦此前是否已经知道法球秘密。</p>
-<p><strong>研究结论：</strong>《那个大胡子叫盖尔把自己炸掉？》文本存在于 Patch 8 文件中，从静态节点结构来看具备可行的触发入口；但它与《可惜了一个好端端的盖尔》条件重叠。理论上，实际游玩中系统会从二者中选择其一触发，即使本册对白会造成“阿斯代伦在盖尔已经公开法球危机后，又表现得像刚刚才发现法球存在”的前后矛盾。</p>
-<p><strong>备注：</strong>研究者检索了公开社区记录，多名玩家明确提到自己听到过“可惜了一个好端端的盖尔”，却尚未找到玩家明确表示自己在正常游玩的普通同伴盖尔路线中实际触发过本册版本的回应。这与两个版本应当随机触发其中之一的判断相悖，原因尚不明确。由于静态对话文件不包含引擎选择多个有效入口时的全部运行信息，若另有未显示的优先级或外部脚本，结论可能改变。</p>
-</aside><details class="research"><summary>研究依据</summary><p>资料来自 Patch 8 对话文件 <code>Astarion_InParty2_Nested_TopicalGreetings</code>。主队内对话把该文件作为一次性话题问候入口；入口本身没有玩家对白节点。因此正文从玩家主动发起交谈后，阿斯代伦自动说出的第一句开始，不补写源文件中不存在的玩家台词。静态文件中的文本存在不单独证明实机可达性。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main></body></html>
+</style></head><body class="scene-book"><main><h1 class="book-title"><span class="book-title__main">可惜了一个好端端的盖尔</span></h1><div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br>伊尔明斯特向盖尔传达密斯特拉要求他引爆法球、牺牲自己的命令后，阿斯代伦向领队评论了盖尔面临的处境。</div><section><h2>01 · 伊尔明斯特传达密斯特拉的命令</h2><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p lang="en">I can't believe Mystra's demanding Gale sacrifice himself to destroy the Absolute.</p><p class="zh"><span class="translation">参考译文</span>真不敢相信，密斯特拉竟要求盖尔牺牲自己去摧毁至上真神。</p></article><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p lang="en">It's just a waste of a perfectly good cult that we could be controlling.</p><p class="zh"><span class="translation">参考译文</span>可惜了这么好一个本可以由我们掌控的邪教。</p></article><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p lang="en">And a waste of a perfectly good Gale, I suppose.</p><p class="zh"><span class="translation">参考译文</span>我想，可惜了一个好端端的盖尔。</p></article></section><details class="research"><summary>研究依据</summary><p>资料来自 Patch 8 对话文件 <code>Astarion_InParty2_Nested_TopicalGreetings</code>。主队内对话把该文件作为一次性话题问候入口；入口本身没有玩家对白节点。因此正文从玩家主动发起交谈后，阿斯代伦自动说出的第一句开始，不补写源文件中不存在的玩家台词。静态文件中的文本存在不单独证明实机可达性。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main></body></html>
