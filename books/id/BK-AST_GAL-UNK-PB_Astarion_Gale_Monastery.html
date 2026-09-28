@@ -94,16 +94,21 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45;text-wrap:pretty}
 .menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
 .menu-label{min-width:0}
-.check{margin:1rem 0;padding:1rem 1.1rem;border:1px solid var(--check-line);background:var(--check-soft)}
-.check-label{display:inline-flex;padding:.25rem .62rem;border:1px solid var(--check);border-radius:99px;color:var(--check);font:700 .75rem/1.25 "Microsoft YaHei",sans-serif}
+.check{display:flex;align-items:center;margin:.85rem 0;padding:.62rem .78rem;border:1px solid var(--rule);border-left:3px solid var(--source-line);background:#faf7f4}
+.check-label{display:inline-flex;align-items:center;gap:.44rem;color:var(--source);font:700 .76rem/1.35 "Microsoft YaHei",sans-serif;letter-spacing:.02em}
+.d20-icon{display:inline-block;width:1.8rem;height:1.8rem;flex:0 0 1.8rem;vertical-align:-.43rem;overflow:visible}
+.d20-icon path{fill:currentColor}
 .variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .variants--stack{grid-template-columns:1fr}
 .variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
 .variant-card>.version-heading:first-child{margin-top:0}
 .variant-card>.note,.variant-card>.source-note{margin-left:0}
-.ending{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
-.ending--success{border-top:4px solid var(--success-line);background:linear-gradient(180deg,var(--success-soft),#fff 38%)}
-.ending--failure{border-top:4px solid var(--failure-line);background:linear-gradient(180deg,var(--failure-soft),#fff 38%)}
+.ending{padding:0;border:0;background:transparent;break-inside:avoid}
+.ending--success,.ending--failure{border:0;background:transparent}
+.ending--success .result-badge{border-color:#b8c7be;background:#f8faf9;color:#466255}
+.ending--failure .result-badge{border-color:#cdbbbe;background:#fcf9f9;color:#765158}
+.ending>.result-badge{margin:0 0 .45rem;gap:.44rem}
+.ending>.turn{margin:0}
 .ending h3{margin:.45rem 0;color:var(--ink)}
 .ending p{margin:.35rem 0}
 .outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
