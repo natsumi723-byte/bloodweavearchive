@@ -1,0 +1,138 @@
+﻿<!doctype html><html lang="zh-Hans"><head>
+  <script src="../../analytics.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="book-id" content="BK-AST_GAL-A1-CAMP_Astarion_CRD_TastingParty_Gale"><title>盖尔的血是什么味道</title><link rel="canonical" href="https://bloodweavearchive.com/books/id/BK-AST_GAL-A1-CAMP_Astarion_CRD_TastingParty_Gale.html"><style id="visual-system-current">
+@page{size:A4;margin:18mm 17mm}
+:root{
+  --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
+  --astarion:#8B3048;--astarion-soft:#faedf1;--astarion-line:#c27b8e;
+  --gale:#624779;--gale-soft:#f3eff7;--gale-line:#9986aa;
+  --shared:#5e565d;--shared-soft:#f3f0f2;--shared-line:#aaa0a7;
+  --source:#51484d;--source-soft:#f6f2ee;--source-line:#9c8f87;
+  --research:#70572F;--research-soft:#fbf6e9;--research-line:#b79d6f;
+  --check:#795b1d;--check-soft:#fff8e8;--check-line:#c4a35d;
+  --success:#276247;--success-soft:#edf7f1;--success-line:#78ae91;
+  --failure:#8a3740;--failure-soft:#fff0f1;--failure-line:#ce8e94;
+  --conflict:#80503F;--conflict-soft:#fff5ef;--conflict-line:#c99f8e
+}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{max-width:900px;margin:28px auto;padding:18mm;background:var(--paper);color:var(--ink);font:16px/1.78 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;box-shadow:0 6px 32px #433b4218}
+main{max-width:860px;margin:auto}
+h1,h2,h3,h4{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.32;text-wrap:balance}
+h1{margin:.2rem 0 1.35rem;color:var(--ink);padding-bottom:1rem;border-bottom:2px solid var(--rule)}
+.book-title__main{display:block;max-width:18em;font-size:clamp(2rem,4.4vw,2.5rem);line-height:1.2;letter-spacing:-.025em;text-wrap:balance}
+.book-title__subtitle{display:block;max-width:28em;margin-top:.58rem;color:var(--gale);font-size:clamp(1.05rem,2.1vw,1.34rem);line-height:1.48;font-weight:650;letter-spacing:.01em;text-wrap:balance}
+h2{font-size:clamp(1.5rem,3vw,1.95rem);margin:3.7rem 0 1.2rem;color:var(--ink);padding-bottom:.5rem;border-bottom:1px solid var(--rule);break-after:avoid-page}
+h3{font-size:1.2rem;margin:1.8rem 0 .8rem;color:var(--ink);break-after:avoid-page}
+h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
+.system-meta{margin:0 0 2.2rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.synopsis-deck{max-width:72ch;margin:0 0 2rem;color:var(--ink);font-size:1rem;line-height:1.72}
+.source-kicker{margin-bottom:.42rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
+.synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
+.synopsis-deck p{margin:.35rem 0}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.zh{color:#4e474c}
+.translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
+.editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
+.research-kicker,.editorial-note::before{color:var(--research);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
+.flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
+.flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
+.route{margin:2.1rem 0}
+.turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.turn p{margin:.38rem 0}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
+.note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
+.note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
+.note p,.source-note p{margin:.3rem 0}
+.choice{padding:1rem 1.1rem;margin:1.05rem 0;border:1px solid var(--rule);border-left:5px solid var(--shared-line);background:#fcfbfc;break-inside:avoid}
+.choice--shared{border-left-color:var(--shared-line);background:linear-gradient(90deg,var(--shared-soft),#fff 44%)}
+.choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
+.tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
+.tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.choice--astarion>.tag,.choice--astarion>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
+.branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
+.menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45;text-wrap:pretty}
+.menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+.menu-label{min-width:0}
+.check{margin:1rem 0;padding:1rem 1.1rem;border:1px solid var(--check-line);background:var(--check-soft)}
+.check-label{display:inline-flex;padding:.25rem .62rem;border:1px solid var(--check);border-radius:99px;color:var(--check);font:700 .75rem/1.25 "Microsoft YaHei",sans-serif}
+.variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
+.ending{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.ending--success{border-top:4px solid var(--success-line);background:linear-gradient(180deg,var(--success-soft),#fff 38%)}
+.ending--failure{border-top:4px solid var(--failure-line);background:linear-gradient(180deg,var(--failure-soft),#fff 38%)}
+.ending h3{margin:.45rem 0;color:var(--ink)}
+.ending p{margin:.35rem 0}
+.outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
+.outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
+.component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
+.component-index a{color:var(--muted);text-underline-offset:.2em}
+@media(max-width:700px){
+  body{margin:0;padding:26px 18px;box-shadow:none;overflow-wrap:anywhere}
+  .book-title__main{font-size:clamp(1.8rem,9vw,2.2rem)}
+  .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
+  .variants{grid-template-columns:1fr}
+  .flow pre{font-size:13px;overflow-wrap:anywhere}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
+  .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
+  .version-heading{grid-template-columns:1fr}
+  .version-heading>.condition-tag{margin:0}
+}
+@media print{
+  html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
+  .component-index,.component-note{display:none}
+  .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
+}
+</style></head><body class="scene-book"><main><h1 class="book-title"><span class="book-title__main">盖尔的血是什么味道</span></h1><div class="synopsis-deck"><div class="source-kicker">■ 源文件简介</div><div class="synopsis-item"><p class="en" lang="en">Astarion is staring at the other companions around the campfire. He's friendly and affable, but his mind is on his hunger. He starts to wonder what the others taste like, although he's MOSTLY joking. In the end he decides to remove himself, before the conversation gets too real.</p><p class="zh"><span>参考译文</span>阿斯代伦望着篝火旁的其他同伴。他显得友善随和，心思却落在自己的饥渴上。他开始猜想其他人尝起来是什么味道——尽管多半只是在说笑。最后，在谈话变得过于认真之前，他决定先行离开。</p></div></div><div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br>原场景还会根据队伍构成谈及其他同伴。本书只节选与盖尔直接相关的部分：阿斯代伦如何评价盖尔的血、他向玩家提出的反问，以及玩家选择盖尔后的回应。</div><h2>阅读脉络</h2><nav class="flow" aria-label="阅读脉络"><pre>01 · 阿斯代伦评价盖尔的血
+├─ 曾喝过盖尔的血
+└─ 没有喝过盖尔的血
+   ↓
+02 · 阿斯代伦反问玩家会选择谁
+   ↓
+玩家选择盖尔 → 阿斯代伦回应 → 谈话收束</pre></nav><section><h2>01 · 阿斯代伦评价盖尔的血</h2><div class="variants"><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 盖尔为同伴；阿斯代伦曾喝过盖尔的血</span></h3><article class="turn turn--astarion" data-source-order="13"><h4>阿斯代伦</h4><p class="en" lang="en">I'm all too familiar with Gale's blood, unfortunately. I can't recommend it.</p><p class="zh"><span class="translation">参考译文</span>遗憾的是，盖尔的血是什么味道，我再熟悉不过了。实在不推荐。</p></article></section><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 盖尔为同伴；阿斯代伦没有喝过盖尔的血</span></h3><article class="turn turn--astarion" data-source-order="66"><h4>阿斯代伦</h4><p class="en" lang="en">Take Gale, for example. He strikes me as someone whose blood is rich, refined like a well-aged brandy.</p><p class="zh"><span class="translation">参考译文</span>就拿盖尔来说吧。他给人的感觉是，血液会像陈年白兰地一样醇厚而细腻。</p></article></section></div></section><section><h2>02 · 如果换成玩家来选</h2><div class="route-guide"><p><strong>01</strong> 之后，阿斯代伦会继续谈论队伍中其他符合条件的同伴。玩家针对其中一人回应后，他强调这只是假设，随后才把同一个问题抛给玩家。</p></div><article class="turn turn--astarion" data-source-order="19"><h4>阿斯代伦</h4><p class="en" lang="en">So - in the spirit of theoretical questions - if you had to take a bite from one of them, who would it be?</p><p class="zh"><span class="translation">参考译文</span>那么——既然只是假设——如果非得从他们当中咬一个，你会选谁？</p></article><h3 class="menu-heading"><span class="menu-code">02.1</span><span class="menu-label">选择盖尔</span></h3><section class="route"><article class="turn" data-source-order="30"><h4>玩家</h4><p class="en" lang="en">Gale, no question.</p><p class="zh"><span class="translation">参考译文</span>当然是盖尔，毫无疑问。</p></article><div class="variants"><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 曾喝过盖尔的血；源文件沿用 01 原句</span></h3><article class="turn turn--astarion" data-source-order="31"><h4>阿斯代伦</h4><p class="en" lang="en">I'm all too familiar with Gale's blood, unfortunately. I can't recommend it.</p><p class="zh"><span class="translation">参考译文</span>遗憾的是，盖尔的血是什么味道，我再熟悉不过了。实在不推荐。</p></article></section><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 未触发版本 I 的饮血条件</span></h3><article class="turn turn--astarion" data-source-order="38"><h4>阿斯代伦</h4><p class="en" lang="en">Ah, a refined palate! I can't disagree.</p><p class="zh"><span class="translation">参考译文</span>啊，真有品位！我无法反驳。</p></article></section></div></section><article class="turn turn--astarion" data-source-order="32"><h4>阿斯代伦</h4><p class="en" lang="en">Although the more I think on it, the hungrier I get. I'd better go find something I can actually get my teeth into.</p><p class="zh"><span class="translation">参考译文</span>不过，越想我就越饿。我最好去找点真正能下口的东西。</p></article><h3 class="menu-heading"><span class="menu-code">02.2</span><span class="menu-label">回应阿斯代伦去觅食</span></h3><section class="choice choice--shared"><div class="tag"><span class="choice-code">02.2A</span> · 祝他狩猎顺利</div><article class="turn" data-source-order="33"><h4>玩家</h4><p class="en" lang="en">Good hunting.</p><p class="zh"><span class="translation">参考译文</span>祝你狩猎顺利。</p></article><div class="variants"><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 营地位于野外区域</span></h3><article class="turn turn--astarion" data-source-order="34"><h4>阿斯代伦</h4><p class="en" lang="en">There's nothing that tasty lurking out in the woods, but I'll make do. Sweet dreams.</p><p class="zh"><span class="translation">参考译文</span>林子里可没有那么美味的东西，不过我会将就。做个好梦。</p></article></section><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 其他营地环境</span></h3><article class="turn turn--astarion" data-source-order="35"><h4>阿斯代伦</h4><p class="en" lang="en">Nothing out there will taste as good as the alternatives, but I'll make do. Sweet dreams.</p><p class="zh"><span class="translation">参考译文</span>外面的东西都比不上那些选择，不过我会将就。做个好梦。</p></article></section></div></section><section class="choice choice--shared"><div class="tag"><span class="choice-code">02.2B</span> · 只要他离大家的脖子远一点</div><article class="turn" data-source-order="36"><h4>玩家</h4><p class="en" lang="en">Anything that keeps you away from our necks.</p><p class="zh"><span class="translation">参考译文</span>只要能让你离我们的脖子远点就行。</p></article><article class="turn turn--astarion" data-source-order="37"><h4>阿斯代伦</h4><p class="en" lang="en">Don't tempt me, darling.</p><p class="zh"><span class="translation">参考译文</span>别诱惑我，亲爱的。</p></article></section></section><details class="research"><summary>研究依据</summary><p>来源：Patch 8 对话文件《CAMP_Astarion_CRD_TastingParty》。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main></body></html>

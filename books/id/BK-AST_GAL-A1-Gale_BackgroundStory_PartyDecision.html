@@ -1,0 +1,198 @@
+<!doctype html><html lang="zh-CN"><head><script src="../../analytics.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="book-id" content="BK-AST_GAL-A1-Gale_BackgroundStory_PartyDecision"><title>藏在胸口的真相</title><link rel="canonical" href="https://bloodweavearchive.com/books/id/BK-AST_GAL-A1-Gale_BackgroundStory_PartyDecision.html"><style id="visual-system-current">
+@page{size:A4;margin:18mm 17mm}
+:root{
+  --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
+  --astarion:#8B3048;--astarion-soft:#faedf1;--astarion-line:#c27b8e;
+  --gale:#624779;--gale-soft:#f3eff7;--gale-line:#9986aa;
+  --shared:#5e565d;--shared-soft:#f3f0f2;--shared-line:#aaa0a7;
+  --source:#51484d;--source-soft:#f6f2ee;--source-line:#9c8f87;
+  --research:#70572F;--research-soft:#fbf6e9;--research-line:#b79d6f;
+  --check:#795b1d;--check-soft:#fff8e8;--check-line:#c4a35d;
+  --success:#276247;--success-soft:#edf7f1;--success-line:#78ae91;
+  --failure:#8a3740;--failure-soft:#fff0f1;--failure-line:#ce8e94;
+  --conflict:#80503F;--conflict-soft:#fff5ef;--conflict-line:#c99f8e
+}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{max-width:900px;margin:28px auto;padding:18mm;background:var(--paper);color:var(--ink);font:16px/1.78 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;box-shadow:0 6px 32px #433b4218}
+main{max-width:860px;margin:auto}
+h1,h2,h3,h4{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.32;text-wrap:balance}
+h1{margin:.2rem 0 1.35rem;color:var(--ink);padding-bottom:1rem;border-bottom:2px solid var(--rule)}
+.book-title__main{display:block;max-width:18em;font-size:clamp(2rem,4.4vw,2.5rem);line-height:1.2;letter-spacing:-.025em;text-wrap:balance}
+.book-title__subtitle{display:block;max-width:28em;margin-top:.58rem;color:var(--gale);font-size:clamp(1.05rem,2.1vw,1.34rem);line-height:1.48;font-weight:650;letter-spacing:.01em;text-wrap:balance}
+h2{font-size:clamp(1.5rem,3vw,1.95rem);margin:3.7rem 0 1.2rem;color:var(--ink);padding-bottom:.5rem;border-bottom:1px solid var(--rule);break-after:avoid-page}
+h3{font-size:1.2rem;margin:1.8rem 0 .8rem;color:var(--ink);break-after:avoid-page}
+h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
+.system-meta{margin:0 0 2.2rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.synopsis-deck{max-width:72ch;margin:0 0 2rem;color:var(--ink);font-size:1rem;line-height:1.72}
+.source-kicker{margin-bottom:.42rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
+.synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
+.synopsis-deck p{margin:.35rem 0}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.zh{color:#4e474c}
+.translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
+.editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
+.research-kicker,.editorial-note::before{color:var(--research);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
+.flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
+.flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
+.route{margin:2.1rem 0}
+.turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.turn p{margin:.38rem 0}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
+.note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
+.note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
+.note p,.source-note p{margin:.3rem 0}
+.choice{padding:1rem 1.1rem;margin:1.05rem 0;border:1px solid var(--rule);border-left:5px solid var(--shared-line);background:#fcfbfc;break-inside:avoid}
+.choice--shared{border-left-color:var(--shared-line);background:linear-gradient(90deg,var(--shared-soft),#fff 44%)}
+.choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
+.tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
+.tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.choice--astarion>.tag,.choice--astarion>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
+.branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
+.menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45;text-wrap:pretty}
+.menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+.menu-label{min-width:0}
+.check{margin:1rem 0;padding:1rem 1.1rem;border:1px solid var(--check-line);background:var(--check-soft)}
+.check-label{display:inline-flex;padding:.25rem .62rem;border:1px solid var(--check);border-radius:99px;color:var(--check);font:700 .75rem/1.25 "Microsoft YaHei",sans-serif}
+.variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
+.ending{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.ending--success{border-top:4px solid var(--success-line);background:linear-gradient(180deg,var(--success-soft),#fff 38%)}
+.ending--failure{border-top:4px solid var(--failure-line);background:linear-gradient(180deg,var(--failure-soft),#fff 38%)}
+.ending h3{margin:.45rem 0;color:var(--ink)}
+.ending p{margin:.35rem 0}
+.outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
+.outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
+.component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
+.component-index a{color:var(--muted);text-underline-offset:.2em}
+@media(max-width:700px){
+  body{margin:0;padding:26px 18px;box-shadow:none;overflow-wrap:anywhere}
+  .book-title__main{font-size:clamp(1.8rem,9vw,2.2rem)}
+  .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
+  .variants{grid-template-columns:1fr}
+  .flow pre{font-size:13px;overflow-wrap:anywhere}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
+  .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
+  .version-heading{grid-template-columns:1fr}
+  .version-heading>.condition-tag{margin:0}
+}
+@media print{
+  html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
+  .component-index,.component-note{display:none}
+  .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
+}
+</style></head><body class="scene-book"><main><h1 class="book-title"><span class="book-title__main">藏在胸口的真相</span></h1>
+<div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br>盖尔终于向玩家坦白自己的身世与秘密：他曾是密斯特拉的爱人与神选，试图寻回一块失落的魔网碎片取悦女神，却误将耐色瑞尔法球带入体内。直到说明法球一旦失控足以造成怎样的灾难，他才承认自己如今可能威胁整支队伍。正文从这场坦白的结尾开始，继续呈现玩家征询阿斯代伦意见，并决定盖尔去留的路线。</div>
+<h2>阅读脉络</h2><nav class="flow" aria-label="阅读脉络"><pre>01 · 盖尔提出独自离开
+↓
+02 · 玩家先征询同伴意见
+↓
+阿斯代伦主张留下或赶走盖尔
+↓
+03 · 玩家作出最终决定，盖尔回应</pre></nav>
+<section><h2>01 · 盖尔提出离队</h2>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">I swear to you I wasn't. But I've no choice but to admit I am now. Perhaps it would be best if I leave and put as much distance between us as I can before the orb erupts.</p><p class="zh"><span class="translation">参考译文</span>我向你保证，我从前并不是威胁。但如今，我不得不承认自己已经成了威胁。也许我最好离开，在法球爆发之前尽可能远离你们。</p></article>
+<section><h3 class="menu-heading"><span class="menu-code">01.1</span><span class="menu-label">追问是否还有办法</span></h3><article class="turn turn--player"><div class="speaker">玩家</div><p class="en" lang="en">Is there nothing we can do?</p><p class="zh"><span class="translation">参考译文</span>我们真的无计可施了吗？</p></article><div class="variants"><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 伊尔明斯特已稳定法球</span></h3><article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">Carry out Mystra's wishes, I suppose. Though that would be a very drastic solution, if you can even call it that.</p><p class="zh"><span class="translation">参考译文</span>我想，只能执行密斯特拉的意愿。不过，那种办法未免太过极端——如果还能称它为办法的话。</p></article></section><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 尚未经过伊尔明斯特稳定</span></h3><article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">We might chance upon a king's collection of magical artefacts around the corner. We might cross paths with a miracle round the bend. Then again - we might not.</p><p class="zh"><span class="translation">参考译文</span>也许转过街角，我们就会撞见一位国王收藏的魔法物品；也许再走几步，奇迹便会迎面而来。当然，也可能什么都没有。</p></article></section></div></section>
+<section><h3 class="menu-heading"><span class="menu-code">01.2</span><span class="menu-label">责怪盖尔没有早些坦白</span></h3><div class="variants"><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 已与盖尔进入暧昧阶段</span></h3><article class="turn turn--player"><div class="speaker">玩家</div><p class="en" lang="en">I thought we were growing closer, Gale. You should've told me right away.</p><p class="zh"><span class="translation">参考译文</span>我还以为我们正在变得亲近，盖尔。你本该立刻告诉我。</p></article></section><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 尚未与盖尔进入暧昧阶段</span></h3><article class="turn turn--player"><div class="speaker">玩家</div><p class="en" lang="en">I trusted you, Gale. You should've told me right away.</p><p class="zh"><span class="translation">参考译文</span>我信任你，盖尔。你本该立刻告诉我。</p></article></section></div><article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">I know.</p><p class="zh"><span class="translation">参考译文</span>我知道。</p></article></section>
+<section><h3 class="menu-heading"><span class="menu-code">01.3</span><span class="menu-label">质问寄生虫失控的后果</span></h3><article class="turn turn--player"><div class="speaker">玩家</div><p class="en" lang="en">Unbelievable. Did you ever think what would happen if the tadpole got the better of you?</p><p class="zh"><span class="translation">参考译文</span>真叫人难以置信。你有没有想过，要是蝌蚪控制了你，会发生什么？</p></article><article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">Every waking moment. Every dreaming moment too. But there was no way out.</p><p class="zh"><span class="translation">参考译文</span>每一个清醒的时刻都想过。就连梦里也在想。可我没有别的出路。</p></article></section>
+<section><h3 class="menu-heading"><span class="menu-code">01.4</span><span class="menu-label">表示理应杀死盖尔</span></h3><article class="turn turn--player"><div class="speaker">玩家</div><p class="en" lang="en">By rights I should kill you.</p><p class="zh"><span class="translation">参考译文</span>按理说，我应该杀了你。</p></article><article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">Perhaps that is what I deserve, but you deserve no such thing. To kill me is to unleash the orb.</p><p class="zh"><span class="translation">参考译文</span>也许那正是我应得的，但你不该承受随之而来的后果。杀死我，就会释放法球。</p></article></section>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">All of this... It must feel like a betrayal. Say the word, and we'll part ways.</p><p class="zh"><span class="translation">参考译文</span>这一切……在你看来一定像是一场背叛。只要你开口，我们便就此分道扬镳。</p></article>
+<article class="turn turn--player"><div class="speaker">玩家</div><p class="en" lang="en">I would hear what the others say first.</p><p class="zh"><span class="translation">参考译文</span>我想先听听其他人的意见。</p></article>
+</section>
+<section><h2>02 · 阿斯代伦的意见</h2><div class="variants">
+<section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · AstarionSwayed=True（疑似不可达）</span></h3>
+<article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p class="en" lang="en">You never know, a walking bomb could come in handy some day. I say he stays.</p><p class="zh"><span class="translation">参考译文</span>谁知道呢，一颗会走路的炸弹说不定哪天能派上用场。我说，让他留下。</p></article>
+</section>
+<section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · AstarionSwayed=False</span></h3>
+<article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p class="en" lang="en">You'd have us debate? That Netherese jack-in-the-box should be a blip on the horizon by now!</p><p class="zh"><span class="translation">参考译文</span>这还需要讨论？那个耐色瑞尔灾星早该消失在地平线上了！</p></article>
+</section></div>
+<aside class="editorial-note"><p>研究者逐项追踪 Patch 8 源文件中的状态写入与读取顺序后发现：版本 I 虽保留了完整对白，却疑似无法通过正常实机流程触发。</p>
+<h3>为什么版本 I 疑似不可达？</h3>
+<ol>
+<li><p><strong>在默认情况下，阿斯代伦会主张盖尔离开：</strong>以上两句台词的差分源自变量 <span lang="en">ORI_Gale_State_AstarionSwayed</span>（阿斯代伦被盖尔说动）的取值。当该变量为 <span lang="en">False</span> 时，阿斯代伦主张盖尔离开；当变量为 <span lang="en">True</span> 时，他则主张可以让盖尔留下。<span lang="en">ORI_Gale_State_AstarionSwayed</span> 的初始值为 <span lang="en">False</span>。也就是说，如果没有特殊情况发生，阿斯代伦在盖尔坦白法球的危险时会触发版本 II：主张让盖尔离队。</p></li>
+<li><p><strong>将 AstarionSwayed 变成 True 的特殊情况在哪里发生：</strong>在将阿斯代伦和盖尔作为同伴的路线中，目前唯一能够追溯到的写入点位于吸血夜后的第二天清晨。彼时，阿斯代伦身为吸血鬼衍体的身份已经暴露，众人正在盘问他；如果同伴回应抽到盖尔，盖尔在说出：</p>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">Well, we all have a monster inside us of one sort or another.</p><p class="zh"><span class="translation">参考译文</span>嗯，我们每个人体内都藏着某种怪物。</p></article>
+<p>这句替阿斯代伦说话的特定台词后，源文件会把 <span lang="en">ORI_Gale_State_AstarionSwayed</span> 写为 <span lang="en">True</span>。在起源阿斯代伦的对话文件中，也存在九个与上述情形结构相同的写入节点，分别散见于向莱埃泽尔、威尔或影心公开身份的对话。</p></li>
+<li><p><strong>然而，盖尔的这句特定台词本身有前置条件：</strong>盖尔只有在 <span lang="en">ORI_Gale_Knows_Bomb=True</span>，即他已经向众人公开自己体内的法球会爆炸时，才会说出上面这句特殊台词。若该状态仍为 <span lang="en">False</span>，文件会走向盖尔的其他回应，进而不会将 <span lang="en">AstarionSwayed</span> 写为 <span lang="en">True</span>。</p></li>
+<li><p><strong>Knows_Bomb 又何时变成 True：</strong>总览目前收录的全部对话源文本，盖尔本人早在被夺心魔抓走之前就已经知道法球失控与自己死后可能引发爆炸，也为此准备了复活流程。这里的 <span lang="en">Knows_Bomb</span> 并不表示盖尔在这一刻才获得相关知识，而是记录<strong>他已经把法球会爆炸及其灾难性威力告诉队伍</strong>。只有在盖尔吸收三件魔法遗物后，剧情才会进入他的完整身世坦白；直到他向众人说明体内法球一旦爆炸，足以夷平深水城规模的城市时，源文件才把 <span lang="en">ORI_Gale_Knows_Bomb</span> 从 <span lang="en">False</span> 写为 <span lang="en">True</span>。紧接着，盖尔将提出离开队伍；玩家若要求先听同伴意见，同一段连续对话便会读取 <span lang="en">AstarionSwayed</span>，决定阿斯代伦支持还是反对。中间没有机会返回吸血夜次晨，让盖尔先说出替阿斯代伦辩护的台词。</p></li>
+</ol>
+<div class="state-trace" role="group" aria-label="正常流程中两个状态的实际变化顺序">
+<h4 class="state-trace__title">一般游戏流程</h4>
+<ol class="state-timeline">
+<li class="state-stage"><div class="state-stage__number">1</div><div class="state-stage__body"><strong>吸血夜后的清晨</strong><p>此时法球危机尚未向队伍公开：<span class="state-value" lang="en">Knows_Bomb=False</span></p><p>盖尔替阿斯代伦辩护的特殊台词不满足条件，因此不会出现；<span class="state-value" lang="en">AstarionSwayed</span> 仍为 <span class="state-value" lang="en">False</span>。</p></div></li>
+<li class="state-transition">剧情继续推进，盖尔吸收三件魔法遗物</li>
+<li class="state-stage"><div class="state-stage__number">2</div><div class="state-stage__body"><strong>盖尔公开法球危机</strong><p>盖尔说明法球的爆炸威力：<span class="state-value" lang="en">Knows_Bomb</span> 从 <span class="state-value" lang="en">False</span> 变为 <span class="state-value" lang="en">True</span>。</p><p>同一段对话立即进入盖尔去留表决，没有机会再触发清晨的辩护节点。游戏读取到 <span class="state-value" lang="en">AstarionSwayed=False</span>，于是阿斯代伦要求盖尔离开。</p></div></li>
+</ol>
+<div class="state-trace__result"><strong>如何造成支持盖尔的分支不可见</strong><p>阿斯代伦要支持盖尔，表决时必须已有 <span lang="en">AstarionSwayed=True</span>；但唯一能写入这个值的盖尔辩护，又因为第一步中的 <span lang="en">Knows_Bomb=False</span> 而没有出现。等 <span lang="en">Knows_Bomb</span> 终于变成 <span lang="en">True</span>，表决已经紧接着开始，来不及再改写 <span lang="en">AstarionSwayed</span>。</p></div>
+</div>
+<p><strong>研究者在此推测，源文本原本想设计的路径是：</strong>盖尔因为自己也隐瞒着不可告人的一面，所以在阿斯代伦身为吸血鬼衍体的身份暴露后，采取了少见的非负面、甚至倾向于理解的态度。有了这一前置事件，阿斯代伦后来也会在盖尔坦白法球危机后，向盖尔适度回报这份理解，主张让盖尔留下。</p>
+<p><strong>研究结论：</strong>阿斯代伦支持盖尔留下的台词确实存在于 Patch 8 文件中，但目前没有找到正常游戏流程可以触发它；通常出现的是阿斯代伦要求盖尔离开的版本。</p>
+<p><strong>备注：</strong>上述结论来自 Patch 8 对话文件中状态的写入条件、读取条件与节点顺序。由于对话源文件不包含全部 Story 脚本，若另有外部脚本提前写入状态，结论可能改变，但目前尚未发现这种证据。在发现这一矛盾点后，研究者在互联网进行了调查，确认《博德之门 3》社区也有玩家曾指出这个问题，可参见 <a href="https://www.reddit.com/r/BaldursGate3/comments/1m9uflr/comment/n5alj21/">Hyperspace_Towel 的评论</a>。</p>
+</aside></section>
+<section><h2>03 · 玩家作出决定</h2>
+<section><h3 class="menu-heading"><span class="menu-code">03.1</span><span class="menu-label">让盖尔留下</span></h3>
+<div class="variants"><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 已与盖尔进入暧昧阶段</span></h3><article class="turn turn--player"><div class="speaker">玩家</div><p class="en" lang="en">I care too much about you to abandon you now, Gale. We travel on together.</p><p class="zh"><span class="translation">参考译文</span>我太在乎你了，盖尔，不可能现在抛下你。我们继续一起走。</p></article></section><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 尚未与盖尔进入暧昧阶段</span></h3><article class="turn turn--player"><div class="speaker">玩家</div><p class="en" lang="en">We've come this far together and we'll continue on together. That is how it will be.</p><p class="zh"><span class="translation">参考译文</span>我们已经一同走到这里，也会继续并肩前行。事情就这么定了。</p></article></section></div>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">That is - a great relief. Oh, a great relief indeed!</p><p class="zh"><span class="translation">参考译文</span>这真是——让我如释重负。是的，实在如释重负！</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">You truly are a soul that steels my own. From all my new-rallied heart I thank you.</p><p class="zh"><span class="translation">参考译文</span>你的灵魂确实给了我勇气。我以这颗重新振作的心，向你致以全部谢意。</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">I thank you all. I understand if you stand against me. I'm humbled if you stand with me. Either way, I will do my best not to let you down.</p><p class="zh"><span class="translation">参考译文</span>谢谢你们所有人。若你们反对我，我能够理解；若你们愿意站在我这边，我不胜感激。无论如何，我都会尽力不让你们失望。</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">I stand at a precipice, but if you do not give up hope, neither shall I. I'll fight, I'll resist - as long as I can.</p><p class="zh"><span class="translation">参考译文</span>我正站在悬崖边缘，但只要你们不放弃希望，我也不会。我会战斗，会抵抗——能坚持多久，就坚持多久。</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">Now - even I am tired of the sound of my own voice. Let us venture forth.</p><p class="zh"><span class="translation">参考译文</span>好了——连我自己都听腻了自己的声音。我们继续上路吧。</p></article></section>
+<section><h3 class="menu-heading"><span class="menu-code">03.2</span><span class="menu-label">追问他会去哪里</span></h3>
+<article class="turn turn--player"><div class="speaker">玩家</div><p class="en" lang="en">If we were to part ways, where would you go?</p><p class="zh"><span class="translation">参考译文</span>如果我们就此分开，你会去哪里？</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">Once I'd step out of the protective aura of the artefact, it wouldn't be long before the Absolute overtakes me. I'd never let that happen, so I'd aim for a swift end.</p><p class="zh"><span class="translation">参考译文</span>一旦离开遗物的保护范围，至上真神用不了多久就会控制我。我绝不会让这种事发生，所以会尽快结束自己的生命。</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">I would consume some Midnight Tears and venture as deep into the Underdark as I possibly could, until they cloud my eyes forever.</p><p class="zh"><span class="translation">参考译文</span>我会服下午夜之泪，尽可能深入幽暗地域，直到毒药永远蒙住我的双眼。</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">With a bit of luck I'd manage to make it to a mind flayer colony, so that when the orb erupts, one loud, last song of vengeance would reverberate through the dark.</p><p class="zh"><span class="translation">参考译文</span>运气好的话，我能走到一处夺心魔聚落。等法球爆发时，复仇的最后一声巨响便会回荡在黑暗之中。</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">It wouldn't be a heroic end, but coarsely poetic enough in its justice.</p><p class="zh"><span class="translation">参考译文</span>那算不上英雄式的结局，不过其中粗粝的公正，倒也称得上几分诗意。</p></article></section>
+<section><h3 class="menu-heading"><span class="menu-code">03.3</span><span class="menu-label">让盖尔离开</span></h3>
+<article class="turn turn--player"><div class="speaker">玩家</div><p class="en" lang="en">You pose too grave a threat. This is goodbye, Gale.</p><p class="zh"><span class="translation">参考译文</span>你的威胁太大了。盖尔，我们就此告别。</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">I understand. I harbour you no ill will. In fact I enjoyed your company, even throughout this harrowing journey of ours.</p><p class="zh"><span class="translation">参考译文</span>我明白。我并不怨恨你。事实上，即使一路险象环生，我仍然很享受与你们同行。</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">My tale is at an end, but yours is not. Beat that damn parasite in your head. Win the day and celebrate the nights.</p><p class="zh"><span class="translation">参考译文</span>我的故事到此为止，你的还没有。战胜你脑袋里那条该死的寄生虫。赢下白昼，也尽情欢庆每一个夜晚。</p></article>
+<article class="turn turn--gale"><div class="speaker">盖尔</div><p class="en" lang="en">Farewell.</p><p class="zh"><span class="translation">参考译文</span>再会。</p></article></section></section>
+<details class="research"><summary>研究依据</summary><p>来源：Patch 8 对话文件《Gale_InParty2_Nested_BackgroundStory》；静态源文件顺序与条件标记，未验证运行时可达性。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main></body></html>

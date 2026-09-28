@@ -64,28 +64,28 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 001",
               title: "散步时请保持安静",
               meta: "旅途中 · 两人闲聊",
-              href: "books/ag-001.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_Flirt.html"
             },
             {
               id: "AG-002",
               archiveCode: "AG · 002",
               title: "有人等你们回去吗",
               meta: "旅途中 · 三人对话",
-              href: "books/ag-002.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_Shadowheart_Love.html"
             },
             {
               id: "AG-003",
               archiveCode: "AG · 003",
               title: "那颗法球能做什么？",
               meta: "旅途中 · 两人闲聊",
-              href: "books/ag-003.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_Bomb.html"
             },
             {
               id: "AG-004",
               archiveCode: "AG · 004",
               title: "听说过叫卡扎多尔的吸血鬼吗",
               meta: "旅途中 · 三人对话",
-              href: "books/ag-004.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Wyll_Gale_Cazador.html"
             },
             {
               id: "AG-005",
@@ -93,7 +93,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "从树林到沼泽",
               subtitle: "日照湿地的幻象消失",
               meta: "第一章 · 日照湿地",
-              href: "books/ag-005.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_Illusion.html"
             },
             {
               id: "AG-006",
@@ -101,7 +101,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "耐色瑞尔魔法是什么",
               subtitle: "鬼婆提及耐色瑞尔魔法",
               meta: "第一章 · 旅途中",
-              href: "books/ag-006.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Wyll_Gale_Astarion_Netherese.html"
             },
             {
               id: "AG-007",
@@ -110,7 +110,7 @@ window.BLOODWEAVE_CATALOG = {
               subtitle: "玩家角色与阿斯代伦进入暧昧阶段",
               notice: "提及玩家与阿斯代伦恋爱关系",
               meta: "第一章 · 旅途中",
-              href: "books/ag-007.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Gale_Astarion_ROM_Act1.html"
             },
             {
               id: "AG-008",
@@ -119,7 +119,7 @@ window.BLOODWEAVE_CATALOG = {
               subtitle: "玩家角色与盖尔进入暧昧阶段",
               notice: "提及玩家与盖尔恋爱关系",
               meta: "第一章 · 旅途中",
-              href: "books/ag-008.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_ROM_Act1.html"
             },
             {
               id: "AG-009",
@@ -127,7 +127,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "修道院里的野兽",
               subtitle: "抵达瑰晨修道院附近",
               meta: "第一章 · 瑰晨修道院",
-              href: "books/ag-009.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_Monastery.html"
             },
             {
               id: "AG-010",
@@ -135,7 +135,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "谁来翻译吉斯洋基文字",
               subtitle: "进入吉斯洋基养育间",
               meta: "第一章 · 养育间",
-              href: "books/ag-010.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Gale_Astarion_Creche.html"
             },
             {
               id: "AG-011",
@@ -143,7 +143,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "过于巧妙的藏身处",
               subtitle: "进入石匠行会地下的反抗军藏身处",
               meta: "第二章 · 石匠行会",
-              href: "books/ag-011.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_RebelHideout.html"
             },
             {
               id: "AG-012",
@@ -151,7 +151,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "“安全舒适”的月出之塔",
               subtitle: "初次接近月出之塔",
               meta: "第二章 · 月出之塔",
-              href: "books/ag-012.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_Moonrise_BridgeFirstTime.html"
             },
             {
               id: "AG-013",
@@ -159,7 +159,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "他们把这地方弄成了什么样",
               subtitle: "进入月出之塔",
               meta: "第二章 · 月出之塔",
-              href: "books/ag-013.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_Moonrise_General.html"
             },
             {
               id: "AG-014",
@@ -168,7 +168,7 @@ window.BLOODWEAVE_CATALOG = {
               subtitle: "玩家角色与盖尔确立恋爱关系，并完成第二章恋爱场景",
               notice: "提及玩家与盖尔恋爱关系",
               meta: "第二章 · 旅途中",
-              href: "books/ag-014.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_ROM_Act2.html"
             },
             {
               id: "AG-015",
@@ -177,7 +177,7 @@ window.BLOODWEAVE_CATALOG = {
               subtitle: "玩家角色与阿斯代伦确立恋爱关系，并完成第二章恋爱场景",
               notice: "提及玩家与阿斯代伦恋爱关系",
               meta: "第二章 · 旅途中",
-              href: "books/ag-015.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Gale_Astarion_ROM_Act2.html"
             },
             {
               id: "AG-016",
@@ -185,7 +185,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "触手与鱿鱼",
               subtitle: "进入夺心魔殖民地",
               meta: "第二章 · 夺心魔殖民地",
-              href: "books/ag-016.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_Colony_Generall.html"
             },
             {
               id: "AG-017",
@@ -193,7 +193,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "每个殖民地都有育幼室？",
               subtitle: "进入夺心魔殖民地",
               meta: "第二章 · 夺心魔殖民地",
-              href: "books/ag-017.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_Colony_TadpolingCentre.html"
             },
             {
               id: "AG-018",
@@ -201,7 +201,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "诸神有回应过你吗",
               subtitle: "抵达石化蜥蜴之门",
               meta: "第三章 · 石化蜥蜴之门",
-              href: "books/ag-018.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Gale_Astarion_Tabernacle.html"
             },
             {
               id: "AG-019",
@@ -209,7 +209,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "回到博德之门，却走进下水道",
               subtitle: "进入下城区下水道",
               meta: "第三章 · 下城区下水道",
-              href: "books/ag-019.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_GeneralSewers.html"
             },
             {
               id: "AG-020",
@@ -218,7 +218,7 @@ window.BLOODWEAVE_CATALOG = {
               subtitle: "玩家角色与盖尔保持恋爱关系，并完成第三章恋爱场景",
               notice: "提及玩家与盖尔恋爱关系",
               meta: "第三章 · 旅途中",
-              href: "books/ag-020.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_ROM_Act3.html"
             },
             {
               id: "AG-021",
@@ -227,7 +227,7 @@ window.BLOODWEAVE_CATALOG = {
               subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦仍是吸血鬼衍体",
               notice: "提及玩家与阿斯代伦恋爱关系",
               meta: "第三章 · 旅途中",
-              href: "books/ag-021.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Gale_Astarion_ROM_Act3_Spawn.html"
             },
             {
               id: "AG-022",
@@ -236,7 +236,7 @@ window.BLOODWEAVE_CATALOG = {
               subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦已经完成飞升",
               notice: "提及玩家与阿斯代伦恋爱关系",
               meta: "第三章 · 旅途中",
-              href: "books/ag-022.html"
+              href: "books/id/BK-AST_GAL-UNK-PB_Gale_Astarion_ROM_Act3_Ascendant.html"
             }
           ]
         },
@@ -251,7 +251,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "没必要把事情弄得一团糟",
               subtitle: "首次遇见并招募阿斯代伦",
               meta: "第一章 · 荒野",
-              href: "books/ag-023.html"
+              href: "books/id/BK-AST_GAL-A1-Astarion_Recruitment_GaleInterjects.html"
             },
             {
               id: "AG-024",
@@ -259,7 +259,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "与吸血鬼同行的清晨",
               subtitle: "吸血夜次晨，众人商议阿斯代伦去留",
               meta: "第一章 · 营地",
-              href: "books/ag-024.html"
+              href: "books/id/BK-AST_GAL-A1-CAMP_AstarionHungerC_CRD_Astarion_MorningAfter.html"
             },
             {
               id: "AG-025",
@@ -267,7 +267,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "盖尔的血是什么味道",
               subtitle: "阿斯代伦猜想同伴们的血是什么味道",
               meta: "第一章 · 营地",
-              href: "books/ag-025.html"
+              href: "books/id/BK-AST_GAL-A1-CAMP_Astarion_CRD_TastingParty_Gale.html"
             },
             {
               id: "AG-026",
@@ -275,7 +275,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "请允许我代他道歉",
               subtitle: "找到米里遗体并与贝恩林交谈",
               meta: "第一章 · 渥金休眠地",
-              href: "books/ag-026.html"
+              href: "books/id/BK-AST_GAL-A1-PLA_StuckHalfElf_Freed_AstarionGale.html"
             },
             {
               id: "AG-027",
@@ -283,7 +283,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "如何复活盖尔",
               subtitle: "首次触发盖尔留下的复活指引",
               meta: "第一章 · 旅途中",
-              href: "books/ag-027.html"
+              href: "books/id/BK-AST_GAL-UNK-Gale_DeathVoice.html"
             },
             {
               id: "AG-028",
@@ -291,7 +291,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "吹响盖尔的魔法笛",
               subtitle: "依照复活指引吹响魔法笛",
               meta: "第一章 · 旅途中",
-              href: "books/ag-028.html"
+              href: "books/id/BK-AST_GAL-UNK-ORI_Gale_DeathFlute.html"
             },
             {
               id: "AG-029",
@@ -299,7 +299,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "藏在胸口的真相",
               subtitle: "盖尔完整坦白身世与法球危机",
               meta: "第一章 · 营地",
-              href: "books/ag-029.html"
+              href: "books/id/BK-AST_GAL-A1-Gale_BackgroundStory_PartyDecision.html"
             },
             {
               id: "AG-030",
@@ -307,7 +307,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "亵渎飞升仪式前后",
               subtitle: "飞升仪式中的劝阻与事后回应",
               meta: "第三章 · 扎尔宅邸",
-              href: "books/ag-030.html"
+              href: "books/id/BK-AST_GAL-UNK-LOW_CazadorsPalace_RitualRoom_PostCombat_OM_Astarion_AOM_COM_OOM.html"
             },
             {
               id: "AG-031",
@@ -315,7 +315,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "王冠沉入乔恩萨河之后",
               subtitle: "盖尔存活，王冠沉入乔恩萨河",
               meta: "终战 · 码头",
-              href: "books/ag-031.html"
+              href: "books/id/BK-AST_GAL-END-END_BrainBattle_CombatOver_Nested_AfterGithLeave.html"
             },
             {
               id: "AG-032",
@@ -323,7 +323,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "阳光不再眷顾他",
               subtitle: "阳光灼伤衍体阿斯代伦，迫使他先行离开",
               meta: "终战 · 码头",
-              href: "books/ag-032.html"
+              href: "books/id/BK-AST_GAL-END-END_BrainBattle_CombatOver_Nested_WhatNext_AstarionSunlight.html"
             },
             {
               id: "AG-033",
@@ -331,7 +331,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "盖尔带来的胜利",
               subtitle: "盖尔引爆法球并摧毁耐色脑",
               meta: "终战 · 码头",
-              href: "books/ag-033.html"
+              href: "books/id/BK-AST_GAL-END-END_BrainBattle_GaleSacrifice_Astarion.html"
             },
             {
               id: "AG-034",
@@ -339,7 +339,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "为盖尔举杯",
               subtitle: "盖尔牺牲，众人商议如何纪念他",
               meta: "终战 · 码头",
-              href: "books/ag-034.html"
+              href: "books/id/BK-AST_GAL-END-END_BrainBattle_CombatOver_Nested_WhatNext.html"
             }
           ]
         },
@@ -354,7 +354,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "和他同行最好保持警觉",
               subtitle: "招募阿斯代伦为同伴后",
               meta: "第一章 · 荒野",
-              href: "books/ag-035.html"
+              href: "books/id/BK-AST_GAL-A1-AstarionRecruited_GaleComment.html"
             },
             {
               id: "AG-036",
@@ -362,7 +362,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "把自己困在传送门里的法师",
               subtitle: "招募盖尔为同伴后",
               meta: "第一章 · 路边山崖",
-              href: "books/ag-036.html"
+              href: "books/id/BK-AST_GAL-A1-GaleRecruited_AstarionComment.html"
             },
             {
               id: "AG-037",
@@ -370,7 +370,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "盖尔今晚心事重重",
               subtitle: "第一夜与盖尔交谈后",
               meta: "第一章 · 营地",
-              href: "books/ag-037.html"
+              href: "books/id/BK-AST_GAL-A1-FirstNightAfterGale_AstarionComment.html"
             },
             {
               id: "AG-038",
@@ -378,7 +378,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "营地里有个吸血鬼",
               subtitle: "身份公开后，玩家询问盖尔对此事的看法",
               meta: "第一章 · 营地",
-              href: "books/ag-038.html"
+              href: "books/id/BK-AST_GAL-A1-GaleAskedAboutAstarionVampire.html"
             },
             {
               id: "AG-039",
@@ -386,7 +386,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "白白糟蹋了那么好的宝物",
               subtitle: "盖尔吸收魔法物品",
               meta: "第一章 · 旅途中",
-              href: "books/ag-039.html"
+              href: "books/id/BK-AST_GAL-A1-GaleConsumedItem_AstarionComment.html"
             },
             {
               id: "AG-040",
@@ -394,7 +394,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "死而复生的好运",
               subtitle: "盖尔死亡后被复活",
               meta: "第一章 · 旅途中",
-              href: "books/ag-040.html"
+              href: "books/id/BK-AST_GAL-A1-GaleResurrected_AstarionComment.html"
             },
             {
               id: "AG-041",
@@ -402,7 +402,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "古尔人的猎网从不留情",
               subtitle: "将阿斯代伦交给古尔猎人",
               meta: "第一章 · 日照湿地",
-              href: "books/ag-041.html"
+              href: "books/id/BK-AST_GAL-A1-AstarionTakenByGur_GaleComment.html"
             },
             {
               id: "AG-042",
@@ -410,7 +410,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "他现在才提起那颗法球？",
               subtitle: "盖尔公开法球危机",
               meta: "第一章 · 旅途中",
-              href: "books/ag-042.html"
+              href: "books/id/BK-AST_GAL-A1-GaleBackstory_AstarionComment.html"
             },
             {
               id: "AG-043",
@@ -418,7 +418,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "可惜了一个好端端的盖尔",
               subtitle: "伊尔明斯特传达密斯特拉的命令",
               meta: "第二章 · 营地",
-              href: "books/ag-043.html"
+              href: "books/id/BK-AST_GAL-A2-ElminsterSacrifice_AstarionComment.html"
             },
             {
               id: "AG-044",
@@ -426,7 +426,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "那个大胡子叫盖尔把自己炸掉？",
               subtitle: "伊尔明斯特传达密斯特拉的命令",
               meta: "第二章 · 营地",
-              href: "books/ag-044.html"
+              href: "books/id/BK-AST_GAL-A2-ElminsterBombReveal_AstarionComment.html"
             },
             {
               id: "AG-045",
@@ -434,7 +434,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "阿斯代伦终会复仇",
               subtitle: "拉斐尔解释阿斯代伦背上的仪式文字",
               meta: "第二章 · 营地",
-              href: "books/ag-045.html"
+              href: "books/id/BK-AST_GAL-A2-RaphaelExplainedRitual_GaleComment.html"
             },
             {
               id: "AG-046",
@@ -442,7 +442,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "盖尔也学会了驾驭黑暗",
               subtitle: "盖尔利用妖精尸体制作提灯",
               meta: "第二章 · 月出之塔",
-              href: "books/ag-046.html"
+              href: "books/id/BK-AST_GAL-A2-DarkLantern_AstarionComment.html"
             },
             {
               id: "AG-047",
@@ -450,7 +450,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "我们得罪的神已经够多了",
               subtitle: "密斯特拉召见盖尔",
               meta: "第三章 · 石化蜥蜴之门",
-              href: "books/ag-047.html"
+              href: "books/id/BK-AST_GAL-A3-MystraMeeting_AstarionComment.html"
             },
             {
               id: "AG-048",
@@ -458,7 +458,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "卡尔萨斯王冠该归谁",
               subtitle: "盖尔与密斯特拉会面",
               meta: "第三章 · 风暴海岸圣所",
-              href: "books/ag-048.html"
+              href: "books/id/BK-AST_GAL-A3-CrownDecision_AstarionComment.html"
             },
             {
               id: "AG-049",
@@ -466,7 +466,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "我们大概还是该救那个法师",
               subtitle: "奥林掳走盖尔",
               meta: "第三章 · 下城区下水道",
-              href: "books/ag-049.html"
+              href: "books/id/BK-AST_GAL-A3-OrinAbductedGale_AstarionComment.html"
             },
             {
               id: "AG-050",
@@ -474,7 +474,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "阿斯代伦的命运如今全看我们",
               subtitle: "吸血鬼衍体掳走阿斯代伦",
               meta: "第三章 · 营地",
-              href: "books/ag-050.html"
+              href: "books/id/BK-AST_GAL-A3-AstarionAbductedBySpawn_GaleComment.html"
             },
             {
               id: "AG-051",
@@ -482,7 +482,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "一位吸血鬼领主与我们同行",
               subtitle: "阿斯代伦完成飞升",
               meta: "第三章 · 扎尔宅邸",
-              href: "books/ag-051.html"
+              href: "books/id/BK-AST_GAL-A3-AstarionAscended_GaleComment.html"
             },
             {
               id: "AG-052",
@@ -490,7 +490,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "博德之门逃过一劫",
               subtitle: "将飞升阿斯代伦交给古尔人",
               meta: "第三章 · 扎尔宅邸",
-              href: "books/ag-052.html"
+              href: "books/id/BK-AST_GAL-A3-AscendantBetrayedToGur_GaleComment.html"
             }
           ]
         }
