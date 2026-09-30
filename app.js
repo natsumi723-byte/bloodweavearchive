@@ -118,7 +118,8 @@
 
       const metadata = book.meta || book.metadata || book.act || "";
       if (metadata) link.append(textElement("span", "entry-meta", metadata));
-      const title = textElement("strong", "", book.title);
+      const title = document.createElement("strong");
+      title.append(textElement("span", "entry-title-text", book.title));
       if (book.isNew) {
         title.append(textElement("span", "entry-new", "NEW"));
       }
