@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<script src="../../analytics.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="book-id" content="BK-AST_GAL-A1-GLO_Astarion_GD_VampireRevelation_GaleResponse">
+<title>尖牙留下的余波｜Bloodweave Archive</title>
+<link rel="canonical" href="https://bloodweavearchive.com/books/id/BK-AST_GAL-A1-GLO_Astarion_GD_VampireRevelation_GaleResponse.html">
+<style>
+@page{size:A4;margin:18mm 17mm}
+:root{
+  --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
+  --astarion:#8B3048;--astarion-soft:#faedf1;--astarion-line:#c27b8e;
+  --gale:#624779;--gale-soft:#f3eff7;--gale-line:#9986aa;
+  --shared:#5e565d;--shared-soft:#f3f0f2;--shared-line:#aaa0a7;
+  --source:#51484d;--source-soft:#f6f2ee;--source-line:#9c8f87;
+  --research:#70572F;--research-soft:#fbf6e9;--research-line:#b79d6f;
+  --check:#795b1d;--check-soft:#fff8e8;--check-line:#c4a35d;
+  --success:#276247;--success-soft:#edf7f1;--success-line:#78ae91;
+  --failure:#8a3740;--failure-soft:#fff0f1;--failure-line:#ce8e94;
+  --conflict:#80503F;--conflict-soft:#fff5ef;--conflict-line:#c99f8e
+}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{max-width:900px;margin:28px auto;padding:18mm;background:var(--paper);color:var(--ink);font:16px/1.78 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;box-shadow:0 6px 32px #433b4218}
+main{max-width:860px;margin:auto}
+h1,h2,h3,h4{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.32;text-wrap:balance}
+h1{margin:.2rem 0 1.35rem;color:var(--ink);padding-bottom:1rem;border-bottom:2px solid var(--rule)}
+.book-title__main{display:block;max-width:18em;font-size:clamp(2rem,4.4vw,2.5rem);line-height:1.2;letter-spacing:-.025em;text-wrap:balance}
+.book-title__subtitle{display:block;max-width:28em;margin-top:.58rem;color:var(--gale);font-size:clamp(1.05rem,2.1vw,1.34rem);line-height:1.48;font-weight:650;letter-spacing:.01em;text-wrap:balance}
+h2{font-size:clamp(1.5rem,3vw,1.95rem);margin:3.7rem 0 1.2rem;color:var(--ink);padding-bottom:.5rem;border-bottom:1px solid var(--rule);break-after:avoid-page}
+h3{font-size:1.2rem;margin:1.8rem 0 .8rem;color:var(--ink);break-after:avoid-page}
+h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
+.system-meta{margin:0 0 2.2rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.synopsis-deck{max-width:72ch;margin:0 0 2rem;color:var(--ink);font-size:1rem;line-height:1.72}
+.source-kicker{margin-bottom:.42rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
+.synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
+.synopsis-deck p{margin:.35rem 0}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.zh{color:#4e474c}
+.translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
+.editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
+.research-kicker,.editorial-note::before{color:var(--research);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
+.flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
+.flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
+.route{margin:2.1rem 0}
+.turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.turn p{margin:.38rem 0}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
+.note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
+.note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
+.note p,.source-note p{margin:.3rem 0}
+.choice{padding:1rem 1.1rem;margin:1.05rem 0;border:1px solid var(--rule);border-left:5px solid var(--shared-line);background:#fcfbfc;break-inside:avoid}
+.choice--shared{border-left-color:var(--shared-line);background:linear-gradient(90deg,var(--shared-soft),#fff 44%)}
+.choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
+.tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
+.tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.choice--astarion>.tag,.choice--astarion>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
+.branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
+.menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45;text-wrap:pretty}
+.menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+.menu-label{min-width:0}
+.check{display:flex;align-items:center;margin:.85rem 0;padding:.62rem .78rem;border:1px solid var(--rule);border-left:3px solid var(--source-line);background:#faf7f4}
+.check-label{display:inline-flex;align-items:center;gap:.44rem;color:var(--source);font:700 .76rem/1.35 "Microsoft YaHei",sans-serif;letter-spacing:.02em}
+.d20-icon{display:inline-block;width:1.8rem;height:1.8rem;flex:0 0 1.8rem;vertical-align:-.43rem;overflow:visible}
+.d20-icon path{fill:currentColor}
+.variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
+.ending{padding:0;border:0;background:transparent;break-inside:avoid}
+.ending--success,.ending--failure{border:0;background:transparent}
+.ending--success .result-badge{border-color:#b8c7be;background:#f8faf9;color:#466255}
+.ending--failure .result-badge{border-color:#cdbbbe;background:#fcf9f9;color:#765158}
+.ending>.result-badge{margin:0 0 .45rem;gap:.44rem}
+.ending>.turn{margin:0}
+.ending h3{margin:.45rem 0;color:var(--ink)}
+.ending p{margin:.35rem 0}
+.outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
+.outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
+.component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
+.component-index a{color:var(--muted);text-underline-offset:.2em}
+@media(max-width:700px){
+  body{margin:0;padding:26px 18px;box-shadow:none;overflow-wrap:anywhere}
+  .book-title__main{font-size:clamp(1.8rem,9vw,2.2rem)}
+  .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
+  .variants{grid-template-columns:1fr}
+  .flow pre{font-size:13px;overflow-wrap:anywhere}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
+  .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
+  .version-heading{grid-template-columns:1fr}
+  .version-heading>.condition-tag{margin:0}
+}
+@media print{
+  html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
+  .component-index,.component-note{display:none}
+  .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
+}
+</style>
+</head>
+<body class="scene-book">
+<main>
+<h1 class="book-title">
+<span class="book-title__main">尖牙留下的余波</span>
+</h1>
+<div class="synopsis-deck"><div class="source-kicker">■ 源文件简介</div><div class="synopsis-item"><p class="en" lang="en">Group Discussion after Astarion is revealed to be a vampire and has been chased off or killed.</p><p class="zh"><span class="translation">参考译文</span>阿斯代伦的吸血鬼身份暴露，并被赶走或杀死后触发的群体讨论。</p></div></div>
+<h2>阅读脉络</h2>
+<nav class="flow" aria-label="阅读脉络"><pre>参与讨论的同伴人数
+├─ 01 · 三名同伴参与讨论
+│  ├─ 01.1 · 盖尔作为第二名同伴发言
+│  └─ 01.2 · 盖尔作为第三名同伴发言
+├─ 02 · 两名同伴参与讨论
+│  ├─ 02.1 · 盖尔作为第一名同伴发言
+│  └─ 02.2 · 盖尔作为第二名同伴发言
+└─ 03 · 只有盖尔参与讨论
+   └─ 03.1 · 玩家怎样评价此前的决定</pre></nav>
+
+<section class="route">
+<h2>01 · 三名同伴参与讨论</h2>
+<h3 class="menu-heading"><span class="menu-code">01.1</span><span class="menu-label">盖尔作为第二名同伴发言</span></h3>
+<article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">He had wit as sharp as his fangs. I can't say I'll miss him, but I can't say I won't either...</p><p class="zh"><span class="translation">参考译文</span>他的机智和尖牙一样锋利。我不能说自己会想念他，但也不能说完全不会……</p></article>
+<div class="route-guide"><p><strong>01.1</strong> · 另一名同伴随后谈到阿斯代伦曾带来的危险，之后由玩家评价此前让他加入队伍的决定。</p></div>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">01.1A</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">It was a mistake. And not one we'll repeat.</p><p class="zh"><span class="translation">参考译文</span>那是个错误，我们不会再犯。</p></article><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">Just so. He was a dangerous ally, to us and our enemies both...</p><p class="zh"><span class="translation">参考译文</span>正是如此。他这个盟友很危险——对我们和敌人都是如此……</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">01.1B</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">We needed allies. It was a risk worth taking.</p><p class="zh"><span class="translation">参考译文</span>我们需要盟友，值得冒这个险。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">01.1C</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">I don't know, he was kind of fun.</p><p class="zh"><span class="translation">参考译文</span>我不知道，他还挺有意思的。</p></article></section>
+<div class="route-guide"><p><strong>01.1B</strong> 或 <strong>01.1C</strong> 会先由另一名同伴回应；随后，盖尔根据阿斯代伦的结局收束讨论。</p></div>
+<div class="variants"><section class="variant-card"><h3 class="version-heading result-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 阿斯代伦被杀死</span></h3><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">It hardly matters now - Astarion is dead. Permanently, one can only hope.</p><p class="zh"><span class="translation">参考译文</span>现在已经没那么重要了——阿斯代伦死了。但愿他这次再也不会回来。</p></article></section><section class="variant-card"><h3 class="version-heading result-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 阿斯代伦被赶走</span></h3><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">It hardly matters now - Astarion is gone and we can only hope for good. Still, let's keep a wary eye out, shall we?</p><p class="zh"><span class="translation">参考译文</span>现在已经没那么重要了——阿斯代伦走了，只能盼着事情往好的方向发展。不过，我们还是保持警惕吧，好吗？</p></article></section></div>
+
+<h3 class="menu-heading"><span class="menu-code">01.2</span><span class="menu-label">盖尔作为第三名同伴发言</span></h3>
+<div class="route-guide"><p><strong>01.2</strong> · 前一名同伴表示对阿斯代伦是否值得怀念态度复杂，盖尔随即提醒众人他曾试图吸食同伴的血。</p></div>
+<article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">Need I remind you that he tried to open one of our necks like a Thayan Red?</p><p class="zh"><span class="translation">参考译文</span>还需要我提醒你吗？他差点像开一瓶塞恩红酒那样打开我们其中一人的脖子。</p></article>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">01.2A</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">We needed allies. It was a risk worth taking.</p><p class="zh"><span class="translation">参考译文</span>我们需要盟友，值得冒这个险。</p></article><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">It was a risk that nearly cost you your neck.</p><p class="zh"><span class="translation">参考译文</span>这个风险差点让你连脖子都保不住。</p></article></section>
+</section>
+
+<section class="route">
+<h2>02 · 两名同伴参与讨论</h2>
+<h3 class="menu-heading"><span class="menu-code">02.1</span><span class="menu-label">盖尔作为第一名同伴发言</span></h3>
+<article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">Wit like fangs, that much I knew he had. Actual ones I did not suspect.</p><p class="zh"><span class="translation">参考译文</span>我早知道他的机智如同尖牙，却没想到他真的长着尖牙。</p></article>
+<div class="route-guide"><p><strong>02.1</strong> · 另一名同伴谈到众人忽略的线索后，盖尔再次发言。</p></div>
+<article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">He was quite a character. I can't say I'll miss him, but I can't say I won't either...</p><p class="zh"><span class="translation">参考译文</span>他确实是个不同寻常的人。我不能说自己会想念他，但也不能说完全不会……</p></article>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">02.1A</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">It was a mistake. And not one we'll repeat.</p><p class="zh"><span class="translation">参考译文</span>那是个错误，我们不会再犯。</p></article><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">Just so. He was a dangerous ally, to us and our enemies both...</p><p class="zh"><span class="translation">参考译文</span>正是如此。他这个盟友很危险——对我们和敌人都是如此……</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">02.1B</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">We needed allies. It was a risk worth taking.</p><p class="zh"><span class="translation">参考译文</span>我们需要盟友，值得冒这个险。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">02.1C</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">I don't know, he was kind of fun.</p><p class="zh"><span class="translation">参考译文</span>我不知道，他还挺有意思的。</p></article></section>
+<div class="route-guide"><p><strong>02.1B</strong> 或 <strong>02.1C</strong> 会先由另一名同伴回应；随后，盖尔根据阿斯代伦的结局收束讨论。</p></div>
+<div class="variants"><section class="variant-card"><h3 class="version-heading result-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 阿斯代伦被杀死</span></h3><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">It hardly matters now - Astarion is dead. Permanently, one can only hope.</p><p class="zh"><span class="translation">参考译文</span>现在已经没那么重要了——阿斯代伦死了。但愿他这次再也不会回来。</p></article></section><section class="variant-card"><h3 class="version-heading result-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 阿斯代伦被赶走</span></h3><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">It hardly matters now - Astarion is gone and we can only hope for good. Still, let's keep a wary eye out, shall we?</p><p class="zh"><span class="translation">参考译文</span>现在已经没那么重要了——阿斯代伦走了，只能盼着事情往好的方向发展。不过，我们还是保持警惕吧，好吗？</p></article></section></div>
+
+<h3 class="menu-heading"><span class="menu-code">02.2</span><span class="menu-label">盖尔作为第二名同伴发言</span></h3>
+<div class="route-guide"><p><strong>02.2</strong> · 第一名同伴先谈到众人错过的线索，盖尔接着指出阿斯代伦曾把所有人置于危险之中。</p></div>
+<article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">We all missed the clues. And in return, Astarion tried to open our necks like bottles of Thayan Red.</p><p class="zh"><span class="translation">参考译文</span>我们全都错过了那些迹象。作为回报，阿斯代伦差点像开塞恩红酒那样打开我们的脖子。</p></article>
+<div class="route-guide"><p><strong>02.2</strong> · 第一名同伴再次评价阿斯代伦后，盖尔作出回应。</p></div>
+<article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">That may well be, but we can't just invite danger in to our hearth like that. We must be more careful.</p><p class="zh"><span class="translation">参考译文</span>也许如此，但我们不能就这样把危险请到自己的炉火边。我们必须更加谨慎。</p></article>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">02.2A</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">We needed allies. It was a risk worth taking.</p><p class="zh"><span class="translation">参考译文</span>我们需要盟友，值得冒这个险。</p></article><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">It was a risk that nearly cost you your neck.</p><p class="zh"><span class="translation">参考译文</span>这个风险差点让你连脖子都保不住。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">02.2B</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">I don't know, he was kind of fun.</p><p class="zh"><span class="translation">参考译文</span>我不知道，他还挺有意思的。</p></article><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">If you're looking for fun, I can recommend several excellent novels. And very few of them will try to kill you in your sleep.</p><p class="zh"><span class="translation">参考译文</span>如果你想找点乐子，我可以推荐几本很不错的小说。而且其中几乎没有哪一本会趁你睡着时杀你。</p></article></section>
+</section>
+
+<section class="route">
+<h2>03 · 只有盖尔参与讨论</h2>
+<article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">Wit like fangs, that much I knew he had. Actual ones I did not suspect.</p><p class="zh"><span class="translation">参考译文</span>我早知道他的机智如同尖牙，却没想到他真的长着尖牙。</p></article>
+<article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">Of course, he was quite a character. I can't say I'll miss him, but I can't say I won't either...</p><p class="zh"><span class="translation">参考译文</span>当然，他确实是个不同寻常的人。我不能说自己会想念他，但也不能说完全不会……</p></article>
+<h3 class="menu-heading"><span class="menu-code">03.1</span><span class="menu-label">玩家怎样评价此前的决定</span></h3>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">03.1A</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">It was a mistake. And not one we'll repeat.</p><p class="zh"><span class="translation">参考译文</span>那是个错误，我们不会再犯。</p></article><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">Just so. He was a dangerous ally, to us and our enemies both...</p><p class="zh"><span class="translation">参考译文</span>正是如此。他这个盟友很危险——对我们和敌人都是如此……</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">03.1B</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">We needed allies. It was a risk worth taking.</p><p class="zh"><span class="translation">参考译文</span>我们需要盟友，值得冒这个险。</p></article><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">It's a coy thing, hindsight: it gives you a glimpse of what could have been, and nothing more. But this night could have gone very differently - remember that.</p><p class="zh"><span class="translation">参考译文</span>事后回想总爱卖关子：只让你瞥见事情原本可能怎样，却不肯再多透露半分。但今晚原本可能走向完全不同的结局——别忘了这一点。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">03.1C</span> · 共同选项</span></div><article class="turn"><h4>玩家</h4><p class="en" lang="en">Yeah, he was kind of fun. Kind of...</p><p class="zh"><span class="translation">参考译文</span>是啊，他还挺有意思的。算是吧……</p></article><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">What's done is done, all we can do now is carry on and maybe be a little more sceptical of those we meet.</p><p class="zh"><span class="translation">参考译文</span>事情已经发生了。我们现在能做的只有继续前进，也许以后对遇见的人多保留几分怀疑。</p></article></section>
+</section>
+<details class="research">
+<summary>研究依据</summary>
+<p>来源：Patch 8 静态解析档案中的 <code>GLO_Astarion_GD_VampireRevelation</code>。源文件说明该群体讨论发生在阿斯代伦的吸血鬼身份暴露、并被杀死或逐出队伍之后。</p>
+<p>三名同伴参与时，首个发言位置没有盖尔版本，因此他只会作为第二或第三名同伴发言。死亡与被赶走的结尾由源文件状态区分；其他发言位置的选取规则尚未确认。</p>
+<p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p>
+</details>
+</main>
+</body>
+</html>
+

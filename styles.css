@@ -376,6 +376,18 @@ a { color: inherit; }
   line-height: 1.55;
   font-weight: 650;
 }
+.entry-new {
+  display: inline-flex;
+  align-items: center;
+  margin-left: .55rem;
+  padding: .02rem .38rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: var(--collection-color);
+  font: 700 .58rem/1.45 var(--font-en);
+  letter-spacing: .08em;
+  vertical-align: .14rem;
+}
 .catalog-entry small {
   grid-area: subtitle;
   margin-top: .12rem;
