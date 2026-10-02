@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>把真相告诉盖尔</title>
-<style>
+<style id="visual-system-current">
 @page{size:A4;margin:18mm 17mm}
 :root{
   --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
@@ -132,11 +132,14 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
 .component-index a{color:var(--muted);text-underline-offset:.2em}
 @media(max-width:700px){
-  body{margin:0;padding:26px 18px;box-shadow:none;overflow-wrap:anywhere}
-  .book-title__main{font-size:clamp(1.8rem,9vw,2.2rem)}
+  body{margin:0;padding:26px 18px;box-shadow:none}
+  p,code{overflow-wrap:anywhere;word-break:break-word}
+  .book-title__main{font-size:clamp(1rem,5.8vw,2.2rem);white-space:nowrap;text-wrap:nowrap;letter-spacing:-.04em}
   .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
-  .variants{grid-template-columns:1fr}
-  .flow pre{font-size:13px;overflow-wrap:anywhere}
+  .variants{grid-template-columns:1fr;min-width:0}
+  .variant-card{min-width:0;max-width:100%}
+  .flow{padding:.9rem 1rem;-webkit-overflow-scrolling:touch}
+  .flow pre{width:max-content;min-width:100%;white-space:pre;font-size:12px;overflow-wrap:normal;word-break:normal}
   .state-trace{padding:.8rem}
   .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
 
