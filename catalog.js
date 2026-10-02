@@ -2,7 +2,7 @@ window.BLOODWEAVE_CATALOG = {
   site: {
     title: "Bloodweave 书库",
     catalogVersion: "0.1",
-    lastUpdated: "2026-09-28"
+    lastUpdated: "2026-10-02"
   },
   collections: [
     {
@@ -16,7 +16,80 @@ window.BLOODWEAVE_CATALOG = {
           id: "scenes-and-relationship",
           title: "旅途中的对话",
           description: "",
-          books: []
+          books: [
+            {
+              id: "OA-001",
+              archiveCode: "OA · 001",
+              title: "把真相告诉盖尔",
+              subtitle: "起源阿斯代伦主动向盖尔坦白吸血鬼身份",
+              meta: "旅途中 · 与盖尔交谈",
+              href: "books/id/BK-OAST_GAL-UNK-Gale_InParty2_Nested_AstarionReveal2.html",
+              isNew: true
+            },
+            {
+              id: "OA-002",
+              archiveCode: "OA · 002",
+              title: "苦涩的血",
+              subtitle: "吸血之夜及次日与盖尔的谈话",
+              meta: "第一章 · 营地",
+              href: "books/id/BK-OAST_GAL-A1-CAMP_AstarionHunger_IVB_SCO_Avatar_Choice.html",
+              isNew: true
+            },
+            {
+              id: "OA-003",
+              archiveCode: "OA · 003",
+              title: "我就知道，你是吸血鬼",
+              subtitle: "吸血鬼身份暴露后与盖尔的谈话",
+              meta: "旅途中 · 与盖尔交谈",
+              href: "books/id/BK-OAST_GAL-UNK-Gale_InParty2_Nested_AstarionReveal.html",
+              isNew: true
+            },
+            {
+              id: "OA-004",
+              archiveCode: "OA · 004",
+              title: "别打我的主意",
+              subtitle: "吸血之夜次日，盖尔从旁附和其他同伴",
+              meta: "第一章 · 营地",
+              href: "books/id/BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse.html",
+              isNew: true
+            },
+            {
+              id: "OA-005",
+              archiveCode: "OA · 005",
+              title: "血液与魔法与饥渴",
+              subtitle: "盖尔发生奥术饥渴后的谈话",
+              meta: "旅途中 · 与盖尔交谈",
+              href: "books/id/BK-OAST_GAL-UNK-Gale_InParty2.html",
+              isNew: true
+            },
+            {
+              id: "OA-006",
+              archiveCode: "OA · 006",
+              title: "同样的伶牙俐齿",
+              subtitle: "庆功宴上，盖尔将起源阿斯代伦比作塔拉",
+              meta: "第一章 · 营地",
+              href: "books/id/BK-OAST_GAL-UNK-CAMP_GoblinHuntTieflingCelebration_CRD_Gale3.html",
+              isNew: true
+            },
+            {
+              id: "OA-007",
+              archiveCode: "OA · 007",
+              title: "那么多条命，真的值得吗？",
+              subtitle: "飞升仪式前后的选择与回应",
+              meta: "第三章 · 扎尔宅邸",
+              href: "books/id/BK-OAST_GAL-UNK-LOW_CazadorsPalace_RitualRoom_PostCombat_OM_Astarion_AOM_COM_OOM.html",
+              isNew: true
+            },
+            {
+              id: "OA-008",
+              archiveCode: "OA · 008",
+              title: "饥饿与伤痕将他引向何方",
+              subtitle: "关于沿途发生的一切",
+              meta: "旅途中 · 与盖尔交谈",
+              href: "books/id/BK-OAST_GAL-MULTI-Gale_InParty2_Nested_TopicalGreetings.html",
+              isNew: true
+            }
+          ]
         },
         {
           id: "finale-and-epilogue",

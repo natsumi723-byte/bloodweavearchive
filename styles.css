@@ -372,9 +372,10 @@ a { color: inherit; }
 }
 .catalog-entry strong {
   grid-area: title;
-  display: flex;
-  align-items: baseline;
-  gap: .55rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  column-gap: .75rem;
   font-size: 1rem;
   line-height: 1.55;
   font-weight: 650;
@@ -390,7 +391,7 @@ a { color: inherit; }
   color: var(--collection-color);
   font: 700 .58rem/1.45 var(--font-en);
   letter-spacing: .08em;
-  vertical-align: .14rem;
+  margin-top: .22rem;
 }
 .catalog-entry small {
   grid-area: subtitle;
@@ -587,9 +588,16 @@ footer { border-top: 1px solid var(--line); }
     text-align: right;
   }
   .catalog-entry strong {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr) max-content;
     align-items: flex-start;
+    column-gap: .5rem;
     font-size: .98rem;
     line-height: 1.48;
+  }
+  .entry-new {
+    justify-self: end;
+    margin-top: .18rem;
   }
   .catalog-entry small {
     margin-top: .08rem;
