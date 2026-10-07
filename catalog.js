@@ -109,7 +109,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "OA-010",
               archiveCode: "OA · 010",
               title: "崭新的黎明",
-              subtitle: "最终战后的清晨，盖尔谈起法球、王冠与两人的未来",
+              subtitle: "最终战后的第一个清晨，盖尔向阿斯代伦说起自己盼望的未来",
               meta: "终局 · 战后翌晨",
               href: "books/id/BK-OAST_GAL-END-END_GameFinale_RomanceFates_Gale.html",
               isNew: true
