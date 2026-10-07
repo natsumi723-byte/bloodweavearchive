@@ -126,7 +126,7 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "OA-012",
               archiveCode: "OA · 012",
-              title: "六个月后再见",
+              title: "各自走过的时光",
               subtitle: "与仍为凡人的友人盖尔重逢（前伴侣或朋友路线）",
               meta: "尾声 · 守墓人聚会",
               href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_Gale_Reunion.html",
