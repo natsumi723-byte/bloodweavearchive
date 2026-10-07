@@ -261,7 +261,7 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 <section data-route-axis="orb" data-route-values="cured" class="variant-card">
 <h3 class="version-heading">
 <span class="version-badge">版本 I</span>
-<span class="condition-tag" data-selector-condition>条件 · 交还王冠，法球被治愈</span>
+<span class="condition-tag" data-selector-condition data-selector-axis="orb">条件 · 交还王冠，法球被治愈</span>
 </h3>
 <article class="turn turn--gale">
 <h4>盖尔</h4>
@@ -285,7 +285,7 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 <section data-route-axis="orb" data-route-values="dormant" class="variant-card">
 <h3 class="version-heading">
 <span class="version-badge">版本 II</span>
-<span class="condition-tag" data-selector-condition>条件 · 法球仍留在盖尔体内</span>
+<span class="condition-tag" data-selector-condition data-selector-axis="orb">条件 · 法球仍留在盖尔体内</span>
 </h3>
 <article class="turn turn--gale">
 <h4>盖尔</h4>
@@ -1305,6 +1305,6 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 const labels={orb:{cured:'法球被治愈',dormant:'法球仍留在体内'},fate:{ascended:'成功飞升',spawn:'放弃飞升',alive:'卡扎多尔仍活着'}};function render(){
 document.body.classList.toggle('route-reading',!state.all);
 document.body.classList.toggle('route-ready',state.all||Boolean(state.orb&&state.fate));
-document.querySelectorAll('[data-route-axis]').forEach(el=>{const selected=state[el.dataset.routeAxis];let show=state.all||(!selected?true:tokens(el.dataset.routeValues).includes(selected));el.hidden=!show});document.querySelectorAll('[data-selector-condition]').forEach(el=>{el.hidden=false});document.querySelectorAll('.variants').forEach(group=>{const cards=[...group.children].filter(el=>el.matches('.variant-card,[data-route-axis]')&&!el.hidden);group.classList.toggle('variants--single-visible',!state.all&&cards.length===1)});modes.forEach(btn=>btn.setAttribute('aria-pressed',String((btn.dataset.mode==='all')===state.all)));document.querySelectorAll('[data-axis]').forEach(btn=>btn.setAttribute('aria-pressed',String(!state.all&&state[btn.dataset.axis]===btn.dataset.value)));if(state.all){status.textContent='当前为全选项阅读模式。';return}const missing=['orb','fate'].filter(a=>!state[a]);status.textContent=missing.length?'请选择法球结局与阿斯代伦的结局。':'当前路线：'+['orb','fate'].map(a=>labels[a][state[a]]).join('；')+'。'}modes.forEach(btn=>btn.addEventListener('click',()=>{state.all=btn.dataset.mode==='all';render()}));document.querySelectorAll('[data-axis]').forEach(btn=>btn.addEventListener('click',()=>{state[btn.dataset.axis]=btn.dataset.value;state.all=false;render()}));render()})();</script>
+document.querySelectorAll('[data-route-axis]').forEach(el=>{const selected=state[el.dataset.routeAxis];let show=state.all||(!selected?true:tokens(el.dataset.routeValues).includes(selected));el.hidden=!show});document.querySelectorAll('[data-selector-condition]').forEach(el=>{const axis=el.dataset.selectorAxis;el.hidden=!state.all&&!!axis&&!!state[axis]});document.querySelectorAll('.variants').forEach(group=>{const cards=[...group.children].filter(el=>el.matches('.variant-card,[data-route-axis]')&&!el.hidden);group.classList.toggle('variants--single-visible',!state.all&&cards.length===1)});modes.forEach(btn=>btn.setAttribute('aria-pressed',String((btn.dataset.mode==='all')===state.all)));document.querySelectorAll('[data-axis]').forEach(btn=>btn.setAttribute('aria-pressed',String(!state.all&&state[btn.dataset.axis]===btn.dataset.value)));if(state.all){status.textContent='当前为全选项阅读模式。';return}const missing=['orb','fate'].filter(a=>!state[a]);status.textContent=missing.length?'请选择法球结局与阿斯代伦的结局。':'当前路线：'+['orb','fate'].map(a=>labels[a][state[a]]).join('；')+'。'}modes.forEach(btn=>btn.addEventListener('click',()=>{state.all=btn.dataset.mode==='all';render()}));document.querySelectorAll('[data-axis]').forEach(btn=>btn.addEventListener('click',()=>{state[btn.dataset.axis]=btn.dataset.value;state.all=false;render()}));render()})();</script>
 </body>
 </html>
