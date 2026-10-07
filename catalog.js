@@ -118,7 +118,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "OA-011",
               archiveCode: "OA · 011",
               title: "与你共享的未来",
-              subtitle: "两人仍是伴侣，盖尔仍是凡人",
+              subtitle: "与仍为凡人的伴侣盖尔一同参加聚会",
               meta: "尾声 · 守墓人聚会",
               href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_Gale.html",
               isNew: true
@@ -127,7 +127,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "OA-012",
               archiveCode: "OA · 012",
               title: "六个月后再见",
-              subtitle: "两人并非伴侣，盖尔仍是凡人",
+              subtitle: "与仍为凡人的友人盖尔重逢（前伴侣或朋友路线）",
               meta: "尾声 · 守墓人聚会",
               href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_Gale_Reunion.html",
               isNew: true
@@ -136,7 +136,7 @@ window.BLOODWEAVE_CATALOG = {
               id: "OA-013",
               archiveCode: "OA · 013",
               title: "野心神归来",
-              subtitle: "盖尔已经成为野心之神",
+              subtitle: "与成为野心之神的盖尔重逢",
               meta: "尾声 · 守墓人聚会",
               href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_GodGaleAscension.html",
               isNew: true
