@@ -1,0 +1,1631 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head><script src="../../analytics.js"></script><meta name="book-id" content="BK-OAST_GAL-EPI-EPI_Epilogue_Gale"><meta name="source-page-ids" content="PAGE-SRC-0001-EPI_Epilogue_EnterParty,PAGE-SRC-0001-EPI_Epilogue_Gale"><meta name="source-graph-ids" content="GRAPH-SRC-0001-EPI_Epilogue_EnterParty_P038,GRAPH-SRC-0001-EPI_Epilogue_Gale_P038"><link rel="canonical" href="https://bloodweavearchive.com/books/id/BK-OAST_GAL-EPI-EPI_Epilogue_Gale.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>与你共享的未来｜Bloodweave Archive</title>
+<style id="visual-system-current">
+@page{size:A4;margin:18mm 17mm}
+:root{
+  --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
+  --astarion:#8B3048;--astarion-soft:#faedf1;--astarion-line:#c27b8e;
+  --gale:#624779;--gale-soft:#f3eff7;--gale-line:#9986aa;
+  --shared:#5e565d;--shared-soft:#f3f0f2;--shared-line:#aaa0a7;
+  --source:#51484d;--source-soft:#f6f2ee;--source-line:#9c8f87;
+  --research:#70572F;--research-soft:#fbf6e9;--research-line:#b79d6f;
+  --check:#795b1d;--check-soft:#fff8e8;--check-line:#c4a35d;
+  --success:#276247;--success-soft:#edf7f1;--success-line:#78ae91;
+  --failure:#8a3740;--failure-soft:#fff0f1;--failure-line:#ce8e94;
+  --conflict:#80503F;--conflict-soft:#fff5ef;--conflict-line:#c99f8e
+}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{max-width:900px;margin:28px auto;padding:18mm;background:var(--paper);color:var(--ink);font:16px/1.78 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;box-shadow:0 6px 32px #433b4218}
+main{max-width:860px;margin:auto}
+h1,h2,h3,h4{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.32}
+h1{margin:.2rem 0 1.35rem;color:var(--ink);padding-bottom:1rem;border-bottom:2px solid var(--rule)}
+.book-title__main{display:block;max-width:18em;font-size:clamp(2rem,4.4vw,2.5rem);line-height:1.2;letter-spacing:-.025em}
+.book-title__subtitle{display:block;max-width:28em;margin-top:.58rem;color:var(--gale);font-size:clamp(1.05rem,2.1vw,1.34rem);line-height:1.48;font-weight:650;letter-spacing:.01em}
+h2{font-size:clamp(1.5rem,3vw,1.95rem);margin:3.7rem 0 1.2rem;color:var(--ink);padding-bottom:.5rem;border-bottom:1px solid var(--rule);break-after:avoid-page}
+h3{font-size:1.2rem;margin:1.8rem 0 .8rem;color:var(--ink);break-after:avoid-page}
+h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
+.system-meta{margin:0 0 2.2rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.synopsis-deck{max-width:72ch;margin:0 0 2rem;color:var(--ink);font-size:1rem;line-height:1.72}
+.source-kicker{margin-bottom:.42rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
+.synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
+.synopsis-deck p{margin:.35rem 0}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.zh{color:#4e474c}
+.translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
+.editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
+.research-kicker,.editorial-note::before{color:var(--research);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
+.flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
+.flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
+.route{margin:2.1rem 0}
+.turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.turn p{margin:.38rem 0}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
+.note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
+.note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
+.note p,.source-note p{margin:.3rem 0}
+.choice{padding:1rem 1.1rem;margin:1.05rem 0;border:1px solid var(--rule);border-left:5px solid var(--shared-line);background:#fcfbfc;break-inside:avoid}
+.choice--shared{border-left-color:var(--shared-line);background:linear-gradient(90deg,var(--shared-soft),#fff 44%)}
+.choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response{break-inside:avoid}
+.turn.origin-response.origin-response--astarion{border-left:5px solid var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.turn.origin-response.origin-response--gale{border-left:5px solid var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response-heading{display:flex;align-items:center;flex-wrap:wrap;gap:.55rem .7rem;margin:0 0 .75rem}
+.origin-response-heading>.speaker{margin:0}
+.origin-response-tag{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;font-weight:700;font-size:.75rem;line-height:1.25}
+.origin-response-tag::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.origin-response--astarion .origin-response-tag{color:var(--astarion);background:var(--astarion-soft)}
+.origin-response--gale .origin-response-tag{color:var(--gale);background:var(--gale-soft)}
+.choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
+.tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
+.tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.choice--astarion>.tag,.choice--astarion>.badge,.choice--astarion>.choice-meta>.tag,.choice--astarion>.choice-meta>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge,.choice--gale>.choice-meta>.tag,.choice--gale>.choice-meta>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.condition-operator{display:inline-flex;align-items:center;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
+.source-reaction-tags{display:flex;justify-content:flex-end;margin:.35rem .85rem .7rem;color:var(--muted);font-size:.74rem;line-height:1.35;text-align:right}
+.source-reaction-tag{font-weight:600}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
+.branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
+.menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45}
+.menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+.menu-label{min-width:0;text-wrap:wrap}
+.check{display:flex;align-items:center;margin:.85rem 0;padding:.62rem .78rem;border:1px solid var(--rule);border-left:3px solid var(--source-line);background:#faf7f4}
+.check-label{display:inline-flex;align-items:center;gap:.44rem;color:var(--source);font:700 .76rem/1.35 "Microsoft YaHei",sans-serif;letter-spacing:.02em}
+.d20-icon{display:inline-block;width:1.8rem;height:1.8rem;flex:0 0 1.8rem;vertical-align:-.43rem;overflow:visible}
+.d20-icon path{fill:currentColor}
+.variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
+.ending{padding:0;border:0;background:transparent;break-inside:avoid}
+.ending--success,.ending--failure{border:0;background:transparent}
+.ending--success .result-badge{border-color:#b8c7be;background:#f8faf9;color:#466255}
+.ending--failure .result-badge{border-color:#cdbbbe;background:#fcf9f9;color:#765158}
+.ending>.result-badge{margin:0 0 .45rem;gap:.44rem}
+.ending>.turn{margin:0}
+.ending h3{margin:.45rem 0;color:var(--ink)}
+.ending p{margin:.35rem 0}
+.outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
+.outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
+.component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
+.component-index a{color:var(--muted);text-underline-offset:.2em}
+@media(max-width:700px){
+  body{margin:0;padding:26px 18px;box-shadow:none}
+  p,code{overflow-wrap:anywhere;word-break:break-word}
+  .book-title__main{font-size:clamp(1.2rem,6.2vw,2.2rem);white-space:nowrap;text-wrap:nowrap;letter-spacing:-.04em}
+  .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
+  h2{font-size:1.18rem}
+  h3{font-size:1.05rem}
+  .variants{grid-template-columns:1fr;min-width:0}
+  .variant-card{min-width:0;max-width:100%}
+  .flow{padding:.9rem 1rem;-webkit-overflow-scrolling:touch}
+  .flow pre{width:max-content;min-width:100%;white-space:pre;font-size:12px;overflow-wrap:normal;word-break:normal}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
+  .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
+  .version-heading{grid-template-columns:1fr}
+  .version-heading>.condition-tag{margin:0}
+}
+@media print{
+  html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
+  .component-index,.component-note{display:none}
+  .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
+}
+</style>
+<style id="book-local-selector">
+.route-configurator{margin:2.2rem 0;padding:1.25rem 1.35rem;border:1px solid var(--rule);background:#fbf8f5}.route-configurator__eyebrow{margin:0 0 .35rem;color:var(--gale);font-size:.82rem;font-weight:750;letter-spacing:.12em}.route-configurator h2{margin:0;border:0;padding:0}.route-configurator__description{max-width:54rem;margin-top:.65rem}.reading-modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.15rem 0 1.35rem}.reading-mode{appearance:none;border:1px solid #d2c5cc;background:#fff;padding:1rem 1.05rem;text-align:left;color:inherit;font:inherit;cursor:pointer}.reading-mode strong,.reading-mode span{display:block}.reading-mode strong{font-size:1.05rem}.reading-mode span{margin-top:.35rem;color:var(--muted);font-size:.9rem;line-height:1.55}.reading-mode[aria-pressed="true"]{border-color:var(--gale);background:linear-gradient(135deg,var(--gale-soft) 0%,#fff 72%);box-shadow:inset 4px 0 0 var(--gale)}.route-configurator__choices{border-top:1px solid var(--rule);padding-top:.15rem}.route-axis{margin-top:1rem}.route-axis h3{font-size:1rem;margin:0 0 .55rem}.route-options{display:flex;flex-wrap:wrap;gap:.55rem}.route-options button{appearance:none;border:1px solid #cabec5;border-radius:999px;background:#fff;padding:.5rem .85rem;color:inherit;font:inherit;font-weight:650;cursor:pointer}.route-options button[aria-pressed="true"]{border-color:var(--gale);background:var(--gale-soft);color:var(--gale);box-shadow:inset 0 0 0 1px var(--gale)}.route-options button:disabled{opacity:.38;cursor:not-allowed}.route-configurator__status{margin:1rem 0 0;color:var(--muted);font-size:.95em}.route-reading [hidden]{display:none!important}.route-segment{display:block}.variants--single-visible{grid-template-columns:minmax(0,1fr)}
+@media(max-width:620px){.reading-modes{grid-template-columns:1fr}.route-configurator{margin:1.6rem 0;padding:1rem}.reading-mode{padding:.9rem}.route-options{display:grid;grid-template-columns:1fr}.route-options button{width:100%;min-width:0;white-space:normal;line-height:1.45;text-align:left}.route-configurator__status{line-height:1.6}}
+</style>
+</head>
+<body>
+<main class="book-page">
+<header class="book-header">
+<h1 class="book-title">
+<span class="book-title__main">与你共享的未来</span>
+</h1>
+</header>
+<section class="synopsis-deck" aria-label="源文件简介">
+<div class="source-kicker">■ 源文件简介</div>
+<div class="synopsis-item">
+<p class="en" lang="en">This dialogue covers instances where Gale attends the Withers party in a human (non-god) form. His default state is that he returned to Waterdeep and became a professor of Illusory magic at his former school, Blackstaff Academy. General vibe here is that this a Gale who's found peace with himself - he's a great teacher, one his students are mostly in awe of. If he's not a teacher in Waterdeep, he could be in several other states (living in Baldur's Gate, living in the hells, living in the underdark etc) but the general vibe is that he's always happy with where he's ended up, as in those cases he's there because that's where his romance partner chose to be.</p>
+<p class="zh"><span class="translation">参考译文</span>这段对话涵盖盖尔以凡人而非神明形态参加守墓人聚会的情况。默认状态下，他回到深水城，在自己的母校黑杖学院担任幻术教授。这里整体呈现的是已经与自己和解的盖尔：他是一位出色的老师，学生大多对他心怀敬畏。若他没有在深水城教书，也可能处于其他几种状态，例如生活在博德之门、地狱或幽暗地域；但总体而言，他始终满意自己最终抵达的地方，因为在这些情况下，他会在那里，是由于恋爱伴侣选择了那里。</p>
+</div>
+</section>
+<section class="route-configurator" aria-labelledby="route-configurator-title">
+<p class="route-configurator__eyebrow">阅读导航</p>
+<h2 id="route-configurator-title">请选择阅读方式</h2>
+<div class="route-configurator__description">本册以路线选择器取代传统阅读脉络。你可以选择两项战后状态，阅读对应的可触达内容；也可以一次展开全部选项。</div>
+<div class="reading-modes" role="group" aria-label="阅读模式">
+<button class="reading-mode" type="button" data-mode="route" aria-pressed="false">
+<strong>自选路线阅读模式</strong>
+<span>选择共同生活安排与阿斯代伦的结局，开启对应路线。</span>
+</button>
+<button class="reading-mode" type="button" data-mode="all" aria-pressed="true">
+<strong>全选项阅读模式</strong>
+<span>不筛选路线，依照资料编排顺序阅读全部分支。</span>
+</button>
+</div>
+<div class="route-configurator__choices">
+<div class="route-axis">
+<h3>六个月来，两人在哪里生活？</h3>
+<div class="route-options">
+<button type="button" data-axis="life" data-value="waterdeep">共同生活在深水城</button>
+<button type="button" data-axis="life" data-value="away">没有共同生活在深水城</button>
+</div>
+</div>
+<div class="route-axis">
+<h3>阿斯代伦的结局如何？</h3>
+<div class="route-options">
+<button type="button" data-axis="fate" data-value="alive">卡扎多尔仍活着</button>
+<button type="button" data-axis="fate" data-value="spawn">杀死卡扎多尔，放弃飞升</button>
+<button type="button" data-axis="fate" data-value="ascended">杀死卡扎多尔，成功飞升</button>
+</div>
+</div>
+</div>
+<p class="route-configurator__status" data-route-status aria-live="polite">当前为全选项阅读模式。</p>
+</section>
+
+<div class="route-reading" data-route-reading>
+<h2 class="menu-heading">
+<span class="menu-code">00 ·</span>
+<span class="menu-label">收到重聚邀请</span>
+</h2>
+<div class="variants variants--stack">
+<section data-life="waterdeep" class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag" data-selector-condition>条件 · 共同生活在深水城</span>
+</h3>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">You and Gale have made a home for yourselves in Waterdeep. Sometimes it isn't clear what he loves more - his research, or you.</p>
+<p class="zh"><span class="translation">参考译文</span>你和盖尔已经在深水城安了家。有时，你很难判断他更爱什么——他的研究，还是你。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">But whenever he looks into your eyes, or up at the stars while he sits by your side, you know the answer.</p>
+<p class="zh"><span class="translation">参考译文</span>可每当他望进你的双眼，或坐在你身旁仰望群星时，你就知道答案。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">One such night, your reveries are interrupted by an embarrassed apprentice, delivering an urgent message, written in a frail hand.</p>
+<p class="zh"><span class="translation">参考译文</span>这样的某个夜晚，你们的遐思被一名窘迫的学徒打断；他送来一封字迹颤巍的紧急信件。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">An invitation to a gathering of former allies - those who stood with you against the Netherbrain six months ago.</p>
+<p class="zh"><span class="translation">参考译文</span>这是一份邀请，邀你前去与昔日盟友重聚——六个月前，正是他们与你并肩对抗耐色脑。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">Gale the adventurer has quickly become Gale the academic, but he is all-too happy to leave his tower for this meeting.</p>
+<p class="zh"><span class="translation">参考译文</span>冒险家盖尔很快便成了学者盖尔，但他非常乐意为了这场重聚离开自己的高塔。</p>
+</article>
+</section>
+<section data-life="adventure underdark" data-fate="alive spawn" class="variant-card">
+<div class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="choice-meta"><span class="condition-tag">条件 · 继续共同冒险</span><span class="condition-operator">或</span><span class="condition-tag">条件 · 带领衍体生活在幽暗地域</span></span>
+</div>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">You and Gale have travelled long and far, seeking out knowledge and adventure in the hidden places of the world.</p>
+<p class="zh"><span class="translation">参考译文</span>你和盖尔一路远行，在世界的隐秘之地探寻知识与冒险。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">Sometimes it isn't clear if he loves the wonderful places his curiosity leads him to more than he loves you.</p>
+<p class="zh"><span class="translation">参考译文</span>有时，你很难判断，比起你，他是否更爱好奇心引他抵达的那些奇妙之地。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">But whenever he looks into your eyes, or up at the stars while he sits by your side, you know the answer.</p>
+<p class="zh"><span class="translation">参考译文</span>可每当他望进你的双眼，或坐在你身旁仰望群星时，你就知道答案。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">One such night, your reveries are interrupted by an embarrassed courier, delivering an urgent message, written in a frail hand. An invitation.</p>
+<p class="zh"><span class="translation">参考译文</span>这样的某个夜晚，你们的遐思被一名窘迫的信使打断；他送来一封字迹颤巍的紧急信件。一份邀请。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">The location is familiar, and though the road is hard and long, you would not miss this for the world.</p>
+<p class="zh"><span class="translation">参考译文</span>邀请中的地点十分熟悉；尽管路途漫长而艰难，你无论如何也不会错过这场重聚。</p>
+</article>
+</section>
+<section data-life="baldursgate" data-fate="ascended" class="variant-card">
+<div class="version-heading">
+<span class="version-badge">版本 III</span>
+<span class="choice-meta"><span class="condition-tag">条件 · 共同生活在博德之门</span><span class="condition-tag">条件 · 起源阿斯代伦成功飞升</span></span>
+</div>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">Six months from the fall of the Netherbrain, you were hosting a grand masquerade in the refurbished ballroom of Cazador's Palace.</p>
+<p class="zh"><span class="translation">参考译文</span>耐色脑覆灭六个月后，你正在修葺一新的扎尔宅邸舞厅举办一场盛大的假面舞会。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">A young elf wearing an ivory mask in the guise of a skinless skull handed you a note as he passed you in the crowd.</p>
+<p class="zh"><span class="translation">参考译文</span>一名戴着象牙色无皮骷髅面具的年轻精灵从人群中与你擦肩而过，将一张字条递到你手中。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">An invitation, written in a frail hand, inviting you to a gathering of the friends and allies who stood with you against the Absolute.</p>
+<p class="zh"><span class="translation">参考译文</span>那是一份字迹苍老而颤巍的邀请，邀你与曾并肩对抗至上真神的朋友和盟友重聚。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">You'll attend this little party, of course, but how appalling that they didn't ask you to be the host. It would have been spectacular.</p>
+<p class="zh"><span class="translation">参考译文</span>你当然会参加这场小聚会，但他们竟没有请你担任主人，实在令人震惊。若由你主持，必定会无比盛大。</p>
+</article>
+</section>
+<section data-life="baldursgate" data-fate="spawn" class="variant-card">
+<div class="version-heading">
+<span class="version-badge">版本 IV</span>
+<span class="choice-meta"><span class="condition-tag">条件 · 共同生活在博德之门</span><span class="condition-tag">条件 · 杀死卡扎多尔，放弃飞升</span></span>
+</div>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">You feared the worst when the messenger found you. Few know your name, or where you rest while the tyrant sun is in the sky.</p>
+<p class="zh"><span class="translation">参考译文</span>信使找到你时，你唯恐最糟糕的事情已经发生。很少有人知道你的名字，也很少有人知道暴虐的太阳高悬天际时，你会在哪里休息。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">But you had nothing to fear. This was the one message you had hoped to receive - an invitation to meet with your friends and allies.</p>
+<p class="zh"><span class="translation">参考译文</span>但你无须害怕。这正是你一直期盼收到的消息——一份与朋友和盟友重聚的邀请。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">Those who stood with you against the Absolute. Those you were parted from so suddenly when the victory was won.</p>
+<p class="zh"><span class="translation">参考译文</span>他们曾与你并肩对抗至上真神，却在胜利到来时与你仓促分别。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">Now you have a chance to say goodbye.</p>
+<p class="zh"><span class="translation">参考译文</span>如今，你终于有机会好好道别。</p>
+</article>
+</section>
+<section data-life="baldursgate" data-fate="alive" class="variant-card">
+<div class="version-heading">
+<span class="version-badge">版本 V</span>
+<span class="choice-meta"><span class="condition-tag">条件 · 共同生活在博德之门</span><span class="condition-tag">条件 · 卡扎多尔仍活着</span></span>
+</div>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">You feared the worst when the messenger found you. Cazador's minions are ever-watchful, and you thought they had caught you at last.</p>
+<p class="zh"><span class="translation">参考译文</span>信使找到你时，你唯恐最糟糕的事情已经发生。卡扎多尔的爪牙始终监视着一切，而你以为他们终于抓住了你。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">But you had nothing to fear. This was the one message you had hoped to receive - an invitation to meet with your friends and allies.</p>
+<p class="zh"><span class="translation">参考译文</span>但你无须害怕。这正是你一直期盼收到的消息——一份与朋友和盟友重聚的邀请。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">Those who stood with you against the Absolute. Those you were parted from so suddenly when the victory was won.</p>
+<p class="zh"><span class="translation">参考译文</span>他们曾与你并肩对抗至上真神，却在胜利到来时与你仓促分别。</p>
+</article>
+<article class="turn">
+<h4>旁白</h4>
+<p class="en" lang="en">Now you have a chance to say goodbye.</p>
+<p class="zh"><span class="translation">参考译文</span>如今，你终于有机会好好道别。</p>
+</article>
+</section>
+</div>
+
+<h2 class="menu-heading">
+<span class="menu-code">01 ·</span>
+<span class="menu-label">重逢与盖尔的衣着</span>
+</h2>
+<div class="variants variants--stack">
+<section data-life="waterdeep" class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag" data-selector-condition>条件 · 盖尔返回深水城</span>
+</h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">You're quite certain I look acceptable?</p>
+<p class="zh">
+<span class="translation">参考译文</span>你真的确定我看起来还算得体吗？</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I can't remember when I last wore something other than my teaching robes. It feels a little odd to find myself in something so unsinged.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我都不记得上一次穿教学长袍以外的衣服是什么时候了。身上这套没有一点烧焦痕迹，感觉还真有些奇怪。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">A bit anxious at seeing everybody again, channeling it into anxiety about his clothes</p>
+<p>
+<span class="translation">参考译文</span>再次见到所有人让他有些紧张，于是把焦虑转移到了自己的衣着上。</p>
+</aside>
+</article>
+</section>
+<section data-life="baldursgate adventure underdark" class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag" data-selector-condition>条件 · 盖尔没有返回深水城</span>
+</h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">You're quite certain I look acceptable?</p>
+<p class="zh">
+<span class="translation">参考译文</span>你真的确定我看起来还算得体吗？</p>
+</article>
+<h3 class="menu-heading">
+<span class="menu-code">01.1 ·</span>
+<span class="menu-label">盖尔继续谈自己的衣着</span>
+</h3>
+<div class="variants variants--stack">
+<section data-fate="ascended" class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag" data-selector-condition>条件 · 起源阿斯代伦成功飞升</span>
+</h3>
+<article class="turn turn--gale origin-response origin-response--gale">
+<h4 class="origin-response-heading">
+<span class="speaker">盖尔</span>
+<span class="origin-response-tag">起源阿斯代伦专属回应</span>
+</h4>
+<p class="en" lang="en">It turns out rather a lot of my clothes are a bit bloodstained. Can't think why...</p>
+<p class="zh">
+<span class="translation">参考译文</span>结果我的许多衣服都沾了点血。真想不出是为什么……</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Light-hearted ribbing, isn't really bothered by this. Just wants reassurance.</p>
+<p>
+<span class="translation">参考译文</span>轻松的打趣；他其实并不介意，只是想得到一句肯定。</p>
+</aside>
+</article>
+</section>
+<section data-fate="alive spawn" class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag" data-selector-condition>条件 · 起源阿斯代伦没有飞升</span>
+</h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Our adventures rarely lend themselves to luxury. Or cleanliness, for that matter. It's been some time since I've made such an effort...</p>
+<p class="zh">
+<span class="translation">参考译文</span>我们的冒险很少与奢华沾边。至于干净整洁，就更谈不上了。我已经很久没有这样费心打扮过了……</p>
+</article>
+</section>
+</div>
+</section>
+</div>
+
+<h3 class="menu-heading">
+<span class="menu-code">01.2 ·</span>
+<span class="menu-label">回应盖尔对衣着的担忧</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">01.2A</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 两人没有结婚</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Don't fret, Gale. You look wonderful.</p>
+<p class="zh">
+<span class="translation">参考译文</span>别担心，盖尔。你看起来很迷人。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">That's a relief. I wasn't sure if I'd made too much of an effort. Or perhaps, not enough...</p>
+<p class="zh">
+<span class="translation">参考译文</span>那我就放心了。我刚才还不确定自己是不是打扮得太过了。又或者……还不够。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Relaxing, just needed some reassurance</p>
+<p>
+<span class="translation">参考译文</span>放松下来；他只是需要一句肯定。</p>
+</aside>
+</article>
+<article class="turn">
+<h4>塔拉</h4>
+<p class="en" lang="en">If only you'd applied those efforts to that thing on your chin...</p>
+<p class="zh">
+<span class="translation">参考译文</span>但愿你肯把这份心思也花在下巴上那团东西上……</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">The day I shave this beard, Tara, is that day I shave you. For both of our sakes, I hope it never comes.</p>
+<p class="zh">
+<span class="translation">参考译文</span>哪天我刮掉这把胡子，塔拉，哪天我就把你的毛也剃了。为了我们两个着想，希望那一天永远别来。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Warm/light - he's just messing with her</p>
+<p>
+<span class="translation">参考译文</span>温暖、轻松；他只是在逗塔拉。</p>
+</aside>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">01.2B</span> · 共同选项</div>
+<span class="condition-tag">条件 · 两人已经结婚</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">You look as wonderful to me as you did on our wedding day.</p>
+<p class="zh">
+<span class="translation">参考译文</span>在我眼里，你和我们结婚那天一样迷人。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">That's a relief. I wasn't sure if I'd made too much of an effort. Or perhaps, not enough...</p>
+<p class="zh">
+<span class="translation">参考译文</span>那我就放心了。我刚才还不确定自己是不是打扮得太过了。又或者……还不够。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Relaxing, just needed some reassurance</p>
+<p>
+<span class="translation">参考译文</span>放松下来；他只是需要一句肯定。</p>
+</aside>
+</article>
+<article class="turn">
+<h4>塔拉</h4>
+<p class="en" lang="en">If only you'd applied those efforts to that thing on your chin...</p>
+<p class="zh">
+<span class="translation">参考译文</span>但愿你肯把这份心思也花在下巴上那团东西上……</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">The day I shave this beard, Tara, is that day I shave you. For both of our sakes, I hope it never comes.</p>
+<p class="zh">
+<span class="translation">参考译文</span>哪天我刮掉这把胡子，塔拉，哪天我就把你的毛也剃了。为了我们两个着想，希望那一天永远别来。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Warm/light - he's just messing with her</p>
+<p>
+<span class="translation">参考译文</span>温暖、轻松；他只是在逗塔拉。</p>
+</aside>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">01.2C</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">You know me. I prefer you with your clothes off...</p>
+<p class="zh">
+<span class="translation">参考译文</span>你了解我。我更喜欢你什么都不穿……</p>
+</article>
+<div class="variants">
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag">条件 · 塔拉在场</span>
+</h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Ahem. Not in front of Tara, please.</p>
+<p class="zh">
+<span class="translation">参考译文</span>咳。请别当着塔拉的面说这个。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">A bit awkward</p>
+<p>
+<span class="translation">参考译文</span>有点尴尬。</p>
+</aside>
+</article>
+<article class="turn">
+<h4>塔拉</h4>
+<p class="en" lang="en">Oh, don't mind me. I'm only your oldest friend and your mother's most voluble confidant. Do whatever you please, I don't mind!</p>
+<p class="zh">
+<span class="translation">参考译文</span>哦，别在意我。我不过是你相识最久的朋友，还是你母亲那位最健谈的知己。想做什么就做吧，我一点也不介意！</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Sarcasm as Gale's love interest is making sex jokes in front of Tara.</p>
+<p>
+<span class="translation">参考译文</span>讽刺；盖尔的恋人在塔拉面前开了个性玩笑。</p>
+</aside>
+</article>
+</section>
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag">条件 · 塔拉不在场</span>
+</h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I'm not entirely certain that would fall under the definition of 'smart casual', but I'll be sure to indulge you when we get home...</p>
+<p class="zh">
+<span class="translation">参考译文</span>我不太确定那是否符合“精致休闲”的定义，不过等我们回家，我一定会满足你……</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Relaxing, flirting back a little</p>
+<p>
+<span class="translation">参考译文</span>放松下来，也稍稍调情作为回应。</p>
+</aside>
+</article>
+</section>
+</div>
+</section>
+
+<section data-life="waterdeep" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">01.2D</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 盖尔返回深水城</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">I'm just glad we made it on time. You did take quite a while to get ready...</p>
+<p class="zh">
+<span class="translation">参考译文</span>我只庆幸我们赶上了。你准备得确实有点久……</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Well, I didn't want you showing up with an ink-stained professor on your arm. Not in such esteemed company.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我只是不想让你挽着一个浑身墨渍的教授出现在如此尊贵的宾客面前。</p>
+</article>
+<article class="turn">
+<h4>塔拉</h4>
+<p class="en" lang="en">No harm in taking pride in your appearance, Mr Dekarios. Though I do so wish you'd take more pride in that chin of yours.</p>
+<p class="zh">
+<span class="translation">参考译文</span>为自己的外表感到自豪并没有错，德卡里奥斯先生。不过我真希望你能多关心一下自己下巴上的东西。</p>
+</article>
+</section>
+<section data-fate="ascended" class="choice choice--astarion">
+<div class="choice-meta">
+<div class="tag badge badge--astarion">
+<span class="choice-code">01.2E</span> · 起源阿斯代伦专属选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 起源阿斯代伦成功飞升</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Not bad. Certainly not bad for an academic.</p>
+<p class="zh">
+<span class="translation">参考译文</span>还不错。对一位学者而言，已经相当不错了。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">That's a relief. I wasn't sure if I'd made too much of an effort. Or perhaps, not enough...</p>
+<p class="zh">
+<span class="translation">参考译文</span>那我就放心了。我刚才还不确定自己是不是打扮得太过了。又或者……还不够。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Relaxing, just needed some reassurance</p>
+<p>
+<span class="translation">参考译文</span>放松下来；他只是需要一句肯定。</p>
+</aside>
+</article>
+<article class="turn">
+<h4>塔拉</h4>
+<p class="en" lang="en">If only you'd applied those efforts to that thing on your chin...</p>
+<p class="zh">
+<span class="translation">参考译文</span>但愿你肯把这份心思也花在下巴上那团东西上……</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">The day I shave this beard, Tara, is that day I shave you. For both of our sakes, I hope it never comes.</p>
+<p class="zh">
+<span class="translation">参考译文</span>哪天我刮掉这把胡子，塔拉，哪天我就把你的毛也剃了。为了我们两个着想，希望那一天永远别来。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Warm/light - he's just messing with her</p>
+<p>
+<span class="translation">参考译文</span>温暖、轻松；他只是在逗塔拉。</p>
+</aside>
+</article>
+</section>
+<section  class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">01.2F</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">These are our friends, Gale. I doubt they're judging our outfits.</p>
+<p class="zh">
+<span class="translation">参考译文</span>这些都是我们的朋友，盖尔。我想他们不会评判我们的衣着。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Perhaps I am overthinking things a little. I do rather like what I'm wearing.</p>
+<p class="zh">
+<span class="translation">参考译文</span>也许我的确想得太多了些。不过，我确实很喜欢自己这一身。</p>
+</article>
+</section>
+<p class="branch-note">以上选项随后汇入盖尔对阿斯代伦的共同致谢。</p>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I won't keep you to myself for too long, but while I have you - I want to say thank you for encouraging me to attend this evening.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我不会霸占你太久。不过趁你还在我身边——我想谢谢你鼓励我今晚来赴会。</p>
+</article>
+
+<section data-life="waterdeep" class="route-segment">
+<h2 class="menu-heading">
+<span class="menu-code">02 ·</span>
+<span class="menu-label">两人住在深水城</span>
+</h2>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Teaching at Blackstaff Academy has proven such an unexpected pleasure. Sometimes I find it hard to tear myself away.</p>
+<p class="zh">
+<span class="translation">参考译文</span>在黑杖学院教书，竟成了如此意外的乐事。有时我甚至舍不得离开。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Just one of the myriad unexpected ways life has delighted me in recent months.</p>
+<p class="zh">
+<span class="translation">参考译文</span>这只是近几个月来，生活带给我的无数意外之喜中的一件。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Even my own city feels new to me, now that I share it with you.</p>
+<p class="zh">
+<span class="translation">参考译文</span>如今有你与我共享这座城市，就连我的故乡也显得焕然一新。</p>
+</article>
+<h3 class="menu-heading">
+<span class="menu-code">02.1 ·</span>
+<span class="menu-label">阿斯代伦眼中的深水城</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">02.1A</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Probably because I make you put down your quill once in a while and enjoy it.</p>
+<p class="zh">
+<span class="translation">参考译文</span>大概是因为我会偶尔逼你放下羽毛笔，好好享受这座城市。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">That you do. I've not had so much fun in Waterdeep since my own days as a wayward Blackstaff apprentice.</p>
+<p class="zh">
+<span class="translation">参考译文</span>确实如此。自从我还是个不安分的黑杖学徒以来，我从未在深水城玩得这样尽兴。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">You've certainly made quite the impression on my friends down at the Yawning Portal. The last I heard, they were thinking of naming a drink after you.</p>
+<p class="zh">
+<span class="translation">参考译文</span>你可给我那些在 Yawning Portal 的朋友留下了相当深刻的印象。上次听说，他们正考虑用你的名字命名一种酒。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">02.1B</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">I've grown to love Waterdeep. Though I confess at first I found it a bit... overly pleased with itself.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我已经开始喜欢深水城了。不过我承认，起初我觉得它有点……太自鸣得意。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">An impression I'm delighted the city has managed to redeem. As have I, I hope.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我很高兴这座城市成功挽回了你的印象。也希望我同样做到了。</p>
+</article>
+</section>
+<section data-fate="spawn alive" class="choice choice--astarion">
+<div class="choice-meta">
+<div class="tag badge badge--astarion">
+<span class="choice-code">02.1C</span> · 起源阿斯代伦专属选项</div>
+</div>
+<div class="variants">
+<section data-fate="spawn" class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag" data-selector-condition>条件 · 杀死卡扎多尔，放弃飞升</span>
+</h3>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Thankfully Waterdeep has plenty of amusements on offer during the hours of darkness...</p>
+<p class="zh">
+<span class="translation">参考译文</span>幸好深水城在夜晚也提供了不少消遣……</p>
+</article>
+</section>
+<section data-fate="alive" class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag" data-selector-condition>条件 · 卡扎多尔仍活着</span>
+</h3>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">I'm just glad Waterdeep is big enough to disappear into.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我只庆幸深水城足够大，大到能让人消失其中。</p>
+</article>
+</section>
+</div>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">You've certainly exposed me to sides of Waterdeep I'd never had the pleasure of experiencing until now. If 'pleasure' is the word for such places...</p>
+<p class="zh">
+<span class="translation">参考译文</span>你确实带我见识了深水城一些我从未领略过的风貌。当然，前提是那些地方真能用“享受”来形容……</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">On the second line, perhaps recalling a particularly dicey evening spent with Astarion in the more dangerous corners of Waterdeep</p>
+<p>
+<span class="translation">参考译文</span>说到后半句时，他似乎想起了某个与阿斯代伦一起深入深水城危险角落的惊险夜晚。</p>
+</aside>
+</article>
+</section>
+
+<p class="branch-note">以上选项随后汇入下方的共同回望。</p>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I'm just glad you're happy there. When we met, our lives were rather different, and being here this evening... well, it reminds me how much has changed.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我只是很高兴你在那里过得幸福。我们初遇时，彼此的生活和现在大不相同；今晚重回这里……真让我想起，一切已经改变了多少。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">When Mystra quelled the orb at last, she did more than rid me of its threat. She created room for hope, where once I felt only despair.</p>
+<p class="zh">
+<span class="translation">参考译文</span>当密斯特拉终于平息法球时，她不仅消除了它的威胁，也在我原本只有绝望的心中，为希望腾出了空间。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Standing here now I no longer see the people we were - frightened, desperate, alone. We changed. We survived. And we did it together.</p>
+<p class="zh">
+<span class="translation">参考译文</span>如今再看着我们，我已看不见从前那两个恐惧、绝望、孤独的人。我们改变了，我们活了下来，而且是一起做到的。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I've missed them. I've missed this .</p>
+<p class="zh">
+<span class="translation">参考译文</span>我一直想念他们。我也一直想念这一切。</p>
+<aside class="note">
+<b>场景旁注</b>
+<p lang="en">On 'this', a gesture indicating to the wider camp/troupe - he's missed standing in a camp like this, with the gang for company</p>
+<p>
+<span class="translation">参考译文</span>说到“这一切”时，他示意周围的营地与同伴；他怀念的是像这样与大家一起站在营地里的感觉。</p>
+</aside>
+</article>
+
+</section>
+<section data-life="baldursgate adventure underdark" class="route-segment">
+<h2 class="menu-heading">
+<span class="menu-code">03 ·</span>
+<span class="menu-label">深水城之外的共同生活</span>
+</h2>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I confess, when I left Waterdeep there was a part of me afraid that I might regret my decision. But I never have.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我承认，离开深水城时，我的确有些担心自己会后悔。但我从未后悔过。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">reflective</p>
+<p>
+<span class="translation">参考译文</span>若有所思。</p>
+</aside>
+</article>
+<div class="route">
+<h3 class="menu-heading">
+<span class="menu-code">03.1 ·</span>
+<span class="menu-label">盖尔描述两人的生活</span>
+</h3>
+<div class="variants variants--stack">
+<article class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag">条件 · 起源阿斯代伦带有特殊眼伤</span>
+</h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">The chance to see life through your good eye, as well as my own - it's been everything I hoped it would be.</p>
+<p class="zh">
+<span class="translation">参考译文</span>能够透过你那只好眼睛，也透过我自己的双眼去看生活——这一切正如我所愿。</p>
+</article>
+</article>
+<article class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag">条件 · 起源阿斯代伦没有特殊眼伤</span>
+</h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">The chance to see life through your eyes, as well as my own - it's been everything I hoped it would be.</p>
+<p class="zh">
+<span class="translation">参考译文</span>能够透过你的双眼，也透过我自己的双眼去看生活——这一切正如我所愿。</p>
+</article>
+</article>
+</div>
+</div>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I'm delighted to be here amongst friends again, but part of me is reluctant to step away from our new life - even for such a gathering as this.</p>
+<p class="zh">
+<span class="translation">参考译文</span>能再次与朋友们相聚，我很高兴；可即使是为了这样的聚会，我仍有些舍不得离开我们的新生活。</p>
+</article>
+
+<h3 class="menu-heading">
+<span class="menu-code">03.2 ·</span>
+<span class="menu-label">起源阿斯代伦谈起这场聚会</span>
+</h3>
+<section data-fate="ascended" class="choice choice--astarion">
+<div class="choice-meta">
+<div class="tag badge badge--astarion">
+<span class="choice-code">03.2A</span> · 起源阿斯代伦专属选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 起源阿斯代伦成功飞升</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">We certainly have moved up in the world.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我们如今的确算是飞黄腾达了。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I won't deny, our living arrangements have taken some getting used to. Though you remain a ray of metaphorical sunshine amidst the darkness, as ever.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我不否认，我们的居住安排确实让我适应了好一阵子。不过一如既往，你仍是黑暗中的一束阳光——当然，是比喻意义上的。</p>
+</article>
+</section>
+<section data-fate="spawn alive" class="choice choice--astarion">
+<div class="choice-meta">
+<div class="tag badge badge--astarion">
+<span class="choice-code">03.2B</span> · 起源阿斯代伦专属选项</div>
+</div>
+<div class="variants">
+<section data-fate="spawn" class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag" data-selector-condition>条件 · 杀死卡扎多尔，放弃飞升</span>
+</h3>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">And there I was thinking you'd appreciate the chance to spend time with the living...</p>
+<p class="zh">
+<span class="translation">参考译文</span>亏我还以为，你会珍惜这个与活人相处的机会……</p>
+</article>
+</section>
+<section data-fate="alive" class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag" data-selector-condition>条件 · 卡扎多尔仍活着</span>
+</h3>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">I don't know. At least this is a party Cazador can't crash...</p>
+<p class="zh">
+<span class="translation">参考译文</span>我不知道。至少卡扎多尔没法来这场聚会搅局……</p>
+</article>
+</section>
+</div>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I won't deny, our living arrangements have taken some getting used to. Though you remain a ray of metaphorical sunshine amidst the darkness, as ever.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我不否认，我们的居住安排确实让我适应了好一阵子。不过一如既往，你仍是黑暗中的一束阳光——当然，是比喻意义上的。</p>
+</article>
+</section>
+<section data-life="adventure underdark" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.2C</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 没有共同生活在博德之门</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">I'm just glad of a night off from the ever-present threat of danger and death.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我只庆幸今晚能暂时远离那些如影随形的危险与死亡。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Come now - our adventures have offered far more than the potential for destruction. I have enough looted literature to fill a dozen libraries.</p>
+<p class="zh">
+<span class="translation">参考译文</span>别这样——我们的冒险带来的可远不只是毁灭的可能。我搜罗来的书，足够装满十二座图书馆。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Buoyant, encouraging</p>
+<p>
+<span class="translation">参考译文</span>兴致高昂，带着鼓励。</p>
+</aside>
+</article>
+</section>
+
+<section data-life="baldursgate" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.2D</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 共同生活在博德之门</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Don't worry - your books and my hearth will still be waiting for us when we get home.</p>
+<p class="zh">
+<span class="translation">参考译文</span>别担心——等我们回家时，你的书和我的壁炉仍会在那里等着我们。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">'Home.' How I love to share that word with you.</p>
+<p class="zh">
+<span class="translation">参考译文</span>“家”。我多么喜欢和你一起说出这个字。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.2E</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">You don't have to be here if you don't want to, Gale...</p>
+<p class="zh">
+<span class="translation">参考译文</span>如果你不想待在这里，也不必勉强自己，盖尔……</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Oh, ignore me - I'm perfectly content. Besides, the chance to step out for a night on your arm is hardly one I'm going to pass up.</p>
+<p class="zh">
+<span class="translation">参考译文</span>哦，别理会我——我其实很满足。再说，能挽着你的手臂出门一晚，我怎么会错过。</p>
+</article>
+</section>
+<section data-life="baldursgate" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.2F</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 共同生活在博德之门</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">I'm glad you've taken to life in Baldur's Gate so quickly. I thought you'd never leave Waterdeep...</p>
+<p class="zh">
+<span class="translation">参考译文</span>我很高兴你这么快就适应了博德之门的生活。我还以为你永远不会离开深水城……</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I merely lacked the correct motivation, but even the City of Splendours itself fails to dazzle when set against your beauty.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我只是一直缺少合适的动力。不过，即使是辉煌之城本身，在你的美貌面前也会黯然失色。</p>
+</article>
+</section>
+<section data-life="baldursgate" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.2G</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 共同生活在博德之门</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">We've done so much for Baldur's Gate and its people these past months. I think we're entitled to a night off.</p>
+<p class="zh">
+<span class="translation">参考译文</span>这几个月来，我们为博德之门和城中居民做了那么多。我想我们理应休息一晚。</p>
+</article>
+</section>
+<p class="branch-note">以上选项随后汇入下方的共同承接。</p>
+<article class="turn">
+<h4>塔拉</h4>
+<p class="en" lang="en">I'm just glad I'm not the only one encouraging you to leave the library once in a while. It does one good to feel the grass beneath one's paws from time to time.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我只庆幸，现在不是只有我一个人在劝你偶尔离开图书馆。时不时让爪下感受一下青草，对身体有好处。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I don't know where to begin in telling people what we've been up to. I suspect they won't believe me...</p>
+<p class="zh">
+<span class="translation">参考译文</span>我都不知道该从哪里讲起，才能告诉大家我们经历了什么。我怀疑他们根本不会相信……</p>
+</article>
+
+<h3 class="menu-heading">
+<span class="menu-code">03.3 ·</span>
+<span class="menu-label">谈起那些难以置信的经历</span>
+</h3>
+<section data-life="waterdeep baldursgate adventure" data-fate="alive spawn ascended" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.3A</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 没有带领衍体前往幽暗地域</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">You've spent every moment not with me in your library, Gale. I suspect they'll believe you.</p>
+<p class="zh">
+<span class="translation">参考译文</span>盖尔，你每一刻不和我待在一起的时间都泡在图书馆里。我想他们会相信你的。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Aha! But only in the pursuit of other pleasures besides the study of magic. Writing, painting, a spot of knitting... I've never been so relaxed.</p>
+<p class="zh">
+<span class="translation">参考译文</span>啊哈！但那只是在追求研习魔法之外的乐趣。写作、绘画，偶尔织点东西……我从未如此放松。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Excited to clarify that he's a changed man</p>
+<p>
+<span class="translation">参考译文</span>兴奋地澄清自己已经变了个人。</p>
+</aside>
+</article>
+</section>
+<section data-life="underdark" data-fate="spawn" class="choice choice--astarion">
+<div class="choice-meta">
+<div class="tag badge badge--astarion">
+<span class="choice-code">03.3B</span> · 起源阿斯代伦专属选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 带领衍体前往幽暗地域</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Faced with a camp full of vampire spawn, the first thing you did was start a book club. Everyone will believe that.</p>
+<p class="zh">
+<span class="translation">参考译文</span>面对一整个营地的吸血鬼衍体，你做的第一件事居然是成立读书会。所有人都会相信这件事。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Just because we live in the Underdark doesn't mean we can't illuminate our days with the burning glow of knowledge.</p>
+<p class="zh">
+<span class="translation">参考译文</span>就算我们住在幽暗地域，也不代表我们不能用知识燃烧的光辉照亮每一天。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Last thought is playfully pre-empting any excitement from the player that they might get to burn his books</p>
+<p>
+<span class="translation">参考译文</span>最后一句是在玩笑般抢先阻止对方因“燃烧”二字而期待烧掉他的书。</p>
+</aside>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Not literally, of course - my books are not for burning. Even though some of them are inclined to combust spontaneously.</p>
+<p class="zh">
+<span class="translation">参考译文</span>当然，不是字面意义上的燃烧——我的书可不是拿来烧的。尽管其中有些的确很容易自燃。</p>
+</article>
+</section>
+<section data-life="underdark" data-fate="spawn" class="choice choice--astarion">
+<div class="choice-meta">
+<div class="tag badge badge--astarion">
+<span class="choice-code">03.3C</span> · 起源阿斯代伦专属选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 带领衍体前往幽暗地域</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">You helped seven thousand vampire spawn find safety in the Underdark. People should know that.</p>
+<p class="zh">
+<span class="translation">参考译文</span>你帮助七千名吸血鬼衍体在幽暗地域找到了安全之所。人们应该知道这件事。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I think that particular feat was your doing, but having a wizard with an aptitude for excellently timed counterspells beside you no doubt helped.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我想那项壮举主要归功于你。不过，身边有一位总能恰到好处地施展反制法术的法师，无疑也帮了不少忙。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Deflecting the praise, but allowing himself to be a little bit pleased</p>
+<p>
+<span class="translation">参考译文</span>把功劳推回给对方，但也允许自己略微得意一下。</p>
+</aside>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.3D</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Who cares if they believe you?</p>
+<p class="zh">
+<span class="translation">参考译文</span>谁在乎他们信不信？</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Not me, of course. Gale of Waterdeep might have craved such attention, but Gale Dekarios does a heroic deed purely for its own quiet satisfaction. And the occasional hearty 'thank you.'</p>
+<p class="zh">
+<span class="translation">参考译文</span>我当然不在乎。深水城的盖尔或许曾渴望这样的关注，但盖尔·德卡里奥斯如今行善，只为从中获得那份静谧的满足。当然，偶尔听到一句热情真诚的“谢谢”也不错。</p>
+</article>
+</section>
+<section data-life="baldursgate" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.3E</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 共同生活在博德之门</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Your spells single-handedly rebuilt half the Upper City. Baldur's Gate is your proof.</p>
+<p class="zh">
+<span class="translation">参考译文</span>你的法术几乎凭一己之力重建了半个上城区。博德之门就是你的证明。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Ahem. Well, the improvements I made to the High Hall alone should protect it from any passing Netherbrains for a millennia at least.</p>
+<p class="zh">
+<span class="translation">参考译文</span>咳。这个嘛，单是我对至高大厅所作的改良，至少就足以让它在未来一千年里抵御任何路过的耐色脑。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">One can never have too many buttresses, after all.</p>
+<p class="zh">
+<span class="translation">参考译文</span>毕竟，扶壁这种东西再多也不嫌多。</p>
+</article>
+</section>
+<section data-life="adventure" data-fate="alive spawn" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.3F</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 继续共同冒险</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">You saved a village from a rabid dire troll and have the scars to prove it. They'll believe you.</p>
+<p class="zh">
+<span class="translation">参考译文</span>你从一头狂暴的巨魔手中救下了一座村庄，身上的伤疤就是证明。他们会相信你的。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I think that particular feat was your doing, but having a wizard with an aptitude for excellently timed counterspells beside you no doubt helped.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我想那项壮举主要归功于你。不过，身边有一位总能恰到好处地施展反制法术的法师，无疑也帮了不少忙。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Deflecting the praise, but allowing himself to be a little bit pleased</p>
+<p>
+<span class="translation">参考译文</span>把功劳推回给对方，但也允许自己略微得意一下。</p>
+</aside>
+</article>
+</section>
+<p class="branch-note">以上选项随后汇入盖尔对两人共同生活的感慨。</p>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Our lives are certainly a far cry from the one I once pictured. Even now, with the orb's fires quelled by Mystra at last, I scarcely dare believe it.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我们如今的生活，的确与我曾经想象的大不相同。即使法球的烈焰如今终于被密斯特拉平息，我仍几乎不敢相信。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Before we met I fear I was rather stuck in my ways. And stuck inside my tower with a world-shattering orb of magic sealed within my chest, to be fair to myself.</p>
+<p class="zh">
+<span class="translation">参考译文</span>在遇见你以前，恐怕我的确有些墨守成规。不过话说回来，我那时也被困在高塔里，胸口还封着一颗足以毁灭世界的法球。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I was afraid to so much as dream of a night like this. To hope that my life might amount to more than lonely, bitter disappointment. And then I found you.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我曾经连想象这样的夜晚都不敢，更不敢期望自己的人生能超越孤独而苦涩的失望。然后，我遇见了你。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Standing here now I no longer see the people we were - frightened, desperate, alone. We changed. We survived. And we did it together.</p>
+<p class="zh">
+<span class="translation">参考译文</span>如今再看着我们，我已看不见从前那两个恐惧、绝望、孤独的人。我们改变了，我们活了下来，而且是一起做到的。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I've missed them. I've missed this .</p>
+<p class="zh">
+<span class="translation">参考译文</span>我一直想念他们。我也一直想念这一切。</p>
+<aside class="note">
+<b>场景旁注</b>
+<p lang="en">On 'this', a gesture indicating to the wider camp/troupe - he's missed standing in a camp like this, with the gang for company</p>
+<p>
+<span class="translation">参考译文</span>说到“这一切”时，他示意周围的营地与同伴；他怀念的是像这样与大家一起站在营地里的感觉。</p>
+</aside>
+</article>
+
+
+
+
+
+
+</section>
+<h2 class="menu-heading">
+<span class="menu-code">04 ·</span>
+<span class="menu-label">重聚唤起的回忆</span>
+</h2>
+<h3 class="menu-heading">
+<span class="menu-code">04.1 ·</span>
+<span class="menu-label">阿斯代伦谈起昔日冒险</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.1A</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">So have I. Sometimes I wish our adventure never ended.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我也是。有时我真希望我们的冒险从未结束。</p>
+</article>
+<div class="variants">
+<section class="variant-card">
+<h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 触发条件不明</span></h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I wouldn't go quite that far. Living without the threat of imminent ceremorphosis seems infinitely preferable to life on the precipice of such a transformation.</p>
+<p class="zh"><span class="translation">参考译文</span>我倒不会说到这个地步。比起始终站在蜕变的悬崖边，活着而不必担心随时变成夺心魔，显然好得多。</p>
+</article>
+</section>
+<section class="variant-card">
+<h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 触发条件不明</span></h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I wouldn't go quite that far. You made sacrifice enough to end it when we did - I dread to think what else might have come, had it gone on for longer.</p>
+<p class="zh"><span class="translation">参考译文</span>我倒不会说到那个地步。你已经为让这一切在当时结束付出了足够多的代价——我不敢想象，若再拖得久些，还会发生什么。</p>
+</article>
+</section>
+</div>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">As I told you long ago - it is to be avoided.</p>
+<p class="zh">
+<span class="translation">参考译文</span>正如我很久以前告诉你的——那种事应当避免。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Gods knows, we suffered for our salvation, but it was worth it, wasn't it?</p>
+<p class="zh">
+<span class="translation">参考译文</span>天知道我们为了获救吃了多少苦，但这一切值得，不是吗？</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">We did something incredible . And wherever life takes us - we'll carry the memory of that with us forever.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我们做成了一件不可思议的事。无论生活将我们带向何方，我们都会永远铭记这段经历。</p>
+</article>
+</section>
+<section data-life="baldursgate adventure underdark" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.1B</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 盖尔没有返回深水城</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Miss this lot? No - I much prefer our lives now we've left all this behind.</p>
+<p class="zh">
+<span class="translation">参考译文</span>想念这群人？不——如今我们已经把这一切抛在身后，我更喜欢现在的生活。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">We have had some fun, haven't we?</p>
+<p class="zh">
+<span class="translation">参考译文</span>我们确实过得很开心，不是吗？</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Conceding the player's point</p>
+<p>
+<span class="translation">参考译文</span>承认起源阿斯代伦说得有道理。</p>
+</aside>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I suppose you're right. Our adventures had their time and place, but it's good that we've moved forward. Carved out a life for ourselves every bit as rich and rewarding as the journey that brought us together.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我想你说得对。我们的冒险自有属于它的时光与位置，但能继续向前也很好。我们亲手为自己开创的生活，丝毫不逊色于那段让我们相遇的旅程，同样丰富，也同样值得。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.1C</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">We still have each other. That's all I'll ever need.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我们仍然拥有彼此。对我而言，这就足够了。</p>
+</article>
+<div class="variants">
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag">条件 · 塔拉在场</span>
+</h3>
+<article class="turn">
+<h4>塔拉</h4>
+<p class="en" lang="en">And Tara, mind.</p>
+<p class="zh">
+<span class="translation">参考译文</span>还有塔拉，别忘了。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">a hint of annoyance.</p>
+<p>
+<span class="translation">参考译文</span>带着一点不满。</p>
+</aside>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I could never forget about you, Tara. You wouldn't let me.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我绝不会忘了你，塔拉。你也绝不会允许我忘记。</p>
+</article>
+</section>
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag">条件 · 塔拉不在场</span>
+</h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I'm not sure I'll ever get over my good fortune in that respect. You are the happiness I never dreamed I could deserve.</p>
+<p class="zh">
+<span class="translation">参考译文</span>说到这份好运，我想自己永远也不会习以为常。你是我从不敢梦想自己能够拥有的幸福。</p>
+</article>
+</section>
+</div>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Gods knows, we suffered for our salvation, but it was worth it, wasn't it?</p>
+<p class="zh">
+<span class="translation">参考译文</span>天知道我们为了获救吃了多少苦，但这一切值得，不是吗？</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">We did something incredible . And wherever life takes us - we'll carry the memory of that with us forever.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我们做成了一件不可思议的事。无论生活将我们带向何方，我们都会永远铭记这段经历。</p>
+</article>
+</section>
+<section data-life="waterdeep baldursgate" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.1D</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 共同生活在深水城或博德之门</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">You almost sound like you want to go adventuring again...</p>
+<p class="zh">
+<span class="translation">参考译文</span>听你这语气，简直像是又想出去冒险了……</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">No, no, I prefer the warmth of my library's hearth these days. But the feeling of adventure... I confess - that I long for.</p>
+<p class="zh">
+<span class="translation">参考译文</span>不，不，如今我更喜欢图书馆壁炉的温暖。不过那种冒险的感觉……我承认，我的确向往。</p>
+</article>
+<article class="turn">
+<h4>塔拉</h4>
+<p class="en" lang="en">Now, Mr Dekarios, we've spoken about this. You really must find safer pastimes - for your own good, and mine too.</p>
+<p class="zh">
+<span class="translation">参考译文</span>德卡里奥斯先生，我们谈过这件事。你真的得找些更安全的消遣——既为了你自己，也为了我。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I have been dabbling with the idea of capturing our adventures with humble ink and parchment.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我近来一直在琢磨，要不要仅凭墨水与羊皮纸，记下我们的冒险。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Cautiously revealing the existence of his memoirs.</p>
+<p>
+<span class="translation">参考译文</span>谨慎地透露他正在写回忆录。</p>
+</aside>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">We've tales enough to fill a good few volumes, and when the truth runs out, who knows... My quill might take us on further adventures yet.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我们的故事足够写满好几卷。等真实经历写完了，谁知道呢……我的笔或许还会带我们踏上新的冒险。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.1E</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">I suppose life has been a little less interesting since we all went our separate ways...</p>
+<p class="zh">
+<span class="translation">参考译文</span>我想，自从大家分道扬镳以后，生活的确少了几分趣味……</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">You feign indifference but I can see it in your eye. You're as delighted to be amongst this company as I am.</p>
+<p class="zh">
+<span class="translation">参考译文</span>你装得满不在乎，可我从你眼里看得出来。能再次与这些同伴相聚，你和我一样高兴。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Knows the palyer far too well to believe they aren't happy to be here</p>
+<p>
+<span class="translation">参考译文</span>他太了解对方，不相信对方真的不喜欢重回众人之中。</p>
+</aside>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Speaking of which, I think it's high time you blessed someone other than myself with your inimitable presence.</p>
+<p class="zh"><span class="translation">参考译文</span>说到这里，我想也该让除我之外的其他人，有幸领略你无可比拟的风采了。</p>
+</article>
+</section>
+<section data-life="waterdeep" class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.1F</span> · 共同选项</div>
+<span class="condition-tag" data-selector-condition>条件 · 共同生活在深水城</span>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">I can't say I miss it. The blood, the fleas, the looming threat of death...</p>
+<p class="zh">
+<span class="translation">参考译文</span>我不能说自己怀念那些日子。鲜血、跳蚤，还有步步逼近的死亡威胁……</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I suggest we steer clear of the Trades Ward during Waukeentide, in that case.</p>
+<p class="zh">
+<span class="translation">参考译文</span>既然如此，我建议我们在沃金节期间离贸易区远一点。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Referring to the equivalent of Black Friday sales</p>
+<p>
+<span class="translation">参考译文</span>这里指类似“黑色星期五”的购物热潮。</p>
+</aside>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">The perils we faced are but trifles compared to those inflicted by the shoppers of Waterdeep when there's a bargain to be had.</p>
+<p class="zh">
+<span class="translation">参考译文</span>与深水城那些争抢便宜货的顾客相比，我们经历过的危险都只能算小事。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Referring to the equivalent of Black Friday sales</p>
+<p>
+<span class="translation">参考译文</span>这里指类似“黑色星期五”的购物热潮。</p>
+</aside>
+</article>
+</section>
+<h2 class="menu-heading">
+<span class="menu-code">05 ·</span>
+<span class="menu-label">回到聚会的人群中</span>
+</h2>
+<div class="variants">
+<section class="variant-card">
+<h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 选择 04.1A、B、C、D 或 F</span></h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Now, much as I could spend an eternity in your company - we see plenty of each other already.</p>
+<p class="zh">
+<span class="translation">参考译文</span>虽然我很乐意永远与你相伴——但我们平日里已经朝夕相处了。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Warmly drawing the conversation to a close</p>
+<p>
+<span class="translation">参考译文</span>温柔地准备结束谈话。</p>
+</aside>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Tempting as it is to keep you all to myself, we'd be terrible company if we didn't mingle for at least part of the evening.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我很想把你一直留在身边，但今晚若连片刻都不去和其他人聊聊，我们可就太失礼了。</p>
+</article>
+</section>
+<section class="variant-card">
+<h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 选择 04.1E</span></h3>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Tempting as it is to keep you all to myself, we'd be terrible company if we didn't mingle for at least part of the evening.</p>
+<p class="zh"><span class="translation">参考译文</span>我很想把你一直留在身边，但今晚若连片刻都不去和其他人聊聊，我们可就太失礼了。</p>
+</article>
+</section>
+</div>
+<div class="ending">
+<h3 class="menu-heading">
+<span class="menu-code">05.1 ·</span>
+<span class="menu-label">重返人群之前</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">05.1A</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Kiss him.</p>
+<p class="zh">
+<span class="translation">参考译文</span>吻他。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">I love you.</p>
+<p class="zh">
+<span class="translation">参考译文</span>我爱你。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">With the warmth of having said this a thousand times before</p>
+<p>
+<span class="translation">参考译文</span>带着一种已经说过千百次的温暖。</p>
+</aside>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Now go on, before I change my mind.</p>
+<p class="zh">
+<span class="translation">参考译文</span>现在快去吧，免得我改变主意。</p>
+<aside class="note">
+<b>语气提示</b>
+<p lang="en">Gentle joking - referring to him having previously told the player they'd be rude if they just hung out with each other all night</p>
+<p>
+<span class="translation">参考译文</span>温和地开玩笑；呼应他刚才所说，两人若整晚只顾彼此会显得失礼。</p>
+</aside>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">05.1B</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">If I must.</p>
+<p class="zh">
+<span class="translation">参考译文</span>既然你坚持。</p>
+</article>
+<article class="turn turn--gale">
+<h4>盖尔</h4>
+<p class="en" lang="en">Enjoy yourself, my love. I'll be right here if you need me. Or else somewhere near the buffet...</p>
+<p class="zh">
+<span class="translation">参考译文</span>好好玩吧，亲爱的。需要我时，我就在这里。又或者……在餐台附近。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">05.1C</span> · 共同选项</div>
+</div>
+<article class="turn turn--astarion">
+<h4>起源阿斯代伦</h4>
+<p class="en" lang="en">Leave.</p>
+<p class="zh">
+<span class="translation">参考译文</span>离开。</p>
+</article>
+</section>
+</div>
+</div>
+<details class="research"><summary>研究依据</summary><p>来源：Patch 8 对话文件《EPI_Epilogue_EnterParty》《EPI_Epilogue_Gale》。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details>
+</main>
+<script>(()=>{const valid={alive:new Set(['waterdeep','away']),spawn:new Set(['waterdeep','away']),ascended:new Set(['away'])};const labels={alive:'卡扎多尔尚存',spawn:'杀死卡扎多尔并放弃飞升',ascended:'杀死卡扎多尔并成功飞升'};const lifeStatus={waterdeep:'两人在深水城共同生活。',away:'两人没有在深水城共同生活。'};const state={life:null,fate:null,all:true};const status=document.querySelector('[data-route-status]');const modes=document.querySelectorAll('[data-mode]');function tokens(v){return(v||'').split(/\s+/).filter(Boolean)}function lifeMatches(v){const values=tokens(v);if(state.life==='away'&&state.fate==='ascended')return values.includes('baldursgate');return state.life==='away'?values.some(x=>x==='baldursgate'||x==='adventure'||x==='underdark'):values.includes(state.life)}function selectorCondition(el){const text=el.textContent;if(state.life==='waterdeep'&&/共同生活在深水城|盖尔返回深水城/.test(text))return true;if(state.fate==='ascended'&&/共同生活在博德之门|共同生活在深水城或博德之门|没有带领衍体前往幽暗地域|起源阿斯代伦成功飞升/.test(text))return true;if(state.fate==='spawn'&&/杀死卡扎多尔，放弃飞升|起源阿斯代伦没有飞升/.test(text))return true;if(state.fate==='alive'&&/卡扎多尔仍活着|起源阿斯代伦没有飞升/.test(text))return true;return false}function render(){document.querySelectorAll('[data-axis]').forEach(b=>{const axis=b.dataset.axis;const value=b.dataset.value;b.setAttribute('aria-pressed',String(!state.all&&state[axis]===value));if(axis==='life')b.disabled=!state.all&&state.fate&&!valid[state.fate].has(value);else if(axis==='fate')b.disabled=!state.all&&state.life&&!valid[value].has(state.life)});modes.forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.mode==='all')===state.all)));document.querySelectorAll('[data-life],[data-fate],[data-selector-condition]').forEach(el=>{let show=true;if(!state.all&&state.life&&el.dataset.life)show=show&&lifeMatches(el.dataset.life);if(!state.all&&state.fate&&el.dataset.fate)show=show&&tokens(el.dataset.fate).includes(state.fate);if(!state.all&&el.hasAttribute('data-selector-condition')&&selectorCondition(el))show=false;el.hidden=!show});document.querySelectorAll('.variants').forEach(grid=>{const visible=Array.from(grid.children).filter(el=>!el.hidden);grid.classList.toggle('variants--single-visible',visible.length===1)});if(state.all)status.textContent='当前为全选项阅读模式。';else if(state.life&&state.fate)status.textContent='当前路线：'+labels[state.fate]+'；'+lifeStatus[state.life];else status.textContent='请选择共同生活地点与阿斯代伦的结局。'}document.addEventListener('click',e=>{const b=e.target.closest('[data-axis]');if(b&&!b.disabled){state.all=false;state[b.dataset.axis]=b.dataset.value;if(state.life&&state.fate&&!valid[state.fate].has(state.life)){if(b.dataset.axis==='life')state.fate=null;else state.life=null}render();return}const m=e.target.closest('[data-mode]');if(m){state.all=m.dataset.mode==='all';render()}});render()})();</script>
+</body>
+</html>
+

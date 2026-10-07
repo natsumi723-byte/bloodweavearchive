@@ -2,7 +2,7 @@ window.BLOODWEAVE_CATALOG = {
   site: {
     title: "Bloodweave 书库",
     catalogVersion: "0.1",
-    lastUpdated: "2026-10-02"
+    lastUpdated: "2026-10-08"
   },
   collections: [
     {
@@ -95,7 +95,53 @@ window.BLOODWEAVE_CATALOG = {
           id: "finale-and-epilogue",
           title: "终局与尾声",
           description: "",
-          books: []
+          books: [
+            {
+              id: "OA-009",
+              archiveCode: "OA · 009",
+              title: "重返阴影的时刻",
+              subtitle: "阳光重新灼伤阿斯代伦时，盖尔提醒他返回阴影",
+              meta: "终局 · 博德之门码头",
+              href: "books/id/BK-OAST_GAL-END-AstarionSunlight_GaleWarnings.html",
+              isNew: true
+            },
+            {
+              id: "OA-010",
+              archiveCode: "OA · 010",
+              title: "崭新的黎明",
+              subtitle: "最终战后的清晨，盖尔谈起法球、王冠与两人的未来",
+              meta: "终局 · 最终战翌晨",
+              href: "books/id/BK-OAST_GAL-END-END_GameFinale_RomanceFates_Gale.html",
+              isNew: true
+            },
+            {
+              id: "OA-011",
+              archiveCode: "OA · 011",
+              title: "与你共享的未来",
+              subtitle: "六个月后的聚会中，凡人盖尔回望两人的共同生活",
+              meta: "尾声 · 守墓人聚会",
+              href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_Gale.html",
+              isNew: true
+            },
+            {
+              id: "OA-012",
+              archiveCode: "OA · 012",
+              title: "六个月后再见",
+              subtitle: "六个月后的聚会中，与已经分开的凡人盖尔重逢",
+              meta: "尾声 · 守墓人聚会",
+              href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_Gale_Reunion.html",
+              isNew: true
+            },
+            {
+              id: "OA-013",
+              archiveCode: "OA · 013",
+              title: "野心神归来",
+              subtitle: "六个月后的聚会中，与成为野心之神的盖尔重逢",
+              meta: "尾声 · 守墓人聚会",
+              href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_GodGaleAscension.html",
+              isNew: true
+            }
+          ]
         }
       ]
     },
