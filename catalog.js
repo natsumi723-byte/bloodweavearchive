@@ -110,7 +110,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "OA · 010",
               title: "崭新的黎明",
               subtitle: "最终战后的清晨，盖尔谈起法球、王冠与两人的未来",
-              meta: "终局 · 最终战翌晨",
+              meta: "终局 · 战后翌晨",
               href: "books/id/BK-OAST_GAL-END-END_GameFinale_RomanceFates_Gale.html",
               isNew: true
             },
@@ -460,7 +460,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 034",
               title: "法球之外的选择",
               subtitle: "盖尔重申引爆法球的提案",
-              meta: "终局 · 星界棱镜",
+              meta: "终战 · 星界棱镜",
               href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_Undecided.html",
               isNew: true
             },
@@ -469,7 +469,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 035",
               title: "转化并非唯一选择",
               subtitle: "面对是否接受夺心魔转化的群体讨论",
-              meta: "终局 · 星界棱镜",
+              meta: "终战 · 星界棱镜",
               href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_TadpoleChoice.html",
               isNew: true
             },
