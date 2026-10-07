@@ -378,8 +378,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "蝌蚪的力量",
               subtitle: "首次使用蝌蚪力量后的同伴讨论",
               meta: "第一章 · 旅途中",
-              href: "books/id/BK-AST_GAL-A1-GLO_Tadpole_GD_FirstUse.html",
-              isNew: true
+              href: "books/id/BK-AST_GAL-A1-GLO_Tadpole_GD_FirstUse.html"
             },
             {
               id: "AG-025",
@@ -395,8 +394,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "尖牙留下的余波",
               subtitle: "盖尔评价已经死亡或离队的吸血鬼阿斯代伦",
               meta: "第一章 · 营地",
-              href: "books/id/BK-AST_GAL-A1-GLO_Astarion_GD_VampireRevelation_GaleResponse.html",
-              isNew: true
+              href: "books/id/BK-AST_GAL-A1-GLO_Astarion_GD_VampireRevelation_GaleResponse.html"
             },
             {
               id: "AG-027",
@@ -412,8 +410,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "他不会浪费猎物",
               subtitle: "阿尔菲拉遇害后的清晨对质",
               meta: "第一章 · 营地",
-              href: "books/id/BK-AST_GAL-A1-CAMP_DarkUrge_MurderOfAlfira_GD_MorningAfter.html",
-              isNew: true
+              href: "books/id/BK-AST_GAL-A1-CAMP_DarkUrge_MurderOfAlfira_GD_MorningAfter.html"
             },
             {
               id: "AG-029",
@@ -461,8 +458,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "法球之外的选择",
               subtitle: "盖尔重申引爆法球的提案",
               meta: "终战 · 星界棱镜",
-              href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_Undecided.html",
-              isNew: true
+              href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_Undecided.html"
             },
             {
               id: "AG-035",
@@ -470,8 +466,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "转化并非唯一选择",
               subtitle: "面对是否接受夺心魔转化的群体讨论",
               meta: "终战 · 星界棱镜",
-              href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_TadpoleChoice.html",
-              isNew: true
+              href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_TadpoleChoice.html"
             },
             {
               id: "AG-036",
