@@ -101,7 +101,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "OA · 009",
               title: "重返阴影的时刻",
               subtitle: "阳光重新灼伤阿斯代伦时，盖尔提醒他返回阴影",
-              meta: "终局 · 博德之门码头",
+              meta: "终战 · 码头",
               href: "books/id/BK-OAST_GAL-END-AstarionSunlight_GaleWarnings.html",
               isNew: true
             },
