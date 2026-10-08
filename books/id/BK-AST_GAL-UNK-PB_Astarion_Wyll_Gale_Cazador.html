@@ -82,10 +82,11 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
 .tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
 .tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
-.choice--astarion>.tag,.choice--astarion>.badge{color:var(--astarion);background:var(--astarion-soft)}
-.choice--gale>.tag,.choice--gale>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice--astarion>.tag,.choice--astarion>.badge,.choice--astarion>.choice-meta>.tag,.choice--astarion>.choice-meta>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge,.choice--gale>.choice-meta>.tag,.choice--gale>.choice-meta>.badge{color:var(--gale);background:var(--gale-soft)}
 .choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
 .condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.condition-operator{display:inline-flex;align-items:center;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
 .result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
 .source-reaction-tags{display:flex;justify-content:flex-end;margin:.35rem .85rem .7rem;color:var(--muted);font-size:.74rem;line-height:1.35;text-align:right}
 .source-reaction-tag{font-weight:600}
@@ -141,9 +142,9 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
   .state-trace{padding:.8rem}
   .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
 
-  .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
-  .version-heading{grid-template-columns:1fr}
-  .version-heading>.condition-tag{margin:0}
+  .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
+  .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
+  .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
 }
 @media print{
   html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
@@ -157,4 +158,4 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 └─ 版本 II：威尔尚不知道阿斯代伦的身份
    ↓ 两种回应在此汇合
 盖尔说出史书记载，阿斯代伦回应
-</pre></nav><h2 class="menu-heading"><span class="menu-code">01 ·</span><span class="menu-label">阿斯代伦的提问</span></h2><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Ever heard of a vampire called Cazador, Wyll?</p><p class="zh"><span class="translation">参考译文</span>威尔，你听说过一个叫卡扎多尔的吸血鬼吗？</p></article><h2 class="menu-heading"><span class="menu-code">02 ·</span><span class="menu-label">威尔的两种回应</span></h2><h3 class="version-heading"><span class="version-badge">版本 I</span>威尔已知道阿斯代伦的身份</h3><article class="turn"><h4>威尔</h4><p class="en" lang="en">I don't think so. Why? Friend of yours?</p><p class="zh"><span class="translation">参考译文</span>我想没有。怎么了？你的朋友？</p></article><h3 class="version-heading"><span class="version-badge">版本 II</span>威尔尚不知道阿斯代伦的身份</h3><article class="turn"><h4>威尔</h4><p class="en" lang="en">Doesn't ring a bell. Why?</p><p class="zh"><span class="translation">参考译文</span>没印象。怎么了？</p></article><h2 class="menu-heading"><span class="menu-code">03 ·</span><span class="menu-label">两条回应汇合</span></h2><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">He's patriarch of the Szarr family. Nasty fellow, if the histories are accurate.</p><p class="zh"><span class="translation">参考译文</span>他是扎尔家族的家主。史书若可信，他可不是什么好东西。</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I imagine they are.</p><p class="zh"><span class="translation">参考译文</span>我想史书说得没错。</p><aside class="note"><strong>制作旁注</strong><p class="en" lang="en">Darkly, to self.</p><p><span class="translation">参考译文</span>阴沉地，对自己说。</p></aside></article><details class="research"><summary>研究依据</summary><p>来源：Patch 8 对话文件《PB_Astarion_Wyll_Gale_Cazador》。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main></body></html>
+</pre></nav><h2 class="menu-heading"><span class="menu-code">01 ·</span><span class="menu-label">阿斯代伦的提问</span></h2><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Ever heard of a vampire called Cazador, Wyll?</p><p class="zh"><span class="translation">参考译文</span>威尔，你听说过一个叫卡扎多尔的吸血鬼吗？</p></article><h2 class="menu-heading"><span class="menu-code">02 ·</span><span class="menu-label">威尔的两种回应</span></h2><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 威尔已知道阿斯代伦的身份</span></h3><article class="turn"><h4>威尔</h4><p class="en" lang="en">I don't think so. Why? Friend of yours?</p><p class="zh"><span class="translation">参考译文</span>我想没有。怎么了？你的朋友？</p></article><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 威尔尚不知道阿斯代伦的身份</span></h3><article class="turn"><h4>威尔</h4><p class="en" lang="en">Doesn't ring a bell. Why?</p><p class="zh"><span class="translation">参考译文</span>没印象。怎么了？</p></article><h2 class="menu-heading"><span class="menu-code">03 ·</span><span class="menu-label">两条回应汇合</span></h2><article class="turn turn--gale"><h4>盖尔</h4><p class="en" lang="en">He's patriarch of the Szarr family. Nasty fellow, if the histories are accurate.</p><p class="zh"><span class="translation">参考译文</span>他是扎尔家族的家主。史书若可信，他可不是什么好东西。</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I imagine they are.</p><p class="zh"><span class="translation">参考译文</span>我想史书说得没错。</p><aside class="note"><strong>制作旁注</strong><p class="en" lang="en">Darkly, to self.</p><p><span class="translation">参考译文</span>阴沉地，对自己说。</p></aside></article><details class="research"><summary>研究依据</summary><p>来源：Patch 8 对话文件《PB_Astarion_Wyll_Gale_Cazador》。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main></body></html>

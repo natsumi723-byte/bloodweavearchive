@@ -82,10 +82,11 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
 .tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
 .tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
-.choice--astarion>.tag,.choice--astarion>.badge{color:var(--astarion);background:var(--astarion-soft)}
-.choice--gale>.tag,.choice--gale>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice--astarion>.tag,.choice--astarion>.badge,.choice--astarion>.choice-meta>.tag,.choice--astarion>.choice-meta>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge,.choice--gale>.choice-meta>.tag,.choice--gale>.choice-meta>.badge{color:var(--gale);background:var(--gale-soft)}
 .choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
 .condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.condition-operator{display:inline-flex;align-items:center;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
 .result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
 .source-reaction-tags{display:flex;justify-content:flex-end;margin:.35rem .85rem .7rem;color:var(--muted);font-size:.74rem;line-height:1.35;text-align:right}
 .source-reaction-tag{font-weight:600}
@@ -141,9 +142,9 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
   .state-trace{padding:.8rem}
   .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
 
-  .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
-  .version-heading{grid-template-columns:1fr}
-  .version-heading>.condition-tag{margin:0}
+  .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
+  .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
+  .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
 }
 @media print{
   html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
@@ -153,7 +154,7 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 </style></head><body><main>
 <h1 class="book-title"><span class="book-title__main">那么多条命，真的值得吗？</span></h1>
 <div class="synopsis-deck"><div class="source-kicker">■ 源文件简介</div><div class="synopsis-item"><p class="en" lang="en">Astarion addresses a defeated Cazador after their fight. He pulls his former master from the coffin where he's recovering and has to decide what to do with him - kill him or carve the scars on Astarion's back into Cazador's and then use him as a sacrifice in the ritual.</p><p class="zh"><span class="translation">参考译文</span>战斗结束后，阿斯代伦站在败北的卡扎多尔面前。他将尚在棺中恢复的昔日主人拖了出来，接下来必须决定该如何处置他：是就此杀死卡扎多尔，还是把自己背上的伤痕刻到对方身上，让卡扎多尔代替自己成为飞升仪式的祭品。</p></div></div>
-<div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br><p>卡扎多尔战败后，起源阿斯代伦从他口中得知飞升仪式的代价。他可以借同伴的视角把符文刻到卡扎多尔背上，再决定完成仪式，或杀死卡扎多尔、放弃飞升；放弃之后，他还必须决定七千名被囚衍体的命运。盖尔会在这些关键选择前后作出回应。</p></div>
+<div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br>卡扎多尔战败后，起源阿斯代伦从他口中得知飞升仪式的代价。他可以借同伴的视角把符文刻到卡扎多尔背上，再决定完成仪式，或杀死卡扎多尔、放弃飞升；放弃之后，他还必须决定七千名被囚衍体的命运。盖尔会在这些关键选择前后作出回应。</div>
 
 <h2>阅读脉络</h2><nav class="flow" aria-label="阅读脉络"><pre>01 · 卡扎多尔说明仪式代价 → 盖尔同情阿斯代伦
 └─ 02 · 阿斯代伦把符文刻到卡扎多尔背上 → 盖尔劝他收手
@@ -187,7 +188,7 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 <article class="turn turn--gale" data-source-order="591"><div class="speaker">盖尔</div><p class="en" lang="en">Leave it, Astarion. The butcher's bill is too steep, no matter what power it grants you.</p><p class="zh"><span class="translation">参考译文</span>收手吧，阿斯代伦。无论能获得怎样的力量，这场屠戮的代价都太过惨重。</p></article>
 
 <h2 class="menu-heading"><span class="menu-code">03 ·</span><span class="menu-label">决定是否完成飞升</span></h2>
-<div class="route-guide"><p><strong>03.1A</strong> 完成仪式，在盖尔的质问后结束。<br><strong>03.1B</strong> 放弃仪式，随后进入 <b>04</b> 决定被囚衍体的命运。</p></div>
+<div class="route-guide"><p class="route-guide-line"><strong>03.1A</strong> 完成仪式，在盖尔的质问后结束。<br><strong>03.1B</strong> 放弃仪式，随后进入 <b>04</b> 决定被囚衍体的命运。</p></div>
 <h3 class="menu-heading"><span class="menu-code">03.1 ·</span><span class="menu-label">决定仪式的结局</span></h3>
 <section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">03.1A</span> · 共同选项</span></div><article class="turn turn--astarion" data-source-order="451"><div class="speaker">阿斯代伦</div><p class="en" lang="en">Begin the ritual.</p><p class="zh"><span class="translation">参考译文</span>开始仪式。</p></article></section>
 <section class="choice choice--shared"><div class="choice-meta"><span class="tag"><span class="choice-code">03.1B</span> · 共同选项</span></div><article class="turn turn--astarion" data-source-order="482"><div class="speaker">阿斯代伦</div><p class="en" lang="en">Kill Cazador and abandon the ritual.</p><p class="zh"><span class="translation">参考译文</span>杀死卡扎多尔，放弃仪式。</p></article><div class="source-reaction-tags" data-reaction-source-order="482"><span class="source-reaction-tag" aria-label="静态来源反应标记">盖尔好感度 +1</span></div></section>
@@ -228,7 +229,7 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 <article class="turn" data-source-order="518"><div class="speaker">苍白的佩特拉斯</div><p class="en" lang="en">There's only one place seven thousand spawn can feed without drawing attention.</p><p class="zh"><span class="translation">参考译文</span>只有一个地方能让七千名衍体进食而不引人注意。</p></article>
 <article class="turn" data-source-order="519"><div class="speaker">达利瑞娅</div><p class="en" lang="en">We will lead them into the Underdark. They will not be safe, but at least they will have a chance.</p><p class="zh"><span class="translation">参考译文</span>我们会带他们前往幽暗地域。那里未必安全，但至少他们还有一次机会。</p></article>
 <article class="turn" data-source-order="520"><div class="speaker">达利瑞娅</div><p class="en" lang="en">Thank you, brother.</p><p class="zh"><span class="translation">参考译文</span>谢谢你，兄弟。</p></article>
-<div class="route-guide"><p><strong>04.1B</strong> 可以选择用法杖杀死被囚衍体；<strong>04.1C</strong> 可以摧毁法杖，让他们继续被囚禁。两项均有其他人物的后续反应，但没有盖尔针对该选择的特殊回应，随后与 <strong>04.1A</strong> 汇入 <strong>04.2</strong>。</p></div>
+<div class="route-guide"><p class="route-guide-line"><strong>04.1B</strong> 可以选择用法杖杀死被囚衍体；<strong>04.1C</strong> 可以摧毁法杖，让他们继续被囚禁。两项均有其他人物的后续反应，但没有盖尔针对该选择的特殊回应，随后与 <strong>04.1A</strong> 汇入 <strong>04.2</strong>。</p></div>
 <h3 class="menu-heading"><span class="menu-code">04.2 ·</span><span class="menu-label">离开仪式厅</span></h3>
 <article class="turn turn--gale" data-source-order="528"><div class="speaker">盖尔</div><p class="en" lang="en">There is nothing more to be done here. High time we left.</p><p class="zh"><span class="translation">参考译文</span>这里已经没有更多事可做了。我们早该离开了。</p></article>
 

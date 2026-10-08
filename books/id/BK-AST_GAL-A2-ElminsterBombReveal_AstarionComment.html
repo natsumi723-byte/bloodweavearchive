@@ -81,10 +81,11 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
 .tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
 .tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
-.choice--astarion>.tag,.choice--astarion>.badge{color:var(--astarion);background:var(--astarion-soft)}
-.choice--gale>.tag,.choice--gale>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice--astarion>.tag,.choice--astarion>.badge,.choice--astarion>.choice-meta>.tag,.choice--astarion>.choice-meta>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge,.choice--gale>.choice-meta>.tag,.choice--gale>.choice-meta>.badge{color:var(--gale);background:var(--gale-soft)}
 .choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
 .condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.condition-operator{display:inline-flex;align-items:center;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
 .result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
 .source-reaction-tags{display:flex;justify-content:flex-end;margin:.35rem .85rem .7rem;color:var(--muted);font-size:.74rem;line-height:1.35;text-align:right}
 .source-reaction-tag{font-weight:600}
@@ -140,16 +141,16 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
   .state-trace{padding:.8rem}
   .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
 
-  .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
-  .version-heading{grid-template-columns:1fr}
-  .version-heading>.condition-tag{margin:0}
+  .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
+  .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
+  .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
 }
 @media print{
   html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
   .component-index,.component-note{display:none}
   .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
 }
-</style></head><body class="scene-book"><main><h1 class="book-title"><span class="book-title__main">那个大胡子叫盖尔把自己炸掉？</span></h1><section><h2 class="menu-heading"><span class="menu-code">01 ·</span><span class="menu-label">伊尔明斯特揭示法球的用途</span></h2><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p lang="en">The parasite must be playing with my ears, because I was sure that beardy tramp told Gale to find the Heart of the Absolute and then blow himself up .</p><p class="zh"><span class="translation">参考译文</span>一定是寄生虫扰乱了我的耳朵。我刚才明明听见那个大胡子流浪汉叫盖尔找到至上真神之心，然后把自己炸掉。</p></article><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p lang="en">To think, he's had that orb within him this whole time and never told us.</p><p class="zh"><span class="translation">参考译文</span>真想不到，那颗法球一直都在他体内，他却从没告诉过我们。</p></article><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p lang="en">Who'd keep a secret like that from his friends? You can't trust anyone these days.</p><p class="zh"><span class="translation">参考译文</span>谁会对朋友隐瞒这种秘密？如今真是谁也不能信。</p></article></section><aside class="editorial-note"><p>研究者经核对源文件发现：本册与《可惜了一个好端端的盖尔》使用了完全相同的触发条件。目前互联网上能找到的实机记录均为《可惜了一个好端端的盖尔》，本册内容是否能够在同伴阿斯代伦&amp;同伴盖尔游戏流程中出现，仍然存疑。</p>
+</style></head><body class="scene-book"><main><h1 class="book-title"><span class="book-title__main">那个大胡子叫盖尔把自己炸掉？</span></h1><section><h2 class="menu-heading"><span class="menu-code">01 ·</span><span class="menu-label">伊尔明斯特揭示法球的用途</span></h2><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p class="en" lang="en">The parasite must be playing with my ears, because I was sure that beardy tramp told Gale to find the Heart of the Absolute and then blow himself up .</p><p class="zh"><span class="translation">参考译文</span>一定是寄生虫扰乱了我的耳朵。我刚才明明听见那个大胡子流浪汉叫盖尔找到至上真神之心，然后把自己炸掉。</p></article><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p class="en" lang="en">To think, he's had that orb within him this whole time and never told us.</p><p class="zh"><span class="translation">参考译文</span>真想不到，那颗法球一直都在他体内，他却从没告诉过我们。</p></article><article class="turn turn--astarion"><div class="speaker">阿斯代伦</div><p class="en" lang="en">Who'd keep a secret like that from his friends? You can't trust anyone these days.</p><p class="zh"><span class="translation">参考译文</span>谁会对朋友隐瞒这种秘密？如今真是谁也不能信。</p></article></section><aside class="editorial-note"><p>研究者经核对源文件发现：本册与《可惜了一个好端端的盖尔》使用了完全相同的触发条件。目前互联网上能找到的实机记录均为《可惜了一个好端端的盖尔》，本册内容是否能够在同伴阿斯代伦&amp;同伴盖尔游戏流程中出现，仍然存疑。</p>
 <h3>实机可达性存疑的原因</h3>
 <ol>
 <li><p><strong>源文件为伊尔明斯特带来消息的事件保留了两种回应：</strong>一组是《可惜了一个好端端的盖尔》，阿斯代伦直接评论密斯特拉要求盖尔牺牲；另一组是本册对白，阿斯代伦刚刚才知道盖尔有爆炸的风险，并责怪盖尔一直没有告诉大家。</p></li>
@@ -158,13 +159,13 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 <li><p><strong>两组台词不能依次出现：</strong>伊尔明斯特来访后，阿斯代伦会得到一个只供这次事件使用的话题窗口。若玩家主动与他交谈，系统只会随机选择二者之一触发，而后立刻清除触发条件，使得另一组台词因此失去入口，无法通过再次交谈补看。</p></li>
 </ol><h3>两个入口实际读取的条件</h3>
 <div class="variants">
-<section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">《可惜了一个好端端的盖尔》</span></h3>
+<section class="variant-card"><h3>《可惜了一个好端端的盖尔》</h3>
 <p>盖尔作为同伴加入队伍：<span class="state-value" lang="en">GLO_Origin_Avatar_Gale=False</span></p>
 <p>盖尔已经向队伍公开法球会爆炸：<span class="state-value" lang="en">ORI_Gale_Knows_Bomb=True</span></p>
 <p>伊尔明斯特来访的话题仍待阿斯代伦回应：<span class="state-value" lang="en">TG_ORI_Gale_ElminsterVisit=True</span></p>
 <p>当前与阿斯代伦交谈的人不是盖尔：<span class="state-value" lang="en">REALLY_GALE=False</span></p>
 </section>
-<section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">《那个大胡子叫盖尔把自己炸掉？》</span></h3>
+<section class="variant-card"><h3>《那个大胡子叫盖尔把自己炸掉？》</h3>
 <p>盖尔作为同伴加入队伍：<span class="state-value" lang="en">GLO_Origin_Avatar_Gale=False</span></p>
 <p>盖尔已经向队伍公开法球会爆炸：<span class="state-value" lang="en">ORI_Gale_Knows_Bomb=True</span></p>
 <p>伊尔明斯特来访的话题仍待阿斯代伦回应：<span class="state-value" lang="en">TG_ORI_Gale_ElminsterVisit=True</span></p>

@@ -82,10 +82,11 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
 .tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
 .tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
-.choice--astarion>.tag,.choice--astarion>.badge{color:var(--astarion);background:var(--astarion-soft)}
-.choice--gale>.tag,.choice--gale>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice--astarion>.tag,.choice--astarion>.badge,.choice--astarion>.choice-meta>.tag,.choice--astarion>.choice-meta>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge,.choice--gale>.choice-meta>.tag,.choice--gale>.choice-meta>.badge{color:var(--gale);background:var(--gale-soft)}
 .choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
 .condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.condition-operator{display:inline-flex;align-items:center;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
 .result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
 .source-reaction-tags{display:flex;justify-content:flex-end;margin:.35rem .85rem .7rem;color:var(--muted);font-size:.74rem;line-height:1.35;text-align:right}
 .source-reaction-tag{font-weight:600}
@@ -141,9 +142,9 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
   .state-trace{padding:.8rem}
   .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
 
-  .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
-  .version-heading{grid-template-columns:1fr}
-  .version-heading>.condition-tag{margin:0}
+  .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
+  .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
+  .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
 }
 @media print{
   html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
@@ -215,7 +216,7 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 
     <h3 class="menu-heading"><span class="menu-code">01.1 ·</span><span class="menu-label">选择接近盖尔</span></h3>
 <section class="choice">
-      <div class="tag badge"><span class="choice-code">01.1A</span> · 场景选项</div>
+      <div class="tag badge"><span class="choice-code">01.1A</span> · 起源阿斯代伦专属选项</div>
       <article class="turn turn--astarion">
         <h4>起源阿斯代伦</h4>
         <p class="en" lang="en">Approach Gale.</p>
@@ -303,26 +304,28 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 
   <section class="route" id="night-bite-followup">
   <h2 class="menu-heading"><span class="menu-code">04 ·</span><span class="menu-label">次日与盖尔谈起昨夜</span></h2>
-  <div class="route-guide"><p><strong>04</strong> · 这一节完整收录夜间事件后直接与盖尔交谈的两种开场。<strong>版本 I</strong>承接本册前文中盖尔本人被咬；<strong>版本 II</strong>则发生在起源阿斯代伦夜间咬了另一名同伴之后。两种开场随后汇入同一组回应。</p></div>
-  <div class="branch"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 盖尔本人被咬</span></h3>
+  <div class="route-guide"><p class="route-guide-line"><strong>04</strong> · 这一节完整收录夜间事件后直接与盖尔交谈的两种开场。<strong>版本 I</strong>承接本册前文中盖尔本人被咬；<strong>版本 II</strong>则发生在起源阿斯代伦夜间咬了另一名同伴之后。两种开场随后汇入同一组回应。</p></div>
+  <div class="variants variants--stack">
+<div class="branch variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 盖尔本人被咬</span></h3>
   <div class="turn turn--gale" data-source-order="57"><div class="speaker">盖尔</div><p class="en" lang="en">I thought I'd awaken feeling, well, drained. But I seem to be quite as well as ever.</p><p class="zh"><span class="translation">参考译文</span>我原以为今天醒来会觉得……嗯，失血虚弱。但我似乎和平时一样好。</p></div>
   <div class="turn turn--gale" data-source-order="58"><div class="speaker">盖尔</div><p class="en" lang="en">Admittedly, that's not saying much given our ongoing predicament. Nonetheless, I'm glad I woke up when I did.</p><p class="zh"><span class="translation">参考译文</span>当然，考虑到我们眼下的处境，这话也说明不了太多。无论如何，幸好我及时醒了。</p></div>
   <div class="turn turn--gale" data-source-order="59"><div class="speaker">盖尔</div><p class="en" lang="en">As I said, I'm willing to move past the whole exsanguination issue, so long as you can promise to keep that hunger of yours in check.</p><p class="zh"><span class="translation">参考译文</span>我说过，只要你保证克制自己的饥饿，我愿意把那场失血风波抛在身后。</p></div></div>
 
-  <div class="branch"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 另一名同伴被咬</span></h3>
+  <div class="branch variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 另一名同伴被咬</span></h3>
   <div class="turn turn--gale" data-source-order="92"><div class="speaker">盖尔</div><p class="en" lang="en">And how are you this morning, my blood-thirsty friend?</p><p class="zh"><span class="translation">参考译文</span>今早过得如何，我嗜血的朋友？</p><aside class="sidenote note"><strong>制作旁注</strong><p lang="en">Eyebrow raised - still not entirely convinced Astarion is to be trusted</p><p><span class="translation">参考译文</span>挑起眉毛；仍不完全确信阿斯代伦值得信任。</p></aside></div>
   <div class="turn turn--gale" data-source-order="93"><div class="speaker">盖尔</div><p class="en" lang="en">If you'd had your way our number would be one fewer by now. We're fortunate you were caught red-fanged.</p><p class="zh"><span class="translation">参考译文</span>要是昨晚如了你的愿，我们现在就会少一个人。幸好你被当场抓住了。</p></div>
   <div class="turn turn--gale" data-source-order="94"><div class="speaker">盖尔</div><p class="en" lang="en">Still, there was no real harm done. So long as you can keep that craving of yours in check, I'm happy that our paths remain aligned.</p><p class="zh"><span class="translation">参考译文</span>不过终究没有造成真正的伤害。只要你能管住食欲，我很乐意继续与你同行。</p></div></div>
 
-  <h3 class="menu-heading"><span class="menu-code">04.1 ·</span><span class="menu-label">回应盖尔</span></h3>
-  <section class="choice"><div class="choice-meta"><span class="tag badge"><span class="choice-code">04.1A</span> · 选项</span></div><article class="turn turn--astarion" data-source-order="60"><div class="speaker">起源阿斯代伦</div><p class="en" lang="en">Thank you for trusting me.</p><p class="zh"><span class="translation">参考译文</span>谢谢你信任我。</p></article><div class="turn turn--gale" data-source-order="61"><div class="speaker">盖尔</div><p class="en" lang="en">I know what it is to have an uncontrollable hunger within you. You can hardly be blamed for your desperation in trying to satisfy it.</p><p class="zh"><span class="translation">参考译文</span>我知道体内有种无法控制的饥饿是什么滋味。你急着满足它，也不能全怪你。</p><aside class="sidenote note"><strong>制作旁注</strong><p lang="en">Sincere, but not giving too much away (referring to the orb, which he may or may not have told the player about)</p><p><span class="translation">参考译文</span>真诚，但没有透露太多；指的是他体内的法球，而此时他可能说过，也可能还没说。</p></aside></div></section>
-  <section class="choice"><div class="choice-meta"><span class="tag badge"><span class="choice-code">04.1B</span> · 选项</span></div><article class="turn turn--astarion" data-source-order="88"><div class="speaker">起源阿斯代伦</div><p class="en" lang="en">I promise you - I'll sate myself on our foes alone from now on.</p><p class="zh"><span class="translation">参考译文</span>我向你保证，从今以后我只会拿敌人填饱肚子。</p></article><div class="turn turn--gale" data-source-order="89"><div class="speaker">盖尔</div><p class="en" lang="en">A choice both efficient and pragmatic. Most unlike you.</p><p class="zh"><span class="translation">参考译文</span>既有效率又务实的选择。真不像你。</p><aside class="sidenote note"><strong>制作旁注</strong><p lang="en">With a smile - poking fun at Astarion's flair for the flamboyant</p><p><span class="translation">参考译文</span>带着笑意，打趣阿斯代伦那种爱夸张的派头。</p></aside></div></section>
-  <section class="choice"><div class="choice-meta"><span class="tag badge"><span class="choice-code">04.1C</span> · 选项</span></div><article class="turn turn--astarion" data-source-order="90"><div class="speaker">起源阿斯代伦</div><p class="en" lang="en">I'll resist with all my strength.</p><p class="zh"><span class="translation">参考译文</span>我会竭尽全力克制。</p></article><div class="turn turn--gale" data-source-order="91"><div class="speaker">盖尔</div><p class="en" lang="en">Well then - let's hope you've strength to spare.</p><p class="zh"><span class="translation">参考译文</span>那就希望你的力气足够了。</p><aside class="sidenote note"><strong>制作旁注</strong><p lang="en">unsure - player didn't exactly promise not to feed on him again</p><p><span class="translation">参考译文</span>不太确定——起源阿斯代伦并未明确保证不会再次吸他的血。</p></aside></div></section>
+  </div>
+<h3 class="menu-heading"><span class="menu-code">04.1 ·</span><span class="menu-label">回应盖尔</span></h3>
+  <section class="choice"><div class="choice-meta"><span class="tag badge"><span class="choice-code">04.1A</span> · 起源阿斯代伦专属选项</span></div><article class="turn turn--astarion" data-source-order="60"><div class="speaker">起源阿斯代伦</div><p class="en" lang="en">Thank you for trusting me.</p><p class="zh"><span class="translation">参考译文</span>谢谢你信任我。</p></article><div class="turn turn--gale" data-source-order="61"><div class="speaker">盖尔</div><p class="en" lang="en">I know what it is to have an uncontrollable hunger within you. You can hardly be blamed for your desperation in trying to satisfy it.</p><p class="zh"><span class="translation">参考译文</span>我知道体内有种无法控制的饥饿是什么滋味。你急着满足它，也不能全怪你。</p><aside class="sidenote note"><strong>制作旁注</strong><p lang="en">Sincere, but not giving too much away (referring to the orb, which he may or may not have told the player about)</p><p><span class="translation">参考译文</span>真诚，但没有透露太多；指的是他体内的法球，而此时他可能说过，也可能还没说。</p></aside></div></section>
+  <section class="choice"><div class="choice-meta"><span class="tag badge"><span class="choice-code">04.1B</span> · 起源阿斯代伦专属选项</span></div><article class="turn turn--astarion" data-source-order="88"><div class="speaker">起源阿斯代伦</div><p class="en" lang="en">I promise you - I'll sate myself on our foes alone from now on.</p><p class="zh"><span class="translation">参考译文</span>我向你保证，从今以后我只会拿敌人填饱肚子。</p></article><div class="turn turn--gale" data-source-order="89"><div class="speaker">盖尔</div><p class="en" lang="en">A choice both efficient and pragmatic. Most unlike you.</p><p class="zh"><span class="translation">参考译文</span>既有效率又务实的选择。真不像你。</p><aside class="sidenote note"><strong>制作旁注</strong><p lang="en">With a smile - poking fun at Astarion's flair for the flamboyant</p><p><span class="translation">参考译文</span>带着笑意，打趣阿斯代伦那种爱夸张的派头。</p></aside></div></section>
+  <section class="choice"><div class="choice-meta"><span class="tag badge"><span class="choice-code">04.1C</span> · 起源阿斯代伦专属选项</span></div><article class="turn turn--astarion" data-source-order="90"><div class="speaker">起源阿斯代伦</div><p class="en" lang="en">I'll resist with all my strength.</p><p class="zh"><span class="translation">参考译文</span>我会竭尽全力克制。</p></article><div class="turn turn--gale" data-source-order="91"><div class="speaker">盖尔</div><p class="en" lang="en">Well then - let's hope you've strength to spare.</p><p class="zh"><span class="translation">参考译文</span>那就希望你的力气足够了。</p><aside class="sidenote note"><strong>制作旁注</strong><p lang="en">unsure - player didn't exactly promise not to feed on him again</p><p><span class="translation">参考译文</span>不太确定——起源阿斯代伦并未明确保证不会再次吸他的血。</p></aside></div></section>
 
   <div class="turn turn--gale" data-source-order="81"><div class="speaker">盖尔</div><p class="en" lang="en">So, we move forwards. And when the occasion arises, we show our enemies exactly how sharp those teeth of yours can be.</p><p class="zh"><span class="translation">参考译文</span>那就继续向前吧。时机一到，就让我们的敌人见识见识你那对牙齿有多锋利。</p><aside class="sidenote note"><strong>制作旁注</strong><p lang="en">Wrapping up the topic, determination wabout what comes next</p><p><span class="translation">参考译文</span>收束这个话题；对接下来的事抱有决心。</p></aside></div>
 </section>
 
-<div class="route-guide"><p><strong>04</strong> · 若起源阿斯代伦在吸血夜咬的是另一名同伴，并且次日与非盖尔的同伴交谈，当盖尔被选中从旁接话时会触发另一种对话，请参阅<a href="../../../BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse/v11/book/BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse.html">《别打我的主意》</a>。</p></div>
+<div class="route-guide"><p class="route-guide-line"><strong>04</strong> · 若起源阿斯代伦在吸血夜咬的是另一名同伴，并且次日与非盖尔的同伴交谈，当盖尔被选中从旁接话时会触发另一种对话，请参阅<a href="../../../BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse/v11/book/BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse.html">《别打我的主意》</a>。</p></div>
 
   <details class="research">
     <summary>研究依据</summary>

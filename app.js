@@ -70,13 +70,6 @@
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        if (!canHover.matches) {
-          window.setTimeout(() => {
-            menu.open = false;
-          }, 0);
-          return;
-        }
-
         event.preventDefault();
         menu.open = false;
         jumpToNavigationTarget(link, target);
