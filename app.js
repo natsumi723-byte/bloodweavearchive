@@ -13,6 +13,31 @@
     });
   }
 
+  function jumpToNavigationTarget(link, target) {
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        const header = document.querySelector(".site-header");
+        const headerOffset = header ? header.getBoundingClientRect().height + 8 : 0;
+        const targetTop = target.getBoundingClientRect().top + window.scrollY;
+        const rootStyle = document.documentElement.style;
+        const previousScrollBehavior = rootStyle.scrollBehavior;
+
+        if (window.location.hash !== link.hash) {
+          window.history.pushState(null, "", link.hash);
+        }
+        rootStyle.scrollBehavior = "auto";
+        window.scrollTo({
+          top: Math.max(0, targetTop - headerOffset),
+          left: 0,
+          behavior: "auto"
+        });
+        window.requestAnimationFrame(() => {
+          rootStyle.scrollBehavior = previousScrollBehavior;
+        });
+      });
+    });
+  }
+
   navigationMenus.forEach((menu) => {
     const summary = menu.querySelector("summary");
 
@@ -46,17 +71,7 @@
 
         event.preventDefault();
         menu.open = false;
-
-        window.setTimeout(() => {
-          const rootStyle = document.documentElement.style;
-          const previousScrollBehavior = rootStyle.scrollBehavior;
-          rootStyle.scrollBehavior = "auto";
-          if (window.location.hash !== link.hash) {
-            window.history.pushState(null, "", link.hash);
-          }
-          target.scrollIntoView({ block: "start" });
-          rootStyle.scrollBehavior = previousScrollBehavior;
-        }, 0);
+        jumpToNavigationTarget(link, target);
       });
     });
   });
