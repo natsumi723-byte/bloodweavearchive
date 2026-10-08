@@ -4,6 +4,48 @@
   const catalog = window.BLOODWEAVE_CATALOG;
   const root = document.querySelector("#collection-list");
 
+  const forewordOpen = document.querySelector("#foreword-open");
+  const forewordDialog = document.querySelector("#foreword-dialog");
+  const forewordClose = forewordDialog?.querySelector(".foreword-close");
+  let forewordClosing = false;
+  let forewordBodyPadding = "";
+
+  function closeForeword() {
+    if (!forewordDialog?.open || forewordClosing) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      forewordDialog.close();
+      return;
+    }
+    forewordClosing = true;
+    forewordDialog.classList.add("is-closing");
+    window.setTimeout(() => {
+      forewordDialog.close();
+      forewordDialog.classList.remove("is-closing");
+      forewordClosing = false;
+    }, 240);
+  }
+
+  forewordOpen?.addEventListener("click", () => {
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    forewordBodyPadding = document.body.style.paddingRight;
+    if (scrollbarWidth > 0) document.body.style.paddingRight = `${scrollbarWidth}px`;
+    forewordDialog.showModal();
+    document.body.classList.add("foreword-modal-open");
+  });
+  forewordClose?.addEventListener("click", closeForeword);
+  forewordDialog?.addEventListener("click", (event) => {
+    if (event.target === forewordDialog) closeForeword();
+  });
+  forewordDialog?.addEventListener("cancel", (event) => {
+    event.preventDefault();
+    closeForeword();
+  });
+  forewordDialog?.addEventListener("close", () => {
+    document.body.classList.remove("foreword-modal-open");
+    document.body.style.paddingRight = forewordBodyPadding;
+    forewordOpen?.focus({ preventScroll: true });
+  });
+
   const navigationMenus = Array.from(document.querySelectorAll(".collection-nav"));
   const canHover = window.matchMedia("(hover: hover) and (pointer: fine)");
 
@@ -232,4 +274,84 @@
     section.append(heading, shelves);
     root.append(section);
   });
+
+  const searchInput = document.querySelector("#archive-search");
+  const stageSelect = document.querySelector("#archive-stage");
+  const viewButtons = Array.from(document.querySelectorAll("[data-view]"));
+  const params = new URLSearchParams(window.location.search);
+  const state = {
+    query: params.get("q") || "",
+    view: ["oa", "og", "ag"].includes(params.get("view")) ? params.get("view") : "all",
+    stage: ["journey", "a1", "a2", "a3", "end", "finale", "epi"].includes(params.get("stage")) ? params.get("stage") : "all"
+  };
+  const viewByCollection = {
+    "astarion-origin-with-gale": "oa",
+    "gale-origin-with-astarion": "og",
+    "shared-journey": "ag"
+  };
+  viewButtons.forEach((button) => {
+    if (button.dataset.view === "all") return;
+    const collectionId = Object.keys(viewByCollection).find((id) => viewByCollection[id] === button.dataset.view);
+    const hasBooks = collectionId && root.querySelector(`#${collectionId} .catalog-entry`);
+    button.disabled = !hasBooks;
+    if (!hasBooks) button.title = "该视角暂无档案";
+  });
+  if (viewButtons.find((button) => button.dataset.view === state.view)?.disabled) state.view = "all";
+  const stagePatterns = {
+    journey: /^旅途中\s*·|^多章节\s*·/,
+    a1: /^第一章\s*·/,
+    a2: /^第二章\s*·/,
+    a3: /^第三章\s*·/,
+    end: /^终战\s*·/,
+    finale: /^终局\s*·/,
+    epi: /^尾声\s*·/
+  };
+
+  function normalized(value) {
+    return String(value || "").toLocaleLowerCase("zh-Hans").replace(/\s+/g, " ").trim();
+  }
+
+  function writeUrl() {
+    const next = new URLSearchParams();
+    if (state.view !== "all") next.set("view", state.view);
+    if (state.stage !== "all") next.set("stage", state.stage);
+    if (state.query) next.set("q", state.query);
+    const suffix = next.toString();
+    history.replaceState(null, "", `${location.pathname}${suffix ? `?${suffix}` : ""}${location.hash}`);
+  }
+
+  function applyArchiveFilters() {
+    const needle = normalized(state.query);
+    root.querySelectorAll(".collection").forEach((collection) => {
+      const collectionView = viewByCollection[collection.id] || "all";
+      let visibleInCollection = 0;
+      collection.querySelectorAll(".shelf").forEach((shelf) => {
+        let visibleInShelf = 0;
+        const shelfText = shelf.querySelector(".shelf-heading")?.textContent || "";
+        shelf.querySelectorAll(".catalog-entry").forEach((entry) => {
+          const searchable = normalized(`${entry.textContent} ${shelfText}`);
+          const entryStage = entry.querySelector(".entry-meta")?.textContent || "";
+          const viewMatch = state.view === "all" || state.view === collectionView;
+          const stageMatch = state.stage === "all" || stagePatterns[state.stage].test(entryStage);
+          const queryMatch = !needle || searchable.includes(needle);
+          const show = viewMatch && stageMatch && queryMatch;
+          entry.hidden = !show;
+          if (show) visibleInShelf += 1;
+        });
+        shelf.hidden = visibleInShelf === 0;
+        visibleInCollection += visibleInShelf;
+      });
+      collection.hidden = visibleInCollection === 0;
+    });
+
+    viewButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.view === state.view)));
+    writeUrl();
+  }
+
+  searchInput.value = state.query;
+  stageSelect.value = state.stage;
+  searchInput.addEventListener("input", () => { state.query = searchInput.value.trim(); applyArchiveFilters(); });
+  stageSelect.addEventListener("change", () => { state.stage = stageSelect.value; applyArchiveFilters(); });
+  viewButtons.forEach((button) => button.addEventListener("click", () => { state.view = button.dataset.view; applyArchiveFilters(); }));
+  applyArchiveFilters();
 })();
