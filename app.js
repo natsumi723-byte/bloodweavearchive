@@ -159,7 +159,7 @@
       empty.className = "empty-shelf";
       empty.append(
         textElement("span", "archive-code", `${code} · —`),
-        textElement("span", "", "暂无公开条目")
+        textElement("span", "", "待更新")
       );
       return { element: empty, nextNumber };
     }
@@ -292,9 +292,8 @@
   viewButtons.forEach((button) => {
     if (button.dataset.view === "all") return;
     const collectionId = Object.keys(viewByCollection).find((id) => viewByCollection[id] === button.dataset.view);
-    const hasBooks = collectionId && root.querySelector(`#${collectionId} .catalog-entry`);
-    button.disabled = !hasBooks;
-    if (!hasBooks) button.title = "该视角暂无档案";
+    const hasCollection = collectionId && root.querySelector(`#${collectionId}`);
+    button.disabled = !hasCollection;
   });
   if (viewButtons.find((button) => button.dataset.view === state.view)?.disabled) state.view = "all";
   const stagePatterns = {
@@ -324,6 +323,9 @@
     const needle = normalized(state.query);
     root.querySelectorAll(".collection").forEach((collection) => {
       const collectionView = viewByCollection[collection.id] || "all";
+      const showEmptyCollection = collection.classList.contains("is-empty") &&
+        (state.view === "all" || state.view === collectionView) &&
+        state.stage === "all" && !needle;
       let visibleInCollection = 0;
       collection.querySelectorAll(".shelf").forEach((shelf) => {
         let visibleInShelf = 0;
@@ -338,10 +340,10 @@
           entry.hidden = !show;
           if (show) visibleInShelf += 1;
         });
-        shelf.hidden = visibleInShelf === 0;
+        shelf.hidden = visibleInShelf === 0 && !showEmptyCollection;
         visibleInCollection += visibleInShelf;
       });
-      collection.hidden = visibleInCollection === 0;
+      collection.hidden = visibleInCollection === 0 && !showEmptyCollection;
     });
 
     viewButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.view === state.view)));
