@@ -37,16 +37,25 @@
       if (!menu.contains(event.relatedTarget)) menu.open = false;
     });
     menu.querySelectorAll(".collection-menu a").forEach((link) => {
-      link.addEventListener("click", () => {
-        const target = link.hash ? document.querySelector(link.hash) : null;
+      link.addEventListener("click", (event) => {
+        if (!link.hash) return;
+
+        const targetId = decodeURIComponent(link.hash.slice(1));
+        const target = document.getElementById(targetId);
+        if (!target) return;
+
+        event.preventDefault();
+        menu.open = false;
+
         window.setTimeout(() => {
-          menu.open = false;
-          if (target) {
-            const previousScrollBehavior = document.documentElement.style.scrollBehavior;
-            document.documentElement.style.scrollBehavior = "auto";
-            target.scrollIntoView({ block: "start" });
-            document.documentElement.style.scrollBehavior = previousScrollBehavior;
+          const rootStyle = document.documentElement.style;
+          const previousScrollBehavior = rootStyle.scrollBehavior;
+          rootStyle.scrollBehavior = "auto";
+          if (window.location.hash !== link.hash) {
+            window.history.pushState(null, "", link.hash);
           }
+          target.scrollIntoView({ block: "start" });
+          rootStyle.scrollBehavior = previousScrollBehavior;
         }, 0);
       });
     });
@@ -202,7 +211,6 @@
       shelfList.every((shelf) => shelf.querySelector(".empty-shelf"))
     ) {
       section.classList.add("is-empty");
-      shelves.replaceChildren(textElement("p", "collection-empty", "暂无公开档案"));
     }
 
     section.append(heading, shelves);
