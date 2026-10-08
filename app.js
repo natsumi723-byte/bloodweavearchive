@@ -59,6 +59,7 @@
       menu.open = true;
     });
     menu.addEventListener("focusout", (event) => {
+      if (!canHover.matches) return;
       if (!menu.contains(event.relatedTarget)) menu.open = false;
     });
     menu.querySelectorAll(".collection-menu a").forEach((link) => {
@@ -68,6 +69,13 @@
         const targetId = decodeURIComponent(link.hash.slice(1));
         const target = document.getElementById(targetId);
         if (!target) return;
+
+        if (!canHover.matches) {
+          window.setTimeout(() => {
+            menu.open = false;
+          }, 0);
+          return;
+        }
 
         event.preventDefault();
         menu.open = false;
