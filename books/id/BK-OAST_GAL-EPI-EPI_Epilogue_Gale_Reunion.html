@@ -160,7 +160,7 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 <style id="book-local-selector">
 .route-configurator{margin:2.2rem 0;padding:1.25rem 1.35rem;border:1px solid var(--rule);background:#fbf8f5}.route-configurator__eyebrow{margin:0 0 .35rem;color:var(--gale);font-size:.82rem;font-weight:750;letter-spacing:.12em}.route-configurator h2{margin:0;border:0;padding:0}.route-configurator__description{max-width:54rem;margin-top:.65rem}.reading-modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.15rem 0 1.35rem}.reading-mode{appearance:none;border:1px solid #d2c5cc;background:#fff;padding:1rem 1.05rem;text-align:left;color:inherit;font:inherit;cursor:pointer}.reading-mode strong,.reading-mode span{display:block}.reading-mode strong{font-size:1.05rem}.reading-mode span{margin-top:.35rem;color:var(--muted);font-size:.9rem;line-height:1.55}.reading-mode[aria-pressed="true"]{border-color:var(--gale);background:linear-gradient(135deg,var(--gale-soft) 0%,#fff 72%);box-shadow:inset 4px 0 0 var(--gale)}.route-configurator__choices{border-top:1px solid var(--rule);padding-top:.15rem}.route-axis{margin-top:1rem}.route-axis h3{font-size:1rem;margin:0 0 .55rem}.route-options{display:flex;flex-wrap:wrap;gap:.55rem}.route-options button{appearance:none;border:1px solid #cabec5;border-radius:999px;background:#fff;padding:.5rem .85rem;color:inherit;font:inherit;font-weight:650;cursor:pointer}.route-options button[aria-pressed="true"]{border-color:var(--gale);background:var(--gale-soft);color:var(--gale);box-shadow:inset 0 0 0 1px var(--gale)}.route-options button:disabled{opacity:.38;cursor:not-allowed}.route-configurator__status{margin:1rem 0 0;color:var(--muted);font-size:.95em}.route-reading [hidden]{display:none!important}.route-segment{display:block}.variants--single-visible{grid-template-columns:minmax(0,1fr)}.route-reading .variants--single-visible>.variant-card{padding:0;border:0;background:transparent}
 .route-reading:not(.route-ready) .route{display:none}
-@media(max-width:620px){.reading-modes{grid-template-columns:1fr}.route-configurator{margin:1.6rem 0;padding:1rem}.reading-mode{padding:.9rem}.route-options{display:flex;flex-wrap:wrap;gap:.5rem}.route-options button{width:auto;max-width:100%;min-width:0;white-space:normal;line-height:1.45;text-align:left}.route-configurator__status{line-height:1.6}}
+@media(max-width:620px){.reading-modes{grid-template-columns:1fr}.route-configurator{margin:1.6rem 0;padding:1rem}.reading-mode{padding:.9rem}.route-options{display:flex;flex-wrap:wrap;gap:.5rem}.route-options button{flex:0 0 auto;width:auto;max-width:100%;min-width:0;white-space:nowrap;line-height:1.45;text-align:left}.route-configurator__status{line-height:1.6}}
 </style>
 </head>
 <body>
@@ -181,11 +181,11 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 <div class="route-configurator__description">本册包含多组相互交叉的结局条件。为了提供更好的阅读体验，研究者在此以路线选择器取代传统的阅读脉络：你可以通过点选筛选条件，逐条线路阅读；也可以一次展开全部选项。</div>
 <div class="reading-modes" role="group" aria-label="阅读模式">
 <button class="reading-mode" type="button" data-mode="route" aria-pressed="false">
-<strong>自选路线阅读模式</strong>
+<strong>自选路线</strong>
 <span>选择以下两项前置状态，开启符合条件的可触达路线和选项。</span>
 </button>
 <button class="reading-mode" type="button" data-mode="all" aria-pressed="true">
-<strong>全选项阅读模式</strong>
+<strong>全选项阅读</strong>
 <span>不筛选路线，按照资料编排顺序阅读本篇收录的全部分支。</span>
 </button>
 </div>
@@ -194,15 +194,15 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 <h3>盖尔的法球结局如何？</h3>
 <div class="route-options">
 <button type="button" data-axis="orb" data-value="cured" aria-pressed="false">交还王冠，法球被治愈</button>
-<button type="button" data-axis="orb" data-value="dormant" aria-pressed="false">法球仍留在体内</button>
+<button type="button" data-axis="orb" data-value="dormant" aria-pressed="false">法球仍留在盖尔体内</button>
 </div>
 </div>
 <div class="route-axis">
 <h3>阿斯代伦的结局如何？</h3>
 <div class="route-options">
-<button type="button" data-axis="fate" data-value="ascended" aria-pressed="false">成功飞升</button>
-<button type="button" data-axis="fate" data-value="spawn" aria-pressed="false">杀死卡扎多尔，放弃飞升</button>
 <button type="button" data-axis="fate" data-value="alive" aria-pressed="false">卡扎多尔仍活着</button>
+<button type="button" data-axis="fate" data-value="spawn" aria-pressed="false">杀死卡扎多尔，放弃飞升</button>
+<button type="button" data-axis="fate" data-value="ascended" aria-pressed="false">杀死卡扎多尔，成功飞升</button>
 </div>
 </div>
 </div>
@@ -1301,6 +1301,6 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 const labels={orb:{cured:'法球被治愈',dormant:'法球仍留在体内'},fate:{ascended:'成功飞升',spawn:'放弃飞升',alive:'卡扎多尔仍活着'}};function render(){
 document.body.classList.toggle('route-reading',!state.all);
 document.body.classList.toggle('route-ready',state.all||Boolean(state.orb&&state.fate));
-document.querySelectorAll('[data-route-axis]').forEach(el=>{const selected=state[el.dataset.routeAxis];let show=state.all||(!selected?true:tokens(el.dataset.routeValues).includes(selected));el.hidden=!show});document.querySelectorAll('[data-selector-condition]').forEach(el=>{const axis=el.dataset.selectorAxis;el.hidden=!state.all&&!!axis&&!!state[axis]});document.querySelectorAll('.variants').forEach(group=>{const cards=[...group.children].filter(el=>el.matches('.variant-card,[data-route-axis]')&&!el.hidden);group.classList.toggle('variants--single-visible',!state.all&&cards.length===1)});modes.forEach(btn=>btn.setAttribute('aria-pressed',String((btn.dataset.mode==='all')===state.all)));document.querySelectorAll('[data-axis]').forEach(btn=>btn.setAttribute('aria-pressed',String(!state.all&&state[btn.dataset.axis]===btn.dataset.value)));if(state.all){status.textContent='当前为全选项阅读模式。';return}const missing=['orb','fate'].filter(a=>!state[a]);status.textContent=missing.length?'请选择法球结局与阿斯代伦的结局。':'当前路线：'+['orb','fate'].map(a=>labels[a][state[a]]).join('；')+'。'}modes.forEach(btn=>btn.addEventListener('click',()=>{state.all=btn.dataset.mode==='all';render()}));document.querySelectorAll('[data-axis]').forEach(btn=>btn.addEventListener('click',()=>{state[btn.dataset.axis]=btn.dataset.value;state.all=false;render()}));render()})();</script>
+document.querySelectorAll('[data-route-axis]').forEach(el=>{const selected=state[el.dataset.routeAxis];let show=state.all||(!selected?true:tokens(el.dataset.routeValues).includes(selected));el.hidden=!show});document.querySelectorAll('[data-selector-condition]').forEach(el=>{const axis=el.dataset.selectorAxis;el.hidden=!state.all&&!!axis&&!!state[axis]});document.querySelectorAll('.variants').forEach(group=>{const cards=[...group.children].filter(el=>el.matches('.variant-card,[data-route-axis]')&&!el.hidden);group.classList.toggle('variants--single-visible',!state.all&&cards.length===1)});modes.forEach(btn=>btn.setAttribute('aria-pressed',String((btn.dataset.mode==='all')===state.all)));document.querySelectorAll('[data-axis]').forEach(btn=>btn.setAttribute('aria-pressed',String(!state.all&&state[btn.dataset.axis]===btn.dataset.value)));if(state.all){status.textContent='当前为全选项阅读。';return}const missing=['orb','fate'].filter(a=>!state[a]);status.textContent=missing.length?'请选择法球结局与阿斯代伦的结局。':'当前路线：'+['orb','fate'].map(a=>labels[a][state[a]]).join('；')+'。'}modes.forEach(btn=>btn.addEventListener('click',()=>{state.all=btn.dataset.mode==='all';render()}));document.querySelectorAll('[data-axis]').forEach(btn=>btn.addEventListener('click',()=>{state[btn.dataset.axis]=btn.dataset.value;state.all=false;render()}));render()})();</script>
 </body>
 </html>
