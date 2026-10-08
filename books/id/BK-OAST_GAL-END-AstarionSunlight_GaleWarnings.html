@@ -141,9 +141,9 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
   .state-trace{padding:.8rem}
   .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
 
-  .condition-tag,.result-tag{margin:.45rem 0 0;display:flex;width:max-content;max-width:100%}
-  .version-heading{grid-template-columns:1fr}
-  .version-heading>.condition-tag{margin:0}
+  .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
+  .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
+  .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
 }
 @media print{
   html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
