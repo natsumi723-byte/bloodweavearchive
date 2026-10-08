@@ -589,9 +589,11 @@ footer { border-top: 1px solid var(--line); }
   }
   .catalog-entry strong {
     width: 100%;
+    grid-column: 1 / -1;
     grid-template-columns: minmax(0, 1fr) max-content;
     align-items: flex-start;
     column-gap: .5rem;
+    padding-right: 1.6rem;
     font-size: .98rem;
     line-height: 1.48;
   }
