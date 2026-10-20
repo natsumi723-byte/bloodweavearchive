@@ -1,0 +1,182 @@
+<!doctype html><html lang="zh-CN"><head><script src="../../analytics.js"></script><meta name="book-id" content="BK-AST_OGAL-UNK-Astarion_InParty2_Topical_GaleOrb"><meta name="source-page-ids" content="PAGE-SRC-0001-Astarion_InParty2_Nested_TopicalGreetings"><meta name="source-graph-ids" content="GRAPH-SRC-0001-Astarion_InParty2_Nested_TopicalGreetings"><link rel="canonical" href="https://bloodweavearchive.com/books/id/BK-AST_OGAL-UNK-Astarion_InParty2_Topical_GaleOrb.html">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>你的女神命令你赴死？ · v2候选</title><style id="visual-system-current">
+@page{size:A4;margin:18mm 17mm}
+:root{
+  --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
+  --astarion:#8B3048;--astarion-soft:#faedf1;--astarion-line:#c27b8e;
+  --gale:#624779;--gale-soft:#f3eff7;--gale-line:#9986aa;
+  --shared:#5e565d;--shared-soft:#f3f0f2;--shared-line:#aaa0a7;
+  --source:#51484d;--source-soft:#f6f2ee;--source-line:#9c8f87;
+  --research:#70572F;--research-soft:#fbf6e9;--research-line:#b79d6f;
+  --check:#795b1d;--check-soft:#fff8e8;--check-line:#c4a35d;
+  --success:#276247;--success-soft:#edf7f1;--success-line:#78ae91;
+  --failure:#8a3740;--failure-soft:#fff0f1;--failure-line:#ce8e94;
+  --conflict:#80503F;--conflict-soft:#fff5ef;--conflict-line:#c99f8e
+}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{max-width:900px;margin:28px auto;padding:18mm;background:var(--paper);color:var(--ink);font:16px/1.78 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;box-shadow:0 6px 32px #433b4218}
+main{max-width:860px;margin:auto}
+h1,h2,h3,h4{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.32}
+h1{margin:.2rem 0 1.35rem;color:var(--ink);padding-bottom:1rem;border-bottom:2px solid var(--rule)}
+.book-title__main{display:block;max-width:18em;font-size:clamp(2rem,4.4vw,2.5rem);line-height:1.2;letter-spacing:-.025em}
+.book-title__subtitle{display:block;max-width:28em;margin-top:.58rem;color:var(--gale);font-size:clamp(1.05rem,2.1vw,1.34rem);line-height:1.48;font-weight:650;letter-spacing:.01em}
+h2{font-size:clamp(1.5rem,3vw,1.95rem);margin:3.7rem 0 1.2rem;color:var(--ink);padding-bottom:.5rem;border-bottom:1px solid var(--rule);break-after:avoid-page}
+h3{font-size:1.2rem;margin:1.8rem 0 .8rem;color:var(--ink);break-after:avoid-page}
+h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
+.system-meta{margin:0 0 2.2rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.synopsis-deck{max-width:72ch;margin:0 0 2rem;color:var(--ink);font-size:1rem;line-height:1.72}
+.source-kicker{margin-bottom:.42rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
+.synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
+.synopsis-deck p{margin:.35rem 0}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.zh{color:#4e474c}
+.translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
+.editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
+.research-kicker,.editorial-note::before{color:var(--research);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
+.flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
+.flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
+.route{margin:2.1rem 0}
+.turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.turn p{margin:.38rem 0}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
+.note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
+.note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
+.note p,.source-note p{margin:.3rem 0}
+.choice{padding:1rem 1.1rem;margin:1.05rem 0;border:1px solid var(--rule);border-left:5px solid var(--shared-line);background:#fcfbfc;break-inside:avoid}
+.choice--shared{border-left-color:var(--shared-line);background:linear-gradient(90deg,var(--shared-soft),#fff 44%)}
+.choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response{break-inside:avoid}
+.turn.origin-response.origin-response--astarion{border-left:5px solid var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.turn.origin-response.origin-response--gale{border-left:5px solid var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response-heading{display:flex;align-items:center;flex-wrap:wrap;gap:.55rem .7rem;margin:0 0 .75rem}
+.origin-response-heading>.speaker{margin:0}
+.origin-response-tag{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;font-weight:700;font-size:.75rem;line-height:1.25}
+.origin-response-tag::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.origin-response--astarion .origin-response-tag{color:var(--astarion);background:var(--astarion-soft)}
+.origin-response--gale .origin-response-tag{color:var(--gale);background:var(--gale-soft)}
+.choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
+.tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
+.tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.choice--astarion>.tag,.choice--astarion>.badge,.choice--astarion>.choice-meta>.tag,.choice--astarion>.choice-meta>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge,.choice--gale>.choice-meta>.tag,.choice--gale>.choice-meta>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.condition-operator{display:inline-flex;align-items:center;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
+.source-reaction-tags{display:flex;justify-content:flex-end;margin:.35rem .85rem .7rem;color:var(--muted);font-size:.74rem;line-height:1.35;text-align:right}
+.source-reaction-tag{font-weight:600}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
+.branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.branch-note--between-variants{margin:1rem 0}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
+.menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45}
+.menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+.menu-label{min-width:0;text-wrap:wrap}
+.check{display:flex;align-items:center;margin:.85rem 0;padding:.62rem .78rem;border:1px solid var(--rule);border-left:3px solid var(--source-line);background:#faf7f4}
+.check-label{display:inline-flex;align-items:center;gap:.44rem;color:var(--source);font:700 .76rem/1.35 "Microsoft YaHei",sans-serif;letter-spacing:.02em}
+.d20-icon{display:inline-block;width:1.8rem;height:1.8rem;flex:0 0 1.8rem;vertical-align:-.43rem;overflow:visible}
+.d20-icon path{fill:currentColor}
+.variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
+.ending{padding:0;border:0;background:transparent;break-inside:avoid}
+.ending--success,.ending--failure{border:0;background:transparent}
+.ending--success .result-badge{border-color:#b8c7be;background:#f8faf9;color:#466255}
+.ending--failure .result-badge{border-color:#cdbbbe;background:#fcf9f9;color:#765158}
+.ending>.result-badge{margin:0 0 .45rem;gap:.44rem}
+.ending>.turn{margin:0}
+.ending h3{margin:.45rem 0;color:var(--ink)}
+.ending p{margin:.35rem 0}
+.outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
+.outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
+.component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
+.component-index a{color:var(--muted);text-underline-offset:.2em}
+@media(max-width:700px){
+  body{margin:0;padding:26px 18px;box-shadow:none}
+  p,code{overflow-wrap:anywhere;word-break:break-word}
+  .book-title__main{font-size:clamp(1.2rem,6.2vw,2.2rem);white-space:nowrap;text-wrap:nowrap;letter-spacing:-.04em}
+  .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
+  h2{font-size:1.18rem}
+  h3{font-size:1.05rem}
+  .variants{grid-template-columns:1fr;min-width:0}
+  .variant-card{min-width:0;max-width:100%}
+  .flow{padding:.9rem 1rem;-webkit-overflow-scrolling:touch}
+  .flow pre{width:max-content;min-width:100%;white-space:pre;font-size:12px;overflow-wrap:normal;word-break:normal}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
+  .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
+  .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
+  .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
+}
+@media print{
+  html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
+  .component-index,.component-note{display:none}
+  .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
+}
+</style></head><body><main><h1 class="book-title"><span class="book-title__main">你的女神命令你赴死？</span></h1><div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br>阿斯代伦得知密斯特拉要求盖尔以耐色瑞尔法球自我牺牲后，会主动追问他究竟准备怎样选择。本书分别呈现阿斯代伦已经知道法球秘密，以及秘密刚刚揭开时出现的两组对话。</div><h2>阅读脉络</h2><nav class="flow" aria-label="阅读脉络"><pre>01 · 密斯特拉要求盖尔牺牲自己
+├─ 阿斯代伦已经知道法球的秘密 → 01.1
+└─ 阿斯代伦刚刚知道法球的秘密 → 01.3</pre></nav><h2 class="menu-heading"><span class="menu-code">01 ·</span><span class="menu-label">密斯特拉要求盖尔牺牲自己</span></h2>
+<h3 class="menu-heading"><span class="menu-code">01.1 ·</span><span class="menu-label">阿斯代伦已经知道法球的秘密</span></h3>
+<section class="turn turn--astarion" data-source-order="184" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">So, I couldn't help but overhear that your god's commanded you to - well... explode.</p><p class="zh"><span>参考译文</span>所以，我无意中听到你的神明命令你……呃，爆炸。</p></section><section class="turn turn--astarion" data-source-order="185" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">You have been dealt a difficult hand, my friend. I'm sorry.</p><p class="zh"><span>参考译文</span>你摊上了一手难打的牌，我的朋友。真遗憾。</p><aside class="source-note"><strong>制作旁注</strong><p class="en" lang="en">Sincere tone</p><p class="zh"><span>参考译文</span>语气真诚。</p></aside></section><section class="turn turn--astarion" data-source-order="186" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">That being said - when you do explode, how far away should I be?</p><p class="zh"><span>参考译文</span>话说回来——等你真的爆炸时，我得离多远？</p><aside class="source-note"><strong>制作旁注</strong><p class="en" lang="en">coming off the back of the previous sincere-sounding line</p><p class="zh"><span>参考译文</span>紧接在上一句听起来真诚的话之后。</p></aside></section>
+
+<section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.1A</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="187" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">I'd rather not explode, quite honestly.</p><p class="zh"><span>参考译文</span>说实话，我宁愿不要爆炸。</p></article><section class="turn turn--astarion" data-source-order="188" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Oh, thank the gods. I was sure you were actually going to do it.</p><p class="zh"><span>参考译文</span>哦，感谢诸神。我还以为你真的打算那么做。</p></section><section class="turn turn--astarion" data-source-order="189" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">You're... you're not actually going to do it, are you?</p><p class="zh"><span>参考译文</span>你……你不会真这么做吧？</p></section></section>
+<section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.1B</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="194" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">I cannot say. The power within me is devastating as any Faerûn has ever seen.</p><p class="zh"><span>参考译文</span>我无法确定。我体内的力量足以造成费伦前所未见的毁灭。</p></article><section class="turn turn--astarion" data-source-order="195" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">I see. So... pretty far, then?</p><p class="zh"><span>参考译文</span>明白了。所以……得离得相当远？</p></section></section>
+<section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.1C</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="209" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">What do you mean? You'll be there by my side, won't you?</p><p class="zh"><span>参考译文</span>你什么意思？你会陪在我身边，对吧？</p></article><section class="turn turn--astarion" data-source-order="210" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">I'm sorry - me? Oh no, no I don't think so.</p><p class="zh"><span>参考译文</span>抱歉——我？哦，不不，我可不这么想。</p></section><section class="turn turn--astarion" data-source-order="211" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">I mean, of course I'll support you. I'd just rather do it from a distance. Because of the... explosion.</p><p class="zh"><span>参考译文</span>当然，我会支持你。我只想离远一点支持。毕竟……会爆炸。</p></section></section>
+<section class="turn turn--astarion" data-source-order="196" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Still, let's hope it doesn't come to that!</p><p class="zh"><span>参考译文</span>不过，还是希望事情不会走到那一步！</p><aside class="source-note"><strong>制作旁注</strong><p class="en" lang="en">A little nervously - Gale's ability to explode worries him</p><p class="zh"><span>参考译文</span>略显紧张——盖尔可能爆炸这件事令他不安。</p></aside></section>
+<h3 class="menu-heading"><span class="menu-code">01.2 ·</span><span class="menu-label">盖尔会如何面对这场牺牲</span></h3>
+
+<section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.2A</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="190" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">Not if I can help it.</p><p class="zh"><span>参考译文</span>只要我能阻止，就不会。</p></article></section><section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.2B</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="197" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">Let's hope.</p><p class="zh"><span>参考译文</span>希望如此。</p></article></section>
+<section class="turn turn--astarion" data-source-order="198" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">That's the spirit! Chin up and all that.</p><p class="zh"><span>参考译文</span>这就对了！打起精神之类的。</p></section><section class="turn turn--astarion" data-source-order="199" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Now, was there anything else you wanted?</p><p class="zh"><span>参考译文</span>好了，你还有别的事吗？</p></section>
+<section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.2C</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="201" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">You don't understand - it's Mystra's will. I cannot fail her.</p><p class="zh"><span>参考译文</span>你不明白——这是密斯特拉的意志。我不能辜负她。</p></article><section class="turn turn--astarion" data-source-order="202" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">You're right, I don't understand. You have a choice, but it sounds like you're actually considering this.</p><p class="zh"><span>参考译文</span>你说得对，我不明白。你明明有选择，听起来却真的在考虑这么做。</p></section><section class="turn turn--astarion" data-source-order="203" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">But you need time to think, so I'll leave you be - give you some space.</p><p class="zh"><span>参考译文</span>不过你需要时间想想，我就不打扰你了——给你一点空间。</p></section></section><section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.2D</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="205" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">Relax, we'll probably die long before that.</p><p class="zh"><span>参考译文</span>放轻松，我们很可能早在那之前就死了。</p></article><section class="turn turn--astarion" data-source-order="206" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Maybe I should just - I'll give you some space.</p><p class="zh"><span>参考译文</span>也许我还是——我给你一点空间吧。</p><aside class="source-note"><strong>制作旁注</strong><p class="en" lang="en">Awkwardly trying tp bail on the conversation</p><p class="zh"><span>参考译文</span>尴尬地试图结束谈话。</p></aside></section></section><section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.2E</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="207" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">Let the silence hang in the air.</p><p class="zh"><span>参考译文</span>任由沉默悬在空气里。</p></article><section class="turn turn--astarion" data-source-order="208" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Yes, well... I'll leave you to your thoughts. Just - I'll give you space.</p><p class="zh"><span>参考译文</span>好吧……我让你自己想想。只是——我会给你留些空间。</p><aside class="source-note"><strong>制作旁注</strong><p class="en" lang="en">Awkwardly trying to fill the silence until he decides to just bail on the conversation</p><p class="zh"><span>参考译文</span>尴尬地试图填补沉默，最后决定干脆结束谈话。</p></aside></section></section>
+<section class="turn turn--astarion" data-source-order="204" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">As much space as I possibly can.</p><p class="zh"><span>参考译文</span>能留多大空间，就留多大。</p><aside class="source-note"><strong>制作旁注</strong><p class="en" lang="en">Muttered to himself</p><p class="zh"><span>参考译文</span>自言自语地嘀咕。</p></aside></section>
+
+<h3 class="menu-heading"><span class="menu-code">01.3 ·</span><span class="menu-label">阿斯代伦刚刚知道法球的秘密</span></h3>
+<section class="turn turn--astarion" data-source-order="216" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">The parasite must be playing with my ears, because I was sure that beardy tramp told you to find the Heart of the Absolute and then blow yourself up .</p><p class="zh"><span>参考译文</span>寄生虫一定在捉弄我的耳朵；我刚才明明听到那个大胡子流浪汉叫你找到至上真神之心，然后把自己炸了。</p></section><section class="turn turn--astarion" data-source-order="217" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Tell me I misheard, Gale. Because how would that make sense? How would that even be possible?</p><p class="zh"><span>参考译文</span>告诉我我听错了，盖尔。这怎么说得通？这怎么可能？</p></section>
+<section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.3A</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="218" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">Explain the Netherese orb and the terrible power within you.</p><p class="zh"><span>参考译文</span>解释你体内的耐色瑞尔法球及其可怕力量。</p></article></section><section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.3B</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="232" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">If it's Mystra's will, anything is possible.</p><p class="zh"><span>参考译文</span>只要是密斯特拉的意志，一切皆有可能。</p></article></section><div class="variants variants--stack"><section class="variant-card"><div class="version-heading"><span class="version-badge">版本 I</span><div class="choice-meta"><span class="condition-tag">条件 · 阿斯代伦曾喝过盖尔的血</span><span class="condition-operator">或</span><span class="condition-tag">条件 · 阿斯代伦曾咬过盖尔</span></div></div><section class="turn turn--astarion" data-source-order="219" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html" data-source-presentation="gale-orb-shared-blood-response"><h4>阿斯代伦</h4><p class="en" lang="en">So that's why your blood tasted so foul - this magic you're harbouring.</p><p class="zh"><span>参考译文</span>所以你的血尝起来才那么糟——你藏着这股魔法。</p></section></section><section class="variant-card"><div class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 不满足以上记录</span></div><section class="turn turn--astarion" data-source-order="231" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">We all have our secrets, indeed.</p><p class="zh"><span>参考译文</span>看来我们确实都有自己的秘密。</p></section></section></div><section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.3C</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="233" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">You misheard.</p><p class="zh"><span>参考译文</span>你听错了。</p></article><section class="turn turn--astarion" data-source-order="234" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Gods, I can't even take solace in the lie.</p><p class="zh"><span>参考译文</span>诸神啊，连这个谎言都安慰不了我。</p></section></section>
+<section class="turn turn--astarion" data-source-order="220" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Well, what's next? Are you actually going through with this?</p><p class="zh"><span>参考译文</span>那么接下来呢？你真的打算照做吗？</p></section>
+<h3 class="menu-heading"><span class="menu-code">01.4 ·</span><span class="menu-label">是否接受密斯特拉的命令</span></h3>
+<section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.4A</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="221" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">I must. It's Mystra's will.</p><p class="zh"><span>参考译文</span>我必须这么做。这是密斯特拉的意志。</p></article><section class="turn turn--astarion" data-source-order="222" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Must you? Does Gale's will not come into it?</p><p class="zh"><span>参考译文</span>真的必须吗？盖尔自己的意愿就不算数吗？</p></section></section>
+<section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.4B</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="226" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">Not if I can avoid it.</p><p class="zh"><span>参考译文</span>只要能避免，我就不会这么做。</p></article><section class="turn turn--astarion" data-source-order="227" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Then find a way to avoid it.</p><p class="zh"><span>参考译文</span>那就想办法避免。</p></section></section>
+<section class="choice"><div class="choice-meta"><span class="badge"><span class="choice-code">01.4C</span> · 起源盖尔选项</span></div><article class="turn" data-source-order="228" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><p class="en" lang="en">We're going through with it.</p><p class="zh"><span>参考译文</span>我们会照做。</p></article><section class="turn turn--astarion" data-source-order="229" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">Oh no, my friend. I have my own plans.</p><p class="zh"><span>参考译文</span>哦不，我的朋友。我另有打算。</p></section></section>
+<section class="turn turn--astarion" data-source-order="223" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">We're going to find to the Heart of the Absolute to help ourselves, not be sacrificed on the altar for some god.</p><p class="zh"><span>参考译文</span>我们是去寻找至上真神之心以帮助自己，不是要被献祭在某个神明的祭坛上。</p></section><section class="turn turn--astarion" data-source-order="224" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Astarion_InParty2_Nested_TopicalGreetings.html"><h4>阿斯代伦</h4><p class="en" lang="en">I hope we can agree on that. Until then, I'll give you some space.</p><p class="zh"><span>参考译文</span>希望我们能在这点上达成一致。在那之前，我给你一点空间。</p></section>
+
+<details class="research"><summary>研究依据</summary><p>来源：Patch 8 静态对话文件《Astarion_InParty2_Nested_TopicalGreetings》，SRC-0001，VERSION-UNKNOWN，PRESENT-IN-FILES。</p><p>本书只收录阿斯代伦直接面对起源盖尔时出现的版本；静态文件存在不等于已确认所有条件组合在实机中可达。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main></body></html>

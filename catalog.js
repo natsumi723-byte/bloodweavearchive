@@ -2,7 +2,7 @@ window.BLOODWEAVE_CATALOG = {
   site: {
     title: "Bloodweave 书库",
     catalogVersion: "0.1",
-    lastUpdated: "2026-10-08"
+    lastUpdated: "2026-10-20"
   },
   collections: [
     {
@@ -23,72 +23,56 @@ window.BLOODWEAVE_CATALOG = {
               title: "把真相告诉盖尔",
               subtitle: "起源阿斯代伦主动向盖尔坦白吸血鬼身份",
               meta: "旅途中 · 与盖尔交谈",
-              href: "books/id/BK-OAST_GAL-UNK-Gale_InParty2_Nested_AstarionReveal2.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-UNK-Gale_InParty2_Nested_AstarionReveal2.html",            },
             {
               id: "OA-002",
               archiveCode: "OA · 002",
               title: "苦涩的血",
               subtitle: "吸血之夜及次日与盖尔的谈话",
               meta: "第一章 · 营地",
-              href: "books/id/BK-OAST_GAL-A1-CAMP_AstarionHunger_IVB_SCO_Avatar_Choice.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-A1-CAMP_AstarionHunger_IVB_SCO_Avatar_Choice.html",            },
             {
               id: "OA-003",
               archiveCode: "OA · 003",
               title: "我就知道，你是吸血鬼",
               subtitle: "吸血鬼身份暴露后与盖尔的谈话",
               meta: "旅途中 · 与盖尔交谈",
-              href: "books/id/BK-OAST_GAL-UNK-Gale_InParty2_Nested_AstarionReveal.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-UNK-Gale_InParty2_Nested_AstarionReveal.html",            },
             {
               id: "OA-004",
               archiveCode: "OA · 004",
               title: "别打我的主意",
               subtitle: "吸血之夜次日，盖尔从旁附和其他同伴",
               meta: "第一章 · 营地",
-              href: "books/id/BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse.html",            },
             {
               id: "OA-005",
               archiveCode: "OA · 005",
               title: "血液与魔法与饥渴",
               subtitle: "盖尔发生奥术饥渴后的谈话",
               meta: "旅途中 · 与盖尔交谈",
-              href: "books/id/BK-OAST_GAL-UNK-Gale_InParty2.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-UNK-Gale_InParty2.html",            },
             {
               id: "OA-006",
               archiveCode: "OA · 006",
               title: "同样的伶牙俐齿",
               subtitle: "庆功宴上，盖尔将起源阿斯代伦比作塔拉",
               meta: "第一章 · 营地",
-              href: "books/id/BK-OAST_GAL-UNK-CAMP_GoblinHuntTieflingCelebration_CRD_Gale3.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-UNK-CAMP_GoblinHuntTieflingCelebration_CRD_Gale3.html",            },
             {
               id: "OA-007",
               archiveCode: "OA · 007",
               title: "那么多条命，真的值得吗？",
               subtitle: "飞升仪式前后的选择与回应",
               meta: "第三章 · 扎尔宅邸",
-              href: "books/id/BK-OAST_GAL-UNK-LOW_CazadorsPalace_RitualRoom_PostCombat_OM_Astarion_AOM_COM_OOM.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-UNK-LOW_CazadorsPalace_RitualRoom_PostCombat_OM_Astarion_AOM_COM_OOM.html",            },
             {
               id: "OA-008",
               archiveCode: "OA · 008",
               title: "饥饿与伤痕将他引向何方",
               subtitle: "关于沿途发生的一切",
               meta: "旅途中 · 与盖尔交谈",
-              href: "books/id/BK-OAST_GAL-MULTI-Gale_InParty2_Nested_TopicalGreetings.html",
-              isNew: true
-            }
+              href: "books/id/BK-OAST_GAL-MULTI-Gale_InParty2_Nested_TopicalGreetings.html",            }
           ]
         },
         {
@@ -102,45 +86,35 @@ window.BLOODWEAVE_CATALOG = {
               title: "重返阴影的时刻",
               subtitle: "阳光重新灼伤阿斯代伦时，盖尔提醒他返回阴影",
               meta: "终战 · 码头",
-              href: "books/id/BK-OAST_GAL-END-AstarionSunlight_GaleWarnings.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-END-AstarionSunlight_GaleWarnings.html",            },
             {
               id: "OA-010",
               archiveCode: "OA · 010",
               title: "崭新的黎明",
               subtitle: "最终战后的第一个清晨，盖尔向阿斯代伦说起自己盼望的未来",
               meta: "终局 · 战后翌晨",
-              href: "books/id/BK-OAST_GAL-END-END_GameFinale_RomanceFates_Gale.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-END-END_GameFinale_RomanceFates_Gale.html",            },
             {
               id: "OA-011",
               archiveCode: "OA · 011",
               title: "与你共享的未来",
               subtitle: "与仍为凡人的伴侣盖尔一同参加聚会",
               meta: "尾声 · 守墓人聚会",
-              href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_Gale.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_Gale.html",            },
             {
               id: "OA-012",
               archiveCode: "OA · 012",
               title: "各自走过的时光",
               subtitle: "与仍为凡人的友人盖尔重逢（前伴侣或朋友路线）",
               meta: "尾声 · 守墓人聚会",
-              href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_Gale_Reunion.html",
-              isNew: true
-            },
+              href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_Gale_Reunion.html",            },
             {
               id: "OA-013",
               archiveCode: "OA · 013",
               title: "野心神归来",
               subtitle: "与成为野心之神的盖尔重逢",
               meta: "尾声 · 守墓人聚会",
-              href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_GodGaleAscension.html",
-              isNew: true
-            }
+              href: "books/id/BK-OAST_GAL-EPI-EPI_Epilogue_GodGaleAscension.html",            }
           ]
         }
       ]
@@ -156,13 +130,177 @@ window.BLOODWEAVE_CATALOG = {
           id: "scenes-and-relationship",
           title: "旅途中的对话",
           description: "",
-          books: []
+          books: [
+            {
+              id: "OG-001",
+              archiveCode: "OG · 001",
+              title: "若我们开始转化",
+              subtitle: "阿斯代伦谈起夺心魔化的应对方案",
+              meta: "第一章 · 营地",
+              href: "books/id/BK-AST_OGAL-UNK-CAMP_Night2_CRD_Astarion.html",
+              isNew: true
+            },
+            {
+              id: "OG-002",
+              archiveCode: "OG · 002",
+              title: "獠牙近在咫尺",
+              subtitle: "盖尔惊醒，发现阿斯代伦正试图吸血",
+              meta: "第一章 · 营地",
+              href: "books/id/BK-AST_OGAL-UNK-CAMP_AstarionHunger_SCO_Companion.html",
+              isNew: true
+            },
+            {
+              id: "OG-003",
+              archiveCode: "OG · 003",
+              title: "那件魔法物品去哪了？",
+              subtitle: "阿斯代伦追问盖尔消失的魔法物品",
+              meta: "第一章 · 旅途中",
+              href: "books/id/BK-AST_OGAL-UNK-Astarion_InParty2_Topical_ConsumedItem.html",
+              isNew: true
+            },
+            {
+              id: "OG-004",
+              archiveCode: "OG · 004",
+              title: "这一本不能给你吃",
+              subtitle: "盖尔提出接管阿斯代伦手中的塞尔死灵法术典籍",
+              meta: "第一章 · 营地",
+              href: "books/id/BK-AST_OGAL-A1-CAMP_DangerousBook_IVB_CFM_Astarion.html",
+              isNew: true
+            },
+            {
+              id: "OG-005",
+              archiveCode: "OG · 005",
+              title: "你的女神命令你赴死？",
+              subtitle: "阿斯代伦得知密斯特拉要求盖尔引爆法球",
+              meta: "第二章 · 旅途中",
+              href: "books/id/BK-AST_OGAL-UNK-Astarion_InParty2_Topical_GaleOrb.html",
+              isNew: true
+            },
+            {
+              id: "OG-006",
+              archiveCode: "OG · 006",
+              title: "真正的力量",
+              subtitle: "阿斯代伦评论盖尔吸收或净化幽影魔网的选择",
+              meta: "第二章 · 雷斯文小镇",
+              href: "books/id/BK-AST_OGAL-A2-TWN_Gale_LootBoss_AstarionReaction.html",
+              isNew: true
+            },
+            {
+              id: "OG-007",
+              archiveCode: "OG · 007",
+              title: "别让女神久等",
+              subtitle: "阿斯代伦催促盖尔尽快响应密斯特拉的召见",
+              meta: "第三章 · 风暴海岸圣所",
+              href: "books/id/BK-AST_OGAL-UNK-LOW_StormshoreTabernacle_MystraShrine_OM_Gale_AOM_OOM.html",
+              isNew: true
+            },
+            {
+              id: "OG-008",
+              archiveCode: "OG · 008",
+              title: "野心与力量将他引向何方",
+              subtitle: "关于沿途发生的一切",
+              meta: "旅途中 · 与阿斯代伦交谈",
+              href: "books/id/BK-AST_OGAL-MULTI-Astarion_InParty2_Topical_GalePower.html",
+              isNew: true
+            }
+          ]
         },
         {
           id: "finale-and-epilogue",
           title: "终局与尾声",
           description: "",
-          books: []
+          books: [
+            {
+              id: "OG-009",
+              archiveCode: "OG · 009",
+              title: "我不喜欢你那副神情",
+              subtitle: "耐色脑决战前，阿斯代伦察觉盖尔神色有异",
+              meta: "终战 · 耐色脑顶端",
+              href: "books/id/BK-AST_OGAL-END-END_BrainBattle_Intro.html",
+              isNew: true
+            },
+            {
+              id: "OG-010",
+              archiveCode: "OG · 010",
+              title: "盖尔，你在想什么？",
+              subtitle: "耐色脑覆灭后，阿斯代伦回应盖尔对王冠的打算",
+              meta: "终战 · 码头",
+              href: "books/id/BK-AST_OGAL-END-END_BrainBattle_CombatOver_Nested_AfterGithLeave_OriginGale.html",
+              isNew: true
+            },
+            {
+              id: "OG-011",
+              archiveCode: "OG · 011",
+              title: "世界尽在我们手中",
+              subtitle: "飞升阿斯代伦与伴侣盖尔商议共同未来",
+              meta: "终局 · 战后翌晨",
+              href: "books/id/BK-AST_OGAL-END-END_GameFinale_ROM_RomanceFates_Astarion_Ascended.html",
+              isNew: true
+            },
+            {
+              id: "OG-012",
+              archiveCode: "OG · 012",
+              title: "夜幕下的新生",
+              subtitle: "摆脱卡扎多尔后，阿斯代伦与伴侣盖尔商议未来",
+              meta: "终局 · 战后翌晨",
+              href: "books/id/BK-AST_OGAL-END-END_GameFinale_ROM_RomanceFates_Astarion_Unascended_CazadorDead.html",
+              isNew: true
+            },
+            {
+              id: "OG-013",
+              archiveCode: "OG · 013",
+              title: "挥之不去的阴影",
+              subtitle: "卡扎多尔仍存活时，阿斯代伦与伴侣盖尔商议未来",
+              meta: "终局 · 战后翌晨",
+              href: "books/id/BK-AST_OGAL-END-END_GameFinale_ROM_RomanceFates_Astarion_Unascended_CazadorAlive.html",
+              isNew: true
+            },
+            {
+              id: "OG-014",
+              archiveCode: "OG · 014",
+              title: "永远在你身边",
+              subtitle: "与未飞升的伴侣阿斯代伦一同参加聚会",
+              meta: "尾声 · 守墓人聚会",
+              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Partnered.html",
+              isNew: true
+            },
+            {
+              id: "OG-015",
+              archiveCode: "OG · 015",
+              title: "永生者的配偶",
+              subtitle: "与飞升后的伴侣阿斯代伦一同参加聚会",
+              meta: "尾声 · 守墓人聚会",
+              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Lord_Partnered.html",
+              isNew: true
+            },
+            {
+              id: "OG-016",
+              archiveCode: "OG · 016",
+              title: "夜色重逢",
+              subtitle: "凡人盖尔与未飞升的旧日同伴阿斯代伦重逢",
+              meta: "尾声 · 守墓人聚会",
+              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion.html",
+              isNew: true
+            },
+            {
+              id: "OG-017",
+              archiveCode: "OG · 017",
+              title: "神明与旧日同伴",
+              subtitle: "成神盖尔与未飞升的旧日同伴阿斯代伦重逢",
+              meta: "尾声 · 守墓人聚会",
+              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_GodGale.html",
+              isNew: true
+            },
+            {
+              id: "OG-018",
+              archiveCode: "OG · 018",
+              title: "与鲜血的不朽者重逢",
+              subtitle: "凡人或成神盖尔与飞升后的旧日同伴阿斯代伦重逢",
+              meta: "尾声 · 守墓人聚会",
+              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Lord.html",
+              isNew: true
+            }
+          ]
         }
       ]
     },
@@ -378,9 +516,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "蝌蚪的力量",
               subtitle: "首次使用蝌蚪力量后的同伴讨论",
               meta: "第一章 · 旅途中",
-              href: "books/id/BK-AST_GAL-A1-GLO_Tadpole_GD_FirstUse.html",
-              isNew: true
-            },
+              href: "books/id/BK-AST_GAL-A1-GLO_Tadpole_GD_FirstUse.html",            },
             {
               id: "AG-025",
               archiveCode: "AG · 025",
@@ -395,9 +531,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "尖牙留下的余波",
               subtitle: "盖尔评价已经死亡或离队的吸血鬼阿斯代伦",
               meta: "第一章 · 营地",
-              href: "books/id/BK-AST_GAL-A1-GLO_Astarion_GD_VampireRevelation_GaleResponse.html",
-              isNew: true
-            },
+              href: "books/id/BK-AST_GAL-A1-GLO_Astarion_GD_VampireRevelation_GaleResponse.html",            },
             {
               id: "AG-027",
               archiveCode: "AG · 027",
@@ -412,9 +546,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "他不会浪费猎物",
               subtitle: "阿尔菲拉遇害后的清晨对质",
               meta: "第一章 · 营地",
-              href: "books/id/BK-AST_GAL-A1-CAMP_DarkUrge_MurderOfAlfira_GD_MorningAfter.html",
-              isNew: true
-            },
+              href: "books/id/BK-AST_GAL-A1-CAMP_DarkUrge_MurderOfAlfira_GD_MorningAfter.html",            },
             {
               id: "AG-029",
               archiveCode: "AG · 029",
@@ -461,18 +593,14 @@ window.BLOODWEAVE_CATALOG = {
               title: "法球之外的选择",
               subtitle: "盖尔重申引爆法球的提案",
               meta: "终战 · 星界棱镜",
-              href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_Undecided.html",
-              isNew: true
-            },
+              href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_Undecided.html",            },
             {
               id: "AG-035",
               archiveCode: "AG · 035",
               title: "转化并非唯一选择",
               subtitle: "面对是否接受夺心魔转化的群体讨论",
               meta: "终战 · 星界棱镜",
-              href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_TadpoleChoice.html",
-              isNew: true
-            },
+              href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_TadpoleChoice.html",            },
             {
               id: "AG-036",
               archiveCode: "AG · 036",

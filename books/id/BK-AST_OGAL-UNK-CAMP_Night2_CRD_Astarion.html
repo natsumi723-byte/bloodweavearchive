@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<script src="../../analytics.js"></script><meta name="book-id" content="BK-AST_OGAL-UNK-CAMP_Night2_CRD_Astarion"><meta name="source-page-ids" content="PAGE-SRC-0001-CAMP_Night2_CRD_Astarion"><meta name="source-graph-ids" content="GRAPH-SRC-0001-CAMP_Night2_CRD_Astarion_P034"><link rel="canonical" href="https://bloodweavearchive.com/books/id/BK-AST_OGAL-UNK-CAMP_Night2_CRD_Astarion.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>若我们开始转化 · v15候选</title>
+
+
+<style id="visual-system-current">
+@page{size:A4;margin:18mm 17mm}
+:root{
+  --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
+  --astarion:#8B3048;--astarion-soft:#faedf1;--astarion-line:#c27b8e;
+  --gale:#624779;--gale-soft:#f3eff7;--gale-line:#9986aa;
+  --shared:#5e565d;--shared-soft:#f3f0f2;--shared-line:#aaa0a7;
+  --source:#51484d;--source-soft:#f6f2ee;--source-line:#9c8f87;
+  --research:#70572F;--research-soft:#fbf6e9;--research-line:#b79d6f;
+  --check:#795b1d;--check-soft:#fff8e8;--check-line:#c4a35d;
+  --success:#276247;--success-soft:#edf7f1;--success-line:#78ae91;
+  --failure:#8a3740;--failure-soft:#fff0f1;--failure-line:#ce8e94;
+  --conflict:#80503F;--conflict-soft:#fff5ef;--conflict-line:#c99f8e
+}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{max-width:900px;margin:28px auto;padding:18mm;background:var(--paper);color:var(--ink);font:16px/1.78 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;box-shadow:0 6px 32px #433b4218}
+main{max-width:860px;margin:auto}
+h1,h2,h3,h4{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.32}
+h1{margin:.2rem 0 1.35rem;color:var(--ink);padding-bottom:1rem;border-bottom:2px solid var(--rule)}
+.book-title__main{display:block;max-width:18em;font-size:clamp(2rem,4.4vw,2.5rem);line-height:1.2;letter-spacing:-.025em}
+.book-title__subtitle{display:block;max-width:28em;margin-top:.58rem;color:var(--gale);font-size:clamp(1.05rem,2.1vw,1.34rem);line-height:1.48;font-weight:650;letter-spacing:.01em}
+h2{font-size:clamp(1.5rem,3vw,1.95rem);margin:3.7rem 0 1.2rem;color:var(--ink);padding-bottom:.5rem;border-bottom:1px solid var(--rule);break-after:avoid-page}
+h3{font-size:1.2rem;margin:1.8rem 0 .8rem;color:var(--ink);break-after:avoid-page}
+h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
+.system-meta{margin:0 0 2.2rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.synopsis-deck{max-width:72ch;margin:0 0 2rem;color:var(--ink);font-size:1rem;line-height:1.72}
+.source-kicker{margin-bottom:.42rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
+.synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
+.synopsis-deck p{margin:.35rem 0}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.zh{color:#4e474c}
+.translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
+.editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
+.research-kicker,.editorial-note::before{color:var(--research);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
+.flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
+.flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
+.route{margin:2.1rem 0}
+.turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.turn p{margin:.38rem 0}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
+.note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
+.note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
+.note p,.source-note p{margin:.3rem 0}
+.choice{padding:1rem 1.1rem;margin:1.05rem 0;border:1px solid var(--rule);border-left:5px solid var(--shared-line);background:#fcfbfc;break-inside:avoid}
+.choice--shared{border-left-color:var(--shared-line);background:linear-gradient(90deg,var(--shared-soft),#fff 44%)}
+.choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response{break-inside:avoid}
+.turn.origin-response.origin-response--astarion{border-left:5px solid var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.turn.origin-response.origin-response--gale{border-left:5px solid var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response-heading{display:flex;align-items:center;flex-wrap:wrap;gap:.55rem .7rem;margin:0 0 .75rem}
+.origin-response-heading>.speaker{margin:0}
+.origin-response-tag{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;font-weight:700;font-size:.75rem;line-height:1.25}
+.origin-response-tag::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.origin-response--astarion .origin-response-tag{color:var(--astarion);background:var(--astarion-soft)}
+.origin-response--gale .origin-response-tag{color:var(--gale);background:var(--gale-soft)}
+.choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
+.tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
+.tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.choice--astarion>.tag,.choice--astarion>.badge,.choice--astarion>.choice-meta>.tag,.choice--astarion>.choice-meta>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge,.choice--gale>.choice-meta>.tag,.choice--gale>.choice-meta>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.condition-operator{display:inline-flex;align-items:center;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
+.source-reaction-tags{display:flex;justify-content:flex-end;margin:.35rem .85rem .7rem;color:var(--muted);font-size:.74rem;line-height:1.35;text-align:right}
+.source-reaction-tag{font-weight:600}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
+.branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.branch-note--between-variants{margin:1rem 0}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
+.menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45}
+.menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+.menu-label{min-width:0;text-wrap:wrap}
+.check{display:flex;align-items:center;margin:.85rem 0;padding:.62rem .78rem;border:1px solid var(--rule);border-left:3px solid var(--source-line);background:#faf7f4}
+.check-label{display:inline-flex;align-items:center;gap:.44rem;color:var(--source);font:700 .76rem/1.35 "Microsoft YaHei",sans-serif;letter-spacing:.02em}
+.d20-icon{display:inline-block;width:1.8rem;height:1.8rem;flex:0 0 1.8rem;vertical-align:-.43rem;overflow:visible}
+.d20-icon path{fill:currentColor}
+.variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
+.ending{padding:0;border:0;background:transparent;break-inside:avoid}
+.ending--success,.ending--failure{border:0;background:transparent}
+.ending--success .result-badge{border-color:#b8c7be;background:#f8faf9;color:#466255}
+.ending--failure .result-badge{border-color:#cdbbbe;background:#fcf9f9;color:#765158}
+.ending>.result-badge{margin:0 0 .45rem;gap:.44rem}
+.ending>.turn{margin:0}
+.ending h3{margin:.45rem 0;color:var(--ink)}
+.ending p{margin:.35rem 0}
+.outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
+.outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
+.component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
+.component-index a{color:var(--muted);text-underline-offset:.2em}
+@media(max-width:700px){
+  body{margin:0;padding:26px 18px;box-shadow:none}
+  p,code{overflow-wrap:anywhere;word-break:break-word}
+  .book-title__main{font-size:clamp(1.2rem,6.2vw,2.2rem);white-space:nowrap;text-wrap:nowrap;letter-spacing:-.04em}
+  .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
+  h2{font-size:1.18rem}
+  h3{font-size:1.05rem}
+  .variants{grid-template-columns:1fr;min-width:0}
+  .variant-card{min-width:0;max-width:100%}
+  .flow{padding:.9rem 1rem;-webkit-overflow-scrolling:touch}
+  .flow pre{width:max-content;min-width:100%;white-space:pre;font-size:12px;overflow-wrap:normal;word-break:normal}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
+  .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
+  .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
+  .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
+}
+@media print{
+  html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
+  .component-index,.component-note{display:none}
+  .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
+}
+</style></head>
+<body><main>
+<h1 class="book-title"><span class="book-title__main">若我们开始转化</span></h1>
+
+<div class="synopsis-deck"><div class="source-kicker">■ 源文件简介</div><div class="synopsis-item"><p class="en" lang="en">You find a contemplative Astarion thinking about the danger we pose if we turn into mind flayers. He asks - hypothetically - if he had to kill us, how would we like to go? As an experienced murderer, he considers it a professional courtesy, but we might be outraged. He'll be enthusiastic when describing the different ways people can die - a fan talking about his favourite subject. If we threaten him, he'll be defensive and a little sulky.</p><p class="zh"><span>参考译文</span>起源盖尔遇见若有所思的阿斯代伦；他正在考虑众人一旦转化成夺心魔会造成怎样的危险。阿斯代伦提出一个假设：如果他不得不杀死起源盖尔，对方希望怎样死去？作为经验丰富的杀手，他把这视为职业礼节，但起源盖尔也可能因此动怒。谈起不同的死法时，他会兴致勃勃，像爱好者谈论最喜欢的话题；如果受到威胁，他会转为防备，还有些闷闷不乐。</p></div></div>
+
+<h2>阅读脉络</h2><nav class="flow" aria-label="场景分支概览"><pre>开场方式（三种互斥版本）
+├─ 版本 I—II → 阿斯代伦观察起源盖尔尚未出现触手
+└─ 版本 III → 阿斯代伦直接指出没有触手
+↓ 三个版本汇合
+02.1 · 起源盖尔如何看待现状
+↓
+阿斯代伦提出死亡预案
+↓
+03.1 · 是否把生死交给阿斯代伦？
+├─ 不选择具体死法 → 03.2
+├─ 选择刀、毒药或斩首 → 03.3
+└─ 拒绝选择或交给别人 → 03.4
+↓
+04.1 · 起源盖尔的最后回应</pre></nav>
+
+<h2 class="menu-heading"><span class="menu-code">01 ·</span><span class="menu-label">一根触手也没看见</span></h2>
+<div class="variants variants--stack">
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 已与莱埃泽尔交谈</span></div><article class="turn turn--astarion" data-source-order="0"><h4>阿斯代伦</h4><p class="en" lang="en">I saw our gith friend inspecting you.</p><p class="zh"><span>参考译文</span>我看见我们那位吉斯朋友检查你了。</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 尚未与莱埃泽尔交谈，但已与其他同伴交谈</span></div><article class="turn turn--astarion" data-source-order="74"><h4>阿斯代伦</h4><p class="en" lang="en">Sounds like you&#39;ve been learning all about your gruesome future.</p><p class="zh"><span>参考译文</span>听起来，你已经把自己那可怕的未来了解得很清楚了。</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 III</span><span class="condition-tag">条件 · 尚未与其他同伴交谈</span></div><article class="turn turn--astarion" data-source-order="75"><h4>阿斯代伦</h4><p class="en" lang="en">So. Not a tentacle to be seen.</p><p class="zh"><span>参考译文</span>这么说吧——一根触手也没看见。</p></article></section></div>
+
+<article class="turn turn--astarion" data-source-order="1"><h4>阿斯代伦 <span class="condition-tag">条件 · 开场为版本 I 或 II</span></h4><p class="en" lang="en">I have to say, I thought you&#39;d look worse, but no. Not a tentacle to be seen.</p><p class="zh"><span>参考译文</span>我得说，我原以为你会变得更糟，可并没有——一根触手也没看见。</p></article>
+
+
+<h2 class="menu-heading"><span class="menu-code">02 ·</span><span class="menu-label">为可能的转化做准备</span></h2>
+<h3 class="menu-heading"><span class="menu-code">02.1 ·</span><span class="menu-label">起源盖尔如何看待现状</span></h3><section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">02.1A</span> · 共同选项</span><span class="condition-tag">条件 · 开场为版本 I 或 II</span></div><article class="turn turn--gale" data-source-order="2"><h4>起源盖尔</h4><p class="en" lang="en">That&#39;s what everyone&#39;s saying. Is it so strange?</p><p class="zh"><span>参考译文</span>人人都这么说。真有那么奇怪吗？</p></article><article class="turn turn--astarion" data-source-order="3"><h4>阿斯代伦</h4><p class="en" lang="en">It&#39;s unexpected, but we shan&#39;t complain.</p><p class="zh"><span>参考译文</span>确实出人意料，不过我们就别抱怨了。</p></article><article class="turn turn--astarion" data-source-order="4" data-source-route="order-4-route-1"><h4>阿斯代伦</h4><p class="en" lang="en">I&#39;m not taking anything for granted, of course. First sign of change and I&#39;ll have to stop that pretty little heart of yours.</p><p class="zh"><span>参考译文</span>当然，我不会把安全当作理所当然。只要你显出变化的第一个征兆，我就得让你那颗漂亮的小心脏停下来。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">02.1B</span> · 共同选项</span></div><article class="turn turn--gale" data-source-order="66"><h4>起源盖尔</h4><p class="en" lang="en">I&#39;m hoping it&#39;ll stay that way.</p><p class="zh"><span>参考译文</span>我希望今后也一直如此。</p></article><article class="turn turn--astarion" data-source-order="67"><h4>阿斯代伦</h4><p class="en" lang="en">Naturally. But I was thinking: what if it doesn&#39;t?</p><p class="zh"><span>参考译文</span>当然。不过我在想：要是不能呢？</p></article><article class="turn turn--astarion" data-source-order="68" data-source-route="order-68-route-1"><h4>阿斯代伦</h4><p class="en" lang="en">Of course, first sign of change and I&#39;ll have to stop that pretty little heart of yours.</p><p class="zh"><span>参考译文</span>当然。只要你显出变化的第一个征兆，我就得让你那颗漂亮的小心脏停下来。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">02.1C</span> · 共同选项</span></div><article class="turn turn--gale" data-source-order="69"><h4>起源盖尔</h4><p class="en" lang="en">Not yet.</p><p class="zh"><span>参考译文</span>暂时还没有。</p></article><article class="turn turn--astarion" data-source-order="70"><h4>阿斯代伦</h4><p class="en" lang="en">&#39;Yet&#39;.</p><p class="zh"><span>参考译文</span>“暂时”。</p></article><article class="turn turn--astarion" data-source-order="68" data-source-route="order-68-route-2"><h4>阿斯代伦</h4><p class="en" lang="en">Of course, first sign of change and I&#39;ll have to stop that pretty little heart of yours.</p><p class="zh"><span>参考译文</span>当然。只要你显出变化的第一个征兆，我就得让你那颗漂亮的小心脏停下来。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">02.1D</span> · 共同选项</span></div><article class="turn turn--gale" data-source-order="71"><h4>起源盖尔</h4><p class="en" lang="en">I could say the same to you.</p><p class="zh"><span>参考译文</span>这话我也可以原样送还给你。</p></article><article class="turn turn--astarion" data-source-order="72"><h4>阿斯代伦</h4><p class="en" lang="en">Indeed you could. We&#39;re all doing surprisingly well, given the circumstances.</p><p class="zh"><span>参考译文</span>你当然可以。考虑到眼下的处境，我们所有人的情况都好得出人意料。</p></article><article class="turn turn--astarion" data-source-order="4" data-source-route="order-4-route-2"><h4>阿斯代伦</h4><p class="en" lang="en">I&#39;m not taking anything for granted, of course. First sign of change and I&#39;ll have to stop that pretty little heart of yours.</p><p class="zh"><span>参考译文</span>当然，我不会把安全当作理所当然。只要你显出变化的第一个征兆，我就得让你那颗漂亮的小心脏停下来。</p></article></section>
+<p class="branch-note">02.1A–D 均汇合以下后续：</p>
+<article class="turn turn--astarion" data-source-order="5"><h4>阿斯代伦</h4><p class="en" lang="en">I am open to suggestions. Knives, poison, strangulation - whatever you&#39;d prefer.</p><p class="zh"><span>参考译文</span>我愿意听听你的意见。刀、毒药、勒死——随你喜欢。</p><aside class="source-note"><strong>制作旁注</strong><p lang="en">Professional courtesy</p><p><span class="translation">参考译文</span>职业礼节。</p></aside></article>
+
+<h2 class="menu-heading"><span class="menu-code">03 ·</span><span class="menu-label">假如起源盖尔开始转化</span></h2>
+<h3 class="menu-heading"><span class="menu-code">03.1 ·</span><span class="menu-label">是否把生死交给阿斯代伦？</span></h3>
+<section class="choice choice--gale"><div class="choice-meta"><span class="badge"><span class="choice-code">03.1A</span> · 起源盖尔专属选项</span></div><article class="turn turn--gale" data-source-order="6"><h4>起源盖尔</h4><p class="en" lang="en">Killing me would rather decrease your odds of survival. Dramatically, in fact.</p><p class="zh"><span>参考译文</span>杀死我反而会大幅降低你的生存机会。事实上，会低得多。</p></article><article class="turn turn--astarion" data-source-order="43"><h4>阿斯代伦</h4><p class="en" lang="en">Don&#39;t be so pig-headed, I&#39;m being practical.</p><p class="zh"><span>参考译文</span>别这么固执，我只是在做实际打算。</p></article><article class="turn turn--astarion" data-source-order="44"><h4>阿斯代伦</h4><p class="en" lang="en">How much damage will you cause if you transform? How much blood can you bear to have on your hands?</p><p class="zh"><span>参考译文</span>如果你转化，会造成多大破坏？你愿意让自己手上沾多少血？</p></article></section>
+<section class="choice choice--gale"><div class="choice-meta"><span class="badge"><span class="choice-code">03.1B</span> · 起源盖尔专属选项</span></div><article class="turn turn--gale" data-source-order="8"><h4>起源盖尔</h4><p class="en" lang="en">Should that happen, my advice would be to drop your weapon and run . Very, very fast.</p><p class="zh"><span>参考译文</span>真到了那一步，我建议你丢下武器就跑。要跑得非常、非常快。</p></article><article class="turn turn--astarion" data-source-order="9"><h4>阿斯代伦</h4><p class="en" lang="en">Well, that&#39;s a little dramatic, don&#39;t you think?</p><p class="zh"><span>参考译文</span>这个说法是不是有点夸张了？</p></article><article class="turn turn--astarion" data-source-order="10"><h4>阿斯代伦</h4><p class="en" lang="en">Come on, humour me. If you had to choose...</p><p class="zh"><span>参考译文</span>来吧，顺着我说说。假如你非选一种不可……</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">03.1C</span> · 共同选项</span></div><article class="turn turn--gale" data-source-order="14"><h4>起源盖尔</h4><p class="en" lang="en">I&#39;d prefer not to die.</p><p class="zh"><span>参考译文</span>我宁愿不死。</p></article><article class="turn turn--astarion" data-source-order="15"><h4>阿斯代伦</h4><p class="en" lang="en">Well now you&#39;re just being close-minded. There are some lovely ways to go.</p><p class="zh"><span>参考译文</span>这可就太不开明了。有些死法其实相当美妙。</p></article><article class="turn turn--astarion" data-source-order="16"><h4>阿斯代伦</h4><p class="en" lang="en">I&#39;ve watched urchins freeze to death on the street. It looks peaceful - just like falling asleep.</p><p class="zh"><span>参考译文</span>我见过街头的孩子冻死。看起来很安详——就像睡着了一样。</p></article><article class="turn turn--astarion" data-source-order="17"><h4>阿斯代伦</h4><p class="en" lang="en">Come on, humour me. If you had to choose...</p><p class="zh"><span>参考译文</span>来吧，顺着我说说。假如你非选一种不可……</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">03.1D</span> · 共同选项</span></div><article class="turn turn--gale" data-source-order="58"><h4>起源盖尔</h4><p class="en" lang="en">Not sure. How would you like to go?</p><p class="zh"><span>参考译文</span>还没想好。你希望自己怎么死？</p></article><article class="turn turn--astarion" data-source-order="59"><h4>阿斯代伦</h4><p class="en" lang="en">I don&#39;t think poison is for me. Nor stabbing, come to think of it.</p><p class="zh"><span>参考译文</span>我觉得毒药不适合我。仔细想想，刀刺也不合适。</p><aside class="source-note"><strong>制作旁注</strong><p lang="en">He&#39;s wondering if you can even poison a vampire.</p><p><span class="translation">参考译文</span>他在琢磨吸血鬼究竟会不会中毒。</p></aside></article><article class="turn turn--astarion" data-source-order="60"><h4>阿斯代伦</h4><p class="en" lang="en">I&#39;ve always felt decapitation was a fine choice. One good swing and then - nothing.</p><p class="zh"><span>参考译文</span>我一直觉得斩首是个好选择。干脆利落地挥一下——然后什么都没有了。</p></article><article class="turn turn--astarion" data-source-order="61"><h4>阿斯代伦</h4><p class="en" lang="en">But we were talking about you. What&#39;ll it be?</p><p class="zh"><span>参考译文</span>不过我们刚才谈的是你。你选什么？</p></article></section>
+<aside class="route-guide"><strong>选择 03.1A</strong> 后，可继续阅读 <strong>03.2 · 不选择具体死法</strong>，或直接进入 <strong>03.3 · 选择死亡方式</strong>。<br><strong>选择 03.1B</strong> 后，可继续阅读 <strong>03.2 · 不选择具体死法</strong>、<strong>03.3 · 选择死亡方式</strong>或 <strong>03.4 · 拒绝选择，或交给别人</strong>。<br><strong>选择 03.1C</strong> 后，可继续阅读 <strong>03.3 · 选择死亡方式</strong>或 <strong>03.4 · 拒绝选择，或交给别人</strong>。<br><strong>选择 03.1D</strong> 后，可在 <strong>03.3 · 选择死亡方式</strong>中选择刀、毒药或阿斯代伦刚刚提到的斩首，也可进入 <strong>03.4 · 拒绝选择，或交给别人</strong>。</aside>
+
+<h3 class="menu-heading"><span class="menu-code">03.2 ·</span><span class="menu-label">不选择具体死法</span></h3>
+<section class="choice choice--gale"><div class="choice-meta"><span class="badge"><span class="choice-code">03.2A</span> · 起源盖尔专属选项</span></div><article class="turn turn--gale" data-source-order="45"><h4>起源盖尔</h4><p class="en" lang="en">I&#39;m afraid I&#39;m deadly serious. Try it, and I&#39;m taking everyone with me. Everyone .</p><p class="zh"><span>参考译文</span>恐怕我是再认真不过了。你若真动手，我会把所有人都一起带走。每一个人。</p></article><article class="turn turn--astarion" data-source-order="56"><h4>阿斯代伦</h4><p class="en" lang="en">Ha! I do like you, you know. You&#39;ve got fire.</p><p class="zh"><span>参考译文</span>哈！我确实挺喜欢你的。你还真有股狠劲。</p></article><article class="turn turn--astarion" data-source-order="57"><h4>阿斯代伦</h4><p class="en" lang="en">Whatever happens, I&#39;ll make the right choice.</p><p class="zh"><span>参考译文</span>不管发生什么，我都会作出正确的选择。</p></article><article class="turn turn--astarion" data-source-order="50" data-source-route="order-50-route-1"><h4>阿斯代伦</h4><p class="en" lang="en">Sweet dreams, darling.</p><p class="zh"><span>参考译文</span>做个好梦，亲爱的。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">03.2B</span> · 共同选项</span></div><article class="turn turn--gale" data-source-order="47"><h4>起源盖尔</h4><p class="en" lang="en">I can bear a lot.</p><p class="zh"><span>参考译文</span>我能承受很多。</p></article><article class="turn turn--astarion" data-source-order="48"><h4>阿斯代伦</h4><p class="en" lang="en">So can I.</p><p class="zh"><span>参考译文</span>我也一样。</p></article><article class="turn turn--astarion" data-source-order="49"><h4>阿斯代伦</h4><p class="en" lang="en">I like you. Rest assured, whatever happens, I&#39;ll make the right choice.</p><p class="zh"><span>参考译文</span>我喜欢你。放心吧，无论发生什么，我都会作出正确的选择。</p></article><article class="turn turn--astarion" data-source-order="50" data-source-route="order-50-route-2"><h4>阿斯代伦</h4><p class="en" lang="en">Sweet dreams, darling.</p><p class="zh"><span>参考译文</span>做个好梦，亲爱的。</p></article></section>
+
+<h3 class="menu-heading"><span class="menu-code">03.3 ·</span><span class="menu-label">选择死亡方式</span></h3>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">03.3A</span> · 共同选项</span></div><article class="turn turn--gale" data-source-order="51"><h4>起源盖尔</h4><p class="en" lang="en">If I had to choose, I&#39;d want the knife. Make it quick.</p><p class="zh"><span>参考译文</span>如果非得选，我希望用刀。下手快一点。</p></article><article class="turn turn--astarion" data-source-order="29"><h4>阿斯代伦</h4><p class="en" lang="en">A classic! One good thrust to the heart and you&#39;re gone.</p><p class="zh"><span>参考译文</span>经典之选！对准心脏，一刀刺下去，你就没命了。</p></article><article class="turn turn--astarion" data-source-order="30"><h4>阿斯代伦</h4><p class="en" lang="en">We need a good blade, of course. Don&#39;t want to waste time hacking and prodding with a dinner knife...</p><p class="zh"><span>参考译文</span>当然得有把好刀。可不能拿餐刀在那里又砍又戳，白白浪费时间……</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">03.3B</span> · 共同选项</span></div><div class="variants">
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 从 03.1A 进入</span></div><article class="turn turn--gale" data-source-order="53"><h4>起源盖尔</h4><p class="en" lang="en">Poison, then. Something painless.</p><p class="zh"><span>参考译文</span>那就毒药吧。要不痛苦的那种。</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 从 03.1B–D 进入</span></div><article class="turn turn--gale" data-source-order="19"><h4>起源盖尔</h4><p class="en" lang="en">Poison, then. It should be painless at least.</p><p class="zh"><span>参考译文</span>那就毒药吧。至少应该不会痛苦。</p></article></section>
+</div><article class="turn turn--astarion" data-source-order="40"><h4>阿斯代伦</h4><p class="en" lang="en">A fine choice! I can think of some nightshades that are deliciously fatal.</p><p class="zh"><span>参考译文</span>好选择！我知道几种致命得恰到好处的茄科毒草。</p></article><article class="turn turn--astarion" data-source-order="41"><h4>阿斯代伦</h4><p class="en" lang="en">If they&#39;re mixed well, you&#39;ll just close your eyes and drift away. And if they&#39;re not...</p><p class="zh"><span>参考译文</span>调配得当，你只会闭上眼睛，慢慢睡去。要是调得不好……</p><aside class="source-note"><strong>制作旁注</strong><p lang="en">&#39;if they&#39;re not you&#39;ll die horribly.&#39; is the unspoken end to that line.</p><p><span class="translation">参考译文</span>这句话没有说出口的结尾是：“要是调得不好，你会死得很惨。”</p></aside></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">03.3C</span> · 共同选项</span><span class="condition-tag">条件 · 从 03.1D 进入</span></div><article class="turn turn--gale" data-source-order="62"><h4>起源盖尔</h4><p class="en" lang="en">Decapitation sounds good, actually.</p><p class="zh"><span>参考译文</span>其实，斩首听起来不错。</p></article><article class="turn turn--astarion" data-source-order="63"><h4>阿斯代伦</h4><p class="en" lang="en">A fine choice. Now, to use sword or axe? Or a saw? Hmm.</p><p class="zh"><span>参考译文</span>好选择。那么，该用剑、斧头，还是锯子？嗯。</p></article></section>
+<aside class="route-guide"><strong>03.3A · 刀</strong>、<strong>03.3B · 毒药</strong>与<strong>03.3C · 斩首</strong>均汇合以下回应。</aside>
+<article class="turn turn--astarion" data-source-order="31"><h4>阿斯代伦</h4><p class="en" lang="en">Well, I&#39;m getting ahead of myself. This is all a worst case scenario, obviously.</p><p class="zh"><span>参考译文</span>好了，我有些想得太远了。显然，这一切都只是最坏情况的预案。</p></article>
+
+<h3 class="menu-heading"><span class="menu-code">03.4 ·</span><span class="menu-label">拒绝选择，或交给别人</span></h3>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">03.4A</span> · 共同选项</span></div><article class="turn turn--gale" data-source-order="21"><h4>起源盖尔</h4><p class="en" lang="en">I don&#39;t have to choose.</p><p class="zh"><span>参考译文</span>我没必要选择。</p></article><article class="turn turn--astarion" data-source-order="22"><h4>阿斯代伦</h4><p class="en" lang="en">Then I suppose we&#39;ll just see what happens.</p><p class="zh"><span>参考译文</span>那我想，我们就只能等着看会发生什么了。</p></article><article class="turn turn--astarion" data-source-order="23"><h4>阿斯代伦</h4><p class="en" lang="en">Don&#39;t worry, darling. I like you. I&#39;m sure I&#39;ll make the right choice.</p><p class="zh"><span>参考译文</span>别担心，亲爱的。我喜欢你。我相信自己会作出正确选择。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">03.4B</span> · 共同选项</span></div><div class="variants">
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 队伍人数至少为 3</span></div><article class="turn turn--gale" data-source-order="24"><h4>起源盖尔</h4><p class="en" lang="en">I&#39;d rather have one of the others do it.</p><p class="zh"><span>参考译文</span>我宁愿让其他人来动手。</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 队伍人数少于 3</span></div><article class="turn turn--gale" data-source-order="27"><h4>起源盖尔</h4><p class="en" lang="en">Then I&#39;ll ask someone else to do it.</p><p class="zh"><span>参考译文</span>那我会去找别人动手。</p></article></section>
+</div><article class="turn turn--astarion" data-source-order="25"><h4>阿斯代伦</h4><p class="en" lang="en">Oh, I see how it is.</p><p class="zh"><span>参考译文</span>哦，我明白了。</p></article><article class="turn turn--astarion" data-source-order="26"><h4>阿斯代伦</h4><p class="en" lang="en">Fine, but if they botch it - don&#39;t come bleeding to me.</p><p class="zh"><span>参考译文</span>好吧，但如果他们搞砸了——可别浑身是血地来找我。</p></article></section>
+
+<h2 class="menu-heading"><span class="menu-code">04 ·</span><span class="menu-label">让一切停留在假设中</span></h2>
+<h3 class="menu-heading"><span class="menu-code">04.1 ·</span><span class="menu-label">起源盖尔的最后回应</span></h3><section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">04.1A</span> · 共同选项</span></div><article class="turn turn--gale" data-source-order="32"><h4>起源盖尔</h4><p class="en" lang="en">Obviously. But that won&#39;t happen. It can&#39;t.</p><p class="zh"><span>参考译文</span>当然。但那不会发生。绝不能发生。</p></article><article class="turn turn--astarion" data-source-order="33"><h4>阿斯代伦</h4><p class="en" lang="en">If the last day has taught me anything, it&#39;s that the impossible is more likely than you think.</p><p class="zh"><span>参考译文</span>如果过去这一天教会了我什么，那就是：不可能的事往往比你想象中更容易发生。</p></article><article class="turn turn--astarion" data-source-order="34" data-source-route="order-34-route-1"><h4>阿斯代伦</h4><p class="en" lang="en">Now, let&#39;s get some rest? The sooner we start tomorrow, the better our chances of keeping this hypothetical.</p><p class="zh"><span>参考译文</span>好了，现在休息吧？明天越早出发，就越有希望让这一切永远只是假设。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">04.1B</span> · 共同选项</span><span class="condition-tag">条件 · 此前未反问过阿斯代伦的死法</span></div><article class="turn turn--gale" data-source-order="35"><h4>起源盖尔</h4><p class="en" lang="en">And you? How should I kill you?</p><p class="zh"><span>参考译文</span>那你呢？我该怎么杀你？</p></article><article class="turn turn--astarion" data-source-order="36"><h4>阿斯代伦</h4><div class="variants variants--stack"><section class="variant-card"><div class="version-heading"><span class="version-badge">版本 I</span></div><p class="en" lang="en">Ha! Oh, my boy. I&#39;d like to see you try.</p><p class="zh"><span>参考译文</span>哈！好小子。我倒想看看你有没有这个本事。</p></section><section class="variant-card"><div class="version-heading"><span class="version-badge">版本 II</span></div><p class="en" lang="en">Ha! Oh, my dear. I&#39;d like to see you try.</p><p class="zh"><span>参考译文</span>哈！亲爱的。我倒想看看你有没有这个本事。</p></section></div></article><article class="turn turn--astarion" data-source-order="34" data-source-route="order-34-route-2"><h4>阿斯代伦</h4><p class="en" lang="en">Now, let&#39;s get some rest? The sooner we start tomorrow, the better our chances of keeping this hypothetical.</p><p class="zh"><span>参考译文</span>好了，现在休息吧？明天越早出发，就越有希望让这一切永远只是假设。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">04.1C</span> · 共同选项</span></div><article class="turn turn--gale" data-source-order="37"><h4>起源盖尔</h4><p class="en" lang="en">Leave.</p><p class="zh"><span>参考译文</span>走开。</p></article><article class="turn turn--astarion" data-source-order="38"><h4>阿斯代伦</h4><p class="en" lang="en">See you in the morning. Sweet dreams, darling.</p><p class="zh"><span>参考译文</span>早上见。做个好梦，亲爱的。</p></article></section>
+
+<details class="research"><summary>研究依据</summary><p>来源：Patch 8 对话文件《CAMP_Night2_CRD_Astarion》。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details>
+</main></body></html>

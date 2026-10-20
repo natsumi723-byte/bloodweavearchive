@@ -1,0 +1,203 @@
+<!doctype html><html lang="zh-Hans"><head><script src="../../analytics.js"></script><meta name="book-id" content="BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Lord_Partnered"><meta name="source-page-ids" content="PAGE-SRC-0001-EPI_Epilogue_EnterParty,PAGE-SRC-0001-EPI_Epilogue_Astarion_Lord"><meta name="source-graph-ids" content="GRAPH-SRC-0001-EPI_Epilogue_EnterParty_P038,GRAPH-SRC-0001-EPI_Epilogue_Astarion_Lord_P038"><link rel="canonical" href="https://bloodweavearchive.com/books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Lord_Partnered.html">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>永生者的配偶</title><style id="visual-system-current">
+@page{size:A4;margin:18mm 17mm}
+:root{
+  --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
+  --astarion:#8B3048;--astarion-soft:#faedf1;--astarion-line:#c27b8e;
+  --gale:#624779;--gale-soft:#f3eff7;--gale-line:#9986aa;
+  --shared:#5e565d;--shared-soft:#f3f0f2;--shared-line:#aaa0a7;
+  --source:#51484d;--source-soft:#f6f2ee;--source-line:#9c8f87;
+  --research:#70572F;--research-soft:#fbf6e9;--research-line:#b79d6f;
+  --check:#795b1d;--check-soft:#fff8e8;--check-line:#c4a35d;
+  --success:#276247;--success-soft:#edf7f1;--success-line:#78ae91;
+  --failure:#8a3740;--failure-soft:#fff0f1;--failure-line:#ce8e94;
+  --conflict:#80503F;--conflict-soft:#fff5ef;--conflict-line:#c99f8e
+}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{max-width:900px;margin:28px auto;padding:18mm;background:var(--paper);color:var(--ink);font:16px/1.78 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;box-shadow:0 6px 32px #433b4218}
+main{max-width:860px;margin:auto}
+h1,h2,h3,h4{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.32}
+h1{margin:.2rem 0 1.35rem;color:var(--ink);padding-bottom:1rem;border-bottom:2px solid var(--rule)}
+.book-title__main{display:block;max-width:18em;font-size:clamp(2rem,4.4vw,2.5rem);line-height:1.2;letter-spacing:-.025em}
+.book-title__subtitle{display:block;max-width:28em;margin-top:.58rem;color:var(--gale);font-size:clamp(1.05rem,2.1vw,1.34rem);line-height:1.48;font-weight:650;letter-spacing:.01em}
+h2{font-size:clamp(1.5rem,3vw,1.95rem);margin:3.7rem 0 1.2rem;color:var(--ink);padding-bottom:.5rem;border-bottom:1px solid var(--rule);break-after:avoid-page}
+h3{font-size:1.2rem;margin:1.8rem 0 .8rem;color:var(--ink);break-after:avoid-page}
+h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
+.system-meta{margin:0 0 2.2rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.synopsis-deck{max-width:72ch;margin:0 0 2rem;color:var(--ink);font-size:1rem;line-height:1.72}
+.source-kicker{margin-bottom:.42rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
+.synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
+.synopsis-deck p{margin:.35rem 0}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.zh{color:#4e474c}
+.translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
+.editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
+.research-kicker,.editorial-note::before{color:var(--research);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
+.flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
+.flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
+.route{margin:2.1rem 0}
+.turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.turn p{margin:.38rem 0}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
+.note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
+.note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
+.note p,.source-note p{margin:.3rem 0}
+.choice{padding:1rem 1.1rem;margin:1.05rem 0;border:1px solid var(--rule);border-left:5px solid var(--shared-line);background:#fcfbfc;break-inside:avoid}
+.choice--shared{border-left-color:var(--shared-line);background:linear-gradient(90deg,var(--shared-soft),#fff 44%)}
+.choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response{break-inside:avoid}
+.turn.origin-response.origin-response--astarion{border-left:5px solid var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.turn.origin-response.origin-response--gale{border-left:5px solid var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response-heading{display:flex;align-items:center;flex-wrap:wrap;gap:.55rem .7rem;margin:0 0 .75rem}
+.origin-response-heading>.speaker{margin:0}
+.origin-response-tag{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;font-weight:700;font-size:.75rem;line-height:1.25}
+.origin-response-tag::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.origin-response--astarion .origin-response-tag{color:var(--astarion);background:var(--astarion-soft)}
+.origin-response--gale .origin-response-tag{color:var(--gale);background:var(--gale-soft)}
+.choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
+.tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
+.tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.choice--astarion>.tag,.choice--astarion>.badge,.choice--astarion>.choice-meta>.tag,.choice--astarion>.choice-meta>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge,.choice--gale>.choice-meta>.tag,.choice--gale>.choice-meta>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.condition-operator{display:inline-flex;align-items:center;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
+.source-reaction-tags{display:flex;justify-content:flex-end;margin:.35rem .85rem .7rem;color:var(--muted);font-size:.74rem;line-height:1.35;text-align:right}
+.source-reaction-tag{font-weight:600}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
+.branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.branch-note--between-variants{margin:1rem 0}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
+.menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45}
+.menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+.menu-label{min-width:0;text-wrap:wrap}
+.check{display:flex;align-items:center;margin:.85rem 0;padding:.62rem .78rem;border:1px solid var(--rule);border-left:3px solid var(--source-line);background:#faf7f4}
+.check-label{display:inline-flex;align-items:center;gap:.44rem;color:var(--source);font:700 .76rem/1.35 "Microsoft YaHei",sans-serif;letter-spacing:.02em}
+.d20-icon{display:inline-block;width:1.8rem;height:1.8rem;flex:0 0 1.8rem;vertical-align:-.43rem;overflow:visible}
+.d20-icon path{fill:currentColor}
+.variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
+.ending{padding:0;border:0;background:transparent;break-inside:avoid}
+.ending--success,.ending--failure{border:0;background:transparent}
+.ending--success .result-badge{border-color:#b8c7be;background:#f8faf9;color:#466255}
+.ending--failure .result-badge{border-color:#cdbbbe;background:#fcf9f9;color:#765158}
+.ending>.result-badge{margin:0 0 .45rem;gap:.44rem}
+.ending>.turn{margin:0}
+.ending h3{margin:.45rem 0;color:var(--ink)}
+.ending p{margin:.35rem 0}
+.outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
+.outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
+.component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
+.component-index a{color:var(--muted);text-underline-offset:.2em}
+@media(max-width:700px){
+  body{margin:0;padding:26px 18px;box-shadow:none}
+  p,code{overflow-wrap:anywhere;word-break:break-word}
+  .book-title__main{font-size:clamp(1.2rem,6.2vw,2.2rem);white-space:nowrap;text-wrap:nowrap;letter-spacing:-.04em}
+  .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
+  h2{font-size:1.18rem}
+  h3{font-size:1.05rem}
+  .variants{grid-template-columns:1fr;min-width:0}
+  .variant-card{min-width:0;max-width:100%}
+  .flow{padding:.9rem 1rem;-webkit-overflow-scrolling:touch}
+  .flow pre{width:max-content;min-width:100%;white-space:pre;font-size:12px;overflow-wrap:normal;word-break:normal}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
+  .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
+  .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
+  .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
+}
+@media print{
+  html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
+  .component-index,.component-note{display:none}
+  .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
+}
+</style></head><body><main class="book-page">
+<header class="book-header"><h1 class="book-title"><span class="book-title__main">永生者的配偶</span></h1></header>
+<div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br>本册收录起源盖尔与飞升伴侣阿斯代伦在耐色脑覆灭六个月后的聚会邀请与交谈。两人在扎尔宅邸举办假面舞会时收到老朋友的邀请；重聚之夜，他们谈起昔日同伴，也谈起共同拥有的权力、永恒与自由。</div>
+<h2>阅读脉络</h2><nav class="flow"><pre>00 · 重聚邀请
+↓
+01 · 先去见见老朋友
+↓
+02 · 昔日同伴的近况
+├─ 02.1 · 朋友们过得如何
+└─ 02.2 · 并肩而立的生活
+   ├─ 02.3 · 留在聚会或回到人群
+   └─ 02.4 · 永恒、权力与自由
+↓
+03 · 再次回到他身边</pre></nav>
+
+<h2 class="menu-heading"><span class="menu-code">00 ·</span><span class="menu-label">重聚邀请</span></h2><article class="turn" data-source-order="122"><h4>旁白</h4><p class="en" lang="en">Six months from the fall of the Netherbrain, you and Astarion were hosting a grand masquerade in the refurbished ballroom of Cazador's Palace.</p><p class="zh"><span class="translation">参考译文</span>耐色脑覆灭六个月后，你和阿斯代伦正在扎尔宅邸修葺一新的舞厅中举办一场盛大的假面舞会。</p><aside class="note"><b>镜头旁注</b><p lang="en">Black screen</p><p><span class="translation">参考译文</span>黑屏。</p></aside></article><article class="turn" data-source-order="123"><h4>旁白</h4><p class="en" lang="en">A young elf wearing an ivory mask in the guise of a skinless skull handed you a note as he passed you in the crowd.</p><p class="zh"><span class="translation">参考译文</span>一名年轻精灵戴着一副象牙制成、形似无皮骷髅的面具，从人群中与你擦肩而过，将一张字条递到你手中。</p><aside class="note"><b>镜头旁注</b><p lang="en">Begin campfire sequence</p><p><span class="translation">参考译文</span>营火场景开始。</p></aside></article>
+<div class="variants variants--stack"><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 源文件未明示</span></h3><article class="turn" data-source-order="124"><h4>旁白</h4><p class="en" lang="en">An invitation, written in a frail hand, inviting you to a celebration for those who stood against the Absolute.</p><p class="zh"><span class="translation">参考译文</span>那是一封字迹颤颤巍巍的邀请函，邀你参加一场为反抗至上真神之人举办的庆典。</p></article><article class="turn" data-source-order="125"><h4>旁白</h4><p class="en" lang="en">Astarion pouted when you read the invitation to him. He'd gladly accompany you, but he would have been happy to host the party himself.</p><p class="zh"><span class="translation">参考译文</span>你把邀请函念给阿斯代伦听时，他撅起了嘴。他当然乐意陪你前往，只不过若能亲自主持这场聚会，他会更高兴。</p></article><article class="turn" data-source-order="126"><h4>旁白</h4><p class="en" lang="en">As it is, you'll gather in a familiar place, and one altogether more suitable for such joyful reflection.</p><p class="zh"><span class="translation">参考译文</span>不过，你们将在一处熟悉的地方相聚；那里显然更适合一同欢庆、追忆往昔。</p></article></section><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 源文件未明示</span></h3><article class="turn" data-source-order="128"><h4>旁白</h4><p class="en" lang="en">An invitation, written in a frail hand, inviting you to a gathering of the friends and allies who stood with you against the Absolute.</p><p class="zh"><span class="translation">参考译文</span>那是一封字迹颤颤巍巍的邀请函，邀你与曾并肩对抗至上真神的朋友和盟友重聚。</p></article><article class="turn" data-source-order="129"><h4>旁白</h4><p class="en" lang="en">Astarion pouted when you read the invitation to him. He'd gladly accompany you, but he would have been happy to host the party himself.</p><p class="zh"><span class="translation">参考译文</span>你把邀请函念给阿斯代伦听时，他撅起了嘴。他当然乐意陪你前往，只不过若能亲自主持这场聚会，他会更高兴。</p></article><article class="turn" data-source-order="130"><h4>旁白</h4><p class="en" lang="en">As it is, you'll gather in a familiar place, and one altogether more suitable for your reunion.</p><p class="zh"><span class="translation">参考译文</span>不过，你们将在一处熟悉的地方相聚；那里显然更适合这场重逢。</p></article></section></div><span hidden data-structural-orders="127"></span>
+
+<h2 class="menu-heading"><span class="menu-code">01 ·</span><span class="menu-label">先去见见老朋友</span></h2><article class="turn turn--astarion" data-source-order="26"><h4>阿斯代伦</h4><p class="en" lang="en">I'm flattered by the attention, darling, but don't you want to check in with some of our erstwhile companions? I'm sure they've missed you.</p><p class="zh"><span class="translation">参考译文</span>亲爱的，你这么惦记我，真叫我受宠若惊。不过，你不想先去看看我们昔日的同伴吗？我敢说，他们都想你了。</p></article><aside class="route-guide">盖尔先去探望聚会上的昔日同伴。与他们交谈后，再回到阿斯代伦身边，继续阅读 02。</aside>
+
+<h2 class="menu-heading"><span class="menu-code">02 ·</span><span class="menu-label">昔日同伴的近况</span></h2><article class="turn turn--astarion" data-source-order="29"><h4>阿斯代伦</h4><p class="en" lang="en">And? How have our dear friends been without us to guide and protect them?</p><p class="zh"><span class="translation">参考译文</span>所以呢？少了我们的引导与保护，那些亲爱的朋友过得怎么样？</p></article>
+<h3 class="menu-heading"><span class="menu-code">02.1 ·</span><span class="menu-label">朋友们过得如何</span></h3>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.1A</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="30"><h4>起源盖尔</h4><p class="en" lang="en">They're great - everyone seems so happy.</p><p class="zh"><span class="translation">参考译文</span>他们都很好——每个人看起来都很幸福。</p></article><article class="turn turn--astarion" data-source-order="31"><h4>阿斯代伦</h4><p class="en" lang="en">Really? Are you sure? I was certain they'd be half-dead and begging us to take them back.</p><p class="zh"><span class="translation">参考译文</span>真的？你确定？我还以为他们早已半死不活，哭着求我们重新收留他们。</p></article><article class="turn turn--astarion" data-source-order="32"><h4>阿斯代伦</h4><p class="en" lang="en">Well, miracles never cease.</p><p class="zh"><span class="translation">参考译文</span>好吧，奇迹还真是层出不穷。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.1B</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="63"><h4>起源盖尔</h4><p class="en" lang="en">Some good, some bad.</p><p class="zh"><span class="translation">参考译文</span>有些好，有些坏。</p></article><article class="turn turn--astarion" data-source-order="64"><h4>阿斯代伦</h4><p class="en" lang="en">Really? I'm amazed they're doing as well as that - I was sure every one would be half-dead in the muck.</p><p class="zh"><span class="translation">参考译文</span>真的？他们居然还过得不赖，真让我吃惊——我还以为他们个个都会半死不活地躺在泥沟里。</p></article><article class="turn turn--astarion" data-repeat-source-order="32"><h4>阿斯代伦</h4><p class="en" lang="en">Well, miracles never cease.</p><p class="zh"><span class="translation">参考译文</span>好吧，奇迹还真是层出不穷。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.1C</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="65"><h4>起源盖尔</h4><p class="en" lang="en">Obviously they miss us terribly.</p><p class="zh"><span class="translation">参考译文</span>显然，他们想我们想得要命。</p></article><article class="turn turn--astarion" data-source-order="66"><h4>阿斯代伦</h4><p class="en" lang="en">Well of course they do! They were never anything without us leading them.</p><p class="zh"><span class="translation">参考译文</span>那当然！没有我们带领，他们从来就什么也不是。</p></article><article class="turn turn--astarion" data-source-order="67"><h4>阿斯代伦</h4><p class="en" lang="en">I'm amazed they've even survived this long, honestly.</p><p class="zh"><span class="translation">参考译文</span>老实说，他们居然能活到现在，我都很惊讶。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.1D</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="68"><h4>起源盖尔</h4><p class="en" lang="en">Oh, they're completely falling apart.</p><p class="zh"><span class="translation">参考译文</span>哦，他们已经彻底乱成一团了。</p></article><article class="turn turn--astarion" data-source-order="69"><h4>阿斯代伦</h4><p class="en" lang="en">Yes, well, that's to be expected. They never were anything without us.</p><p class="zh"><span class="translation">参考译文</span>是啊，这也在意料之中。没有我们，他们从来就一事无成。</p></article><article class="turn turn--astarion" data-repeat-source-order="67"><h4>阿斯代伦</h4><p class="en" lang="en">I'm amazed they've even survived this long, honestly.</p><p class="zh"><span class="translation">参考译文</span>老实说，他们居然能活到现在，我都很惊讶。</p></article></section>
+<aside class="route-guide">选择 02.1A–02.1D 后，继续阅读 02.2。</aside>
+
+<h3 class="menu-heading"><span class="menu-code">02.2 ·</span><span class="menu-label">并肩而立的生活</span></h3><article class="turn turn--astarion" data-source-order="33"><h4>阿斯代伦</h4><p class="en" lang="en">Still, it is good to see them. And good for them to see us, side by side, flourishing .</p><p class="zh"><span class="translation">参考译文</span>不过，见到他们确实不错。也该让他们看看，我们并肩而立，过得有多风光。</p></article>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.2A</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="34"><h4>起源盖尔</h4><p class="en" lang="en">True. We are spectacular, after all.</p><p class="zh"><span class="translation">参考译文</span>确实。毕竟，我们走到哪里都光彩照人。</p></article><article class="turn turn--astarion" data-source-order="35"><h4>阿斯代伦</h4><p class="en" lang="en">We do turn every head the moment we walk into a room. And rightly so.</p><p class="zh"><span class="translation">参考译文</span>我们一走进房间，所有人都会转头看过来。这也是理所当然。</p></article><article class="turn turn--astarion" data-source-order="36"><h4>阿斯代伦</h4><p class="en" lang="en">I may have power, but it would be nothing without you. You complete me.</p><p class="zh"><span class="translation">参考译文</span>我或许拥有力量，但没有你，这一切都毫无意义。有你在，我才完整。</p></article><article class="turn turn--astarion" data-source-order="37"><h4>阿斯代伦</h4><p class="en" lang="en">And together, we are unstoppable. So Heavens help the fool that tries to get in our way.</p><p class="zh"><span class="translation">参考译文</span>而只要我们联手，便无人能挡。谁敢挡我们的路，就只能自求多福了。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.2B</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="47"><h4>起源盖尔</h4><p class="en" lang="en">It is wonderful. I'm glad I get to share this with you.</p><p class="zh"><span class="translation">参考译文</span>这一切真好。我很高兴能和你一起分享。</p></article><article class="turn turn--astarion" data-source-order="48"><h4>阿斯代伦</h4><p class="en" lang="en">And I am blessed to share it with you, my love.</p><p class="zh"><span class="translation">参考译文</span>而能与你共享这一切，也是我的福分，亲爱的。</p></article><article class="turn turn--astarion" data-repeat-source-order="36"><h4>阿斯代伦</h4><p class="en" lang="en">I may have power, but it would be nothing without you. You complete me.</p><p class="zh"><span class="translation">参考译文</span>我或许拥有力量，但没有你，这一切都毫无意义。有你在，我才完整。</p></article><article class="turn turn--astarion" data-repeat-source-order="37"><h4>阿斯代伦</h4><p class="en" lang="en">And together, we are unstoppable. So Heavens help the fool that tries to get in our way.</p><p class="zh"><span class="translation">参考译文</span>而只要我们联手，便无人能挡。谁敢挡我们的路，就只能自求多福了。</p></article></section>
+<span hidden data-structural-orders="49"></span><section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.2C</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="38"><h4>起源盖尔</h4><p class="en" lang="en">Do you want to see the others? Say 'hello'?</p><p class="zh"><span class="translation">参考译文</span>你想去见见其他人吗？跟他们打声招呼？</p></article><article class="turn turn--astarion" data-source-order="39"><h4>阿斯代伦</h4><p class="en" lang="en">No, I can see more than enough from here.</p><p class="zh"><span class="translation">参考译文</span>不必了，我从这里已经看得够多了。</p></article><article class="turn turn--astarion" data-source-order="40"><h4>阿斯代伦</h4><p class="en" lang="en">But you should go - mingle, chat, laugh. Have fun, my love.</p><p class="zh"><span class="translation">参考译文</span>不过你该去——应酬、聊天、欢笑。玩得开心些，亲爱的。</p></article><article class="turn turn--astarion" data-source-order="41"><h4>阿斯代伦</h4><p class="en" lang="en">And if our friends drop any interesting secrets, bring them right back to me.</p><p class="zh"><span class="translation">参考译文</span>要是我们的朋友不小心说漏了什么有趣的秘密，记得立刻带回来告诉我。</p></article><article class="turn turn--astarion" data-source-order="42"><h4>阿斯代伦</h4><p class="en" lang="en">Until then, I'll be here. But don't fret, I will be watching. I am always watching.</p><p class="zh"><span class="translation">参考译文</span>在那之前，我会待在这里。但别担心，我会看着的。我一直都在看着。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.2D</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="50"><h4>起源盖尔</h4><p class="en" lang="en">Is that what we're doing? 'Flourishing'?</p><p class="zh"><span class="translation">参考译文</span>我们现在真算得上是“活得风光”吗？</p></article><article class="turn turn--astarion" data-source-order="51"><h4>阿斯代伦</h4><p class="en" lang="en">Of course, my darling. Look at us!</p><p class="zh"><span class="translation">参考译文</span>当然了，亲爱的。看看我们！</p></article><article class="turn turn--astarion" data-source-order="52"><h4>阿斯代伦</h4><p class="en" lang="en">We share a palace, share power, live lives eternal in each other's arms. What more could anyone want?</p><p class="zh"><span class="translation">参考译文</span>我们共享一座宫殿，共享权力，在彼此怀中永生。还有谁能奢求更多？</p></article></section>
+
+<h3 class="menu-heading"><span class="menu-code">02.3 ·</span><span class="menu-label">留在聚会或回到人群</span></h3><aside class="route-guide">选择 02.2A 或 02.2B 后，继续阅读本节。02.3A–02.3C 均进入同一段结束语。</aside>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.3A</span> · 共同选项</div></div><article class="turn turn--gale" data-repeat-source-order="38"><h4>起源盖尔</h4><p class="en" lang="en">Do you want to see the others? Say 'hello'?</p><p class="zh"><span class="translation">参考译文</span>你想去见见其他人吗？跟他们打声招呼？</p></article><article class="turn turn--astarion" data-repeat-source-order="39"><h4>阿斯代伦</h4><p class="en" lang="en">No, I can see more than enough from here.</p><p class="zh"><span class="translation">参考译文</span>不必了，我从这里已经看得够多了。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.3B</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="43"><h4>起源盖尔</h4><p class="en" lang="en">I'll get back to the party. Do you want anything?</p><p class="zh"><span class="translation">参考译文</span>我要回宴会上去了。你想要什么吗？</p></article><article class="turn turn--astarion" data-source-order="44"><h4>阿斯代伦</h4><p class="en" lang="en">No, everything I want is standing right here.</p><p class="zh"><span class="translation">参考译文</span>不必，我想要的一切就站在这里。</p><aside class="note"><b>制作旁注</b><p lang="en">Speaking to the player he's in a romance with</p><p><span class="translation">参考译文</span>阿斯代伦正对自己的恋爱对象——起源盖尔——说话。</p></aside></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.3C</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="45"><h4>起源盖尔</h4><p class="en" lang="en">None would dare, my love.</p><p class="zh"><span class="translation">参考译文</span>没人敢那么做，亲爱的。</p></article><article class="turn turn--astarion" data-source-order="46"><h4>阿斯代伦</h4><p class="en" lang="en">I almost wish they would. It's been some time since we've seen a real challenge.</p><p class="zh"><span class="translation">参考译文</span>我倒几乎希望有人敢。我们已经很久没遇到真正的挑战了。</p></article></section>
+<article class="turn turn--astarion" data-repeat-source-order="40"><h4>阿斯代伦</h4><p class="en" lang="en">But you should go - mingle, chat, laugh. Have fun, my love.</p><p class="zh"><span class="translation">参考译文</span>不过你该去——应酬、聊天、欢笑。玩得开心些，亲爱的。</p></article><article class="turn turn--astarion" data-repeat-source-order="41"><h4>阿斯代伦</h4><p class="en" lang="en">And if our friends drop any interesting secrets, bring them right back to me.</p><p class="zh"><span class="translation">参考译文</span>要是我们的朋友不小心说漏了什么有趣的秘密，记得立刻带回来告诉我。</p></article><article class="turn turn--astarion" data-repeat-source-order="42"><h4>阿斯代伦</h4><p class="en" lang="en">Until then, I'll be here. But don't fret, I will be watching. I am always watching.</p><p class="zh"><span class="translation">参考译文</span>在那之前，我会待在这里。但别担心，我会看着的。我一直都在看着。</p></article>
+
+<h3 class="menu-heading"><span class="menu-code">02.4 ·</span><span class="menu-label">永恒、权力与自由</span></h3><aside class="route-guide">本组承接 02.2D。选择 02.4A 后，本次交谈直接结束；其余三项进入同一段结束语。</aside>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.4A</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="53"><h4>起源盖尔</h4><p class="en" lang="en">Freedom?</p><p class="zh"><span class="translation">参考译文</span>自由？</p></article><article class="turn turn--astarion" data-source-order="54"><h4>阿斯代伦</h4><p class="en" lang="en">Gods, not this again.</p><p class="zh"><span class="translation">参考译文</span>诸神在上，怎么又来了。</p></article><article class="turn turn--astarion" data-source-order="55"><h4>阿斯代伦</h4><p class="en" lang="en">I give you wealth, power, pleasure - every decadence that can be afforded to a person? But you'd rather - what - sleep in the dirt again?</p><p class="zh"><span class="translation">参考译文</span>我给了你财富、权力、欢愉——凡人所能享受的种种奢华。可你倒宁愿……怎么，重新睡回泥地里去？</p></article><article class="turn turn--astarion" data-source-order="56"><h4>阿斯代伦</h4><p class="en" lang="en">You are my consort, and I will see you living the very best life. Even if you don't appreciate it.</p><p class="zh"><span class="translation">参考译文</span>你是我的配偶，我一定会让你过上最好的生活。哪怕你并不领情。</p></article><article class="turn turn--astarion" data-source-order="57"><h4>阿斯代伦</h4><p class="en" lang="en">Why don't you go and mingle? Have fun with your so-called friends. I'll be here when you're done.</p><p class="zh"><span class="translation">参考译文</span>你何不去应酬一下？和你那些所谓的朋友好好玩吧。等你聊完，我还在这里。</p></article></section>
+<span hidden data-structural-orders="58"></span><section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.4B</span> · 共同选项</div></div><article class="turn turn--gale" data-repeat-source-order="38"><h4>起源盖尔</h4><p class="en" lang="en">Do you want to see the others? Say 'hello'?</p><p class="zh"><span class="translation">参考译文</span>你想去见见其他人吗？跟他们打声招呼？</p></article><article class="turn turn--astarion" data-repeat-source-order="39"><h4>阿斯代伦</h4><p class="en" lang="en">No, I can see more than enough from here.</p><p class="zh"><span class="translation">参考译文</span>不必了，我从这里已经看得够多了。</p></article></section>
+<span hidden data-structural-orders="59"></span><section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.4C</span> · 共同选项</div></div><article class="turn turn--gale" data-repeat-source-order="43"><h4>起源盖尔</h4><p class="en" lang="en">I'll get back to the party. Do you want anything?</p><p class="zh"><span class="translation">参考译文</span>我要回宴会上去了。你想要什么吗？</p></article><article class="turn turn--astarion" data-repeat-source-order="44"><h4>阿斯代伦</h4><p class="en" lang="en">No, everything I want is standing right here.</p><p class="zh"><span class="translation">参考译文</span>不必，我想要的一切就站在这里。</p><aside class="note"><b>制作旁注</b><p lang="en">Speaking to the player he's in a romance with</p><p><span class="translation">参考译文</span>阿斯代伦正对自己的恋爱对象——起源盖尔——说话。</p></aside></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><div class="tag badge badge--shared"><span class="choice-code">02.4D</span> · 共同选项</div></div><article class="turn turn--gale" data-source-order="60"><h4>起源盖尔</h4><p class="en" lang="en">Nothing. Forget I said anything.</p><p class="zh"><span class="translation">参考译文</span>没什么。当我什么都没说。</p></article><article class="turn turn--astarion" data-source-order="61"><h4>阿斯代伦</h4><p class="en" lang="en">Already done.</p><p class="zh"><span class="translation">参考译文</span>早就忘了。</p></article><span hidden data-structural-orders="62"></span></section><article class="turn turn--astarion" data-repeat-source-order="40"><h4>阿斯代伦</h4><p class="en" lang="en">But you should go - mingle, chat, laugh. Have fun, my love.</p><p class="zh"><span class="translation">参考译文</span>不过你该去——应酬、聊天、欢笑。玩得开心些，亲爱的。</p></article><article class="turn turn--astarion" data-repeat-source-order="41"><h4>阿斯代伦</h4><p class="en" lang="en">And if our friends drop any interesting secrets, bring them right back to me.</p><p class="zh"><span class="translation">参考译文</span>要是我们的朋友不小心说漏了什么有趣的秘密，记得立刻带回来告诉我。</p></article><article class="turn turn--astarion" data-repeat-source-order="42"><h4>阿斯代伦</h4><p class="en" lang="en">Until then, I'll be here. But don't fret, I will be watching. I am always watching.</p><p class="zh"><span class="translation">参考译文</span>在那之前，我会待在这里。但别担心，我会看着的。我一直都在看着。</p></article>
+
+<h2 class="menu-heading"><span class="menu-code">03 ·</span><span class="menu-label">再次回到他身边</span></h2>
+<div class="variants variants--stack"><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 此前在 02.4A 追问自由</span></h3><article class="turn turn--astarion" data-source-order="27"><h4>阿斯代伦</h4><p class="en" lang="en">You're not done already, surely?</p><p class="zh"><span class="translation">参考译文</span>不会吧，你这么快就聊完了？</p><aside class="note"><b>源文件旁注</b><p lang="en">[Vampire Lord]</p><p><span class="translation">参考译文</span>［吸血鬼领主］</p></aside></article></section><section class="variant-card"><h3 class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 通常状态下再次接近</span></h3><article class="turn turn--astarion" data-source-order="28"><h4>阿斯代伦</h4><p class="en" lang="en">We have eternity for chit-chat, my love - the others only get you for tonight. I can't keep you all to myself.</p><p class="zh"><span class="translation">参考译文</span>亲爱的，我们有永恒的时间可以慢慢聊——其他人却只有今晚能见到你。我总不能一直独占着你。</p><aside class="note"><b>源文件旁注</b><p lang="en">[Vampire Lord]</p><p><span class="translation">参考译文</span>［吸血鬼领主］</p></aside></article></section></div>
+<details class="research"><summary>研究依据</summary><p>来源：Patch 8 对话文件《EPI_Epilogue_EnterParty》《EPI_Epilogue_Astarion_Lord》。</p><p>本册静态闭包为 53 个节点：48 个有声节点与 5 个结构节点。中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main></body></html>

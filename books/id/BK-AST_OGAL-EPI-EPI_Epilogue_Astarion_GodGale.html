@@ -1,0 +1,1251 @@
+<!doctype html>
+<html lang="zh-Hans"><head><script src="../../analytics.js"></script><meta name="book-id" content="BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_GodGale"><meta name="source-page-ids" content="PAGE-SRC-0001-EPI_Epilogue_EnterParty,PAGE-SRC-0001-EPI_Epilogue_Astarion"><meta name="source-graph-ids" content="GRAPH-SRC-0001-EPI_Epilogue_EnterParty_P038,GRAPH-SRC-0001-EPI_Epilogue_Astarion_P038"><link rel="canonical" href="https://bloodweavearchive.com/books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_GodGale.html">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>神明与旧日同伴</title>
+<style id="visual-system-current">
+@page{size:A4;margin:18mm 17mm}
+:root{
+  --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
+  --astarion:#8B3048;--astarion-soft:#faedf1;--astarion-line:#c27b8e;
+  --gale:#624779;--gale-soft:#f3eff7;--gale-line:#9986aa;
+  --shared:#5e565d;--shared-soft:#f3f0f2;--shared-line:#aaa0a7;
+  --source:#51484d;--source-soft:#f6f2ee;--source-line:#9c8f87;
+  --research:#70572F;--research-soft:#fbf6e9;--research-line:#b79d6f;
+  --check:#795b1d;--check-soft:#fff8e8;--check-line:#c4a35d;
+  --success:#276247;--success-soft:#edf7f1;--success-line:#78ae91;
+  --failure:#8a3740;--failure-soft:#fff0f1;--failure-line:#ce8e94;
+  --conflict:#80503F;--conflict-soft:#fff5ef;--conflict-line:#c99f8e
+}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{max-width:900px;margin:28px auto;padding:18mm;background:var(--paper);color:var(--ink);font:16px/1.78 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;box-shadow:0 6px 32px #433b4218}
+main{max-width:860px;margin:auto}
+h1,h2,h3,h4{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.32}
+h1{margin:.2rem 0 1.35rem;color:var(--ink);padding-bottom:1rem;border-bottom:2px solid var(--rule)}
+.book-title__main{display:block;max-width:18em;font-size:clamp(2rem,4.4vw,2.5rem);line-height:1.2;letter-spacing:-.025em}
+.book-title__subtitle{display:block;max-width:28em;margin-top:.58rem;color:var(--gale);font-size:clamp(1.05rem,2.1vw,1.34rem);line-height:1.48;font-weight:650;letter-spacing:.01em}
+h2{font-size:clamp(1.5rem,3vw,1.95rem);margin:3.7rem 0 1.2rem;color:var(--ink);padding-bottom:.5rem;border-bottom:1px solid var(--rule);break-after:avoid-page}
+h3{font-size:1.2rem;margin:1.8rem 0 .8rem;color:var(--ink);break-after:avoid-page}
+h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
+.system-meta{margin:0 0 2.2rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.synopsis-deck{max-width:72ch;margin:0 0 2rem;color:var(--ink);font-size:1rem;line-height:1.72}
+.source-kicker{margin-bottom:.42rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
+.synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
+.synopsis-deck p{margin:.35rem 0}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.zh{color:#4e474c}
+.translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
+.editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
+.research-kicker,.editorial-note::before{color:var(--research);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
+.flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
+.flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
+.route{margin:2.1rem 0}
+.turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.turn p{margin:.38rem 0}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
+.note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
+.note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
+.note p,.source-note p{margin:.3rem 0}
+.choice{padding:1rem 1.1rem;margin:1.05rem 0;border:1px solid var(--rule);border-left:5px solid var(--shared-line);background:#fcfbfc;break-inside:avoid}
+.choice--shared{border-left-color:var(--shared-line);background:linear-gradient(90deg,var(--shared-soft),#fff 44%)}
+.choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response{break-inside:avoid}
+.turn.origin-response.origin-response--astarion{border-left:5px solid var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.turn.origin-response.origin-response--gale{border-left:5px solid var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response-heading{display:flex;align-items:center;flex-wrap:wrap;gap:.55rem .7rem;margin:0 0 .75rem}
+.origin-response-heading>.speaker{margin:0}
+.origin-response-tag{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;font-weight:700;font-size:.75rem;line-height:1.25}
+.origin-response-tag::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.origin-response--astarion .origin-response-tag{color:var(--astarion);background:var(--astarion-soft)}
+.origin-response--gale .origin-response-tag{color:var(--gale);background:var(--gale-soft)}
+.choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
+.tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
+.tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.choice--astarion>.tag,.choice--astarion>.badge,.choice--astarion>.choice-meta>.tag,.choice--astarion>.choice-meta>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge,.choice--gale>.choice-meta>.tag,.choice--gale>.choice-meta>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.condition-operator{display:inline-flex;align-items:center;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
+.source-reaction-tags{display:flex;justify-content:flex-end;margin:.35rem .85rem .7rem;color:var(--muted);font-size:.74rem;line-height:1.35;text-align:right}
+.source-reaction-tag{font-weight:600}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
+.branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.branch-note--between-variants{margin:1rem 0}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
+.menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45}
+.menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+.menu-label{min-width:0;text-wrap:wrap}
+.check{display:flex;align-items:center;margin:.85rem 0;padding:.62rem .78rem;border:1px solid var(--rule);border-left:3px solid var(--source-line);background:#faf7f4}
+.check-label{display:inline-flex;align-items:center;gap:.44rem;color:var(--source);font:700 .76rem/1.35 "Microsoft YaHei",sans-serif;letter-spacing:.02em}
+.d20-icon{display:inline-block;width:1.8rem;height:1.8rem;flex:0 0 1.8rem;vertical-align:-.43rem;overflow:visible}
+.d20-icon path{fill:currentColor}
+.variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
+.ending{padding:0;border:0;background:transparent;break-inside:avoid}
+.ending--success,.ending--failure{border:0;background:transparent}
+.ending--success .result-badge{border-color:#b8c7be;background:#f8faf9;color:#466255}
+.ending--failure .result-badge{border-color:#cdbbbe;background:#fcf9f9;color:#765158}
+.ending>.result-badge{margin:0 0 .45rem;gap:.44rem}
+.ending>.turn{margin:0}
+.ending h3{margin:.45rem 0;color:var(--ink)}
+.ending p{margin:.35rem 0}
+.outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
+.outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
+.component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
+.component-index a{color:var(--muted);text-underline-offset:.2em}
+@media(max-width:700px){
+  body{margin:0;padding:26px 18px;box-shadow:none}
+  p,code{overflow-wrap:anywhere;word-break:break-word}
+  .book-title__main{font-size:clamp(1.2rem,6.2vw,2.2rem);white-space:nowrap;text-wrap:nowrap;letter-spacing:-.04em}
+  .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
+  h2{font-size:1.18rem}
+  h3{font-size:1.05rem}
+  .variants{grid-template-columns:1fr;min-width:0}
+  .variant-card{min-width:0;max-width:100%}
+  .flow{padding:.9rem 1rem;-webkit-overflow-scrolling:touch}
+  .flow pre{width:max-content;min-width:100%;white-space:pre;font-size:12px;overflow-wrap:normal;word-break:normal}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
+  .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
+  .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
+  .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
+}
+@media print{
+  html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
+  .component-index,.component-note{display:none}
+  .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
+}
+</style>
+<style id="book-local-selector">
+.route-configurator{margin:2.2rem 0;padding:1.25rem 1.35rem;border:1px solid var(--rule);background:#fbf8f5}.route-configurator__eyebrow{margin:0 0 .35rem;color:var(--gale);font-size:.82rem;font-weight:750;letter-spacing:.12em}.route-configurator h2{margin:0;border:0;padding:0}.route-configurator__description{max-width:54rem;margin-top:.65rem}.reading-modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.15rem 0 1.35rem}.reading-mode{appearance:none;border:1px solid #d2c5cc;background:#fff;padding:1rem 1.05rem;text-align:left;color:inherit;font:inherit;cursor:pointer}.reading-mode strong,.reading-mode span{display:block}.reading-mode strong{font-size:1.05rem}.reading-mode span{margin-top:.35rem;color:var(--muted);font-size:.9rem;line-height:1.55}.reading-mode[aria-pressed="true"]{border-color:var(--gale);background:linear-gradient(135deg,var(--gale-soft) 0%,#fff 72%);box-shadow:inset 4px 0 0 var(--gale)}.route-configurator__choices{border-top:1px solid var(--rule);padding-top:.15rem}.route-axis{margin-top:1rem}.route-axis h3{font-size:1rem;margin:0 0 .55rem}.route-options{display:flex;flex-wrap:wrap;gap:.55rem}.route-options button{appearance:none;border:1px solid #cabec5;border-radius:999px;background:#fff;padding:.5rem .85rem;color:inherit;font:inherit;font-weight:650;cursor:pointer}.route-options button[aria-pressed="true"]{border-color:var(--gale);background:var(--gale-soft);color:var(--gale);box-shadow:inset 0 0 0 1px var(--gale)}.route-options button:disabled{opacity:.38;cursor:not-allowed}.route-configurator__status{margin:1rem 0 0;color:var(--muted);font-size:.95em}.route-reading [hidden]{display:none!important}.route-segment{display:block}.variants--single-visible{grid-template-columns:minmax(0,1fr)}.route-reading .variants--single-visible>.variant-card{padding:0;border:0;background:transparent}
+@media(max-width:620px){.reading-modes{grid-template-columns:1fr}.route-configurator{margin:1.6rem 0;padding:1rem}.reading-mode{padding:.9rem}.route-options{display:flex;flex-wrap:wrap;gap:.5rem}.route-options button{flex:0 0 auto;width:auto;max-width:100%;min-width:0;white-space:nowrap;line-height:1.45;text-align:left}.route-configurator__status{line-height:1.6}}
+</style></head><body>
+<main class="book-page scene-book"><header class="book-header">
+<h1 class="book-title">
+<span class="book-title__main">神明与旧日同伴</span>
+</h1></header>
+<div class="editorial-opening">
+<span class="research-kicker">◆ 研究者整理</span><br>本册收录耐色脑覆灭六个月后，成为野心之神的盖尔重返凡世与未飞升阿斯代伦在聚会上的重逢与交谈。</div>
+<section class="route-configurator" aria-labelledby="route-configurator-title"><p class="route-configurator__eyebrow">阅读导航</p>
+<h2 id="route-configurator-title">请选择阅读方式</h2>
+<div class="route-configurator__description">本册固定呈现成为野心之神的盖尔与非伴侣身份的未飞升阿斯代伦重逢。请选择阿斯代伦分别后的生活路线，逐条阅读可触达内容；也可以一次展开全部选项。</div>
+<div class="reading-modes" role="group" aria-label="阅读模式"><button class="reading-mode" type="button" data-mode="route" aria-pressed="false"><strong>自选路线</strong>
+<span>选择以下一项生活状态，开启符合条件的路线和选项。</span></button><button class="reading-mode" type="button" data-mode="all" aria-pressed="true"><strong>全选项阅读</strong>
+<span>不筛选路线，按照资料编排顺序阅读本册收录的全部分支。</span></button>
+</div>
+<div class="route-configurator__choices">
+<div class="route-axis">
+<h3>分别后的六个月里，阿斯代伦在哪里生活？</h3>
+<div class="route-options"><button type="button" data-axis="life" data-value="threat" aria-pressed="false">躲避仍活着的卡扎多尔</button><button type="button" data-axis="life" data-value="independent" aria-pressed="false">独自在外生活</button><button type="button" data-axis="life" data-value="haven" aria-pressed="false">带领衍体定居幽暗地域</button>
+</div>
+</div>
+</div><p class="route-configurator__status" data-route-status="" aria-live="polite">当前为全选项阅读。</p>
+</section>
+<div class="route-reading" data-route-reading="">
+<section class="route">
+<h2 class="menu-heading">
+<span class="menu-code">00 ·</span>
+<span class="menu-label">重聚邀请</span>
+</h2>
+<article class="turn " data-source-entry="EPI_Epilogue_EnterParty" data-source-order="65">
+<h4>旁白</h4><p class="en" lang="en">Time has passed since you claimed your godhood, but you cannot say how much. A day, a month, a year, a century?</p><p class="zh">
+<span class="translation">参考译文</span>自你登临神位以来，时间已经流逝，可你说不清究竟过去了多久。一天、一个月、一年，还是一个世纪？</p>
+<aside class="note"><b>制作旁注</b><p lang="en">Black screen</p><p>
+<span class="translation">参考译文</span>黑屏。</p>
+</aside>
+</article>
+<article class="turn " data-source-entry="EPI_Epilogue_EnterParty" data-source-order="66">
+<h4>旁白</h4><p class="en" lang="en">You measure time in aeons and eternities, and space is a matter of infinities, overlapping impossibly in the dreams of the divine.</p><p class="zh">
+<span class="translation">参考译文</span>你以万古与永恒计量时间；至于空间，则是无数重无限，在神明的梦中以不可能的方式彼此交叠。</p>
+<aside class="note"><b>制作旁注</b><p lang="en">Begin campfire sequence</p><p>
+<span class="translation">参考译文</span>营火场景开始。</p>
+</aside>
+</article>
+<div class="variants variants--stack">
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag">条件 · 源文件未明示</span>
+</h3>
+<article class="turn " data-source-entry="EPI_Epilogue_EnterParty" data-source-order="67">
+<h4>旁白</h4><p class="en" lang="en">But the virtues of immortality are as undeniable as they are limitless.</p><p class="zh">
+<span class="translation">参考译文</span>然而，永生的妙处无可否认，亦如永恒一般没有尽头。</p>
+</article>
+<article class="turn " data-source-entry="EPI_Epilogue_EnterParty" data-source-order="68">
+<h4>旁白</h4><p class="en" lang="en">That is why you must return once more to Faerûn, where the Netherbrain fell - and where your ambition was first sparked.</p><p class="zh">
+<span class="translation">参考译文</span>因此，你必须再度回到费伦——耐色脑覆灭之地，也是你的野心最初燃起之处。</p>
+</article>
+<article class="turn " data-source-entry="EPI_Epilogue_EnterParty" data-source-order="69">
+<h4>旁白</h4><p class="en" lang="en">Perhaps there you might learn how much time has passed since you last graced the planes as a mortal man.</p><p class="zh">
+<span class="translation">参考译文</span>或许在那里，你能弄清自己上一次以凡人之身踏足诸界，已是多久以前。</p>
+</article>
+</section>
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag">条件 · 源文件未明示</span>
+</h3>
+<article class="turn " data-source-entry="EPI_Epilogue_EnterParty" data-source-order="71">
+<h4>旁白</h4><p class="en" lang="en">But the bonds of friendship and heroism still have meaning, and they are truly without limit.</p><p class="zh">
+<span class="translation">参考译文</span>但友谊与英雄情谊依然有其意义——而且真正无远弗届。</p>
+</article>
+<article class="turn " data-source-entry="EPI_Epilogue_EnterParty" data-source-order="72">
+<h4>旁白</h4><p class="en" lang="en">That is why you must return once more to Faerûn, to be with those who stood alongside you when the Netherbrain fell.</p><p class="zh">
+<span class="translation">参考译文</span>因此，你必须再度回到费伦，与那些在耐色脑覆灭之际和你并肩作战的人相聚。</p>
+</article>
+<article class="turn " data-source-entry="EPI_Epilogue_EnterParty" data-source-order="73">
+<h4>旁白</h4><p class="en" lang="en">To be among mortals once more. The best of their kind.</p><p class="zh">
+<span class="translation">参考译文</span>再一次置身凡人之间——他们之中最杰出的一群。</p>
+</article>
+<article class="turn " data-source-entry="EPI_Epilogue_EnterParty" data-source-order="74">
+<h4>旁白</h4><p class="en" lang="en">Perhaps they can tell you how much time has passed since the last time you were together.</p><p class="zh">
+<span class="translation">参考译文</span>或许他们能告诉你，距离上次相聚究竟过去了多久。</p>
+</article>
+</section>
+</div>
+</section>
+<section class="route">
+<h2 class="menu-heading">
+<span class="menu-code">01 ·</span>
+<span class="menu-label">与阿斯代伦重逢</span>
+</h2>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="55">
+<h4>阿斯代伦 <span class="condition-tag">条件 · 好感度低于 30</span></h4>
+<p class="en" lang="en">Well, look who decided to turn up.</p><p class="zh">
+<span class="translation">参考译文</span>瞧瞧是谁终于肯露面了。</p>
+<aside class="note"><b>制作旁注</b><p lang="en">Low approval greeting (not hostile, but not overjoyed to see you either.)</p><p>
+<span class="translation">参考译文</span>低好感度问候（并无敌意，但见到盖尔也谈不上多高兴）。</p>
+</aside>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="57">
+<h4>阿斯代伦</h4><p class="en" lang="en">Hello, darling.</p><p class="zh">
+<span class="translation">参考译文</span>你好啊，亲爱的。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="58">
+<h4>阿斯代伦</h4><p class="en" lang="en">I wasn't sure our withered old friend could live up to his promise, but here we are.</p><p class="zh">
+<span class="translation">参考译文</span>我原本不确定我们那位干瘪的老朋友能否兑现承诺，不过我们还是来了。</p>
+</article>
+</section>
+<section class="route">
+<h2 class="menu-heading">
+<span class="menu-code">02 ·</span>
+<span class="menu-label">神祇与旧日同伴</span>
+</h2>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="286">
+<h4>阿斯代伦</h4><p class="en" lang="en">I would ask if things have been going well, but you seem to be a literal god, so... I'm guessing 'yes'?</p><p class="zh">
+<span class="translation">参考译文</span>我本想问你过得怎么样，可你现在显然已经成了真正的神，所以……我猜答案是“很好”？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="287">
+<h4>阿斯代伦</h4><p class="en" lang="en">What's it like? All that power at your fingertips? All those prayers to answer?</p><p class="zh">
+<span class="translation">参考译文</span>那是什么感觉？指尖掌握着那般力量？还要回应那么多祈祷？</p>
+</article>
+<h3 class="menu-heading">
+<span class="menu-code">02.1 ·</span>
+<span class="menu-label">神位与凡世</span>
+</h3>
+<section class="choice">
+<div class="choice-meta">
+<div class="tag badge">
+<span class="choice-code">02.1A</span> · 起源盖尔选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="288">
+<h4>起源盖尔</h4><p class="en" lang="en">It's been a charmed immortality so far. I'm enjoying myself immensely.</p><p class="zh">
+<span class="translation">参考译文</span>这段永生至今可谓得天独厚。我过得痛快极了。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="289">
+<h4>阿斯代伦</h4><p class="en" lang="en">There was a time when I would have done anything to have what you have. But now? I think I would have felt more chained than charmed.</p><p class="zh">
+<span class="translation">参考译文</span>曾经有一段时间，为了得到你所拥有的一切，我什么都愿意做。但现在呢？我感受到的恐怕不会是恩宠，而只会是更沉重的枷锁。</p>
+<aside class="note"><b>制作旁注</b><p lang="en">Stress on 'anything'</p><p>
+<span class="translation">参考译文</span>重读“什么都”。</p>
+</aside>
+</article>
+</section>
+<section class="choice">
+<div class="choice-meta">
+<div class="tag badge">
+<span class="choice-code">02.1B</span> · 起源盖尔选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="297">
+<h4>起源盖尔</h4><p class="en" lang="en">I admit, there are times I miss my mortal life.</p><p class="zh">
+<span class="translation">参考译文</span>我承认，有时我会怀念凡人的生活。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="298">
+<h4>阿斯代伦</h4><p class="en" lang="en">Yes, I suppose you're above the baser pleasures of life now. A pity: they're often the most fun.</p><p class="zh">
+<span class="translation">参考译文</span>是啊，我想你如今已经超脱于生命中那些低俗乐趣了。真可惜：它们往往才最有趣。</p>
+</article>
+</section>
+<section class="choice">
+<div class="choice-meta">
+<div class="tag badge">
+<span class="choice-code">02.1C</span> · 起源盖尔选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="299">
+<h4>起源盖尔</h4><p class="en" lang="en">Have you considered praying to me? I am the God of Ambition - I could help you.</p><p class="zh">
+<span class="translation">参考译文</span>你考虑过向我祈祷吗？我是野心之神——我可以帮你。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="300">
+<h4>阿斯代伦</h4><p class="en" lang="en">Oh no, I've seen what too much ambition can lead to. I'm quite all right as I am, thank you.</p><p class="zh">
+<span class="translation">参考译文</span>哦，不必了。我见识过野心过盛会带来什么后果。我现在这样就很好，多谢。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="301">
+<h4>阿斯代伦</h4><p class="en" lang="en">Not that I'm immune to the charms of your domain. But all things in moderation.</p><p class="zh">
+<span class="translation">参考译文</span>倒也不是说你的神职对我毫无吸引力。不过凡事都要适度。</p>
+</article>
+<aside class="route-guide">继续阅读 <strong>03</strong> · 老朋友的近况，直接进入后续话题。</aside>
+</section>
+<div class="branch-note">选择 <strong>02.1A</strong> · 享受永生或 <strong>02.1B</strong> · 怀念凡人生活后，接以下共同回应。</div>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="290">
+<h4>阿斯代伦</h4><p class="en" lang="en">Don't get me wrong, I am happy for you. It's just that I'm happy for myself too.</p><p class="zh">
+<span class="translation">参考译文</span>别误会，我为你高兴。只是我也为自己感到高兴。</p>
+</article>
+</section>
+<section class="route">
+<h2 class="menu-heading">
+<span class="menu-code">03 ·</span>
+<span class="menu-label">老朋友的近况</span>
+</h2>
+<h3 class="menu-heading">
+<span class="menu-code">03.1 ·</span>
+<span class="menu-label">问起他的近况</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.1A</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="291">
+<h4>起源盖尔</h4><p class="en" lang="en">You seem happy. Have you been drinking?</p><p class="zh">
+<span class="translation">参考译文</span>你看起来很快乐。喝过血了？</p>
+</article>
+<div class="variants variants--stack">
+<section class="variant-card" data-life="cazador_alive">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag" data-selector-condition="">条件 · 卡扎多尔仍活着</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="71">
+<h4>阿斯代伦</h4><p class="en" lang="en">Alas, no. I haven't dared to risk it while Cazador still lives.</p><p class="zh">
+<span class="translation">参考译文</span>可惜，没有。卡扎多尔还活着，我不敢冒这个险。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="72">
+<h4>阿斯代伦</h4><p class="en" lang="en">I haven't seen the sun since the brain fell, I'm reduced to eating vermin once more, and I can't walk the streets lest Cazador finds me...</p><p class="zh">
+<span class="translation">参考译文</span>自从那颗脑子坠落后，我就再没见过阳光，又只能靠虫鼠果腹；我甚至不能走上街头，免得被卡扎多尔发现……</p>
+</article>
+<aside class="route-guide">继续阅读 <strong>04</strong> · 卡扎多尔的阴影，谈论如何摆脱他的控制。</aside>
+</section>
+<section class="variant-card" data-life="travel seeking_sun hunted_cazador underdark_leader adventurer">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag" data-selector-condition="">条件 · 阿斯代伦已摆脱卡扎多尔</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="74">
+<h4>阿斯代伦</h4><p class="en" lang="en">Cheeky. I've been very well behaved, thank you.</p><p class="zh">
+<span class="translation">参考译文</span>真没礼貌。多谢关心，我一直都非常安分。</p>
+</article>
+<div data-life="hunted_cazador">
+<span class="condition-tag">条件 · 分别后追猎并消灭卡扎多尔</span>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="77">
+<h4>阿斯代伦</h4><p class="en" lang="en">Mostly well-behaved. I did have a little unfinished business.</p><p class="zh">
+<span class="translation">参考译文</span>大多数时候都很安分。只是还有一点旧事需要了结。</p>
+</article>
+</div>
+<aside class="route-guide" data-life="travel seeking_sun hunted_cazador adventurer underdark_leader">
+<p class="route-guide-line" data-life="travel seeking_sun hunted_cazador adventurer">独自在外生活的路线：继续阅读 <strong>05</strong> · 独自在外的新生活。</p>
+<p class="route-guide-line" data-life="underdark_leader">带领衍体生活在幽暗地域的路线：继续阅读 <strong>06</strong> · 幽暗地域的新家。</p>
+</aside>
+</section>
+</div>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.1B</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="117">
+<h4>起源盖尔</h4><p class="en" lang="en">The last time I saw you, you were running from the sun. What happened?</p><p class="zh">
+<span class="translation">参考译文</span>我上次见到你时，你正在躲避阳光。后来发生了什么？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="121" data-source-presentation="god-sun-flight">
+<h4>阿斯代伦</h4><p class="en" lang="en">Exactly what I feared. Without the protection of our little friends I was just an ordinary spawn again, burning in the sun. I fled the dock and found refuge in the shadows until night fell.</p><p class="zh">
+<span class="translation">参考译文</span>正如我所担心的。失去我们体内那些小虫子的保护后，我又变回了普通衍体，在阳光下灼烧。我逃离码头，躲进阴影，直到夜幕降临。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="122" data-source-presentation="god-postbattle-shame">
+<h4>阿斯代伦</h4><p class="en" lang="en">Part of me was relieved you left so quickly after the battle. I felt... ashamed. Like I'd lost everything, just as you claimed your victory. I didn't want you to see me like that.</p><p class="zh">
+<span class="translation">参考译文</span>大战结束后你那么快就离开，我心里有一部分反而松了口气。我觉得……很羞耻。就在你赢得胜利时，我却像是失去了一切。我不想让你看到我那副样子。</p>
+</article>
+<div class="variants variants--stack">
+<section class="variant-card" data-life="cazador_alive">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag" data-selector-condition="">条件 · 卡扎多尔仍活着</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="139">
+<h4>阿斯代伦</h4><p class="en" lang="en">And with Cazador still out there, I could hardly show my face. So I retreated to the sewers to hide, bide my time, and enjoy all the rats one can eat.</p><p class="zh">
+<span class="translation">参考译文</span>卡扎多尔还在外面，我更不敢露面。于是我退进下水道躲藏、等待时机，尽情享用吃不完的老鼠。</p>
+</article>
+<aside class="route-guide">继续阅读 <strong>04</strong> · 卡扎多尔的阴影，谈论如何摆脱他的控制。</aside>
+</section>
+<section class="variant-card" data-life="travel seeking_sun hunted_cazador underdark_leader adventurer">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag" data-selector-condition="">条件 · 阿斯代伦已摆脱卡扎多尔</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="141">
+<h4>阿斯代伦</h4><p class="en" lang="en">But time lent perspective. It wasn't your victory, it was ours. And for all I'd lost, I had gained so much more. I had freedom, strength - a whole new life. And it was time to live it.</p><p class="zh">
+<span class="translation">参考译文</span>但时间让我看清了一切。那不是你的胜利，而是我们的胜利。尽管我失去了许多，得到的却更多。我有了自由、力量——一段崭新的人生。是时候真正活出它了。</p>
+</article>
+<aside class="route-guide" data-life="travel seeking_sun hunted_cazador adventurer underdark_leader">
+<p class="route-guide-line" data-life="travel seeking_sun hunted_cazador adventurer">独自在外生活的路线：继续阅读 <strong>05</strong> · 独自在外的新生活。</p>
+<p class="route-guide-line" data-life="underdark_leader">带领衍体生活在幽暗地域的路线：继续阅读 <strong>06</strong> · 幽暗地域的新家。</p>
+</aside>
+</section>
+</div>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.1C</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="294">
+<h4>起源盖尔</h4><p class="en" lang="en">What about you? What have you been up to?</p><p class="zh">
+<span class="translation">参考译文</span>你呢？你一直在做些什么？</p>
+</article>
+<div class="variants variants--stack">
+<section class="variant-card" data-life="cazador_alive">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag" data-selector-condition="">条件 · 卡扎多尔仍活着</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="84">
+<h4>阿斯代伦</h4><p class="en" lang="en">Oh, you know, ups and downs.</p><p class="zh">
+<span class="translation">参考译文</span>哦，你知道的，有起有落。</p>
+<aside class="note"><b>制作旁注</b><p lang="en">[CazadorAlive]</p><p>
+<span class="translation">参考译文</span>［卡扎多尔仍活着］</p>
+</aside>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="85">
+<h4>阿斯代伦</h4><p class="en" lang="en">I haven't seen the sun since the brain fell, I'm reduced to eating vermin once more, and I can't walk the streets lest Cazador finds me...</p><p class="zh">
+<span class="translation">参考译文</span>自从那颗脑子坠落后，我就再没见过阳光，又只能靠虫鼠果腹；我甚至不能走上街头，免得被卡扎多尔发现……</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="86">
+<h4>阿斯代伦</h4><p class="en" lang="en">You know, when I say it out loud, there have been decidedly more downs than ups. Almost exclusively downs, actually.</p><p class="zh">
+<span class="translation">参考译文</span>仔细一说才发现，糟心事远比顺心事多。说真的，几乎就没有顺心的时候。</p>
+</article>
+<aside class="route-guide">继续阅读 <strong>04</strong> · 卡扎多尔的阴影，谈论如何摆脱他的控制。</aside>
+</section>
+<section class="variant-card" data-life="hunted_cazador">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag" data-selector-condition="">条件 · 分别后追猎并消灭卡扎多尔</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="112">
+<h4>阿斯代伦</h4><p class="en" lang="en">Well, I had some unfinished business that I needed to take care of.</p><p class="zh">
+<span class="translation">参考译文</span>嗯，我还有些未了的旧事需要处理。</p>
+</article>
+</section>
+</div>
+<aside class="route-guide" data-life="travel seeking_sun hunted_cazador adventurer underdark_leader">
+<p class="route-guide-line" data-life="travel seeking_sun hunted_cazador adventurer">独自在外生活的路线：继续阅读 <strong>05</strong> · 独自在外的新生活。</p>
+<p class="route-guide-line" data-life="underdark_leader">带领衍体生活在幽暗地域的路线：继续阅读 <strong>06</strong> · 幽暗地域的新家。</p>
+</aside>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">03.1D</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="249">
+<h4>起源盖尔</h4><p class="en" lang="en">I should probably go and talk to the others.</p><p class="zh">
+<span class="translation">参考译文</span>我大概该去和其他人聊聊了。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="250">
+<h4>阿斯代伦</h4><p class="en" lang="en">Yes, no, of course - I'm very busy too.</p><p class="zh">
+<span class="translation">参考译文</span>是啊，不，当然——我也忙得很。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="251">
+<h4>阿斯代伦</h4><p class="en" lang="en">Go and mingle. I'll be here, darling, living my best life.</p><p class="zh">
+<span class="translation">参考译文</span>去和大家聊聊吧。我会待在这里，亲爱的，继续过我的逍遥日子。</p>
+</article>
+</section>
+</section>
+<section class="route" data-life="cazador_alive">
+<h2 class="menu-heading">
+<span class="menu-code">04 ·</span>
+<span class="menu-label">仍受卡扎多尔威胁</span>
+</h2>
+<h3 class="menu-heading">
+<span class="menu-code">04.1 ·</span>
+<span class="menu-label">听到他的处境</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.1A</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="87">
+<h4>起源盖尔</h4><p class="en" lang="en">I'm sorry. I wish I could have helped.</p><p class="zh">
+<span class="translation">参考译文</span>对不起。真希望我当时能帮上忙。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="88">
+<h4>阿斯代伦</h4><p class="en" lang="en">Well, you've been busy, haven't you? Away having new adventures, living your new life.</p><p class="zh">
+<span class="translation">参考译文</span>你一直很忙，不是吗？在外经历新的冒险，过着自己的新生活。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="89">
+<h4>阿斯代伦</h4><p class="en" lang="en">Although if you wanted to help now, I certainly wouldn't say no.</p><p class="zh">
+<span class="translation">参考译文</span>不过，要是你现在想帮忙，我当然不会拒绝。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="90">
+<h4>阿斯代伦</h4><p class="en" lang="en">You're more than capable of facing him. And killing him, one hopes.</p><p class="zh">
+<span class="translation">参考译文</span>你完全有能力面对他。最好还能杀了他。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.1B</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="100">
+<h4>起源盖尔</h4><p class="en" lang="en">There must be something you can do?</p><p class="zh">
+<span class="translation">参考译文</span>你总能做点什么吧？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="101">
+<h4>阿斯代伦</h4><p class="en" lang="en">Alas, no. Since we lost our tadpoles, I'm just another vampire spawn.</p><p class="zh">
+<span class="translation">参考译文</span>可惜，不能。失去蝌蚪以后，我不过是又一个吸血鬼衍体。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="102">
+<h4>阿斯代伦</h4><p class="en" lang="en">If he finds me, he only has to say the word and I'm his puppet again. I can't face him.</p><p class="zh">
+<span class="translation">参考译文</span>要是他找到我，只需一句话，我就会再次变成他的傀儡。我无法面对他。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="103">
+<h4>阿斯代伦</h4><p class="en" lang="en">You, on the other hand, are perfectly suited to facing him! And killing him, one hopes.</p><p class="zh">
+<span class="translation">参考译文</span>可你就不同了，你再适合不过！正好去面对他——最好再杀了他。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.1C</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="105">
+<h4>起源盖尔</h4><p class="en" lang="en">That's a shame, but what'll you do.</p><p class="zh">
+<span class="translation">参考译文</span>真遗憾，不过又能怎么办呢。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="106">
+<h4>阿斯代伦</h4><p class="en" lang="en">You could at least offer to help!</p><p class="zh">
+<span class="translation">参考译文</span>你至少可以主动提出帮忙！</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="107">
+<h4>阿斯代伦</h4><p class="en" lang="en">You're more than capable of facing him - now more than ever. Killing him would be easy.</p><p class="zh">
+<span class="translation">参考译文</span>你完全有能力面对他——现在比以往任何时候都更有能力。杀了他轻而易举。</p>
+</article>
+</section>
+<aside class="route-guide">选择 <strong>04.1A</strong> · 表达歉意或 <strong>04.1B</strong> · 询问他能做些什么后，可选 <strong>04.2A–C</strong>；选择 <strong>04.1C</strong> · 表示遗憾后，可选 <strong>04.2A</strong> 或 <strong>04.2C</strong>。</aside>
+<h3 class="menu-heading">
+<span class="menu-code">04.2 ·</span>
+<span class="menu-label">是否伸出援手</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.2A</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="91">
+<h4>起源盖尔</h4><p class="en" lang="en">Of course, I'd be happy to kill him.</p><p class="zh">
+<span class="translation">参考译文</span>当然，我很乐意杀了他。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="92">
+<h4>阿斯代伦</h4><p class="en" lang="en">Thank you. I can't tell you how much this means.</p><p class="zh">
+<span class="translation">参考译文</span>谢谢你。你不知道这对我意义有多大。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="93">
+<h4>阿斯代伦</h4><p class="en" lang="en">But killing vampires is a decidedly day-time activity. For now, we can simply enjoy the night.</p><p class="zh">
+<span class="translation">参考译文</span>不过，猎杀吸血鬼显然是白天的活动。现在，我们只需享受夜晚。</p>
+</article>
+<aside class="route-guide">继续阅读 <strong>08</strong> · 回头见，亲爱的。</aside>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.2B</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="95">
+<h4>起源盖尔</h4><p class="en" lang="en">'One hopes'? Don't tell me you're doubting my skill?</p><p class="zh">
+<span class="translation">参考译文</span>“最好还能”？别告诉我你在怀疑我的本事。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="96">
+<h4>阿斯代伦</h4><p class="en" lang="en">Well of course not, darling! We've all seen what you can do against a giant, floating brain - a vampire will be a walk in the graveyard after that.</p><p class="zh">
+<span class="translation">参考译文</span>当然不是，亲爱的！我们都见过你如何对付那颗漂浮的巨型脑子——在那之后，杀个吸血鬼不过是墓园里散散步。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">04.2C</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="97">
+<h4>起源盖尔</h4><p class="en" lang="en">Forget it. I'm finished doing other people's dirty work.</p><p class="zh">
+<span class="translation">参考译文</span>算了吧。我已经受够替别人干脏活了。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="98">
+<h4>阿斯代伦</h4><p class="en" lang="en">Of course, after you've saved an entire city, saving one more person is probably below you.</p><p class="zh">
+<span class="translation">参考译文</span>当然，拯救过整座城市以后，再救一个人大概配不上你了。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="99">
+<h4>阿斯代伦</h4><p class="en" lang="en">Not that it bothers me, of course. I've always been alone - I don't see why that would change now.</p><p class="zh">
+<span class="translation">参考译文</span>当然，我一点也不介意。我一直都是一个人——现在又有什么理由改变呢。</p>
+</article>
+</section>
+</section>
+<section class="route" data-life="travel seeking_sun hunted_cazador adventurer">
+<h2 class="menu-heading">
+<span class="menu-code">05 ·</span>
+<span class="menu-label">独自在外的新生活</span>
+</h2>
+<div class="variants variants--stack">
+<section class="variant-card" data-life="travel">
+<div class="version-heading">
+<span class="version-badge">版本 I</span>
+<div class="choice-meta"><span class="condition-tag" data-selector-condition="">条件 · 阿斯代伦处于游历世界的状态</span></div>
+</div>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="142">
+<h4>阿斯代伦</h4><p class="en" lang="en">I've been seeing the world. Rediscovering what's out there after so many years under Cazador's thumb.</p><p class="zh">
+<span class="translation">参考译文</span>我一直在游历世界。在卡扎多尔掌控下度过那么多年后，重新认识外面的一切。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="143">
+<h4>阿斯代伦</h4><p class="en" lang="en">It turns out, it's every bit as dangerous travelling alone as it was travelling with you. I've killed more beasts and bandits than I can count.</p><p class="zh">
+<span class="translation">参考译文</span>事实证明，独自旅行和与你同行时一样危险。我杀过的野兽和强盗多得数不清。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="144" data-source-route="travel">
+<h4>阿斯代伦</h4><p class="en" lang="en">You know, it turns out I'm rather good at being a hero.</p><p class="zh">
+<span class="translation">参考译文</span>你知道吗，原来我还挺擅长当英雄。</p>
+</article>
+</section>
+<section class="variant-card" data-life="seeking_sun">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag" data-selector-condition="">条件 · 寻找重返阳光的方法</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="166">
+<h4>阿斯代伦</h4><p class="en" lang="en">I've been exploring the world, looking for anything that will let me walk in the sun again.</p><p class="zh">
+<span class="translation">参考译文</span>我一直在探索世界，寻找任何能让我重新行走于阳光下的东西。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="167">
+<h4>阿斯代伦</h4><p class="en" lang="en">No joy yet, but I've killed plenty of monsters on the way.</p><p class="zh">
+<span class="translation">参考译文</span>目前还没有收获，不过沿途杀了不少怪物。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="144" data-source-route="seeking_sun">
+<h4>阿斯代伦</h4><p class="en" lang="en">You know, it turns out I'm rather good at being a hero.</p><p class="zh">
+<span class="translation">参考译文</span>你知道吗，原来我还挺擅长当英雄。</p>
+</article>
+</section>
+<section class="variant-card" data-life="hunted_cazador">
+<h3 class="version-heading">
+<span class="version-badge">版本 III</span>
+<span class="condition-tag" data-selector-condition="">条件 · 分别后追猎并消灭卡扎多尔</span>
+</h3>
+<div class="variants variants--stack">
+<section class="variant-card">
+<div class="version-heading">
+<span class="version-badge">版本 I</span>
+<div class="choice-meta"><span class="condition-tag">条件 · 阿斯代伦追猎卡扎多尔</span><span class="condition-tag">条件 · 阿斯代伦向古尔人寻求合作</span></div>
+</div>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="169">
+<h4>阿斯代伦</h4><p class="en" lang="en">Cazador was still out there, after all. But with a little help from my new monster hunter friends, finding and destroying him barely took any effort at all.</p><p class="zh">
+<span class="translation">参考译文</span>毕竟卡扎多尔当时仍在外面。不过在新结识的怪物猎人朋友略施援手后，找到并消灭他几乎没费什么力气。</p>
+</article>
+</section>
+<section class="variant-card">
+<div class="version-heading">
+<span class="version-badge">版本 II</span>
+<div class="choice-meta"><span class="condition-tag">条件 · 阿斯代伦追猎卡扎多尔</span><span class="condition-tag">条件 · 阿斯代伦有强力盟友</span></div>
+</div>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="171">
+<h4>阿斯代伦</h4><p class="en" lang="en">Cazador was still out there, after all. But with a little help from some friends, finding and destroying him barely took any effort at all.</p><p class="zh">
+<span class="translation">参考译文</span>毕竟卡扎多尔当时仍在外面。不过在一些朋友略施援手后，找到并消灭他几乎没费什么力气。</p>
+</article>
+</section>
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 III</span>
+<span class="condition-tag">条件 · 源文件未明示</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="172">
+<h4>阿斯代伦</h4><p class="en" lang="en">Cazador was still out there, after all. But with a little help from my darling love, finding and destroying him barely took any effort at all.</p><p class="zh">
+<span class="translation">参考译文</span>毕竟卡扎多尔当时仍在外面。不过在我亲爱的爱人略施援手后，找到并消灭他几乎没费什么力气。</p>
+</article>
+</section>
+</div>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="170">
+<h4>阿斯代伦</h4><p class="en" lang="en">On my part, at least. They did have to tear out his tongue before I could approach safely, but we got there in the end. And what a glorious end it was.</p><p class="zh">
+<span class="translation">参考译文</span>至少对我而言如此。他们确实得先扯掉他的舌头，我才能安全靠近，但我们最终还是做到了。那结局真是辉煌。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="144" data-source-route="hunted_cazador">
+<h4>阿斯代伦</h4><p class="en" lang="en">You know, it turns out I'm rather good at being a hero.</p><p class="zh">
+<span class="translation">参考译文</span>你知道吗，原来我还挺擅长当英雄。</p>
+</article>
+</section>
+<section class="variant-card" data-life="adventurer">
+<h3 class="version-heading">
+<span class="version-badge">版本 IV</span>
+<span class="condition-tag" data-selector-condition="">条件 · 源文件未明示</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="246">
+<h4>阿斯代伦</h4><p class="en" lang="en">I've taken a turn as an adventurer and hero.</p><p class="zh">
+<span class="translation">参考译文</span>我现在当起了冒险者和英雄。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="247">
+<h4>阿斯代伦</h4><p class="en" lang="en">It turns out no one actually cares about murder, as long as you murder the right people. And apparently I'm rather good at it.</p><p class="zh">
+<span class="translation">参考译文</span>原来，只要杀的是“正确的人”，根本没人真正在意谋杀。而且显然，我还很擅长。</p>
+</article>
+</section>
+</div>
+<h3 class="menu-heading">
+<span class="menu-code">05.1 ·</span>
+<span class="menu-label">阿斯代伦成了英雄</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">05.1A</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="145">
+<h4>起源盖尔</h4><p class="en" lang="en">I could have told you that.</p><p class="zh">
+<span class="translation">参考译文</span>这我早就知道了。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="146">
+<h4>阿斯代伦</h4><p class="en" lang="en">Yes, but you say all sorts of things. Honestly, I don't even listen half the time.</p><p class="zh">
+<span class="translation">参考译文</span>是啊，可你什么话都说得出口。老实说，你说话时有一半时间我根本没在听。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="147">
+<h4>阿斯代伦</h4><p class="en" lang="en">It has made for a nice change, though - inspiring hope in people instead of terror.</p><p class="zh">
+<span class="translation">参考译文</span>不过，这种变化倒也不错——给人带来希望，而不是恐惧。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="148">
+<h4>阿斯代伦</h4><p class="en" lang="en">Well... I do try to inspire a little terror. I'm still me, after all.</p><p class="zh">
+<span class="translation">参考译文</span>嗯……我还是会努力让他们害怕一点。毕竟我还是我。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">05.1B</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="159">
+<h4>起源盖尔</h4><p class="en" lang="en">Astarion: one of the good guys. Who would've thought?</p><p class="zh">
+<span class="translation">参考译文</span>阿斯代伦成了好人之一。谁能想到？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="160">
+<h4>阿斯代伦</h4><p class="en" lang="en">Let's not get carried away, darling. I'm still me.</p><p class="zh">
+<span class="translation">参考译文</span>别得意忘形，亲爱的。我还是我。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="161">
+<h4>阿斯代伦</h4><p class="en" lang="en">Perhaps more 'me' than I've ever been.</p><p class="zh">
+<span class="translation">参考译文</span>或许比以往任何时候都更像“我自己”。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">05.1C</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="163">
+<h4>起源盖尔</h4><p class="en" lang="en">Sure, as long as there's something in it for you.</p><p class="zh">
+<span class="translation">参考译文</span>当然，只要这对你有好处。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="164">
+<h4>阿斯代伦</h4><p class="en" lang="en">You do know me oh so well, don't you?</p><p class="zh">
+<span class="translation">参考译文</span>你还真是太了解我了，对吧？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="165">
+<h4>阿斯代伦</h4><p class="en" lang="en">But yes, there's nothing wrong with being rewarded for good work. And when it comes to killing, I do very good work.</p><p class="zh">
+<span class="translation">参考译文</span>不过没错，出色的工作理应得到奖赏。而说到杀戮，我的工作做得非常出色。</p>
+</article>
+</section>
+<h3 class="menu-heading">
+<span class="menu-code">05.2 ·</span>
+<span class="menu-label">未来、阳光与快乐</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">05.2A</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="207">
+<h4>起源盖尔</h4><p class="en" lang="en">Do you ever miss walking in the sun?</p><p class="zh">
+<span class="translation">参考译文</span>你会怀念行走在阳光下吗？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="208">
+<h4>阿斯代伦</h4><p class="en" lang="en">I did at first, but then I realised - these shadows, this darkness - it's all part of me.</p><p class="zh">
+<span class="translation">参考译文</span>起初会，但后来我意识到——这些阴影、这片黑暗——都是我的一部分。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="209">
+<h4>阿斯代伦</h4><p class="en" lang="en">I spent too long defined by what other people did to me. The choices other people made for me - but that's over now.</p><p class="zh">
+<span class="translation">参考译文</span>我被别人对我做过的事、别人替我作出的选择定义了太久——但现在已经结束了。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">05.2B</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="150">
+<h4>起源盖尔</h4><p class="en" lang="en">So what's next for you? Going to keep living the good life?</p><p class="zh">
+<span class="translation">参考译文</span>那你接下来打算做什么？继续过这种好日子？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="151">
+<h4>阿斯代伦</h4><p class="en" lang="en">Ha! Hardly. 'Good' people don't spend as much time lurking in the dark as I do.</p><p class="zh">
+<span class="translation">参考译文</span>哈！才不是。“好人”可不会像我一样花这么多时间潜伏在黑暗里。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="152">
+<h4>阿斯代伦</h4><p class="en" lang="en">You know it's funny, at first I thought I was trapped by the shadows - cursed to live in them forever.</p><p class="zh">
+<span class="translation">参考译文</span>说来也有趣，一开始我以为自己被阴影困住了——受诅咒永远只能活在其中。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="153">
+<h4>阿斯代伦</h4><p class="en" lang="en">But in time, I realised that darkness is as much a part of me as my fangs. This is only a curse as long as I refuse to embrace the shadows. So I decided I would.</p><p class="zh">
+<span class="translation">参考译文</span>但渐渐地，我意识到黑暗和獠牙一样，都是我的一部分。只要我拒绝拥抱阴影，它才会是一种诅咒。所以我决定接受它。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="154">
+<h4>阿斯代伦</h4><p class="en" lang="en">I decided not to be defined by the choices other people made - by what other people did to me. My past may be done, but my present - my future - they're mine.</p><p class="zh">
+<span class="translation">参考译文</span>我决定不再让别人的选择、别人对我做过的事来定义我。过去已经结束，但我的现在——我的未来——都属于我。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">05.2C</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="156">
+<h4>起源盖尔</h4><p class="en" lang="en">You seem... happy. Are you sure you haven't been drinking blood?</p><p class="zh">
+<span class="translation">参考译文</span>你看起来……很快乐。你确定自己没喝过血？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="157">
+<h4>阿斯代伦</h4><p class="en" lang="en">No, this is all me, I swear.</p><p class="zh">
+<span class="translation">参考译文</span>没有，这就是我本来的样子，我发誓。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="158">
+<h4>阿斯代伦</h4><p class="en" lang="en">Don't get me wrong, I was a mess at first. Every day I yearned for the sun and mourned my curse to live in the shadows.</p><p class="zh">
+<span class="translation">参考译文</span>别误会，起初我也一团糟。每天都渴望阳光，为自己被诅咒只能活在阴影中而哀伤。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-repeat-source-order="153">
+<h4>阿斯代伦</h4><p class="en" lang="en">But in time, I realised that darkness is as much a part of me as my fangs. This is only a curse as long as I refuse to embrace the shadows. So I decided I would.</p><p class="zh">
+<span class="translation">参考译文</span>但渐渐地，我意识到黑暗和獠牙一样，都是我的一部分。只要我拒绝拥抱阴影，它才会是一种诅咒。所以我决定接受它。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-repeat-source-order="154">
+<h4>阿斯代伦</h4><p class="en" lang="en">I decided not to be defined by the choices other people made - by what other people did to me. My past may be done, but my present - my future - they're mine.</p><p class="zh">
+<span class="translation">参考译文</span>我决定不再让别人的选择、别人对我做过的事来定义我。过去已经结束，但我的现在——我的未来——都属于我。</p>
+</article>
+</section>
+<aside class="route-guide">选择 <strong>05.2A</strong> · 谈起阳光、<strong>05.2B</strong> · 询问未来或 <strong>05.2C</strong> · 谈起他的快乐后，继续阅读 <strong>07</strong> · 坦然面对自己。</aside>
+</section>
+<section class="route" data-life="underdark_leader">
+<h2 class="menu-heading">
+<span class="menu-code">06 ·</span>
+<span class="menu-label">幽暗地域的新家</span>
+</h2>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="193">
+<h4>阿斯代伦</h4><p class="en" lang="en">I've been leading. For the first time - maybe ever - I've been thinking about people other than myself.</p><p class="zh">
+<span class="translation">参考译文</span>我一直在带领别人。第一次——或许是有生以来第一次——我开始为自己以外的人着想。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="194">
+<h4>阿斯代伦</h4><p class="en" lang="en">There are thousands of vampire spawn in the Underdark - lost souls I lured into the shadows. The least I could do was give them a place they'd be safe.</p><p class="zh">
+<span class="translation">参考译文</span>幽暗地域里有成千上万的吸血鬼衍体——都是被我诱入阴影的迷失灵魂。我至少该给他们一个安全的容身之处。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="195">
+<h4>阿斯代伦</h4><p class="en" lang="en">So I've been building a haven down there. It's relatively small for now, but growing every day as more and more spawn find us.</p><p class="zh">
+<span class="translation">参考译文</span>所以我一直在下面建造一处避难所。现在还比较小，但随着越来越多衍体找到我们，它每天都在扩张。</p>
+</article>
+<h3 class="menu-heading">
+<span class="menu-code">06.1 ·</span>
+<span class="menu-label">新生活的滋味</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">06.1A</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="196">
+<h4>起源盖尔</h4><p class="en" lang="en">Sounds dangerous.</p><p class="zh">
+<span class="translation">参考译文</span>听起来很危险。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="197">
+<h4>阿斯代伦</h4><p class="en" lang="en">Well of course it is, darling. That's what makes it fun .</p><p class="zh">
+<span class="translation">参考译文</span>那当然危险，亲爱的。正因如此才有趣。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">06.1B</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="242">
+<h4>起源盖尔</h4><p class="en" lang="en">And? How's it going?</p><p class="zh">
+<span class="translation">参考译文</span>然后呢？进展如何？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="243">
+<h4>阿斯代伦</h4><p class="en" lang="en">Surprisingly well, actually!</p><p class="zh">
+<span class="translation">参考译文</span>其实好得出人意料！</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">06.1C</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="244">
+<h4>起源盖尔</h4><p class="en" lang="en">That sounds an awful lot like hard work.</p><p class="zh">
+<span class="translation">参考译文</span>这听起来可真像一大堆苦差事。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="245">
+<h4>阿斯代伦</h4><p class="en" lang="en">Alas, I have had to get my hands dirty.</p><p class="zh">
+<span class="translation">参考译文</span>可惜，我不得不亲自动手干些脏活。</p>
+</article>
+</section>
+<div class="branch-note">以上选项之后，阿斯代伦谈起他们共同建起的居所。</div>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="198">
+<h4>阿斯代伦</h4><p class="en" lang="en">We found some ruins in the darkness and made them our own - rebuilt walls, added touches of comfort.</p><p class="zh">
+<span class="translation">参考译文</span>我们在黑暗中找到一些遗迹，把那里改造成了自己的地方——重筑围墙，也添了些舒适设施。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="199">
+<h4>阿斯代伦</h4><p class="en" lang="en">It's no palace, but maybe someday it will be.</p><p class="zh">
+<span class="translation">参考译文</span>那里还称不上宫殿，不过总有一天也许会成为宫殿。</p>
+</article>
+<h3 class="menu-heading">
+<span class="menu-code">06.2 ·</span>
+<span class="menu-label">废墟、衍体与领袖</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">06.2A</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="200">
+<h4>起源盖尔</h4><p class="en" lang="en">Speaking of palaces, what happened to Cazador's?</p><p class="zh">
+<span class="translation">参考译文</span>说到宫殿，卡扎多尔的宅邸后来怎样了？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="201">
+<h4>阿斯代伦</h4><p class="en" lang="en">Oh, didn't you hear? It burned.</p><p class="zh">
+<span class="translation">参考译文</span>哦，你没听说吗？烧掉了。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="202">
+<h4>阿斯代伦</h4><p class="en" lang="en">Every sin-stained furnishing, every last trace of Cazador - it all burned .</p><p class="zh">
+<span class="translation">参考译文</span>每件沾满罪孽的陈设、卡扎多尔留下的每一丝痕迹——全都烧光了。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="203">
+<h4>阿斯代伦</h4><p class="en" lang="en">And when the structure finally gave way, it collapsed into the wretched chapel below. Every record of his infernal ritual is gone - we'll never see its like again.</p><p class="zh">
+<span class="translation">参考译文</span>最后，整座建筑坍塌进下方那座可憎的礼拜堂。他那邪恶仪式的所有记录都已消失——世上再也不会出现同样的东西。</p>
+</article>
+</section>
+<aside class="route-guide">选择 <strong>06.2A</strong> · 谈起扎尔宅邸后，继续 <strong>06.3</strong> · 衍体的生活。</aside>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">06.2B</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="238">
+<h4>起源盖尔</h4><p class="en" lang="en">And how are you feeding all your blood-thirsty friends?</p><p class="zh">
+<span class="translation">参考译文</span>你又是怎么喂饱那些嗜血的朋友的？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="205">
+<h4>阿斯代伦</h4><p class="en" lang="en">Rather easily, actually. It turns out there are more than enough things willing to attack you in the Underdark.</p><p class="zh">
+<span class="translation">参考译文</span>其实相当容易。原来幽暗地域里愿意主动攻击你的东西多得绰绰有余。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="206">
+<h4>阿斯代伦</h4><p class="en" lang="en">And if they find themselves on the wrong end of someone's fangs, that's on them.</p><p class="zh">
+<span class="translation">参考译文</span>要是他们最后落到别人的獠牙下，那就是他们自己的责任了。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">06.2C</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="240">
+<h4>起源盖尔</h4><p class="en" lang="en">Aren't you worried about losing control of them?</p><p class="zh">
+<span class="translation">参考译文</span>你不担心失去对他们的控制吗？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="235">
+<h4>阿斯代伦</h4><p class="en" lang="en">Oh no, people can be quite meek after seeing you murder their former master.</p><p class="zh">
+<span class="translation">参考译文</span>哦，不会。亲眼看着你杀掉他们从前的主人后，人们通常会变得相当温顺。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="236">
+<h4>阿斯代伦</h4><p class="en" lang="en">And if they do step out of line, it just takes one or two brutal examples to remind everyone else of their place.</p><p class="zh">
+<span class="translation">参考译文</span>就算有人越界，也只需要用一两个残酷的例子提醒其他人认清自己的位置。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="237">
+<h4>阿斯代伦</h4><p class="en" lang="en">I'm not a tyrant, I do care for their well-being, I just can't afford to show weakness.</p><p class="zh">
+<span class="translation">参考译文</span>我不是暴君，我确实关心他们过得好不好；我只是不能显露软弱。</p>
+</article>
+</section>
+<aside class="route-guide">选择 <strong>06.2B</strong> · 谈起食物或 <strong>06.2C</strong> · 谈起秩序后，继续 <strong>06.4</strong> · 新家的未来。</aside>
+<h3 class="menu-heading">
+<span class="menu-code">06.3 ·</span>
+<span class="menu-label">衍体的生活</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">06.3A</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="204">
+<h4>起源盖尔</h4><p class="en" lang="en">What about the spawn? How are you feeding them?</p><p class="zh">
+<span class="translation">参考译文</span>那些衍体呢？你怎么让他们吃饱？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-repeat-source-order="205">
+<h4>阿斯代伦</h4><p class="en" lang="en">Rather easily, actually. It turns out there are more than enough things willing to attack you in the Underdark.</p><p class="zh">
+<span class="translation">参考译文</span>其实相当容易。原来幽暗地域里愿意主动攻击你的东西多得绰绰有余。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-repeat-source-order="206">
+<h4>阿斯代伦</h4><p class="en" lang="en">And if they find themselves on the wrong end of someone's fangs, that's on them.</p><p class="zh">
+<span class="translation">参考译文</span>要是他们最后落到别人的獠牙下，那就是他们自己的责任了。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">06.3B</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="234">
+<h4>起源盖尔</h4><p class="en" lang="en">Are you worried about losing control of thousands of vampire spawn?</p><p class="zh">
+<span class="translation">参考译文</span>你不担心失去对成千上万吸血鬼衍体的控制吗？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-repeat-source-order="235">
+<h4>阿斯代伦</h4><p class="en" lang="en">Oh no, people can be quite meek after seeing you murder their former master.</p><p class="zh">
+<span class="translation">参考译文</span>哦，不会。亲眼看着你杀掉他们从前的主人后，人们通常会变得相当温顺。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-repeat-source-order="236">
+<h4>阿斯代伦</h4><p class="en" lang="en">And if they do step out of line, it just takes one or two brutal examples to remind everyone else of their place.</p><p class="zh">
+<span class="translation">参考译文</span>就算有人越界，也只需要用一两个残酷的例子提醒其他人认清自己的位置。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-repeat-source-order="237">
+<h4>阿斯代伦</h4><p class="en" lang="en">I'm not a tyrant, I do care for their well-being, I just can't afford to show weakness.</p><p class="zh">
+<span class="translation">参考译文</span>我不是暴君，我确实关心他们过得好不好；我只是不能显露软弱。</p>
+</article>
+</section>
+<h3 class="menu-heading">
+<span class="menu-code">06.4 ·</span>
+<span class="menu-label">新家的未来</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">06.4A</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-repeat-source-order="207">
+<h4>起源盖尔</h4><p class="en" lang="en">Do you ever miss walking in the sun?</p><p class="zh">
+<span class="translation">参考译文</span>你会怀念行走在阳光下吗？</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-repeat-source-order="208">
+<h4>阿斯代伦</h4><p class="en" lang="en">I did at first, but then I realised - these shadows, this darkness - it's all part of me.</p><p class="zh">
+<span class="translation">参考译文</span>起初会，但后来我意识到——这些阴影、这片黑暗——都是我的一部分。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-repeat-source-order="209">
+<h4>阿斯代伦</h4><p class="en" lang="en">I spent too long defined by what other people did to me. The choices other people made for me - but that's over now.</p><p class="zh">
+<span class="translation">参考译文</span>我被别人对我做过的事、别人替我作出的选择定义了太久——但现在已经结束了。</p>
+</article>
+<aside class="route-guide">继续阅读 <strong>07</strong> · 坦然面对自己。</aside>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">06.4B</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="231">
+<h4>起源盖尔</h4><p class="en" lang="en">It sounds like the spawn are in good hands.</p><p class="zh">
+<span class="translation">参考译文</span>听起来，那些衍体交到你手里还不错。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="232">
+<h4>阿斯代伦</h4><p class="en" lang="en">They're in hands, at least. I wouldn't make a call on 'good' just yet.</p><p class="zh">
+<span class="translation">参考译文</span>反正是在我手里。至于算不算“不错”，现在下结论还早。</p>
+</article>
+<aside class="route-guide">继续阅读 <strong>08</strong> · 回头见，亲爱的。</aside>
+</section>
+</section>
+<section class="route" data-life="travel seeking_sun hunted_cazador underdark_leader adventurer">
+<h2 class="menu-heading">
+<span class="menu-code">07 ·</span>
+<span class="menu-label">坦然面对自己</span>
+</h2>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="210">
+<h4>阿斯代伦</h4><p class="en" lang="en">This is who I am. In all my glory, for better and for worse.</p><p class="zh">
+<span class="translation">参考译文</span>这就是我。带着全部的荣光，无论好坏。</p>
+</article>
+<h3 class="menu-heading">
+<span class="menu-code">07.1 ·</span>
+<span class="menu-label">听到他的决定</span>
+</h3>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">07.1A</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="211">
+<h4>起源盖尔</h4><p class="en" lang="en">I'm glad to hear it. Acceptance looks good on you.</p><p class="zh">
+<span class="translation">参考译文</span>听你这么说，我很高兴。你如今能坦然接纳自己，真不错。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="212">
+<h4>阿斯代伦</h4><p class="en" lang="en">That being said, I haven't completely given up on returning to the sun. If the opportunity presented itself - well, I wouldn't say no...</p><p class="zh">
+<span class="translation">参考译文</span>不过话虽如此，我还没有彻底放弃重返阳光。要是机会自己送上门来——嗯，我不会拒绝……</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="213">
+<h4>阿斯代伦</h4><p class="en" lang="en">But until then, I am happy.</p><p class="zh">
+<span class="translation">参考译文</span>但在那之前，我很快乐。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">07.1B</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="218">
+<h4>起源盖尔</h4><p class="en" lang="en">Good luck.</p><p class="zh">
+<span class="translation">参考译文</span>祝你好运。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="219">
+<h4>阿斯代伦</h4><p class="en" lang="en">And to you.</p><p class="zh">
+<span class="translation">参考译文</span>你也是。</p>
+</article>
+</section>
+<section class="choice choice--shared">
+<div class="choice-meta">
+<div class="tag badge badge--shared">
+<span class="choice-code">07.1C</span> · 共同选项</div>
+</div>
+<article class="turn turn--gale" data-source-entry="EPI_Epilogue_Astarion" data-source-order="220">
+<h4>起源盖尔</h4><p class="en" lang="en">More worse than better, I'd say.</p><p class="zh">
+<span class="translation">参考译文</span>要我说，还是坏处更多。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="221">
+<h4>阿斯代伦</h4><p class="en" lang="en">Then so be it. I've been through Hells metaphorical and literal, and this is what I am. I will not apologise.</p><p class="zh">
+<span class="translation">参考译文</span>那就这样吧。地狱般的苦难，真正的地狱，我都走过了。这就是我。我不会为此道歉。</p>
+</article>
+</section>
+</section>
+<section class="route">
+<h2 class="menu-heading">
+<span class="menu-code">08 ·</span>
+<span class="menu-label">回头见，亲爱的</span>
+</h2>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="214">
+<h4>阿斯代伦</h4><p class="en" lang="en">We have had quite the journey, you and I.</p><p class="zh">
+<span class="translation">参考译文</span>你和我经历了一段非凡的旅程。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="215">
+<h4>阿斯代伦</h4><p class="en" lang="en">From the moment I first threatened you, I knew you were someone special. Someone to take on the world with.</p><p class="zh">
+<span class="translation">参考译文</span>从我第一次威胁你的那一刻起，我就知道你与众不同。是个能和我一起闯荡世界的人。</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="216">
+<h4>阿斯代伦</h4><p class="en" lang="en">I will miss our time together. But then again, maybe this isn't goodbye so much as it's...</p><p class="zh">
+<span class="translation">参考译文</span>我会怀念我们共度的时光。不过话说回来，这也许算不上告别，更像是……</p>
+</article>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="217">
+<h4>阿斯代伦</h4><p class="en" lang="en">'See you later, darling.'</p><p class="zh">
+<span class="translation">参考译文</span>“回头见，亲爱的。”</p>
+</article>
+</section>
+<section class="route">
+<h2 class="menu-heading">
+<span class="menu-code">09 ·</span>
+<span class="menu-label">再次回到他身边</span>
+</h2>
+<h3 class="menu-heading"><span class="menu-code">09.1 ·</span><span class="menu-label">暂别后继续交谈</span></h3>
+<div class="variants variants--stack">
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag">条件 · 此前选择 03.1D 离开，好感度低于 30</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="50">
+<h4>阿斯代伦</h4><p class="en" lang="en">Well, look who decided to turn up.</p><p class="zh">
+<span class="translation">参考译文</span>瞧瞧是谁终于肯露面了。</p>
+</article>
+</section>
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag">条件 · 选择 03.1D 后返回，未进入版本 I</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="52">
+<h4>阿斯代伦</h4><p class="en" lang="en">Hello, darling.</p><p class="zh">
+<span class="translation">参考译文</span>你好啊，亲爱的。</p>
+</article>
+</section>
+</div>
+<aside class="route-guide">此前选择 <strong>03.1D</strong> · 暂时离开后，再次找他，听到以上问候之一，返回 <strong>03</strong> · 老朋友的近况继续交谈。</aside>
+<h3 class="menu-heading"><span class="menu-code">09.2 ·</span><span class="menu-label">交谈后再次找他</span></h3>
+<div class="variants variants--stack">
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 I</span>
+<span class="condition-tag">条件 · 此前选择 04.2C，拒绝帮助阿斯代伦</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="53">
+<h4>阿斯代伦</h4><p class="en" lang="en">By the gods, this evening can't end soon enough.</p><p class="zh">
+<span class="translation">参考译文</span>诸神在上，这一晚怎么还不结束。</p>
+<aside class="note"><b>制作旁注</b><p lang="en">[Vampire Spawn] Almost muttering to himself - he's annoyed at the player and doesn't want to speak to them again.</p><p>
+<span class="translation">参考译文</span>［吸血鬼衍体］近乎低声嘟囔；他在恼怒盖尔，不想再与他交谈。</p>
+</aside>
+</article>
+</section>
+<section class="variant-card">
+<h3 class="version-heading">
+<span class="version-badge">版本 II</span>
+<span class="condition-tag">条件 · 此前已交谈</span>
+</h3>
+<article class="turn turn--astarion" data-source-entry="EPI_Epilogue_Astarion" data-source-order="54">
+<h4>阿斯代伦</h4><p class="en" lang="en">After everything, this feels nice - a chance to take a breath... Metaphorically speaking.</p><p class="zh">
+<span class="translation">参考译文</span>经历了这一切，能这样歇一歇真不错……当然，只是打个比方。</p>
+<aside class="note"><b>制作旁注</b><p lang="en">[Vampire Spawn]</p><p>
+<span class="translation">参考译文</span>［吸血鬼衍体］</p>
+</aside>
+</article>
+</section>
+</div>
+</section>
+<span hidden="" data-source-entry="EPI_Epilogue_Astarion" data-structural-orders="51,56,70,73,75,76,78,81,82,83,94,104,108,109,110,111,113,115,116,120,138,140,149,155,162,168,233,239,241,248,292,293,295,296,302">
+</span>
+<span hidden="" data-source-entry="EPI_Epilogue_EnterParty" data-structural-orders="70">
+</span>
+</div>
+<details class="research"><summary>研究依据</summary><p>来源：Patch 8 对话文件《EPI_Epilogue_EnterParty》《EPI_Epilogue_Astarion》。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p>
+</details>
+</main>
+<script>(()=>{const labels={threat:"躲避仍活着的卡扎多尔",independent:"独自在外生活",haven:"带领衍体定居幽暗地域"},state={life:null,all:true};const selected=()=>({threat:["cazador_alive"],independent:["travel","seeking_sun","hunted_cazador","adventurer"],haven:["underdark_leader"]}[state.life]||[]);const tokens=v=>(v||'').split(/\s+/).filter(Boolean);function render(){document.body.classList.toggle('route-reading',!state.all);document.querySelectorAll('[data-axis]').forEach(b=>b.setAttribute('aria-pressed',String(!state.all&&state.life===b.dataset.value)));document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.mode==='all')===state.all)));document.querySelectorAll('[data-life]').forEach(el=>el.hidden=!state.all&&(!state.life||!selected().some(value=>tokens(el.dataset.life).includes(value))));document.querySelectorAll('[data-selector-condition]').forEach(el=>el.hidden=!state.all&&!!state.life&&selected().every(value=>tokens(el.closest('[data-life]').dataset.life).includes(value)));document.querySelectorAll('.variants').forEach(grid=>grid.classList.toggle('variants--single-visible',[...grid.children].filter(el=>!el.hidden).length===1));document.querySelector('[data-route-status]').textContent=state.all?'当前为全选项阅读。':state.life?'当前路线：'+labels[state.life]+'。':'请选择阿斯代伦的生活状态。';}document.addEventListener('click',event=>{const button=event.target.closest('[data-axis],[data-mode]');if(!button)return;if(button.dataset.axis){state.life=button.dataset.value;state.all=false;}else state.all=button.dataset.mode==='all';render();});render();})();</script></body></html>
