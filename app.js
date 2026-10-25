@@ -139,6 +139,10 @@
     "shared-journey": {
       code: "AG",
       title: ["共同的旅程", "阿斯代伦与盖尔"]
+    },
+    "wayside-remarks": {
+      code: "VB",
+      title: ["途中絮语", "阿斯代伦与盖尔"]
     }
   };
 
@@ -153,13 +157,13 @@
     return `${code} · ${String(number).padStart(3, "0")}`;
   }
 
-  function renderBooks(books, code, nextNumber) {
+  function renderBooks(books, code, nextNumber, emptyLabel = "待更新") {
     if (!Array.isArray(books) || books.length === 0) {
       const empty = document.createElement("p");
       empty.className = "empty-shelf";
       empty.append(
         textElement("span", "archive-code", `${code} · —`),
-        textElement("span", "", "待更新")
+        textElement("span", "", emptyLabel)
       );
       return { element: empty, nextNumber };
     }
@@ -257,7 +261,12 @@
         shelfHeading.append(textElement("p", "", shelf.description));
       }
 
-      const rendered = renderBooks(shelf.books, presentation.code, nextNumber);
+      const rendered = renderBooks(
+        shelf.books,
+        presentation.code,
+        nextNumber,
+        shelf.emptyLabel || "待更新"
+      );
       nextNumber = rendered.nextNumber;
       shelfSection.append(shelfHeading, rendered.element);
       shelves.append(shelfSection);

@@ -10,7 +10,8 @@
   const seriesByCollection = {
     "astarion-origin-with-gale": "oa",
     "gale-origin-with-astarion": "og",
-    "shared-journey": "ag"
+    "shared-journey": "ag",
+    "wayside-remarks": "vb"
   };
   const booksBySeries = {};
 

@@ -787,6 +787,94 @@ window.BLOODWEAVE_CATALOG = {
           ]
         }
       ]
+    },
+    {
+      id: "wayside-remarks",
+      title: "途中絮语　阿斯代伦与盖尔",
+      englishTitle: "Wayside Remarks · Astarion & Gale",
+      accent: "voicebark",
+      description: "收录两人作为起源角色或同行同伴时，在探索、战斗及环境事件中触发的特殊回应。",
+      shelves: [
+        {
+          id: "archive",
+          title: "馆藏书目",
+          description: "",
+          books: [
+            {
+              id: "VB-001",
+              archiveCode: "VB · 001",
+              title: "奇怪的古代魔法符文",
+              subtitle: "路过困住盖尔的传送符文",
+              meta: "第一章 · 路边山崖",
+              href: "books/id/BK-OAST_GAL-A1-CRA_GaleRecruitment_PAD_Approach.html"
+            },
+            {
+              id: "VB-002",
+              archiveCode: "VB · 002",
+              title: "盖尔会想要这个",
+              subtitle: "发现或取得特殊魔法遗物",
+              meta: "第一章 · 旅途中",
+              href: "books/id/BK-MULTIVIEW-A1-ORI_Gale_MagicItemComments.html"
+            },
+            {
+              id: "VB-003",
+              archiveCode: "VB · 003",
+              title: "饥渴的蛛丝马迹",
+              subtitle: "追寻阿斯代伦饥渴的迹象",
+              meta: "第一章 · 旅途中",
+              href: "books/id/BK-MULTIVIEW-A1-AstarionHunger_Clues.html"
+            },
+            {
+              id: "VB-004",
+              archiveCode: "VB · 004",
+              title: "管好你的牙齿",
+              subtitle: "当阿斯代伦对盖尔使用吸血鬼噬咬",
+              meta: "旅途中 · 对盖尔使用噬咬",
+              href: "books/id/BK-OAST_GAL-UNK-ORI_AstarionIsAVamp_PAD_GaleWasBitten.html"
+            },
+            {
+              id: "VB-005",
+              archiveCode: "VB · 005",
+              title: "盖尔去哪儿了？",
+              subtitle: "阿斯代伦在吸血夜没能交涉成功，导致盖尔离队",
+              meta: "第一章 · 营地",
+              href: "books/id/BK-OAST_GAL-UNK-CAMP_AstarionHunger_PAD_AftermathAvatarCompanionLeft.html"
+            },
+            {
+              id: "VB-006",
+              archiveCode: "VB · 006",
+              title: "衍体化作雾气",
+              subtitle: "弗雷戈招待所的吸血鬼衍体化作雾气离开",
+              meta: "第三章 · 弗雷戈招待所",
+              href: "books/id/BK-MULTIVIEW-A3-WYR_VampireSpawns_PAD_SpawnTurnsIntoMist.html"
+            },
+            {
+              id: "VB-007",
+              archiveCode: "VB · 007",
+              title: "盖尔见了准会垂涎三尺",
+              subtitle: "盖尔缺席时抵达巫术杂货店",
+              meta: "第三章 · 巫术杂货店",
+              href: "books/id/BK-AST_GAL-A3-LOW_SorcerousSundries_AD_RamazithTowerNoGale.html"
+            },
+            {
+              id: "VB-008",
+              archiveCode: "VB · 008",
+              title: "召唤阿斯代伦的盟友",
+              subtitle: "对战主脑时召集古尔猎人与不死军队",
+              meta: "终战 · 召集盟友",
+              href: "books/id/BK-MULTIVIEW-END-END_GatherYourAllies_AstarionAllies.html"
+            },
+            {
+              id: "VB-009",
+              archiveCode: "VB · 009",
+              title: "别在这里倒下",
+              subtitle: "在战斗中倒下触发的即时反应",
+              meta: "旅途中 · 战斗中",
+              href: "books/id/BK-AST_GAL-UNK-GLO_PAD_CombatReact_PartyDeath.html"
+            }
+          ]
+        }
+      ]
     }
   ]
 };
