@@ -137,8 +137,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "若我们开始转化",
               subtitle: "阿斯代伦谈起夺心魔化的应对方案",
               meta: "第一章 · 营地",
-              href: "books/id/BK-AST_OGAL-UNK-CAMP_Night2_CRD_Astarion.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-UNK-CAMP_Night2_CRD_Astarion.html"
             },
             {
               id: "OG-002",
@@ -146,8 +145,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "獠牙近在咫尺",
               subtitle: "盖尔惊醒，发现阿斯代伦正试图吸血",
               meta: "第一章 · 营地",
-              href: "books/id/BK-AST_OGAL-UNK-CAMP_AstarionHunger_SCO_Companion.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-UNK-CAMP_AstarionHunger_SCO_Companion.html"
             },
             {
               id: "OG-003",
@@ -155,8 +153,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "那件魔法物品去哪了？",
               subtitle: "阿斯代伦追问盖尔消失的魔法物品",
               meta: "第一章 · 旅途中",
-              href: "books/id/BK-AST_OGAL-UNK-Astarion_InParty2_Topical_ConsumedItem.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-UNK-Astarion_InParty2_Topical_ConsumedItem.html"
             },
             {
               id: "OG-004",
@@ -164,8 +161,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "这一本不能给你吃",
               subtitle: "盖尔提出接管阿斯代伦手中的塞尔死灵法术典籍",
               meta: "第一章 · 营地",
-              href: "books/id/BK-AST_OGAL-A1-CAMP_DangerousBook_IVB_CFM_Astarion.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-A1-CAMP_DangerousBook_IVB_CFM_Astarion.html"
             },
             {
               id: "OG-005",
@@ -173,8 +169,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "你的女神命令你赴死？",
               subtitle: "阿斯代伦得知密斯特拉要求盖尔引爆法球",
               meta: "第二章 · 旅途中",
-              href: "books/id/BK-AST_OGAL-UNK-Astarion_InParty2_Topical_GaleOrb.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-UNK-Astarion_InParty2_Topical_GaleOrb.html"
             },
             {
               id: "OG-006",
@@ -182,8 +177,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "真正的力量",
               subtitle: "阿斯代伦评论盖尔吸收或净化幽影魔网的选择",
               meta: "第二章 · 雷斯文小镇",
-              href: "books/id/BK-AST_OGAL-A2-TWN_Gale_LootBoss_AstarionReaction.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-A2-TWN_Gale_LootBoss_AstarionReaction.html"
             },
             {
               id: "OG-007",
@@ -191,8 +185,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "别让女神久等",
               subtitle: "阿斯代伦催促盖尔尽快响应密斯特拉的召见",
               meta: "第三章 · 风暴海岸圣所",
-              href: "books/id/BK-AST_OGAL-UNK-LOW_StormshoreTabernacle_MystraShrine_OM_Gale_AOM_OOM.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-UNK-LOW_StormshoreTabernacle_MystraShrine_OM_Gale_AOM_OOM.html"
             },
             {
               id: "OG-008",
@@ -200,8 +193,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "野心与力量将他引向何方",
               subtitle: "关于沿途发生的一切",
               meta: "旅途中 · 与阿斯代伦交谈",
-              href: "books/id/BK-AST_OGAL-MULTI-Astarion_InParty2_Topical_GalePower.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-MULTI-Astarion_InParty2_Topical_GalePower.html"
             }
           ]
         },
@@ -216,8 +208,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "我不喜欢你那副神情",
               subtitle: "耐色脑决战前，阿斯代伦察觉盖尔神色有异",
               meta: "终战 · 耐色脑顶端",
-              href: "books/id/BK-AST_OGAL-END-END_BrainBattle_Intro.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-END-END_BrainBattle_Intro.html"
             },
             {
               id: "OG-010",
@@ -225,8 +216,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "盖尔，你在想什么？",
               subtitle: "耐色脑覆灭后，阿斯代伦回应盖尔对王冠的打算",
               meta: "终战 · 码头",
-              href: "books/id/BK-AST_OGAL-END-END_BrainBattle_CombatOver_Nested_AfterGithLeave_OriginGale.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-END-END_BrainBattle_CombatOver_Nested_AfterGithLeave_OriginGale.html"
             },
             {
               id: "OG-011",
@@ -234,8 +224,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "世界尽在我们手中",
               subtitle: "飞升阿斯代伦与伴侣盖尔商议共同未来",
               meta: "终局 · 战后翌晨",
-              href: "books/id/BK-AST_OGAL-END-END_GameFinale_ROM_RomanceFates_Astarion_Ascended.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-END-END_GameFinale_ROM_RomanceFates_Astarion_Ascended.html"
             },
             {
               id: "OG-012",
@@ -243,8 +232,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "夜幕下的新生",
               subtitle: "摆脱卡扎多尔后，阿斯代伦与伴侣盖尔商议未来",
               meta: "终局 · 战后翌晨",
-              href: "books/id/BK-AST_OGAL-END-END_GameFinale_ROM_RomanceFates_Astarion_Unascended_CazadorDead.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-END-END_GameFinale_ROM_RomanceFates_Astarion_Unascended_CazadorDead.html"
             },
             {
               id: "OG-013",
@@ -252,8 +240,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "挥之不去的阴影",
               subtitle: "卡扎多尔仍存活时，阿斯代伦与伴侣盖尔商议未来",
               meta: "终局 · 战后翌晨",
-              href: "books/id/BK-AST_OGAL-END-END_GameFinale_ROM_RomanceFates_Astarion_Unascended_CazadorAlive.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-END-END_GameFinale_ROM_RomanceFates_Astarion_Unascended_CazadorAlive.html"
             },
             {
               id: "OG-014",
@@ -261,8 +248,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "永远在你身边",
               subtitle: "与未飞升的伴侣阿斯代伦一同参加聚会",
               meta: "尾声 · 守墓人聚会",
-              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Partnered.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Partnered.html"
             },
             {
               id: "OG-015",
@@ -270,8 +256,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "永生者的配偶",
               subtitle: "与飞升后的伴侣阿斯代伦一同参加聚会",
               meta: "尾声 · 守墓人聚会",
-              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Lord_Partnered.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Lord_Partnered.html"
             },
             {
               id: "OG-016",
@@ -279,8 +264,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "夜色重逢",
               subtitle: "凡人盖尔与未飞升的旧日同伴阿斯代伦重逢",
               meta: "尾声 · 守墓人聚会",
-              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion.html"
             },
             {
               id: "OG-017",
@@ -288,8 +272,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "神明与旧日同伴",
               subtitle: "成神盖尔与未飞升的旧日同伴阿斯代伦重逢",
               meta: "尾声 · 守墓人聚会",
-              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_GodGale.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_GodGale.html"
             },
             {
               id: "OG-018",
@@ -297,8 +280,7 @@ window.BLOODWEAVE_CATALOG = {
               title: "与鲜血的不朽者重逢",
               subtitle: "凡人或成神盖尔与飞升后的旧日同伴阿斯代伦重逢",
               meta: "尾声 · 守墓人聚会",
-              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Lord.html",
-              isNew: true
+              href: "books/id/BK-AST_OGAL-EPI-EPI_Epilogue_Astarion_Lord.html"
             }
           ]
         }
@@ -806,7 +788,8 @@ window.BLOODWEAVE_CATALOG = {
               title: "奇怪的古代魔法符文",
               subtitle: "路过困住盖尔的传送符文",
               meta: "第一章 · 路边山崖",
-              href: "books/id/BK-OAST_GAL-A1-CRA_GaleRecruitment_PAD_Approach.html"
+              href: "books/id/BK-OAST_GAL-A1-CRA_GaleRecruitment_PAD_Approach.html",
+              isNew: true
             },
             {
               id: "VB-002",
@@ -814,7 +797,8 @@ window.BLOODWEAVE_CATALOG = {
               title: "盖尔会想要这个",
               subtitle: "发现或取得特殊魔法遗物",
               meta: "第一章 · 旅途中",
-              href: "books/id/BK-MULTIVIEW-A1-ORI_Gale_MagicItemComments.html"
+              href: "books/id/BK-MULTIVIEW-A1-ORI_Gale_MagicItemComments.html",
+              isNew: true
             },
             {
               id: "VB-003",
@@ -822,7 +806,8 @@ window.BLOODWEAVE_CATALOG = {
               title: "饥渴的蛛丝马迹",
               subtitle: "追寻阿斯代伦饥渴的迹象",
               meta: "第一章 · 旅途中",
-              href: "books/id/BK-MULTIVIEW-A1-AstarionHunger_Clues.html"
+              href: "books/id/BK-MULTIVIEW-A1-AstarionHunger_Clues.html",
+              isNew: true
             },
             {
               id: "VB-004",
@@ -830,7 +815,8 @@ window.BLOODWEAVE_CATALOG = {
               title: "管好你的牙齿",
               subtitle: "当阿斯代伦对盖尔使用吸血鬼噬咬",
               meta: "旅途中 · 对盖尔使用噬咬",
-              href: "books/id/BK-OAST_GAL-UNK-ORI_AstarionIsAVamp_PAD_GaleWasBitten.html"
+              href: "books/id/BK-OAST_GAL-UNK-ORI_AstarionIsAVamp_PAD_GaleWasBitten.html",
+              isNew: true
             },
             {
               id: "VB-005",
@@ -838,7 +824,8 @@ window.BLOODWEAVE_CATALOG = {
               title: "盖尔去哪儿了？",
               subtitle: "阿斯代伦在吸血夜没能交涉成功，导致盖尔离队",
               meta: "第一章 · 营地",
-              href: "books/id/BK-OAST_GAL-UNK-CAMP_AstarionHunger_PAD_AftermathAvatarCompanionLeft.html"
+              href: "books/id/BK-OAST_GAL-UNK-CAMP_AstarionHunger_PAD_AftermathAvatarCompanionLeft.html",
+              isNew: true
             },
             {
               id: "VB-006",
@@ -846,7 +833,8 @@ window.BLOODWEAVE_CATALOG = {
               title: "衍体化作雾气",
               subtitle: "弗雷戈招待所的吸血鬼衍体化作雾气离开",
               meta: "第三章 · 弗雷戈招待所",
-              href: "books/id/BK-MULTIVIEW-A3-WYR_VampireSpawns_PAD_SpawnTurnsIntoMist.html"
+              href: "books/id/BK-MULTIVIEW-A3-WYR_VampireSpawns_PAD_SpawnTurnsIntoMist.html",
+              isNew: true
             },
             {
               id: "VB-007",
@@ -854,7 +842,8 @@ window.BLOODWEAVE_CATALOG = {
               title: "盖尔见了准会垂涎三尺",
               subtitle: "盖尔缺席时抵达巫术杂货店",
               meta: "第三章 · 巫术杂货店",
-              href: "books/id/BK-AST_GAL-A3-LOW_SorcerousSundries_AD_RamazithTowerNoGale.html"
+              href: "books/id/BK-AST_GAL-A3-LOW_SorcerousSundries_AD_RamazithTowerNoGale.html",
+              isNew: true
             },
             {
               id: "VB-008",
@@ -862,7 +851,8 @@ window.BLOODWEAVE_CATALOG = {
               title: "召唤阿斯代伦的盟友",
               subtitle: "对战主脑时召集古尔猎人与不死军队",
               meta: "终战 · 召集盟友",
-              href: "books/id/BK-MULTIVIEW-END-END_GatherYourAllies_AstarionAllies.html"
+              href: "books/id/BK-MULTIVIEW-END-END_GatherYourAllies_AstarionAllies.html",
+              isNew: true
             },
             {
               id: "VB-009",
@@ -870,7 +860,8 @@ window.BLOODWEAVE_CATALOG = {
               title: "别在这里倒下",
               subtitle: "在战斗中倒下触发的即时反应",
               meta: "旅途中 · 战斗中",
-              href: "books/id/BK-AST_GAL-UNK-GLO_PAD_CombatReact_PartyDeath.html"
+              href: "books/id/BK-AST_GAL-UNK-GLO_PAD_CombatReact_PartyDeath.html",
+              isNew: true
             }
           ]
         }
