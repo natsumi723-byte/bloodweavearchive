@@ -1,0 +1,161 @@
+.book-continuation {
+  --continuation-accent: #5e565d;
+  width: 100%;
+  margin: 3rem 0 1.25rem;
+  border: 1px solid #d7ccc6;
+  color: #352d32;
+  background: #faf7f4;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.book-continuation[data-series="oa"] { --continuation-accent: #8b3048; }
+.book-continuation[data-series="og"] { --continuation-accent: #624779; }
+.book-continuation[data-series="ag"] { --continuation-accent: #5e565d; }
+
+.book-continuation__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .7rem;
+  border-bottom: 1px solid #d7ccc6;
+}
+
+.book-continuation__current {
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+  margin: 0;
+  font-size: .76rem;
+}
+
+.book-continuation__label {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: .6rem .72rem;
+  color: #fff;
+  background: var(--continuation-accent);
+  font-weight: 750;
+}
+
+.book-continuation__title {
+  padding: .55rem .68rem;
+  overflow: hidden;
+  font-weight: 750;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.book-continuation__jump {
+  display: flex;
+  align-items: center;
+  gap: .38rem;
+  margin-right: .55rem;
+}
+
+.book-continuation__jump > span {
+  color: #746b70;
+  font-size: .64rem;
+  font-weight: 750;
+}
+
+.book-continuation__jump select {
+  max-width: 12rem;
+  padding: .32rem 1.55rem .32rem .45rem;
+  border: 1px solid #d7ccc6;
+  color: var(--continuation-accent);
+  background: #fff;
+  font: 650 .67rem/1.3 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.book-continuation__nav {
+  display: grid;
+  align-items: stretch;
+}
+
+.book-continuation[data-edge="first"] .book-continuation__nav {
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.book-continuation[data-edge="middle"] .book-continuation__nav {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.book-continuation[data-edge="last"] .book-continuation__nav {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.book-continuation__position {
+  display: grid;
+  place-items: center;
+  min-width: 4.3rem;
+  margin: .45rem 0;
+  color: #746b70;
+  font: italic .72rem/1.4 Georgia, serif;
+}
+
+.book-continuation[data-edge="first"] .book-continuation__position { border-right: 1px solid #d7ccc6; }
+.book-continuation[data-edge="middle"] .book-continuation__position { border-right: 1px solid #d7ccc6; border-left: 1px solid #d7ccc6; }
+.book-continuation[data-edge="last"] .book-continuation__position { border-left: 1px solid #d7ccc6; }
+
+.book-continuation__nav a {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  min-width: 0;
+  padding: .72rem .78rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.book-continuation[data-edge="first"] .book-continuation__nav a,
+.book-continuation[data-edge="middle"] .book-continuation__nav a:last-child {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.book-continuation__nav-copy { min-width: 0; }
+.book-continuation__nav-label {
+  display: block;
+  color: #746b70;
+  font-size: .63rem;
+  font-weight: 750;
+  letter-spacing: .04em;
+}
+
+.book-continuation__nav-title {
+  display: block;
+  overflow: hidden;
+  font-size: .86rem;
+  font-weight: 750;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.book-continuation__arrow {
+  flex: 0 0 auto;
+  color: var(--continuation-accent);
+  font: 1.1rem/1 Georgia, serif;
+}
+
+@media (max-width: 700px) {
+  .book-continuation__header { grid-template-columns: 1fr; }
+  .book-continuation__jump { padding: 0 .6rem .55rem; }
+  .book-continuation__jump select { width: 100%; max-width: none; }
+  .book-continuation[data-edge="middle"] .book-continuation__nav {
+    position: relative;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    padding-top: 1.6rem;
+  }
+  .book-continuation[data-edge="middle"] .book-continuation__position {
+    position: absolute;
+    inset: .15rem 0 auto;
+    margin: 0;
+    border: 0;
+  }
+  .book-continuation[data-edge="middle"] .book-continuation__nav a:last-child {
+    border-left: 1px solid #d7ccc6;
+  }
+  .book-continuation__nav-title { font-size: .78rem; }
+  .book-continuation__title { white-space: normal; }
+}

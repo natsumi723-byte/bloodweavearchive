@@ -1,0 +1,112 @@
+.blank-record-entry {
+  width: min(46rem, 100%);
+  margin: 0 auto 7rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.archive .collection:last-child {
+  padding-bottom: 1rem;
+  border-bottom: 0;
+}
+
+.archive .collection:last-child .catalog-entry:last-child a {
+  border-bottom: 0;
+}
+
+.blank-record-context {
+  margin: 0;
+  color: var(--ink);
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.blank-record {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: min(32rem, calc(100% - 2rem));
+  min-height: 15rem;
+  margin: 1.5rem auto 1rem;
+  padding: 2.5rem;
+  overflow: visible;
+  border: 1px solid #cfc3bd;
+  color: var(--ink);
+  background: #fbf8f2;
+  box-shadow: 0 .45rem 1.1rem rgba(61, 45, 52, .06);
+  text-decoration: none;
+  transform: translateY(3.5rem);
+  transition: transform .6s cubic-bezier(.2, .8, .2, 1), box-shadow .45s ease;
+}
+
+.blank-record-tab {
+  position: absolute;
+  top: -1.65rem;
+  left: 2.8rem;
+  width: 8.5rem;
+  height: 1.7rem;
+  border: 1px solid #cfc3bd;
+  border-bottom: 0;
+  background: #f4ece9;
+  clip-path: polygon(0 100%, 12% 0, 88% 0, 100% 100%);
+}
+
+.blank-record-seal {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.7rem;
+  width: 1.85rem;
+  height: 1.85rem;
+  flex-basis: 1.85rem;
+  opacity: .32;
+}
+
+.blank-record-copy {
+  display: grid;
+  gap: .8rem;
+  opacity: 0;
+  transform: translateY(.8rem);
+  transition: opacity .35s ease .08s, transform .4s ease .08s;
+}
+
+.blank-record-copy small {
+  color: #7f2943;
+  font: 700 .68rem/1 var(--font-en);
+  letter-spacing: .11em;
+}
+
+.blank-record-copy strong {
+  font: 700 clamp(1.35rem, 3vw, 1.8rem)/1.35 var(--font-ui);
+}
+
+.blank-record-copy > span {
+  color: var(--purple);
+  font-size: .78rem;
+  text-decoration: underline;
+  text-underline-offset: .28rem;
+}
+
+.blank-record:hover,
+.blank-record:focus-visible,
+.blank-record.is-revealed {
+  box-shadow: 0 1.2rem 2.8rem rgba(61, 45, 52, .14);
+  transform: translateY(0);
+}
+
+.blank-record:hover .blank-record-copy,
+.blank-record:focus-visible .blank-record-copy,
+.blank-record.is-revealed .blank-record-copy {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+  .blank-record-entry { margin-bottom: 4.5rem; }
+  .blank-record { min-height: 13rem; padding: 2rem; transform: translateY(2rem); }
+  .blank-record-copy strong { font-size: 1.3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blank-record,
+  .blank-record-copy { transition: none; }
+}
