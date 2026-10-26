@@ -54,12 +54,15 @@
 }
 
 .book-continuation__jump > span {
+  flex: 0 0 auto;
   color: #746b70;
   font-size: .64rem;
   font-weight: 750;
+  white-space: nowrap;
 }
 
 .book-continuation__jump select {
+  min-width: 0;
   max-width: 12rem;
   padding: .32rem 1.55rem .32rem .45rem;
   border: 1px solid #d7ccc6;
@@ -140,7 +143,11 @@
 
 @media (max-width: 700px) {
   .book-continuation__header { grid-template-columns: 1fr; }
-  .book-continuation__jump { padding: 0 .6rem .55rem; }
+  .book-continuation__jump {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    padding: 0 .6rem .55rem;
+  }
   .book-continuation__jump select { width: 100%; max-width: none; }
   .book-continuation[data-edge="middle"] .book-continuation__nav {
     position: relative;
