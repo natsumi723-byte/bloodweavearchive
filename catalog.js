@@ -812,6 +812,15 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "VB-004",
               archiveCode: "VB · 004",
+              title: "你的吸血鬼身份露馅了",
+              subtitle: "起源阿斯代伦的吸血鬼身份以不同方式暴露",
+              meta: "第一至二章 · 旅途中",
+              href: "books/id/BK-OAST_GAL-MULTI-ORI_Astarion_PAD_VampiricNatureDiscussion.html",
+              isNew: true
+            },
+            {
+              id: "VB-005",
+              archiveCode: "VB · 005",
               title: "管好你的牙齿",
               subtitle: "当阿斯代伦对盖尔使用吸血鬼噬咬",
               meta: "旅途中 · 对盖尔使用噬咬",
@@ -819,8 +828,8 @@ window.BLOODWEAVE_CATALOG = {
               isNew: true
             },
             {
-              id: "VB-005",
-              archiveCode: "VB · 005",
+              id: "VB-006",
+              archiveCode: "VB · 006",
               title: "盖尔去哪儿了？",
               subtitle: "阿斯代伦在吸血夜没能交涉成功，导致盖尔离队",
               meta: "第一章 · 营地",
@@ -828,8 +837,8 @@ window.BLOODWEAVE_CATALOG = {
               isNew: true
             },
             {
-              id: "VB-006",
-              archiveCode: "VB · 006",
+              id: "VB-007",
+              archiveCode: "VB · 007",
               title: "衍体化作雾气",
               subtitle: "弗雷戈招待所的吸血鬼衍体化作雾气离开",
               meta: "第三章 · 弗雷戈招待所",
@@ -837,8 +846,8 @@ window.BLOODWEAVE_CATALOG = {
               isNew: true
             },
             {
-              id: "VB-007",
-              archiveCode: "VB · 007",
+              id: "VB-008",
+              archiveCode: "VB · 008",
               title: "盖尔见了准会垂涎三尺",
               subtitle: "盖尔缺席时抵达巫术杂货店",
               meta: "第三章 · 巫术杂货店",
@@ -846,8 +855,26 @@ window.BLOODWEAVE_CATALOG = {
               isNew: true
             },
             {
-              id: "VB-008",
-              archiveCode: "VB · 008",
+              id: "VB-009",
+              archiveCode: "VB · 009",
+              title: "欢迎回到博德之门",
+              subtitle: "重返博德之门后，两人谈起眼前的街区",
+              meta: "第三章 · 明斯克藏身处附近",
+              href: "books/id/BK-AST_GAL-A3-LOW_MinscHideout_PAD_Neighbourhood.html",
+              isNew: true
+            },
+            {
+              id: "VB-010",
+              archiveCode: "VB · 010",
+              title: "卡扎多尔的浮夸品味",
+              subtitle: "进入扎尔宅邸宴会厅前，两人谈起这里的装潢",
+              meta: "第三章 · 扎尔宅邸宴会厅前",
+              href: "books/id/BK-AST_GAL-A3-LOW_CazadorsPalace_PAD_BeforeBallroom.html",
+              isNew: true
+            },
+            {
+              id: "VB-011",
+              archiveCode: "VB · 011",
               title: "召唤阿斯代伦的盟友",
               subtitle: "对战主脑时召集古尔猎人与不死军队",
               meta: "终战 · 召集盟友",
@@ -855,8 +882,8 @@ window.BLOODWEAVE_CATALOG = {
               isNew: true
             },
             {
-              id: "VB-009",
-              archiveCode: "VB · 009",
+              id: "VB-012",
+              archiveCode: "VB · 012",
               title: "别在这里倒下",
               subtitle: "在战斗中倒下触发的即时反应",
               meta: "旅途中 · 战斗中",
