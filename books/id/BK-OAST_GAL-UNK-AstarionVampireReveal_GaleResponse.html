@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN"><head><script src="../../analytics.js"></script><meta name="book-id" content="BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse"><meta name="source-page-ids" content="PAGE-SRC-0001-ShadowHeart_InParty2_Nested_OriginChapter,PAGE-SRC-0001-Wyll_InParty2_Nested_AstarionConfession,PAGE-SRC-0001-Laezel_InParty2_Nested_AstarionConfession"><meta name="source-graph-ids" content="GRAPH-SRC-0001-ShadowHeart_InParty2_Nested_OriginChapter_P035,GRAPH-SRC-0001-Wyll_InParty2_Nested_AstarionConfession_P035,GRAPH-SRC-0001-Laezel_InParty2_Nested_AstarionConfession_P035"><link rel="canonical" href="https://bloodweavearchive.com/books/id/BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse.html"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>别打我的主意</title><style id="visual-system-current">
+<html lang="zh-CN"><head><meta name="book-id" content="BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse"><meta name="source-page-ids" content="PAGE-SRC-0001-ShadowHeart_InParty2_Nested_OriginChapter,PAGE-SRC-0001-Wyll_InParty2_Nested_AstarionConfession,PAGE-SRC-0001-Laezel_InParty2_Nested_AstarionConfession,PAGE-SRC-0001-Karlach_InParty_Nested_AstarionBiteConfrontation"><meta name="source-graph-ids" content="GRAPH-SRC-0001-ShadowHeart_InParty2_Nested_OriginChapter_P035,GRAPH-SRC-0001-Wyll_InParty2_Nested_AstarionConfession_P035,GRAPH-SRC-0001-Laezel_InParty2_Nested_AstarionConfession_P035,GRAPH-SRC-0001-Karlach_InParty_Nested_AstarionBiteConfrontation_P038"><link rel="canonical" href="https://bloodweavearchive.com/books/id/BK-OAST_GAL-UNK-AstarionVampireReveal_GaleResponse.html"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>别打我的主意</title><style id="visual-system-current">
 @page{size:A4;margin:18mm 17mm}
 :root{
   --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
@@ -126,6 +126,32 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 .outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
 .research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
 .research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.collection-continuation{--collection-accent:var(--shared);margin-top:2.6rem;border:1px solid var(--rule);background:#faf7f4}
+.collection-continuation[data-collection="oa"]{--collection-accent:var(--astarion)}
+.collection-continuation[data-collection="og"]{--collection-accent:var(--gale)}
+.collection-continuation[data-collection="ag"]{--collection-accent:var(--shared)}
+.continuation-header{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1rem;border-bottom:1px solid var(--rule)}
+.continuation-heading{display:flex;align-items:center;min-width:0;margin:0;font-size:.78rem;font-weight:700}
+.continuation-reading-label{align-self:stretch;display:inline-flex;align-items:center;padding:.65rem .78rem;background:var(--collection-accent);color:#fff;letter-spacing:.04em}
+.continuation-reading-current{min-width:0;padding:.55rem .72rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.continuation-jump{display:flex;align-items:center;gap:.48rem;margin-right:.65rem}
+.continuation-jump-label{flex:0 0 auto;color:var(--muted);font-size:.68rem;font-weight:700;letter-spacing:.04em}
+.continuation-jump select{max-width:12rem;padding:.38rem 1.8rem .38rem .52rem;border:1px solid var(--rule);border-radius:0;background:#fff;color:var(--collection-accent);font:inherit;font-size:.72rem;font-weight:650;cursor:pointer}
+.continuation-jump select:hover,.continuation-jump select:focus{border-color:var(--collection-accent);outline:0}
+.continuation-nav{display:grid;align-items:stretch}
+.collection-continuation[data-edge="first"] .continuation-nav{grid-template-columns:auto minmax(0,1fr)}
+.collection-continuation[data-edge="middle"] .continuation-nav{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
+.collection-continuation[data-edge="last"] .continuation-nav{grid-template-columns:minmax(0,1fr) auto}
+.continuation-link{display:flex;align-items:center;gap:.65rem;min-width:0;padding:.72rem .8rem;color:inherit;text-decoration:none}
+.collection-continuation[data-edge="first"] .continuation-link,.collection-continuation[data-edge="middle"] .continuation-link:last-child{justify-content:flex-end;text-align:right}
+.continuation-link:hover .continuation-title{color:var(--collection-accent)}
+.continuation-label{display:block;color:var(--muted);font-size:.65rem;font-weight:700;letter-spacing:.06em}
+.continuation-title{display:block;max-width:18em;font-size:.9rem;font-weight:700;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.continuation-arrow{color:var(--collection-accent);font:1.1rem/1 Georgia,"Times New Roman",serif}
+.continuation-position{display:grid;place-items:center;min-width:4.4rem;margin:.5rem 0;color:var(--muted);font:italic .75rem/1.4 Georgia,"Times New Roman",serif}
+.collection-continuation[data-edge="first"] .continuation-position{border-right:1px solid var(--rule)}
+.collection-continuation[data-edge="middle"] .continuation-position{border-left:1px solid var(--rule);border-right:1px solid var(--rule)}
+.collection-continuation[data-edge="last"] .continuation-position{border-left:1px solid var(--rule)}
 .component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
 .component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
 .component-index a{color:var(--muted);text-underline-offset:.2em}
@@ -146,22 +172,38 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
   .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
   .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
   .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
+  .continuation-header{grid-template-columns:1fr}
+  .continuation-jump{margin:0;padding:0 .7rem .55rem}
+  .continuation-jump select{width:100%;max-width:none}
+  .collection-continuation[data-edge="middle"] .continuation-nav{grid-template-columns:minmax(0,1fr) minmax(0,1fr);position:relative;padding-top:1.7rem}
+  .collection-continuation[data-edge="middle"] .continuation-position{position:absolute;inset:.2rem 0 auto;margin:0;border:0;min-width:0}
+  .collection-continuation[data-edge="middle"] .continuation-link:last-child{border-left:1px solid var(--rule)}
+  .continuation-link{padding:.7rem .55rem}
+  .continuation-arrow{font-size:1.05rem}
+  .continuation-title{font-size:.82rem}
+  .continuation-reading-current{font-size:.72rem}
 }
 @media print{
   html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
   .component-index,.component-note{display:none}
   .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
 }
-</style>  <link rel="stylesheet" href="../../book-navigation.css?v=20261025-1">
-</head><body><main>
+</style></head><body><main>
 <h1 class="book-title"><span class="book-title__main">别打我的主意</span></h1>
-<div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br>吸血之夜后，起源阿斯代伦与影心、威尔或莱埃泽尔谈起自己的吸血鬼身份。交谈对象可能是昨夜被咬的人，也可能是其他队友。盖尔从旁插话时，可能独自回应，也可能与另一名同伴先后回应；01–03 按这三种插话情况排列。他是否已经坦白体内的耐色瑞尔法球，也会影响回应内容。<p class="route-guide-line">本册仅收录了起源阿斯代伦在夜间咬了一名非盖尔的队友，次日与非盖尔的任意队友谈话时，盖尔被选中从旁接话的各个版本。若要阅读夜间接近盖尔的完整事件，以及次日直接与盖尔交谈的两种开场，请参阅《苦涩的血》。</p></div>
+<div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br>吸血之夜，起源阿斯代伦趁同伴熟睡时露出了獠牙，也因此暴露了自己的吸血鬼衍体身份。第二天，队友们纷纷谈起这场风波：有人质问，有人警告，也有人愿意再给他一次机会。盖尔会在他们的谈话中从旁评价，说出自己的看法。起源阿斯代伦夜间接近盖尔，及次日直接与他交谈的内容，见《苦涩的血》。</div>
 <h2>阅读脉络</h2>
-<nav class="flow"><pre>吸血之夜咬了非盖尔队友 → 次日与非盖尔队友交谈 → 盖尔被选中从旁回应
-├─ 01 · 仅盖尔从旁插话 → 盖尔单独回应
-└─ 有两名同伴从旁插话
-   ├─ 02 · 盖尔先插话，另一名同伴随后插话
-   └─ 03 · 另一名同伴先插话，盖尔随后插话
+<nav class="flow"><pre>吸血之夜后，与非盖尔队友谈起阿斯代伦的吸血鬼身份
+├─ 与影心、威尔或莱埃泽尔交谈
+│  ├─ 01 · 仅盖尔从旁插话 → 盖尔单独回应
+│  └─ 有两名同伴从旁插话
+│     ├─ 02 · 盖尔先插话，另一名同伴随后插话
+│     └─ 03 · 另一名同伴先插话，盖尔随后插话
+└─ 04 · 与卡菈克交谈
+   ├─ 卡菈克提起昨夜发生的事
+   ├─ 起源阿斯代伦作出回应
+   两处可能选中盖尔的同伴发言位置（彼此关系未知）：
+   04.3 · 第一处：盖尔评论卡菈克的态度
+   04.4 · 第二处：盖尔愿意给阿斯代伦一次机会
 
 每个发言位置均按以下条件区分版本：
 ├─ 版本 I · 盖尔尚未坦白耐色瑞尔法球
@@ -197,11 +239,39 @@ h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
 <section class="variant-card"><div class="version-heading"><span class="version-badge">版本 IV</span><div class="choice-meta"><span class="condition-tag">条件 · 盖尔已经坦白耐色瑞尔法球</span><span class="condition-tag">条件 · 当前交谈对象为莱埃泽尔</span></div></div><section class="turn turn--gale" data-source-order="91" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Laezel_InParty2_Nested_AstarionConfession.html"><div class="speaker">盖尔</div><p class="en" lang="en">Quite right. We all have our hungers to sate. Some just happen to hunger for blood.</p><p class="zh"><span>参考译文</span>正是如此。我们都有需要满足的饥饿，只不过有些人渴求的是鲜血。</p></section><section class="turn turn--gale" data-source-order="92" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Laezel_InParty2_Nested_AstarionConfession.html"><div class="speaker">盖尔</div><p class="en" lang="en">A word of warning, Astarion: I taste absolutely awful .</p><p class="zh"><span>参考译文</span>先警告一句，阿斯代伦：我的味道糟透了。</p></section></section>
 </div>
 
+<h2 class="menu-heading"><span class="menu-code">04 ·</span><span class="menu-label">卡菈克没有追究昨夜的事</span></h2>
+<h3 class="menu-heading"><span class="menu-code">04.1 ·</span><span class="menu-label">卡菈克谈起昨夜发生的事</span></h3>
+<div class="variants variants--stack">
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 卡菈克是吸血夜的被咬者</span></div>
+<section class="turn" data-source-order="52" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">卡菈克</div><p class="en" lang="en">Impressed with myself. I slept like a baby, even after your little display.</p><p class="zh"><span>参考译文</span>我还挺佩服自己的。就算见识了你昨晚那番小表演，我照样睡得像个婴儿。</p></section>
+<section class="turn" data-source-order="53" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">卡菈克</div><p class="en" lang="en">Sometimes I think I'd sleep through the apocalypse.</p><p class="zh"><span>参考译文</span>有时候我觉得，就算末日降临我也能一觉睡过去。</p></section>
+<section class="turn" data-source-order="54" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">卡菈克</div><p class="en" lang="en">You're lucky I can handle your bullshit.</p><p class="zh"><span>参考译文</span>算你走运，我还能受得了你这些破事。</p></section></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 II</span></div>
+<section class="turn" data-source-order="81" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">卡菈克</div><p class="en" lang="en">The vampire wakes.</p><p class="zh"><span>参考译文</span>吸血鬼醒了。</p></section>
+<section class="turn" data-source-order="82" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">卡菈克</div><p class="en" lang="en">I hope last night's little display was a one-time thing.</p><p class="zh"><span>参考译文</span>希望你昨晚那番小表演只有一次。</p></section>
+<section class="turn" data-source-order="83" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">卡菈克</div><p class="en" lang="en">Lucky for you, I'm very forgiving of mistakes.</p><p class="zh"><span>参考译文</span>算你走运，我很愿意原谅别人犯错。</p></section></section>
+</div>
 
-<details class="research"><summary>研究依据</summary><p>主要来源：Patch 8 对话文件《ShadowHeart_InParty2_Nested_OriginChapter》；另与《Wyll_InParty2_Nested_AstarionConfession》和《Laezel_InParty2_Nested_AstarionConfession》交叉核对。</p><p>本页呈现静态文件中所有经过盖尔回应的局部版本；文件结构本身不能证明各版本在正式游戏中的实际可达性。中文译文仅供阅读参考，如有歧义，以英文原文为准。</p></details><span hidden data-structural-orders="84,93,75,66" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/ShadowHeart_InParty2_Nested_OriginChapter.html"></span>
+<h3 class="menu-heading"><span class="menu-code">04.2 ·</span><span class="menu-label">起源阿斯代伦如何回应</span></h3>
+<section class="choice"><div class="choice-meta"><span class="tag badge"><span class="choice-code">04.2A</span> · 起源阿斯代伦选项</span></div><article class="turn turn--astarion" data-source-order="55" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">起源阿斯代伦</div><p class="en" lang="en">What more can I say than 'thank you'.</p><p class="zh"><span>参考译文</span>除了“谢谢”，我还能说什么呢。</p></article><section class="turn" data-source-order="56" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">卡菈克</div><p class="en" lang="en">You're welcome.</p><p class="zh"><span>参考译文</span>不客气。</p></section></section>
+<section class="choice"><div class="choice-meta"><span class="tag badge"><span class="choice-code">04.2B</span> · 起源阿斯代伦选项</span></div><article class="turn turn--astarion" data-source-order="77" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">起源阿斯代伦</div><p class="en" lang="en">From now on, these fangs seek enemy flesh only.</p><p class="zh"><span>参考译文</span>从现在起，这对獠牙只会咬向敌人。</p></article><section class="turn" data-source-order="78" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">卡菈克</div><p class="en" lang="en">If you're sure about that, then I'm sure about you.</p><p class="zh"><span>参考译文</span>如果你能保证，我就愿意相信你。</p></section></section>
+<section class="choice"><div class="choice-meta"><span class="tag badge"><span class="choice-code">04.2C</span> · 起源阿斯代伦选项</span></div><article class="turn turn--astarion" data-source-order="79" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">起源阿斯代伦</div><p class="en" lang="en">Don't patronise me, tiefling.</p><p class="zh"><span>参考译文</span>别用这种高高在上的口气对我，提夫林。</p></article><section class="turn" data-source-order="80" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">卡菈克</div><p class="en" lang="en">Getting caught red-fanged hasn't humbled you much, I see.</p><p class="zh"><span>参考译文</span>看来被抓了个满嘴鲜血，也没让你谦逊多少。</p></section></section>
+<p class="branch-note">三种回答随后都会进入同伴插话。</p>
+
+<h3 class="menu-heading"><span class="menu-code">04.3 ·</span><span class="menu-label">盖尔评论卡菈克的态度</span></h3>
+<section class="turn turn--gale origin-response origin-response--gale" data-source-order="67" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="origin-response-heading"><div class="speaker">盖尔</div><span class="origin-response-tag">起源阿斯代伦专属回应</span></div><p class="en" lang="en">You're being rather philosophical about all this, Karlach. I was expecting a more heated response.</p><p class="zh"><span>参考译文</span>你对这件事倒看得很通透，卡菈克。我还以为你的反应会更火爆些。</p></section>
+
+<h3 class="menu-heading"><span class="menu-code">04.4 ·</span><span class="menu-label">盖尔愿意给阿斯代伦一次机会</span></h3>
+<div class="variants variants--stack">
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 I</span></div><section class="turn turn--gale origin-response origin-response--gale" data-source-order="63" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="origin-response-heading"><div class="speaker">盖尔</div><span class="origin-response-tag">起源阿斯代伦专属回应</span></div><p class="en" lang="en">So long as none of us are on the pointed end of Astarion's hunger pangs, I think he deserves a chance.</p><p class="zh"><span>参考译文</span>只要阿斯代伦饿起来时，别让我们挨上他的尖牙，我觉得应该给他一次机会。</p></section></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 II</span></div><section class="turn turn--gale origin-response origin-response--gale" data-source-order="76" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="origin-response-heading"><div class="speaker">盖尔</div><span class="origin-response-tag">起源阿斯代伦专属回应</span></div><p class="en" lang="en">So long as none of us are on the pointed end of his hunger pangs, I think he deserves a chance.</p><p class="zh"><span>参考译文</span>只要他饿起来时，别让我们挨上他的尖牙，我觉得应该给他一次机会。</p></section></section>
+</div>
+<section class="turn" data-source-order="72" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"><div class="speaker">卡菈克</div><p class="en" lang="en">New day ahead of us. Let's put this knew knowledge to good use in the fight against evil.</p><p class="zh"><span>参考译文</span>新的一天在等着我们。就让这份新知在对抗邪恶时派上用场吧。</p></section>
+
+
+<details class="research"><summary>研究依据</summary><p>01–03 主要来源于 Patch 8 对话文件《ShadowHeart_InParty2_Nested_OriginChapter》，并与《Wyll_InParty2_Nested_AstarionConfession》和《Laezel_InParty2_Nested_AstarionConfession》交叉核对；04 直接取自《Karlach_InParty_Nested_AstarionBiteConfrontation》。</p><p>本页呈现静态文件中所有经过盖尔回应的局部版本；文件结构本身不能证明各版本在正式游戏中的实际可达性。中文译文仅供阅读参考，如有歧义，以英文原文为准。</p></details><span hidden data-structural-orders="84,93,75,66" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/ShadowHeart_InParty2_Nested_OriginChapter.html"></span>
 <span hidden data-structural-orders="81,72,64" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Wyll_InParty2_Nested_AstarionConfession.html"></span>
 <span hidden data-structural-orders="105,96,88" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Laezel_InParty2_Nested_AstarionConfession.html"></span>
+<span hidden data-structural-orders="57,65,60,68,71" data-source-entry="parsed_dialogs_release_patch8_18092025/dialogs/Companions/Karlach_InParty_Nested_AstarionBiteConfrontation.html"></span>
 </main>
-  <script src="../../catalog.js?v=20261025-2"></script>
-  <script src="../../book-navigation.js?v=20261025-2"></script>
 </body></html>
