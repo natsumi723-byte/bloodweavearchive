@@ -823,7 +823,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "VB · 005",
               title: "管好你的牙齿",
               subtitle: "当阿斯代伦对盖尔使用吸血鬼噬咬",
-              meta: "旅途中 · 对盖尔使用噬咬",
+              meta: "旅途中 · 两人对峙",
               href: "books/id/BK-OAST_GAL-UNK-ORI_AstarionIsAVamp_PAD_GaleWasBitten.html",
               isNew: true
             },
@@ -859,7 +859,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "VB · 009",
               title: "欢迎回到博德之门",
               subtitle: "重返博德之门后，两人谈起眼前的街区",
-              meta: "第三章 · 明斯克藏身处附近",
+              meta: "第三章 · 下城区下水道",
               href: "books/id/BK-AST_GAL-A3-LOW_MinscHideout_PAD_Neighbourhood.html",
               isNew: true
             },
@@ -868,7 +868,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "VB · 010",
               title: "卡扎多尔的浮夸品味",
               subtitle: "进入扎尔宅邸宴会厅前，两人谈起这里的装潢",
-              meta: "第三章 · 扎尔宅邸宴会厅前",
+              meta: "第三章 · 扎尔宅邸",
               href: "books/id/BK-AST_GAL-A3-LOW_CazadorsPalace_PAD_BeforeBallroom.html",
               isNew: true
             },
