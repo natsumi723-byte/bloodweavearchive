@@ -433,10 +433,9 @@ body.foreword-modal-open { overflow:hidden; }
 }
 .catalog-entry strong {
   grid-area: title;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: start;
-  column-gap: .75rem;
+  display: flex;
+  align-items: baseline;
+  gap: .48rem;
   font-size: 1rem;
   line-height: 1.55;
   font-weight: 650;
@@ -453,6 +452,7 @@ body.foreword-modal-open { overflow:hidden; }
   font: 700 .58rem/1.45 var(--font-en);
   letter-spacing: .08em;
   margin-top: .22rem;
+  margin-left: auto;
 }
 .catalog-entry small {
   grid-area: subtitle;
@@ -462,18 +462,22 @@ body.foreword-modal-open { overflow:hidden; }
   line-height: 1.6;
 }
 .entry-notice {
-  display: flex;
-  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: fit-content;
   max-width: 100%;
-  margin: .42rem 0 0;
-  padding: .04rem .42rem;
-  border: 1px solid var(--line-dark);
+  margin: 0;
+  padding: .08rem .48rem .1rem;
+  border: 0;
   border-radius: 999px;
-  color: var(--shared);
-  font-size: .68rem;
-  line-height: 1.45;
+  background: #d2b3bb;
+  color: #fffaf8;
+  font-size: .64rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: .015em;
   white-space: nowrap;
-  vertical-align: .08rem;
 }
 .entry-arrow {
   grid-area: arrow;
@@ -651,9 +655,8 @@ footer { border-top: 1px solid var(--line); }
   .catalog-entry strong {
     width: 100%;
     grid-column: 1 / -1;
-    grid-template-columns: minmax(0, 1fr) max-content;
-    align-items: flex-start;
-    column-gap: .5rem;
+    align-items: baseline;
+    gap: .42rem;
     padding-right: 1.6rem;
     font-size: .98rem;
     line-height: 1.48;
@@ -715,11 +718,17 @@ footer { border-top: 1px solid var(--line); }
     height: 21px;
     flex-basis: 21px;
   }
+  .wordmark-text strong {
+    font-size: .58rem;
+    letter-spacing: .015em;
+  }
   .wordmark-text small { display: none; }
   .site-header nav {
-    gap: .75rem;
-    font-size: .72rem;
+    gap: .5rem;
+    font-size: .68rem;
   }
+  .nav-ag > summary { padding-left: .5rem; padding-right: 1.15rem; }
+  .nav-ag > summary span::after { content: "目录"; font-size: .68rem; }
   .entry-meta {
     max-width: none;
     letter-spacing: .035em;

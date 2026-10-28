@@ -191,16 +191,15 @@
       if (metadata) link.append(textElement("span", "entry-meta", metadata));
       const title = document.createElement("strong");
       title.append(textElement("span", "entry-title-text", book.title));
+      if (book.notice) {
+        title.append(textElement("span", "entry-notice", book.notice));
+      }
       if (book.isNew) {
         title.append(textElement("span", "entry-new", "NEW"));
       }
       link.append(title);
       if (book.subtitle) {
-        const subtitle = textElement("small", "", book.subtitle);
-        if (book.notice) {
-          subtitle.append(textElement("span", "entry-notice", book.notice));
-        }
-        link.append(subtitle);
+        link.append(textElement("small", "", book.subtitle));
       }
       link.append(textElement("span", "entry-arrow", "→"));
 

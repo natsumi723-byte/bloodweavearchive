@@ -2,7 +2,7 @@ window.BLOODWEAVE_CATALOG = {
   site: {
     title: "Bloodweave 书库",
     catalogVersion: "0.1",
-    lastUpdated: "2026-10-20"
+    lastUpdated: "2026-10-28"
   },
   collections: [
     {
@@ -347,7 +347,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 007",
               title: "我倒觉得这次有点慢了",
               subtitle: "玩家角色与阿斯代伦进入暧昧阶段",
-              notice: "提及玩家与阿斯代伦恋爱关系",
+              notice: "含 A／G 与玩家恋爱线",
               meta: "第一章 · 旅途中",
               href: "books/id/BK-AST_GAL-UNK-PB_Gale_Astarion_ROM_Act1.html"
             },
@@ -356,7 +356,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 008",
               title: "我说的可不是密斯特拉",
               subtitle: "玩家角色与盖尔进入暧昧阶段",
-              notice: "提及玩家与盖尔恋爱关系",
+              notice: "含 A／G 与玩家恋爱线",
               meta: "第一章 · 旅途中",
               href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_ROM_Act1.html"
             },
@@ -405,7 +405,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 014",
               title: "你昨晚和盖尔过得如何",
               subtitle: "玩家角色与盖尔确立恋爱关系，并完成第二章恋爱场景",
-              notice: "提及玩家与盖尔恋爱关系",
+              notice: "含 A／G 与玩家恋爱线",
               meta: "第二章 · 旅途中",
               href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_ROM_Act2.html"
             },
@@ -414,7 +414,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 015",
               title: "愿心碎已成过去",
               subtitle: "玩家角色与阿斯代伦确立恋爱关系，并完成第二章恋爱场景",
-              notice: "提及玩家与阿斯代伦恋爱关系",
+              notice: "含 A／G 与玩家恋爱线",
               meta: "第二章 · 旅途中",
               href: "books/id/BK-AST_GAL-UNK-PB_Gale_Astarion_ROM_Act2.html"
             },
@@ -455,7 +455,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 020",
               title: "与女神同床的故事",
               subtitle: "玩家角色与盖尔保持恋爱关系，并完成第三章恋爱场景",
-              notice: "提及玩家与盖尔恋爱关系",
+              notice: "含 A／G 与玩家恋爱线",
               meta: "第三章 · 旅途中",
               href: "books/id/BK-AST_GAL-UNK-PB_Astarion_Gale_ROM_Act3.html"
             },
@@ -464,7 +464,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 021",
               title: "献血的好意",
               subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦仍是吸血鬼衍体",
-              notice: "提及玩家与阿斯代伦恋爱关系",
+              notice: "含 A／G 与玩家恋爱线",
               meta: "第三章 · 旅途中",
               href: "books/id/BK-AST_GAL-UNK-PB_Gale_Astarion_ROM_Act3_Spawn.html"
             },
@@ -473,7 +473,7 @@ window.BLOODWEAVE_CATALOG = {
               archiveCode: "AG · 022",
               title: "新的关系，还是新的束缚",
               subtitle: "玩家角色与阿斯代伦保持恋爱关系，阿斯代伦已经完成飞升",
-              notice: "提及玩家与阿斯代伦恋爱关系",
+              notice: "含 A／G 与玩家恋爱线",
               meta: "第三章 · 旅途中",
               href: "books/id/BK-AST_GAL-UNK-PB_Gale_Astarion_ROM_Act3_Ascendant.html"
             }
@@ -564,52 +564,72 @@ window.BLOODWEAVE_CATALOG = {
             {
               id: "AG-033",
               archiveCode: "AG · 033",
+              title: "庆功宴上的邀约",
+              subtitle: "提夫林庆功宴上，两人评论玩家与另一人的约定",
+              notice: "含 A／G 与玩家恋爱线",
+              meta: "第一章 · 营地",
+              href: "books/id/BK-AST_GAL-A1-TieflingCelebrationPartnerComments.html",
+              isNew: true
+            },
+            {
+              id: "AG-034",
+              archiveCode: "AG · 034",
+              title: "我，还是他？",
+              subtitle: "阿斯代伦与盖尔要求玩家在两人之间作出选择",
+              notice: "含 A／G 与玩家恋爱线",
+              meta: "第二章 · 旅途中",
+              href: "books/id/BK-AST_GAL-A2-AstarionGalePartnerChoice.html",
+              isNew: true
+            },
+            {
+              id: "AG-035",
+              archiveCode: "AG · 035",
               title: "亵渎飞升仪式前后",
               subtitle: "飞升仪式中的劝阻与事后回应",
               meta: "第三章 · 扎尔宅邸",
               href: "books/id/BK-AST_GAL-UNK-LOW_CazadorsPalace_RitualRoom_PostCombat_OM_Astarion_AOM_COM_OOM.html"
             },
             {
-              id: "AG-034",
-              archiveCode: "AG · 034",
+              id: "AG-036",
+              archiveCode: "AG · 036",
               title: "法球之外的选择",
               subtitle: "盖尔重申引爆法球的提案",
               meta: "终战 · 星界棱镜",
               href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_Undecided.html",            },
             {
-              id: "AG-035",
-              archiveCode: "AG · 035",
+              id: "AG-037",
+              archiveCode: "AG · 037",
               title: "转化并非唯一选择",
               subtitle: "面对是否接受夺心魔转化的群体讨论",
               meta: "终战 · 星界棱镜",
               href: "books/id/BK-AST_GAL-END-END_IllithidOptions_GD_TadpoleChoice.html",            },
             {
-              id: "AG-036",
-              archiveCode: "AG · 036",
+              id: "AG-038",
+              archiveCode: "AG · 038",
               title: "王冠沉入乔恩萨河之后",
               subtitle: "盖尔存活，王冠沉入乔恩萨河",
               meta: "终战 · 码头",
               href: "books/id/BK-AST_GAL-END-END_BrainBattle_CombatOver_Nested_AfterGithLeave.html"
             },
             {
-              id: "AG-037",
-              archiveCode: "AG · 037",
+              id: "AG-039",
+              archiveCode: "AG · 039",
               title: "阳光不再眷顾他",
               subtitle: "阳光灼伤衍体阿斯代伦，迫使他先行离开",
               meta: "终战 · 码头",
               href: "books/id/BK-AST_GAL-END-END_BrainBattle_CombatOver_Nested_WhatNext_AstarionSunlight.html"
             },
             {
-              id: "AG-038",
-              archiveCode: "AG · 038",
+              id: "AG-040",
+              archiveCode: "AG · 040",
               title: "盖尔带来的胜利",
               subtitle: "盖尔引爆法球并摧毁耐色脑",
               meta: "终战 · 码头",
               href: "books/id/BK-AST_GAL-END-END_BrainBattle_GaleSacrifice_Astarion.html"
             },
             {
-              id: "AG-039",
-              archiveCode: "AG · 039",
+              id: "AG-041",
+              archiveCode: "AG · 041",
               title: "为盖尔举杯",
               subtitle: "盖尔牺牲，众人商议如何纪念他",
               meta: "终战 · 码头",
@@ -623,144 +643,144 @@ window.BLOODWEAVE_CATALOG = {
           description: "",
           books: [
             {
-              id: "AG-040",
-              archiveCode: "AG · 040",
+              id: "AG-042",
+              archiveCode: "AG · 042",
               title: "和他同行最好保持警觉",
               subtitle: "招募阿斯代伦为同伴后",
               meta: "第一章 · 荒野",
               href: "books/id/BK-AST_GAL-A1-AstarionRecruited_GaleComment.html"
             },
             {
-              id: "AG-041",
-              archiveCode: "AG · 041",
+              id: "AG-043",
+              archiveCode: "AG · 043",
               title: "把自己困在传送门里的法师",
               subtitle: "招募盖尔为同伴后",
               meta: "第一章 · 路边山崖",
               href: "books/id/BK-AST_GAL-A1-GaleRecruited_AstarionComment.html"
             },
             {
-              id: "AG-042",
-              archiveCode: "AG · 042",
+              id: "AG-044",
+              archiveCode: "AG · 044",
               title: "盖尔今晚心事重重",
               subtitle: "第一夜与盖尔交谈后",
               meta: "第一章 · 营地",
               href: "books/id/BK-AST_GAL-A1-FirstNightAfterGale_AstarionComment.html"
             },
             {
-              id: "AG-043",
-              archiveCode: "AG · 043",
+              id: "AG-045",
+              archiveCode: "AG · 045",
               title: "营地里有个吸血鬼",
               subtitle: "身份公开后，玩家询问盖尔对此事的看法",
               meta: "第一章 · 营地",
               href: "books/id/BK-AST_GAL-A1-GaleAskedAboutAstarionVampire.html"
             },
             {
-              id: "AG-044",
-              archiveCode: "AG · 044",
+              id: "AG-046",
+              archiveCode: "AG · 046",
               title: "白白糟蹋了那么好的宝物",
               subtitle: "盖尔吸收魔法物品",
               meta: "第一章 · 旅途中",
               href: "books/id/BK-AST_GAL-A1-GaleConsumedItem_AstarionComment.html"
             },
             {
-              id: "AG-045",
-              archiveCode: "AG · 045",
+              id: "AG-047",
+              archiveCode: "AG · 047",
               title: "死而复生的好运",
               subtitle: "盖尔死亡后被复活",
               meta: "第一章 · 旅途中",
               href: "books/id/BK-AST_GAL-A1-GaleResurrected_AstarionComment.html"
             },
             {
-              id: "AG-046",
-              archiveCode: "AG · 046",
+              id: "AG-048",
+              archiveCode: "AG · 048",
               title: "古尔人的猎网从不留情",
               subtitle: "将阿斯代伦交给古尔猎人",
               meta: "第一章 · 日照湿地",
               href: "books/id/BK-AST_GAL-A1-AstarionTakenByGur_GaleComment.html"
             },
             {
-              id: "AG-047",
-              archiveCode: "AG · 047",
+              id: "AG-049",
+              archiveCode: "AG · 049",
               title: "他现在才提起那颗法球？",
               subtitle: "盖尔公开法球危机",
               meta: "第一章 · 旅途中",
               href: "books/id/BK-AST_GAL-A1-GaleBackstory_AstarionComment.html"
             },
             {
-              id: "AG-048",
-              archiveCode: "AG · 048",
+              id: "AG-050",
+              archiveCode: "AG · 050",
               title: "可惜了一个好端端的盖尔",
               subtitle: "伊尔明斯特传达密斯特拉的命令",
               meta: "第二章 · 营地",
               href: "books/id/BK-AST_GAL-A2-ElminsterSacrifice_AstarionComment.html"
             },
             {
-              id: "AG-049",
-              archiveCode: "AG · 049",
+              id: "AG-051",
+              archiveCode: "AG · 051",
               title: "那个大胡子叫盖尔把自己炸掉？",
               subtitle: "伊尔明斯特传达密斯特拉的命令",
               meta: "第二章 · 营地",
               href: "books/id/BK-AST_GAL-A2-ElminsterBombReveal_AstarionComment.html"
             },
             {
-              id: "AG-050",
-              archiveCode: "AG · 050",
+              id: "AG-052",
+              archiveCode: "AG · 052",
               title: "阿斯代伦终会复仇",
               subtitle: "拉斐尔解释阿斯代伦背上的仪式文字",
               meta: "第二章 · 营地",
               href: "books/id/BK-AST_GAL-A2-RaphaelExplainedRitual_GaleComment.html"
             },
             {
-              id: "AG-051",
-              archiveCode: "AG · 051",
+              id: "AG-053",
+              archiveCode: "AG · 053",
               title: "盖尔也学会了驾驭黑暗",
               subtitle: "盖尔利用妖精尸体制作提灯",
               meta: "第二章 · 月出之塔",
               href: "books/id/BK-AST_GAL-A2-DarkLantern_AstarionComment.html"
             },
             {
-              id: "AG-052",
-              archiveCode: "AG · 052",
+              id: "AG-054",
+              archiveCode: "AG · 054",
               title: "我们得罪的神已经够多了",
               subtitle: "密斯特拉召见盖尔",
               meta: "第三章 · 石化蜥蜴之门",
               href: "books/id/BK-AST_GAL-A3-MystraMeeting_AstarionComment.html"
             },
             {
-              id: "AG-053",
-              archiveCode: "AG · 053",
+              id: "AG-055",
+              archiveCode: "AG · 055",
               title: "卡尔萨斯王冠该归谁",
               subtitle: "盖尔与密斯特拉会面",
               meta: "第三章 · 风暴海岸圣所",
               href: "books/id/BK-AST_GAL-A3-CrownDecision_AstarionComment.html"
             },
             {
-              id: "AG-054",
-              archiveCode: "AG · 054",
+              id: "AG-056",
+              archiveCode: "AG · 056",
               title: "我们大概还是该救那个法师",
               subtitle: "奥林掳走盖尔",
               meta: "第三章 · 下城区下水道",
               href: "books/id/BK-AST_GAL-A3-OrinAbductedGale_AstarionComment.html"
             },
             {
-              id: "AG-055",
-              archiveCode: "AG · 055",
+              id: "AG-057",
+              archiveCode: "AG · 057",
               title: "阿斯代伦的命运如今全看我们",
               subtitle: "吸血鬼衍体掳走阿斯代伦",
               meta: "第三章 · 营地",
               href: "books/id/BK-AST_GAL-A3-AstarionAbductedBySpawn_GaleComment.html"
             },
             {
-              id: "AG-056",
-              archiveCode: "AG · 056",
+              id: "AG-058",
+              archiveCode: "AG · 058",
               title: "一位吸血鬼领主与我们同行",
               subtitle: "阿斯代伦完成飞升",
               meta: "第三章 · 扎尔宅邸",
               href: "books/id/BK-AST_GAL-A3-AstarionAscended_GaleComment.html"
             },
             {
-              id: "AG-057",
-              archiveCode: "AG · 057",
+              id: "AG-059",
+              archiveCode: "AG · 059",
               title: "博德之门逃过一劫",
               subtitle: "将飞升阿斯代伦交给古尔人",
               meta: "第三章 · 扎尔宅邸",
