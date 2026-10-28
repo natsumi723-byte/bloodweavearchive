@@ -442,10 +442,10 @@ body.foreword-modal-open { overflow:hidden; }
   font-weight: 650;
 }
 .entry-title-text {
-  flex: 0 0 100%;
   min-width: 0;
   white-space: nowrap;
 }
+.catalog-entry strong:has(.entry-notice) .entry-title-text { flex: 0 0 100%; }
 .entry-new {
   display: inline-flex;
   flex: 0 0 auto;
