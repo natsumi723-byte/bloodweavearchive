@@ -445,7 +445,12 @@ body.foreword-modal-open { overflow:hidden; }
   min-width: 0;
   white-space: nowrap;
 }
+.catalog-entry strong:has(.entry-notice) {
+  align-items: center;
+  row-gap: .28rem;
+}
 .catalog-entry strong:has(.entry-notice) .entry-title-text { flex: 0 0 100%; }
+.catalog-entry strong:has(.entry-notice) .entry-new { margin-top: 0; }
 .entry-new {
   display: inline-flex;
   flex: 0 0 auto;
@@ -466,6 +471,7 @@ body.foreword-modal-open { overflow:hidden; }
   font-size: .82rem;
   line-height: 1.6;
 }
+.catalog-entry a:has(.entry-notice) small { margin-top: .13rem; }
 .entry-notice {
   display: inline-flex;
   align-items: center;
@@ -676,6 +682,7 @@ footer { border-top: 1px solid var(--line); }
     font-size: .78rem;
     line-height: 1.55;
   }
+  .catalog-entry a:has(.entry-notice) small { margin-top: .06rem; }
   .entry-arrow {
     justify-self: end;
     margin-top: .26rem;
