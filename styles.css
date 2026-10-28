@@ -434,13 +434,18 @@ body.foreword-modal-open { overflow:hidden; }
 .catalog-entry strong {
   grid-area: title;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: .48rem;
   font-size: 1rem;
   line-height: 1.55;
   font-weight: 650;
 }
-.entry-title-text { min-width: 0; }
+.entry-title-text {
+  flex: 0 0 100%;
+  min-width: 0;
+  white-space: nowrap;
+}
 .entry-new {
   display: inline-flex;
   flex: 0 0 auto;
@@ -656,7 +661,7 @@ footer { border-top: 1px solid var(--line); }
     width: 100%;
     grid-column: 1 / -1;
     align-items: baseline;
-    gap: .42rem;
+    gap: .34rem .42rem;
     padding-right: 1.6rem;
     font-size: .98rem;
     line-height: 1.48;
