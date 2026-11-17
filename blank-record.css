@@ -27,7 +27,7 @@
   place-items: center;
   width: min(32rem, calc(100% - 2rem));
   min-height: 15rem;
-  margin: 1.5rem auto 1rem;
+  margin: 5rem auto 1rem;
   padding: 2.5rem;
   overflow: visible;
   border: 1px solid #cfc3bd;
@@ -35,8 +35,65 @@
   background: #fbf8f2;
   box-shadow: 0 .45rem 1.1rem rgba(61, 45, 52, .06);
   text-decoration: none;
-  transform: translateY(3.5rem);
+  transform: translateY(1rem);
   transition: transform .6s cubic-bezier(.2, .8, .2, 1), box-shadow .45s ease;
+}
+
+.blank-record-art {
+  position: absolute;
+  z-index: 4;
+  bottom: -.5rem;
+  width: 10.5rem;
+  pointer-events: none;
+  user-select: none;
+  transition: transform .45s cubic-bezier(.2, .8, .2, 1);
+}
+
+.blank-record-art img { display: block; width: 100%; }
+.blank-record-art-gale { left: -4.6rem; }
+.blank-record-art-astarion { right: -4.6rem; }
+
+.blank-record-art-tara {
+  position: absolute;
+  z-index: 5;
+  top: -4.4rem;
+  left: 50%;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+.blank-record-art-tara img {
+  position: absolute;
+  top: calc(50% + 1.55rem);
+  left: 50%;
+  display: block;
+  width: 28rem;
+  max-width: none;
+  transform: translate(-50%, -50%);
+}
+
+.blank-record-credit {
+  width: min(32rem, calc(100% - 2rem));
+  margin: -.35rem auto 0;
+  color: var(--line-dark);
+  font-size: .66rem;
+  letter-spacing: .025em;
+  text-align: right;
+  white-space: nowrap;
+  transform: translateY(1rem);
+  transition: transform .6s cubic-bezier(.2, .8, .2, 1);
+}
+
+.blank-record-entry:hover .blank-record-art-gale {
+  transform: translate(-.35rem, -.15rem) rotate(-1.5deg);
+}
+
+.blank-record-entry:hover .blank-record-art-astarion {
+  transform: translate(.35rem, -.15rem) rotate(1.5deg);
 }
 
 .blank-record-tab {
@@ -93,6 +150,12 @@
   transform: translateY(0);
 }
 
+.blank-record-entry:hover .blank-record-credit,
+.blank-record:focus-visible + .blank-record-credit,
+.blank-record.is-revealed + .blank-record-credit {
+  transform: translateY(0);
+}
+
 .blank-record:hover .blank-record-copy,
 .blank-record:focus-visible .blank-record-copy,
 .blank-record.is-revealed .blank-record-copy {
@@ -102,11 +165,18 @@
 
 @media (max-width: 700px) {
   .blank-record-entry { margin-bottom: 4.5rem; }
-  .blank-record { min-height: 13rem; padding: 2rem; transform: translateY(2rem); }
+  .blank-record { width: calc(100% - 4.5rem); min-height: 13rem; margin-top: 4.3rem; padding: 2rem; transform: translateY(.75rem); }
   .blank-record-copy strong { font-size: 1.3rem; }
+  .blank-record-art { bottom: -.4rem; width: 6.4rem; }
+  .blank-record-art-gale { left: -2.4rem; }
+  .blank-record-art-astarion { right: -2.4rem; }
+  .blank-record-art-tara { top: -3.98rem; transform: translateX(-50%) scale(.86); }
+  .blank-record-credit { width: calc(100% - 4.5rem); margin-top: -.2rem; font-size: .62rem; transform: translateY(.75rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .blank-record,
-  .blank-record-copy { transition: none; }
+  .blank-record-copy,
+  .blank-record-art,
+  .blank-record-credit { transition: none; }
 }
