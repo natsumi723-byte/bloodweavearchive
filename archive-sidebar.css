@@ -40,6 +40,7 @@ body:has(#search-clear:not([hidden]))
 .current-shelf { display: none; }
 
 @media (min-width: 881px) {
+  html[data-archive-edition="release"] body { container-type: inline-size; }
   #ea-directory > .shelves { border-top: 0; }
 
   #collection-list .shelf-heading {
@@ -118,6 +119,7 @@ html { scroll-behavior: auto; }
 
   #rail-dock {
     isolation: isolate;
+    translate: min(0px, calc((1440px - 100cqw) / 2)) 0;
     padding: 1.35rem .65rem .65rem 0;
     margin-top: 1.7rem;
     height: min(438px, calc(100dvh - 128px));
@@ -146,7 +148,7 @@ html { scroll-behavior: auto; }
   #rail-dock::after {
     content: "";
     position: absolute;
-    inset: 7px -9px -5px calc(-1 * max(26px, (100vw - 1296px) / 2) - 18px);
+    inset: 7px -9px -5px clamp(-72px, calc((1296px - 100cqw) / 2), -24px);
     z-index: -2;
     pointer-events: none;
     transform: rotate(2.2deg);
@@ -156,7 +158,7 @@ html { scroll-behavior: auto; }
   #rail-dock::before {
     content: "";
     position: absolute;
-    inset: 0 -3px 0 calc(-1 * max(26px, (100vw - 1296px) / 2) - 18px);
+    inset: 0 -3px 0 clamp(-72px, calc((1296px - 100cqw) / 2), -24px);
     z-index: -1;
     transform: rotate(-.35deg);
     border-radius: 1px 2px 2px 1px;
