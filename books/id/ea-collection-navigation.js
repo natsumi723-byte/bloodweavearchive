@@ -208,6 +208,8 @@
     arrowElement.setAttribute("aria-hidden", "true");
     arrowElement.textContent = arrow;
     const copy = document.createElement("span");
+    // Let the title shrink inside the link, as in the Release navigation.
+    copy.style.minWidth = "0";
     const label = document.createElement("span");
     label.className = "continuation-label";
     label.textContent = relation + "　" + book.archiveCode;
