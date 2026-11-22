@@ -9,13 +9,13 @@
     gtag('js', new Date());
     gtag('config', 'G-DLK3D1XYYM');
   </script>
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Patch 8 text archive for Astarion and Gale in Baldur’s Gate 3, documenting dialogue, story branches, trigger conditions, and developer notes.">
   <title>Bloodweave Archive</title>
   <link rel="canonical" href="https://bloodweavearchive.com/">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/favicon.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="96x96">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Bloodweave Archive">
   <meta property="og:title" content="Bloodweave Archive">
@@ -36,6 +36,15 @@
   </script>
   <link rel="stylesheet" href="styles.css?v=20261008-2">
   <link rel="stylesheet" href="blank-record.css?v=20261117-1">
+  <link rel="stylesheet" href="ea-archive.css">
+  <link rel="preload" href="assets/archive-sidebar/ambientcg-paper006.jpg" as="image" media="(min-width: 881px)">
+  <link rel="stylesheet" href="archive-sidebar.css?v=20261122-1">
+  <script>
+    const demoParams = new URLSearchParams(location.search);
+    const comparisonIcons = demoParams.get("icons");
+    document.documentElement.dataset.archiveEdition = demoParams.get("archive") === "ea" ? "ea" : "release";
+    document.documentElement.dataset.iconFamily = comparisonIcons === "iconoir" ? "iconoir" : "tabler";
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#archive">跳到档案目录</a>
@@ -46,68 +55,41 @@
         <span class="wordmark-mark" aria-hidden="true"><i></i><i></i></span>
         <span class="wordmark-text">
           <strong>Bloodweave Archive</strong>
-          <small>Astarion · Gale</small>
         </span>
       </a>
-      <nav class="archive-nav archive-nav-horizontal" aria-label="主导航">
+      <details class="edition" id="archive-edition">
+        <summary aria-label="切换档案">
+          <span id="edition-label"><span data-initial-edition="release">正式发行档案</span><span data-initial-edition="ea">抢先体验档案</span></span>
+          <small id="edition-patch"><span data-initial-edition="release">Patch 8</span><span data-initial-edition="ea">Patch 5 / Patch 9</span></small>
+        </summary>
+        <div class="edition-options">
+          <button type="button" data-edition="release" aria-current="true"><strong>正式发行档案</strong><small>Patch 8</small></button>
+          <button type="button" data-edition="ea"><strong>抢先体验档案</strong><small>Patch 5 / Patch 9</small></button>
+        </div>
+      </details>
+
+      <div class="header-search" role="search">
+        <span class="search-icon" aria-hidden="true">
+          <svg class="search-tabler" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"/><path d="M21 21l-6 -6"/></svg>
+          <svg class="search-iconoir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L21 21"/><path d="M3 11C3 15.4183 6.58172 19 11 19C13.213 19 15.2161 18.1015 16.6644 16.6493C18.1077 15.2022 19 13.2053 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11Z"/></svg>
+        </span>
+        <input type="text" id="archive-search" aria-label="搜索当前档案" placeholder="" autocomplete="off">
+        <button class="header-search-clear" type="button" id="search-clear" aria-label="清除当前搜索" title="清除当前搜索" hidden></button>
+      </div>
+      <div class="latest-actions">
         <button class="about-link" type="button" id="foreword-open" aria-haspopup="dialog" aria-controls="foreword-dialog">关于本站</button>
-        <details class="collection-nav nav-oa">
-          <summary><span>起源阿斯代伦视角</span><i aria-hidden="true"></i></summary>
-          <div class="collection-menu">
-            <a href="#astarion-origin-with-gale-scenes-and-relationship">旅途中的对话</a>
-            <a href="#astarion-origin-with-gale-finale-and-epilogue">终局与尾声</a>
-          </div>
-        </details>
-        <details class="collection-nav nav-og">
-          <summary><span>起源盖尔视角</span><i aria-hidden="true"></i></summary>
-          <div class="collection-menu">
-            <a href="#gale-origin-with-astarion-scenes-and-relationship">旅途中的对话</a>
-            <a href="#gale-origin-with-astarion-finale-and-epilogue">终局与尾声</a>
-          </div>
-        </details>
-        <details class="collection-nav nav-ag">
-          <summary><span>同伴阿斯代伦&amp;同伴盖尔视角</span><i aria-hidden="true"></i></summary>
-          <div class="collection-menu">
-            <div class="desktop-nav-links">
-              <a href="#shared-journey-party-banter">队内闲聊</a>
-              <a href="#shared-journey-story-scenes">剧情内互动</a>
-              <a href="#shared-journey-talking-about-each-other">向领队谈起对方</a>
-            </div>
-            <div class="mobile-nav-index">
-              <section>
-                <strong>起源阿斯代伦视角</strong>
-                <a href="#astarion-origin-with-gale-scenes-and-relationship">旅途中的对话</a>
-                <a href="#astarion-origin-with-gale-finale-and-epilogue">终局与尾声</a>
-              </section>
-              <section>
-                <strong>起源盖尔视角</strong>
-                <a href="#gale-origin-with-astarion-scenes-and-relationship">旅途中的对话</a>
-                <a href="#gale-origin-with-astarion-finale-and-epilogue">终局与尾声</a>
-              </section>
-              <section>
-                <strong>同伴阿斯代伦&amp;同伴盖尔视角</strong>
-                <a href="#shared-journey-party-banter">队内闲聊</a>
-                <a href="#shared-journey-story-scenes">剧情内互动</a>
-                <a href="#shared-journey-talking-about-each-other">向领队谈起对方</a>
-              </section>
-              <section>
-                <strong>途中絮语</strong>
-                <a href="#wayside-remarks-archive">馆藏书目</a>
-              </section>
-            </div>
-          </div>
-        </details>
-        <details class="collection-nav nav-vb">
-          <summary><span>途中絮语</span><i aria-hidden="true"></i></summary>
-          <div class="collection-menu">
-            <a href="#wayside-remarks-archive">馆藏书目</a>
-          </div>
-        </details>
-      </nav>
+        <button class="round-action" id="rail-trigger" type="button" aria-haspopup="dialog" aria-controls="rail-dialog" aria-label="打开目录"><span class="bwa-icon menu-icon" aria-hidden="true"></span></button>
+      </div>
     </div>
   </header>
 
-  <main id="top" class="page">
+  <div class="archive-layout" id="top"><aside id="rail-dock"><nav id="archive-rail" aria-label="正式发行档案目录">
+<details name="catalog-groups" open><summary><span class="rail-code">OA</span><span>起源阿斯代伦</span></summary><div class="rail-shelves"><a href="#astarion-origin-with-gale-scenes-and-relationship">旅途中的对话</a><a href="#astarion-origin-with-gale-finale-and-epilogue">终局与尾声</a></div></details>
+<details name="catalog-groups"><summary><span class="rail-code">OG</span><span>起源盖尔</span></summary><div class="rail-shelves"><a href="#gale-origin-with-astarion-scenes-and-relationship">旅途中的对话</a><a href="#gale-origin-with-astarion-finale-and-epilogue">终局与尾声</a></div></details>
+<details name="catalog-groups"><summary><span class="rail-code">AG</span><span>同伴互动</span></summary><div class="rail-shelves"><a href="#shared-journey-party-banter">队内闲聊</a><a href="#shared-journey-story-scenes">剧情内互动</a><a href="#shared-journey-talking-about-each-other">向领队谈起对方</a></div></details>
+<details name="catalog-groups"><summary><span class="rail-code">VB</span><span>途中絮语</span></summary><div class="rail-shelves"><a href="#wayside-remarks-archive">馆藏书目</a></div></details>
+</nav></aside>
+<main class="page">
     <dialog class="foreword-dialog" id="foreword-dialog" aria-labelledby="foreword-letter-title">
         <article class="foreword-letter">
           <header class="foreword-letter-header">
@@ -119,9 +101,9 @@
           </header>
           <p class="foreword-letter-greeting" id="foreword-letter-title">Hi，这里是 <span lang="en">Bloodweave Archive</span>！</p>
           <div class="foreword">
-        <p><span lang="en">Bloodweave Archive</span> 以 Patch 8 版本的游戏文本为基础，收录并梳理《博德之门 3》中阿斯代伦（Astarion）与盖尔（Gale）的互动、专属剧情分支及相关文本资料。</p>
-        <p>在每一册互动中，除了对话，<span lang="en">Bloodweave Archive</span> 还将尽可能呈现源文本在该场景下的所有文字描述：包括背景简介、触发条件、不同选择及其结果，以及游玩过程中不可见的开发者旁注。</p>
-        <p><span lang="en">Bloodweave Archive</span> 会明确区分原始资料与研究整理内容，避免两者在阅读过程中混淆：原始资料均直接取自源文件；中文参考译文、部分前情提要及必要的上下文逻辑说明，则由 <span lang="en">Bloodweave Archive</span> 整理，仅用于帮助快速理解原始文本。目前，所有对白的中文翻译均为研究译文，并非官方简体中文翻译；如有歧义，请以英文为准。官方简中可能将在后续更新中逐步替换到正式文档内。</p>
+        <p>Bloodweave Archive 以游戏《博德之门3》Release Patch 8, Early Acess Patch 5/Patch 9 的文本为基础，梳理并收录了阿斯代伦（Astarion）与盖尔（Gale）的互动剧情。</p>
+        <p>在每一册档案中，除了对话，Bloodweave Archive 还尽可能呈现了源文本在该场景下的所有文字描述：包括背景简介、触发条件、不同选择及其结果，以及游玩过程中不可见的开发者旁注。</p>
+        <p>Bloodweave Archive 会明确区分原始资料与研究者整理内容，避免两者在阅读过程中混淆：原始资料均直接取自源文件；中文参考译文、部分档案的前情提要及必要的上下文逻辑说明，则由 Bloodweave Archive 整理，仅用于帮助快速理解原始文本。目前，所有对白的中文翻译均为研究译文，并非官方简体中文翻译；如有歧义，请以英文为准。官方简中可能将在后续更新中逐步替换到正式文档内。</p>
         <p class="foreword-closing" lang="en">Enjoy！</p>
         <p class="foreword-signature" lang="en"><span>Yours,</span><span>N.A.</span></p>
           </div>
@@ -149,15 +131,24 @@
           <button type="button" data-view="og" aria-pressed="false"><span class="view-label-long">起源盖尔</span><span class="view-label-short">OG</span></button>
           <button type="button" data-view="ag" aria-pressed="false"><span class="view-label-long">同伴互动</span><span class="view-label-short">AG</span></button>
         </div>
-        <label class="archive-search">
-          <span class="visually-hidden">搜索档案</span>
-          <input type="search" id="archive-search" placeholder="搜索书名、编号、简介、章节或地点" autocomplete="off">
-        </label>
       </div>
     </section>
 
     <section class="archive" id="archive" aria-label="Bloodweave 档案目录">
       <div id="collection-list" class="collection-list" aria-live="polite"></div>
+      <section class="collection" id="ea-directory" aria-labelledby="ea-heading" hidden>
+        <header class="collection-heading">
+          <span class="collection-number">EA</span>
+          <h2 id="ea-heading"><span>旅途旧篇</span><span>阿斯代伦与盖尔</span></h2>
+          <p class="en" lang="en">Early Access · Astarion &amp; Gale</p>
+          <p class="description">收录阿斯代伦与盖尔在抢先体验阶段（Patch 5 / Patch 9）的互动。</p>
+        </header>
+        <div class="shelves">
+          <div id="ea-book-list"></div>
+          <p class="collection-empty search-empty" role="status">未找到匹配的书目</p>
+        </div>
+      </section>
+      <p class="collection-empty search-empty" role="status">未找到匹配的书目</p>
       <noscript><p class="notice">此目录需要 JavaScript 才能读取书目。</p></noscript>
     </section>
 
@@ -178,7 +169,8 @@
       <p class="blank-record-credit">感谢@D为BWA绘制了可爱的角色插图！</p>
     </aside>
 
-  </main>
+  </main></div>
+<dialog id="rail-dialog" aria-label="档案目录"><button type="button" id="rail-close" aria-label="关闭目录">×</button><div id="rail-slot"></div></dialog>
 
   <footer>
     <div class="footer-inner">
@@ -195,7 +187,9 @@
   </footer>
 
   <script src="catalog.js?v=20261008-1"></script>
+  <script src="ea-catalog.js"></script>
   <script src="app.js?v=20261008-5"></script>
   <script src="blank-record.js?v=20261025-1"></script>
+<script src="archive-sidebar.js?v=20261122-1"></script>
 </body>
 </html>

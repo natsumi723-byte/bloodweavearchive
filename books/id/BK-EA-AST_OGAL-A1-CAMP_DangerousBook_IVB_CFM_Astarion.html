@@ -1,0 +1,308 @@
+<!doctype html><html lang="zh-CN" data-archive-version="ea"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>这一本不能给你吃｜Early Access</title><style id="visual-system-current">
+@page{size:A4;margin:18mm 17mm}
+:root{
+  --ink:#433B42;--muted:#6b6269;--paper:#fffdf9;--page:#eee9e4;--rule:#d8cec7;
+  --astarion:#8B3048;--astarion-soft:#faedf1;--astarion-line:#c27b8e;
+  --gale:#624779;--gale-soft:#f3eff7;--gale-line:#9986aa;
+  --shared:#5e565d;--shared-soft:#f3f0f2;--shared-line:#aaa0a7;
+  --source:#51484d;--source-soft:#f6f2ee;--source-line:#9c8f87;
+  --research:#70572F;--research-soft:#fbf6e9;--research-line:#b79d6f;
+  --check:#795b1d;--check-soft:#fff8e8;--check-line:#c4a35d;
+  --success:#276247;--success-soft:#edf7f1;--success-line:#78ae91;
+  --failure:#8a3740;--failure-soft:#fff0f1;--failure-line:#ce8e94;
+  --conflict:#80503F;--conflict-soft:#fff5ef;--conflict-line:#c99f8e;
+  --version-ink:#695962;--ea-stamp:#695962;--card-footer-safe-space:3.625rem
+}
+html[data-archive-version="ea"]{--page:#E8E6EC;--paper:#FDFCFE}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{max-width:900px;margin:28px auto;padding:18mm;background:var(--paper);color:var(--ink);font:16px/1.78 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;box-shadow:0 6px 32px #433b4218}
+main{max-width:860px;margin:auto}
+h1,h2,h3,h4{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.32}
+h1{margin:.2rem 0 1.35rem;color:var(--ink);padding-bottom:1rem;border-bottom:2px solid var(--rule)}
+.book-title__main{display:block;max-width:18em;font-size:clamp(2rem,4.4vw,2.5rem);line-height:1.2;letter-spacing:-.025em}
+.book-title__subtitle{display:block;max-width:28em;margin-top:.58rem;color:var(--gale);font-size:clamp(1.05rem,2.1vw,1.34rem);line-height:1.48;font-weight:650;letter-spacing:.01em}
+.ea-book-header{position:relative;min-height:5.15rem;padding:.2rem 11rem 1rem 0;border-bottom:2px solid var(--rule)}
+.ea-book-header .book-title{margin:0;padding:0;border:0}
+.ea-rubber-stamp{position:absolute;top:.05rem;right:.15rem;width:9.35rem;height:3.35rem;display:grid;place-items:center;padding:.39rem .78rem;border:.18rem solid currentColor;border-radius:.18rem;color:var(--ea-stamp);font:800 .78rem/1 "Arial Narrow","Roboto Condensed","Microsoft YaHei",sans-serif;letter-spacing:.145em;white-space:nowrap;transform:rotate(-2.1deg);mix-blend-mode:multiply;isolation:isolate}
+.ea-rubber-stamp::before{content:"";position:absolute;inset:.22rem;border:1px solid currentColor;border-radius:.08rem}
+.ea-rubber-stamp__ink{display:block;width:100%;font-weight:800;line-height:1;text-align:center}
+h2{font-size:clamp(1.5rem,3vw,1.95rem);margin:3.7rem 0 1.2rem;color:var(--ink);padding-bottom:.5rem;border-bottom:1px solid var(--rule);break-after:avoid-page}
+h3{font-size:1.2rem;margin:1.8rem 0 .8rem;color:var(--ink);break-after:avoid-page}
+h4,.speaker{font-size:.95rem;margin:0 0 .55rem;color:var(--ink);font-weight:700}
+.system-meta{margin:0 0 2.2rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.synopsis-deck{max-width:72ch;margin:0 0 2rem;color:var(--ink);font-size:1rem;line-height:1.72}
+.source-kicker{margin-bottom:.42rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.synopsis-item+.synopsis-item{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--rule)}
+.synopsis-stage{margin-bottom:.35rem;color:var(--source);font-size:.78rem;font-weight:700}
+.synopsis-deck p{margin:.35rem 0}
+.en,.turn p[lang=en],.note p[lang=en],.source-note p[lang=en],.note-en{font:1.03rem/1.72 Georgia,"Times New Roman",serif}
+.zh{color:#4e474c}
+.translation,.zh span,.note span{font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;color:var(--research);margin-right:.55rem}
+.editorial-opening,.editorial-note{margin:1rem 0 1.5rem;padding:.9rem 1rem;border:1px dashed var(--research-line);border-left:5px double var(--research);background:var(--research-soft);color:#51493d}
+.research-kicker,.editorial-note::before{color:var(--research);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.editorial-note::before{content:"◆  研究者整理";display:block;margin-bottom:.35rem}
+.flow{border:1px solid var(--rule);background:#faf7f4;padding:1.15rem 1.35rem;margin:1rem 0 2rem;overflow-x:auto}
+.flow pre{white-space:pre-wrap;margin:0;font:14px/1.82 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--ink)}
+.state-trace{margin:1rem 0 2rem;padding:1rem 1.1rem;border:1px solid var(--rule);background:#faf7f4}
+.state-trace__title{margin:0 0 .8rem;color:var(--research);font-size:1rem}
+.state-timeline{list-style:none;margin:0;padding:0}
+.state-stage{display:grid;grid-template-columns:2.25rem minmax(0,1fr);gap:.75rem;padding:1rem;border:1px solid var(--rule);background:#fff}
+.state-stage__number{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border:1px solid var(--research);border-radius:50%;color:var(--research);font-weight:700}
+.state-stage__body strong{display:block;margin-bottom:.45rem;color:var(--research)}
+.state-stage__body p{margin:.3rem 0}
+.state-value{display:inline-block;padding:.08rem .38rem;border:1px solid #cfc4d5;background:#f8f4fa;color:var(--gale);font-size:.88em;font-weight:700}
+.state-transition{display:flex;align-items:center;gap:.65rem;margin:.45rem 0 .45rem 1rem;color:var(--muted);font-size:.82rem;font-weight:700}
+.state-transition::before{content:"↓";color:var(--conflict);font-size:1.25rem}
+.state-trace__result{margin:.8rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--conflict);background:#fffaf2}
+.state-trace__result strong{display:block;margin-bottom:.25rem;color:var(--conflict)}
+.state-trace__result p{margin:.25rem 0}
+
+.route{margin:2.1rem 0}
+.turn{margin:.8rem 0;padding:1rem 1.1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.turn p{margin:.38rem 0}
+.turn--astarion{border-left:4px solid var(--astarion-line)}
+.turn--gale{border-left:4px solid var(--gale-line)}
+.turn--astarion>h3,.turn--astarion>h4,.turn--astarion>.speaker{color:var(--astarion)}
+.turn--gale>h3,.turn--gale>h4,.turn--gale>.speaker{color:var(--gale)}
+.note,.source-note{margin:.85rem 0 0 .7rem;padding:.75rem .9rem;border-left:3px solid var(--source-line);background:var(--source-soft);font-size:.9rem}
+.note::before,.source-note::before{content:"■  源文件旁注";display:block;margin-bottom:.35rem;color:var(--source);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.note strong,.note b,.source-note strong,.source-note b{color:var(--source)}
+.note p,.source-note p{margin:.3rem 0}
+.choice{padding:1rem 1.1rem;margin:1.05rem 0;border:1px solid var(--rule);border-left:5px solid var(--shared-line);background:#fcfbfc;break-inside:avoid}
+.choice--shared{border-left-color:var(--shared-line);background:linear-gradient(90deg,var(--shared-soft),#fff 44%)}
+.choice--astarion{border-left-color:var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.choice--gale{border-left-color:var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response{break-inside:avoid}
+.turn.origin-response.origin-response--astarion{border-left:5px solid var(--astarion-line);background:linear-gradient(90deg,var(--astarion-soft),#fff 44%)}
+.turn.origin-response.origin-response--gale{border-left:5px solid var(--gale-line);background:linear-gradient(90deg,var(--gale-soft),#fff 44%)}
+.origin-response-heading{display:flex;align-items:center;flex-wrap:wrap;gap:.55rem .7rem;margin:0 0 .75rem}
+.origin-response-heading>.speaker{margin:0}
+.origin-response-tag{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;font-weight:700;font-size:.75rem;line-height:1.25}
+.origin-response-tag::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.origin-response--astarion .origin-response-tag{color:var(--astarion);background:var(--astarion-soft)}
+.origin-response--gale .origin-response-tag{color:var(--gale);background:var(--gale-soft)}
+.choice>.turn{background:#fff}
+.choice>.tag:first-child,.choice>.badge:first-child{margin-bottom:.75rem}
+.choice-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:0 0 .75rem}
+.choice-meta>.tag,.choice-meta>.badge,.choice-meta>.condition-tag,.choice-meta>.result-badge,.choice-meta>.result-tag{margin:0;max-width:100%}
+.tag,.badge{display:inline-flex;align-items:center;gap:.38rem;padding:.25rem .62rem;border-radius:99px;border:1px solid currentColor;background:var(--shared-soft);color:var(--shared);font-weight:700;font-size:.75rem;line-height:1.25}
+.tag::before,.badge::before{content:"";width:.42rem;height:.42rem;border-radius:50%;background:currentColor}
+.choice--astarion>.tag,.choice--astarion>.badge,.choice--astarion>.choice-meta>.tag,.choice--astarion>.choice-meta>.badge{color:var(--astarion);background:var(--astarion-soft)}
+.choice--gale>.tag,.choice--gale>.badge,.choice--gale>.choice-meta>.tag,.choice--gale>.choice-meta>.badge{color:var(--gale);background:var(--gale-soft)}
+.choice-code{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.condition-tag,.result-tag{display:inline-flex;align-items:center;margin-left:.42rem;padding:.25rem .58rem;border:1px solid var(--rule);border-radius:99px;background:#fff;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.condition-operator{display:inline-flex;align-items:center;color:var(--muted);font:600 .72rem/1.25 "Microsoft YaHei",sans-serif;vertical-align:middle}
+.result-tag{background:var(--shared-soft);color:var(--shared);border-color:var(--shared-line)}
+.source-reaction-tags{display:flex;justify-content:flex-end;margin:.35rem .85rem .7rem;color:var(--muted);font-size:.74rem;line-height:1.35;text-align:right}
+.source-reaction-tag{font-weight:600}
+.version-heading{display:grid;grid-template-columns:4.5rem minmax(0,1fr);align-items:start;column-gap:.65rem;row-gap:.45rem}
+.result-heading{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.version-badge,.result-badge{display:inline-flex;align-items:center;padding:.28rem .65rem;border-radius:99px;font:700 .75rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.03em}
+.version-badge{justify-content:center;flex:0 0 4.5rem;width:4.5rem;white-space:nowrap;border:1px solid var(--gale-line);background:var(--gale-soft);color:var(--gale)}
+.version-heading>.condition-tag{min-width:0;margin:0;width:max-content;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.result-badge{border:1px solid var(--shared-line);background:var(--shared-soft);color:var(--shared)}
+.branch-note{margin:-.25rem 0 1rem;color:var(--muted);font-size:.94rem}
+.branch-note--between-variants{margin:1rem 0}
+.route-guide{margin:1.15rem 0;padding:.82rem 1rem;border:1px solid var(--shared-line);border-left:4px solid var(--shared-line);background:var(--shared-soft);color:var(--ink);font-size:.92rem}
+.route-guide p{margin:.25rem 0}.route-guide strong{color:var(--shared)}
+.route-guide ul{margin:.45rem 0 .1rem;padding-left:1.35rem}.route-guide li+li{margin-top:.28rem}
+.menu-heading{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:.62rem;margin:2.55rem 0 1rem;padding:0 0 .5rem;border-bottom:1px solid var(--rule);line-height:1.45}
+.menu-code{color:var(--gale);font-size:.78em;font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+.menu-label{min-width:0;text-wrap:wrap}
+.check{display:flex;align-items:center;margin:.85rem 0;padding:.62rem .78rem;border:1px solid var(--rule);border-left:3px solid var(--source-line);background:#faf7f4}
+.check-label{display:inline-flex;align-items:center;gap:.44rem;color:var(--source);font:700 .76rem/1.35 "Microsoft YaHei",sans-serif;letter-spacing:.02em}
+.d20-icon{display:inline-block;width:1.8rem;height:1.8rem;flex:0 0 1.8rem;vertical-align:-.43rem;overflow:visible}
+.d20-icon path{fill:currentColor}
+.variants{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.variants--stack{grid-template-columns:1fr}
+.variant-card{padding:1rem;border:1px solid var(--rule);background:#fff;break-inside:avoid}
+.variant-card>.version-heading:first-child{margin-top:0}
+.variant-card>.note,.variant-card>.source-note{margin-left:0}
+.version-flip{position:relative;margin:1rem 0;perspective:1000px}
+.version-flip__card{position:relative;width:100%;transform-style:preserve-3d;transition:transform .3s}
+.js .version-flip__card{height:100%}
+.js .version-flip.is-release .version-flip__card{transform:rotateY(180deg)}
+.version-flip__face{box-sizing:border-box;margin:0;padding-bottom:var(--card-footer-safe-space);background:#fff;border-radius:.65rem;box-shadow:0 0 1.25rem .06rem rgb(85 72 79 / .3)}
+.js .version-flip__face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.version-flip__face--back{margin-top:1rem}
+.js .version-flip__face--back{margin-top:0;transform:rotateY(180deg)}
+.version-flip__face .speaker{padding-right:6rem}
+.version-flip__face .zh:last-of-type{padding-right:3.5rem}
+.version-flip__switch{position:absolute;top:.8rem;right:1rem;z-index:4;display:grid;grid-template-columns:2rem 2rem;padding:.14rem;border:1px solid rgb(105 89 98 / .12);border-radius:999px;background:rgb(105 89 98 / .07);isolation:isolate}
+.version-flip__switch::before{content:"";position:absolute;z-index:-1;left:.14rem;top:.14rem;width:2rem;height:1.5rem;border-radius:999px;background:#fff;box-shadow:0 1px 4px rgb(73 56 63 / .14);transition:transform 220ms cubic-bezier(.22,.61,.36,1)}
+.version-flip__switch[data-active="p9"]::before{transform:translateX(2rem)}
+.version-flip__switch button{min-width:2rem;min-height:1.5rem;padding:0 .42rem;border:0;border-radius:999px;background:transparent;color:var(--muted);font:650 .68rem/1.2 "Microsoft YaHei",sans-serif;cursor:pointer;transition:color 180ms ease}
+.version-flip__switch button[aria-selected="true"]{color:var(--version-ink)}
+.version-flip__mark{position:absolute;left:1.05rem;bottom:.74rem;color:var(--muted);font:650 .68rem/1 "Microsoft YaHei",sans-serif;opacity:.72}
+.version-flip__toggle{position:absolute;right:.72rem;bottom:.58rem;z-index:7;display:grid;place-items:center;width:2.75rem;height:2.75rem;padding:0;border:0;border-radius:.45rem;background:transparent;color:rgb(105 89 98 / .72);cursor:pointer;transition:background 160ms ease,color 160ms ease,transform 160ms ease}
+.version-flip__toggle svg{width:1.35rem;height:1.35rem;display:block}
+.version-flip__toggle:hover{background:rgb(105 89 98 / .065);color:var(--version-ink);transform:translateY(-1px)}
+.version-flip__toggle:focus-visible,.version-flip__switch button:focus-visible{outline:2px solid var(--version-ink);outline-offset:3px}
+.version-flip__toggle:focus-visible{background:rgb(105 89 98 / .065)}
+.version-flip.is-release .version-flip__front-control{visibility:hidden}
+.version-flip.is-release .version-flip__face--back>*,.version-flip.is-returning .version-flip__face--front>*{animation:version-flip-content-in .3s .2s backwards}
+@keyframes version-flip-content-in{from{opacity:0;transform:translateY(1.25rem)}to{opacity:1;transform:translateY(0)}}
+.version-flip__lines{display:grid;gap:.55rem}
+.version-flip__lines .en{margin:0}
+.version-flip__empty{color:var(--shared-line)}
+html:not(.js) .version-flip__switch,html:not(.js) .version-flip__toggle{display:none}
+html:not(.js) .version-flip [data-version-panel][hidden]{display:block}
+.ending{padding:0;border:0;background:transparent;break-inside:avoid}
+.ending--success,.ending--failure{border:0;background:transparent}
+.ending--success .result-badge{border-color:#b8c7be;background:#f8faf9;color:#466255}
+.ending--failure .result-badge{border-color:#cdbbbe;background:#fcf9f9;color:#765158}
+.ending>.result-badge{margin:0 0 .45rem;gap:.44rem}
+.ending>.turn{margin:0}
+.ending h3{margin:.45rem 0;color:var(--ink)}
+.ending p{margin:.35rem 0}
+.outcome-mismatch,.conflict{margin:1.5rem 0;padding:1rem 1.1rem;border:1px dashed var(--conflict-line);border-top:5px double var(--conflict);background:var(--conflict-soft)}
+.outcome-mismatch::before,.conflict::before{content:"◆  研究者识别 · 待核对";display:block;margin-bottom:.35rem;color:var(--conflict);font:700 .72rem/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.outcome-mismatch h3,.conflict h3{margin:.5rem 0;color:var(--conflict)}
+.research{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);background:transparent;color:var(--muted);font-size:.86rem}
+.research summary{cursor:pointer;color:var(--ink);font-weight:700}.research[open] summary{margin-bottom:.75rem}.research p{margin:.55rem 0}.research code{font-size:.92em;overflow-wrap:anywhere}
+.collection-continuation{--collection-accent:var(--shared);margin-top:2.6rem;border:1px solid var(--rule);background:#faf7f4}
+.collection-continuation[data-collection="oa"]{--collection-accent:var(--astarion)}
+.collection-continuation[data-collection="og"]{--collection-accent:var(--gale)}
+.collection-continuation[data-collection="ag"]{--collection-accent:var(--shared)}
+.collection-continuation[data-collection="ea"]{--collection-accent:var(--ea-stamp);background:#f7f5f9}
+.continuation-header{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1rem;border-bottom:1px solid var(--rule)}
+.continuation-heading{display:flex;align-items:center;min-width:0;margin:0;font-size:.78rem;font-weight:700}
+.continuation-reading-label{align-self:stretch;display:inline-flex;align-items:center;padding:.65rem .78rem;background:var(--collection-accent);color:#fff;letter-spacing:.04em}
+.continuation-reading-current{min-width:0;padding:.55rem .72rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.continuation-jump{display:flex;align-items:center;gap:.48rem;margin-right:.65rem}
+.continuation-jump-label{flex:0 0 auto;color:var(--muted);font-size:.68rem;font-weight:700;letter-spacing:.04em}
+.continuation-jump select{max-width:12rem;padding:.38rem 1.8rem .38rem .52rem;border:1px solid var(--rule);border-radius:0;background:#fff;color:var(--collection-accent);font:inherit;font-size:.72rem;font-weight:650;cursor:pointer}
+.continuation-jump select:hover,.continuation-jump select:focus{border-color:var(--collection-accent);outline:0}
+.continuation-nav{display:grid;align-items:stretch}
+.collection-continuation[data-edge="first"] .continuation-nav{grid-template-columns:auto minmax(0,1fr)}
+.collection-continuation[data-edge="middle"] .continuation-nav{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
+.collection-continuation[data-edge="last"] .continuation-nav{grid-template-columns:minmax(0,1fr) auto}
+.continuation-link{display:flex;align-items:center;gap:.65rem;min-width:0;padding:.72rem .8rem;color:inherit;text-decoration:none}
+.collection-continuation[data-edge="first"] .continuation-link,.collection-continuation[data-edge="middle"] .continuation-link:last-child{justify-content:flex-end;text-align:right}
+.continuation-link:hover .continuation-title{color:var(--collection-accent)}
+.continuation-label{display:block;color:var(--muted);font-size:.65rem;font-weight:700;letter-spacing:.06em}
+.continuation-title{display:block;max-width:18em;font-size:.9rem;font-weight:700;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.continuation-arrow{color:var(--collection-accent);font:1.1rem/1 Georgia,"Times New Roman",serif}
+.continuation-position{display:grid;place-items:center;min-width:4.4rem;margin:.5rem 0;color:var(--muted);font:italic .75rem/1.4 Georgia,"Times New Roman",serif}
+.collection-continuation[data-edge="first"] .continuation-position{border-right:1px solid var(--rule)}
+.collection-continuation[data-edge="middle"] .continuation-position{border-left:1px solid var(--rule);border-right:1px solid var(--rule)}
+.collection-continuation[data-edge="last"] .continuation-position{border-left:1px solid var(--rule)}
+.component-note{margin:.7rem 0 1.2rem;color:var(--muted);font-size:.86rem}
+.component-index{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--rule);font-size:.86rem}
+.component-index a{color:var(--muted);text-underline-offset:.2em}
+@media(max-width:700px){
+  body{margin:0;padding:26px 18px;box-shadow:none}
+  p,code{overflow-wrap:anywhere;word-break:break-word}
+  .book-title__main{font-size:clamp(1.2rem,6.2vw,2.2rem);white-space:nowrap;text-wrap:nowrap;letter-spacing:-.04em}
+  .book-title__subtitle{font-size:1.05rem;margin-top:.48rem}
+  .ea-book-header{min-height:0;padding:4rem 0 1rem}
+  .ea-rubber-stamp{top:0;right:.35rem;width:8.15rem;height:2.85rem;font-size:.68rem;transform:rotate(-2.1deg) scale(.96);transform-origin:top right}
+  h2{font-size:1.18rem}
+  h3{font-size:1.05rem}
+  .variants{grid-template-columns:1fr;min-width:0}
+  .variant-card{min-width:0;max-width:100%}
+  .version-flip__face{padding:1rem 1rem var(--card-footer-safe-space)}
+  .version-flip__face .speaker{padding-right:5.5rem}
+  .flow{padding:.9rem 1rem;-webkit-overflow-scrolling:touch}
+  .flow pre{width:max-content;min-width:100%;white-space:pre;font-size:12px;overflow-wrap:normal;word-break:normal}
+  .state-trace{padding:.8rem}
+  .state-stage{grid-template-columns:2rem minmax(0,1fr);padding:.8rem}
+
+  .condition-tag,.result-tag{display:inline-flex;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:normal;word-break:normal}
+  .version-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.45rem .65rem}
+  .version-heading>.condition-tag,.version-heading>.choice-meta{flex:0 1 auto;margin:0;width:fit-content;max-width:100%}
+  .continuation-header{grid-template-columns:1fr}
+  .continuation-jump{margin:0;padding:0 .7rem .55rem}
+  .continuation-jump select{width:100%;max-width:none}
+  .collection-continuation[data-edge="middle"] .continuation-nav{grid-template-columns:minmax(0,1fr) minmax(0,1fr);position:relative;padding-top:1.7rem}
+  .collection-continuation[data-edge="middle"] .continuation-position{position:absolute;inset:.2rem 0 auto;margin:0;border:0;min-width:0}
+  .collection-continuation[data-edge="middle"] .continuation-link:last-child{border-left:1px solid var(--rule)}
+  .continuation-link{padding:.7rem .55rem}
+  .continuation-arrow{font-size:1.05rem}
+  .continuation-title{font-size:.82rem}
+  .continuation-reading-current{font-size:.72rem}
+}
+@media print{
+  html{background:#fff}body{margin:0;padding:0;box-shadow:none;max-width:none}
+  .ea-rubber-stamp{color:#5f5362;mix-blend-mode:multiply}
+  .component-index,.component-note{display:none}
+  .turn,.choice,.note,.source-note,.ending,.outcome-mismatch{break-inside:avoid}
+  .version-flip{height:auto!important;perspective:none}.version-flip__card{height:auto!important;transform:none!important}.version-flip__face{position:relative!important;inset:auto!important;transform:none!important;margin:0 0 .8rem;box-shadow:none}.version-flip__switch,.version-flip__toggle{display:none!important}
+  .version-flip [data-version-panel][hidden]{display:block!important}
+}
+@media(prefers-reduced-motion:reduce){.version-flip__card,.version-flip__switch::before,.version-flip__switch button,.version-flip__toggle{transition:none}.version-flip__toggle:hover{transform:none}.version-flip.is-release .version-flip__face--back>*,.version-flip.is-returning .version-flip__face--front>*{animation:none}}
+</style><style id="release-book-link-component">
+.release-citation{display:inline-block;white-space:nowrap}
+.release-book-link{display:inline-flex;align-items:baseline;gap:.24em;color:#514a52;font-weight:650;text-decoration:none;white-space:nowrap}
+.release-book-link svg{width:.92em;height:.92em;align-self:center;flex:none;transform:translateY(.02em);color:var(--ea-stamp)}
+.release-book-link:hover,.release-book-link:focus-visible{color:var(--ea-stamp);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em}
+.release-book-link:focus-visible{outline:2px solid rgb(105 89 98 / .38);outline-offset:3px}
+</style></head><body class="scene-book"><main><header class="ea-book-header"><h1 class="book-title"><span class="book-title__main">这一本不能给你吃</span></h1><span class="ea-rubber-stamp" aria-label="Early Access 馆藏"><span class="ea-rubber-stamp__ink" aria-hidden="true">EARLY ACCESS</span></span></header><div class="editorial-opening"><span class="research-kicker">◆ 研究者整理</span><br>阿斯代伦翻看塞尔死灵法术典籍时，听见了只有自己能够听见的声音。起源盖尔察觉他的异状，并提出接手这本蕴含强大魔法的典籍。 正式版<span class="release-citation">见 <a class="release-book-link" href="https://bloodweavearchive.com/books/id/BK-AST_OGAL-A1-CAMP_DangerousBook_IVB_CFM_Astarion.html"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V5C4 3.89543 4.89543 3 6 3H19.4C19.7314 3 20 3.26863 20 3.6V16.7143M6 17H20M6 21H20M6 21C4.89543 21 4 20.1046 4 19C4 17.8954 4.89543 17 6 17M9 7H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>《这一本不能给你吃》</span></a>。</span></div><h2>阅读脉络</h2><nav class="flow" aria-label="阅读脉络"><pre>01 · 阿斯代伦受到书中声音干扰
+├─ 回应或询问 → 02 · 阿斯代伦猛地合上书
+└─ 保持沉默 → 01.2 · 书中声音提到的同伴
+   ↓
+   01.3 · 书合上后的余波
+   ↓
+03 · 书中幽灵阻止他继续阅读（两条路线汇合）
+   ↓
+04 · 盖尔提出接手典籍
+   ↓
+阿斯代伦拒绝，并暂时把书收起</pre></nav>
+
+<section><h2 class="menu-heading" id="s-01"><span class="menu-code">01 ·</span><span class="menu-label">书中的声音</span></h2>
+<article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Come on, come on. What are you hiding?</p><p class="zh"><span class="translation">参考译文</span>快点，快点。你到底藏着什么？</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Can you summon the dead? Bring them back? Can you - ugh, can you shut up and let me read?</p><p class="zh"><span class="translation">参考译文</span>你能召唤死者吗？让他们复生？你能不能——呃，你能闭嘴让我读书吗？</p></article>
+<h3 class="menu-heading" id="s-01.1"><span class="menu-code">01.1 ·</span><span class="menu-label">盖尔注意到阿斯代伦的异状</span></h3>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">01.1A</span> · 共同选项</span></div><article class="turn turn--gale"><h4>起源盖尔</h4><p class="en" lang="en">I didn't say anything.</p><p class="zh"><span class="translation">参考译文</span>我什么也没说。</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">What? No - not you.</p><p class="zh"><span class="translation">参考译文</span>什么？不——不是说你。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">01.1B</span> · 共同选项</span></div><article class="turn turn--gale"><h4>起源盖尔</h4><p class="en" lang="en">Need some help?</p><p class="zh"><span class="translation">参考译文</span>需要帮忙吗？</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">What? No. I - I'm fine.</p><p class="zh"><span class="translation">参考译文</span>什么？不。我——我没事。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">01.1C</span> · 共同选项</span></div><article class="turn turn--gale"><h4>起源盖尔</h4><p class="en" lang="en">Stay silent.</p><p class="zh"><span class="translation">参考译文</span>保持沉默。</p></article></section>
+<aside class="route-guide"><strong>01.1A–B</strong> 进入 <strong>02</strong> · 阿斯代伦猛地合上书；<strong>01.1C</strong> 继续阅读 <strong>01.2</strong> · 书中声音提到的同伴。</aside>
+
+<h3 class="menu-heading" id="s-01.2"><span class="menu-code">01.2 ·</span><span class="menu-label">书中声音提到的同伴</span></h3>
+<div class="variants variants--stack">
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 威尔在队伍中</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">No, I won't kill them! Well, maybe Wyll...</p><p class="zh"><span class="translation">参考译文</span>不，我不会杀他们！不过，威尔也许可以……</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 影心在队伍中</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">No, I won't kill them! Well, maybe Shadowheart...</p><p class="zh"><span class="translation">参考译文</span>不，我不会杀他们！不过，影心也许可以……</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 III</span><span class="condition-tag">条件 · 莱埃泽尔在队伍中</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">No, I won't kill them! Well, maybe the gith...</p><p class="zh"><span class="translation">参考译文</span>不，我不会杀他们！不过，那个吉斯人也许可以……</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 IV</span><span class="condition-tag">条件 · 卡菈克在队伍中</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">No, I won't kill them! Well, maybe the tiefling...</p><p class="zh"><span class="translation">参考译文</span>不，我不会杀他们！不过，那个提夫林也许可以……</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 V</span><span class="condition-tag">条件 · 无上述同伴版本</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">No - stop it - I won't kill them!</p><p class="zh"><span class="translation">参考译文</span>不——住口——我不会杀他们！</p></article></section>
+</div>
+<article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I can't. I won't. Now - stop!</p><p class="zh"><span class="translation">参考译文</span>我不能。我不会。现在——住手！</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Let. Me. Go! Ah... Hello.</p><p class="zh"><span class="translation">参考译文</span>放。开。我！啊……你好。</p></article>
+
+<h3 class="menu-heading" id="s-01.3"><span class="menu-code">01.3 ·</span><span class="menu-label">书合上后的余波</span></h3>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">01.3A</span> · 共同选项</span></div><article class="turn turn--gale"><h4>起源盖尔</h4><p class="en" lang="en">Good book?</p><p class="zh"><span class="translation">参考译文</span>书好看吗？</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">A unique read, certainly. A tome of necromancy, guarded by spirits.</p><p class="zh"><span class="translation">参考译文</span>确实是本别具一格的读物。一部由幽灵守护的死灵法术典籍。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">01.3B</span> · 共同选项</span></div><article class="turn turn--gale"><h4>起源盖尔</h4><p class="en" lang="en">What in the hells was that?</p><p class="zh"><span class="translation">参考译文</span>刚才那究竟是什么鬼东西？</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I'm not sure. A dance with death, maybe.</p><p class="zh"><span class="translation">参考译文</span>我也说不准。也许是一场与死亡共舞。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">01.3C</span> · 共同选项</span></div><article class="turn turn--gale"><h4>起源盖尔</h4><p class="en" lang="en">You're not killing anyone in this party.</p><p class="zh"><span class="translation">参考译文</span>你不准杀队伍里的任何人。</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Of course I'm not. It's just - it gets to you.</p><p class="zh"><span class="translation">参考译文</span>我当然不会。只是——它会钻进你的脑子。</p></article></section>
+<p class="branch-note"><strong>01.3B–C</strong> 汇入以下回应。</p>
+<article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">This is a powerful book of necromancy, but it's guarded by spirits.</p><p class="zh"><span class="translation">参考译文</span>这是一本强大的死灵法术典籍，但有幽灵守护着它。</p></article>
+<aside class="route-guide"><strong>01.3A–C</strong> 随后汇合至 <strong>03</strong> · 书中幽灵阻止他继续阅读。</aside>
+</section>
+
+<section><h2 class="menu-heading" id="s-02"><span class="menu-code">02 ·</span><span class="menu-label">阿斯代伦猛地合上书</span></h2>
+<article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I was just perusing this little find and - WILL YOU SHUT UP?!</p><p class="zh"><span class="translation">参考译文</span>我只是在翻看这件小小的发现，然后——你们能不能闭嘴？！</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Forgive me. This book reads you more than you read it.</p><p class="zh"><span class="translation">参考译文</span>见谅。与其说是你在读这本书，不如说是它在读你。</p></article>
+<h3 class="menu-heading" id="s-02.1"><span class="menu-code">02.1 ·</span><span class="menu-label">盖尔问起书中的力量</span></h3>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">02.1A</span> · 共同选项</span></div><article class="turn turn--gale"><h4>起源盖尔</h4><p class="en" lang="en">What do you mean?</p><p class="zh"><span class="translation">参考译文</span>什么意思？</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I mean it plays with your mind. There are secrets here, but the book has spirits. They fight you every step of the way.</p><p class="zh"><span class="translation">参考译文</span>它会玩弄你的心智。这里藏着秘密，可书中也有幽灵；你每前进一步，它们都会阻挠。</p></article></section>
+<section class="choice choice--shared"><div class="choice-meta"><span class="badge"><span class="choice-code">02.1B</span> · 共同选项</span></div><article class="turn turn--gale"><h4>起源盖尔</h4><p class="en" lang="en">Sounds dangerous. Maybe you should leave it alone.</p><p class="zh"><span class="translation">参考译文</span>听起来很危险。也许你该别再碰它。</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">No, there's something in here. But the voices - the spirits in the book won't let me see it.</p><p class="zh"><span class="translation">参考译文</span>不，这里面确实藏着什么。可那些声音——书里的幽灵不肯让我看见。</p></article></section>
+<section class="choice choice--gale"><div class="choice-meta"><span class="badge"><span class="choice-code">02.1C</span> · 起源盖尔专属选项</span></div><article class="turn turn--gale"><h4>起源盖尔</h4><p class="en" lang="en">Give it to me, then.</p><p class="zh"><span class="translation">参考译文</span>那就把它交给我。</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I can't. I feel a connection with it, but the spirits within fight me at every step.</p><p class="zh"><span class="translation">参考译文</span>我做不到。我能感觉到自己与它有所联系，可书里的幽灵处处阻挠我。</p></article></section>
+<aside class="route-guide"><strong>02.1A–C</strong> 随后汇合至 <strong>03</strong> · 书中幽灵阻止他继续阅读。</aside>
+</section>
+
+<section><h2 class="menu-heading" id="s-03"><span class="menu-code">03 ·</span><span class="menu-label">书中幽灵阻止他继续阅读</span></h2>
+<div class="variants variants--stack">
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 几乎读到最后</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I almost reached the end before they drove me out. And drove me all but mad.</p><p class="zh"><span class="translation">参考译文</span>我差一点就读到了最后，却被它们赶了出来，也差一点被逼疯。</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 已深入阅读</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I got deep into the pages of this book before they drove me out. And almost drove me mad.</p><p class="zh"><span class="translation">参考译文</span>我已经读得很深，才被它们赶了出来——也差一点被逼疯。</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 III</span><span class="condition-tag">条件 · 只读了一页</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I only read one page before their maddening whispers drove me away.</p><p class="zh"><span class="translation">参考译文</span>我只读了一页，就被它们令人发狂的低语逼退了。</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 IV</span><span class="condition-tag">条件 · 刚打开书</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">I barely opened it when they started whispering from the shadows.</p><p class="zh"><span class="translation">参考译文</span>我才刚把书打开，它们便从阴影中低语起来。</p></article></section>
+</div>
+<article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Now every time I open it, the voices surge back into my mind. I can't reason with them - they exist to protect that book.</p><p class="zh"><span class="translation">参考译文</span>现在每次翻开它，那些声音都会重新涌入我的脑海。我无法和它们讲道理——它们存在的意义就是守护这本书。</p></article>
+</section>
+
+<section><h2 class="menu-heading" id="s-04"><span class="menu-code">04 ·</span><span class="menu-label">盖尔提出接手典籍</span></h2>
+<article class="turn turn--gale"><h4>起源盖尔</h4><p class="en" lang="en">It's powerful magic, not to be toyed with. I could take it off your hands.</p><p class="zh"><span class="translation">参考译文</span>这是强大的魔法，不能等闲视之。把它交给我吧。</p></article>
+<div class="variants variants--stack">
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 I</span><span class="condition-tag">条件 · 阿斯代伦知道盖尔会吸收魔法物品</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">No! You're not eating this one. It's too valuable.</p><p class="zh"><span class="translation">参考译文</span>不行！这一本不能给你吃。它太贵重了。</p></article></section>
+<section class="variant-card"><div class="version-heading"><span class="version-badge">版本 II</span><span class="condition-tag">条件 · 阿斯代伦尚不知情</span></div><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Generous, but I'd prefer to keep it. It may be rather valuable.</p><p class="zh"><span class="translation">参考译文</span>好意心领了，不过我还是想自己留着。它说不定相当值钱。</p></article></section>
+</div>
+<article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Someone went through a lot of trouble to protect this tome. It has to be something more than a book of cantrips.</p><p class="zh"><span class="translation">参考译文</span>有人煞费苦心地保护这部典籍。它绝不可能只是一本戏法书。</p></article><article class="turn turn--astarion"><h4>阿斯代伦</h4><p class="en" lang="en">Still, I doubt this will help us with our parasites. Maybe it's better to put it aside for now.</p><p class="zh"><span class="translation">参考译文</span>不过，我怀疑它帮不了我们解决寄生虫。眼下或许还是先把它放到一边。</p></article>
+</section>
+<span hidden data-structural-orders="5,9,62"></span><details class="research"><summary>研究依据</summary><p>来源：EA Patch 5／Hotfix 15 与 EA Patch 9 对话文件《CAMP_DangerousBook_IVB_CFM_Astarion》。</p><p>中文译文仅供阅读参考；如有歧义，以英文原文为准。</p></details></main><script src="ea-collection-navigation.js?v=20261121-1"></script>
+</body></html>

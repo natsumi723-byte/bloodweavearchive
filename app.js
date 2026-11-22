@@ -123,6 +123,30 @@
     if (!event.target.closest(".collection-nav")) closeNavigationMenus(null);
   });
 
+  const searchClear = document.querySelector("#search-clear");
+  const navDrawer = document.querySelector("#nav-drawer");
+  const menuOpen = document.querySelector("#menu-open");
+  const drawerAbout = document.querySelector(".drawer-about");
+
+  function setOverlayState(layer, open) {
+    layer?.classList.toggle("is-open", open);
+    layer?.setAttribute("aria-hidden", String(!open));
+  }
+  menuOpen?.addEventListener("click", () => setOverlayState(navDrawer, true));
+  navDrawer?.addEventListener("click", (event) => {
+    if (event.target === navDrawer) setOverlayState(navDrawer, false);
+  });
+  navDrawer?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOverlayState(navDrawer, false)));
+  drawerAbout?.addEventListener("click", () => {
+    setOverlayState(navDrawer, false);
+    forewordOpen?.click();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    setOverlayState(navDrawer, false);
+    document.querySelector("#archive-search")?.blur();
+  });
+
   if (!catalog || !Array.isArray(catalog.collections) || !root) {
     throw new Error("Public catalog is missing or malformed.");
   }
@@ -287,8 +311,20 @@
   const stageSelect = document.querySelector("#archive-stage");
   const viewButtons = Array.from(document.querySelectorAll("[data-view]"));
   const params = new URLSearchParams(window.location.search);
+  const edition = document.querySelector("#archive-edition");
+  const eaDirectory = document.querySelector("#ea-directory");
+  const eaList = renderBooks(earlyAccessBooks.map(book => ({
+    ...book,
+    meta: book.meta.replace(/\s*·\s*v\d+$/i, "")
+  })), "EA", 1).element;
+  document.querySelector("#ea-book-list").append(eaList);
+  const editionButtons = [...edition.querySelectorAll("[data-edition]")];
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  let activeEdition = params.get("archive") === "ea" ? "ea" : "release";
+  let switching = false;
+  let eaQuery = activeEdition === "ea" ? params.get("q") || "" : "";
   const state = {
-    query: params.get("q") || "",
+    query: activeEdition === "release" ? params.get("q") || "" : "",
     view: ["oa", "og", "ag"].includes(params.get("view")) ? params.get("view") : "all",
     stage: ["journey", "a1", "a2", "a3", "end", "finale", "epi"].includes(params.get("stage")) ? params.get("stage") : "all"
   };
@@ -320,14 +356,27 @@
 
   function writeUrl() {
     const next = new URLSearchParams();
-    if (state.view !== "all") next.set("view", state.view);
-    if (state.stage !== "all") next.set("stage", state.stage);
-    if (state.query) next.set("q", state.query);
+    if (activeEdition === "ea") {
+      next.set("archive", "ea");
+      if (eaQuery) next.set("q", eaQuery);
+    } else {
+      if (state.view !== "all") next.set("view", state.view);
+      if (state.stage !== "all") next.set("stage", state.stage);
+      if (state.query) next.set("q", state.query);
+    }
     const suffix = next.toString();
     history.replaceState(null, "", `${location.pathname}${suffix ? `?${suffix}` : ""}${location.hash}`);
   }
 
   function applyArchiveFilters() {
+    if (activeEdition === "ea") {
+      const needle = normalized(eaQuery);
+      for (const entry of eaList.children) {
+        entry.hidden = !normalized(entry.textContent).includes(needle);
+      }
+      writeUrl();
+      return;
+    }
     const needle = normalized(state.query);
     root.querySelectorAll(".collection").forEach((collection) => {
       const collectionView = viewByCollection[collection.id] || "all";
@@ -358,10 +407,75 @@
     writeUrl();
   }
 
-  searchInput.value = state.query;
+  function showEdition() {
+    const isEA = activeEdition === "ea";
+    document.documentElement.dataset.archiveEdition = activeEdition;
+    root.hidden = isEA;
+    eaDirectory.hidden = !isEA;
+    document.querySelector("#edition-label").textContent = isEA ? "抢先体验档案" : "正式发行档案";
+    document.querySelector("#edition-patch").textContent = isEA ? "Patch 5 / Patch 9" : "Patch 8";
+    for (const button of editionButtons) {
+      button.setAttribute("aria-current", String(button.dataset.edition === activeEdition));
+    }
+    searchInput.value = isEA ? eaQuery : state.query;
+    applyArchiveFilters();
+    searchClear.hidden = !searchInput.value;
+  }
+
+  searchClear?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (activeEdition === "ea") eaQuery = "";
+    else state.query = "";
+    searchInput.value = "";
+    applyArchiveFilters();
+    searchClear.hidden = true;
+    searchInput.focus({ preventScroll: true });
+  });
+
+  async function switchEdition(next) {
+    edition.open = false;
+    edition.querySelector("summary").focus({ preventScroll: true });
+    if (next === activeEdition || switching) return;
+    switching = true;
+    const commitEdition = () => {
+      activeEdition = next;
+      history.replaceState(null, "", location.pathname);
+      showEdition();
+      window.scrollTo({ top: 0, behavior: "instant" });
+    };
+    try {
+      if (reducedMotion.matches || typeof document.startViewTransition !== "function") {
+        commitEdition();
+        return;
+      }
+      const transition = document.startViewTransition(commitEdition);
+      await transition.finished;
+    } finally {
+      switching = false;
+    }
+  }
+
+  for (const button of editionButtons) {
+    button.addEventListener("click", () => switchEdition(button.dataset.edition));
+  }
+  document.addEventListener("click", (event) => {
+    if (!edition.contains(event.target)) edition.open = false;
+  });
+  edition.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && edition.open) {
+      edition.open = false;
+      edition.querySelector("summary").focus();
+    }
+  });
+
   stageSelect.value = state.stage;
-  searchInput.addEventListener("input", () => { state.query = searchInput.value.trim(); applyArchiveFilters(); });
+  searchInput.addEventListener("input", () => {
+    if (activeEdition === "ea") eaQuery = searchInput.value.trim();
+    else state.query = searchInput.value.trim();
+    applyArchiveFilters();
+    searchClear.hidden = !searchInput.value;
+  });
   stageSelect.addEventListener("change", () => { state.stage = stageSelect.value; applyArchiveFilters(); });
   viewButtons.forEach((button) => button.addEventListener("click", () => { state.view = button.dataset.view; applyArchiveFilters(); }));
-  applyArchiveFilters();
+  showEdition();
 })();
