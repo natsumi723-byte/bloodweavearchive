@@ -4,12 +4,16 @@ on:
   push:
     paths:
       - "books/**"
+      - "catalog.js"
+      - "ea-catalog.js"
       - "analytics.js"
       - "scripts/verify-book-analytics.mjs"
       - ".github/workflows/verify-book-analytics.yml"
   pull_request:
     paths:
       - "books/**"
+      - "catalog.js"
+      - "ea-catalog.js"
       - "analytics.js"
       - "scripts/verify-book-analytics.mjs"
       - ".github/workflows/verify-book-analytics.yml"

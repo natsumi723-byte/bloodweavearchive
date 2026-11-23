@@ -1,27 +1,44 @@
-import { readdir, readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
+import { runInNewContext } from "node:vm";
 
-const booksDir = path.resolve("books");
-const bookFiles = (await readdir(booksDir))
-  .filter((name) => /^ag-\d{3}\.html$/.test(name))
-  .sort();
-
-if (bookFiles.length === 0) {
-  throw new Error("No public AG book pages were found.");
-}
-
-const missing = [];
-for (const file of bookFiles) {
-  const html = await readFile(path.join(booksDir, file), "utf8");
-  if (!html.includes('<script src="../analytics.js"></script>')) {
-    missing.push(file);
+const read = file => readFile(file, "utf8");
+const release = runInNewContext(
+  (await read("catalog.js")) + "\nwindow.BLOODWEAVE_CATALOG",
+  { window: {} },
+  { timeout: 1000 },
+);
+const ea = runInNewContext(
+  (await read("ea-catalog.js")) + "\nearlyAccessBooks",
+  {},
+  { timeout: 1000 },
+);
+const p8 = release.collections.flatMap(collection => collection.shelves.flatMap(shelf => shelf.books));
+const legacy = (await readdir("books")).filter(file => /^ag-\d{3}\.html$/.test(file));
+const groups = { P8: p8.map(book => book.href), EA: ea.map(book => book.href), Legacy: legacy.map(file => "books/" + file) };
+const failures = [];
+for (const [name, files] of Object.entries(groups)) {
+  if (!files.length) failures.push(name + ": empty catalog");
+  for (const file of new Set(files)) {
+    if (typeof file !== "string" || !/^books\/(?:id\/)?[\w-]+\.html$/.test(file)) {
+      failures.push(name + ": invalid path " + file);
+      continue;
+    }
+    try {
+      const html = (await read(file)).replace(/<!--[\s\S]*?-->/g, "");
+      const expected = path.posix.relative(path.posix.dirname(file), "analytics.js");
+      const scripts = [...html.matchAll(/<script\b[^>]*\bsrc\s*=\s*["']([^"']+)["']/gi)];
+      const analytics = scripts.filter(([, src]) => /(?:analytics\.js|googletagmanager\.com\/gtag\/js)/i.test(src));
+      if (analytics.length !== 1 || analytics[0][1] !== expected) {
+        failures.push(file + ": expected exactly one GA4 loader at " + expected);
+      }
+    } catch (error) {
+      failures.push(file + ": " + error.message);
+    }
   }
+  console.log(name + ": checked " + new Set(files).size + " book pages");
 }
-
-if (missing.length > 0) {
-  console.error(`Missing GA4 loader in ${missing.length} book page(s):`);
-  for (const file of missing) console.error(`- books/${file}`);
-  process.exit(1);
+if (failures.length) {
+  console.error(failures.join("\n"));
+  process.exitCode = 1;
 }
-
-console.log(`GA4 loader verified in ${bookFiles.length} public book pages.`);
